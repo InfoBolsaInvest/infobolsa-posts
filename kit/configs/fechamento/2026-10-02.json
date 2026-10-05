@@ -1,0 +1,69 @@
+{
+ "data": "2026-10-02",
+ "ibov": {
+  "pontos": "192.114",
+  "var": 2.63
+ },
+ "extras": [
+  {
+   "rotulo": "Dólar",
+   "valor": "R$ 5,22",
+   "var": -0.08
+  },
+  {
+   "rotulo": "Na semana",
+   "var": 4.71
+  }
+ ],
+ "altas": [
+  [
+   "HAPV3",
+   "Hapvida",
+   11.91
+  ],
+  [
+   "NATU3",
+   "Natura",
+   10.37
+  ],
+  [
+   "VIVA3",
+   "Vivara",
+   5.62
+  ],
+  [
+   "USIM5",
+   "Usiminas",
+   5.5
+  ],
+  [
+   "VAMO3",
+   "Vamos",
+   5.33
+  ]
+ ],
+ "baixas": [
+  [
+   "FLRY3",
+   "Fleury",
+   -1.05
+  ],
+  [
+   "CSMG3",
+   "Copasa",
+   -0.9
+  ],
+  [
+   "BEEF3",
+   "Minerva",
+   -0.51
+  ],
+  [
+   "ASAI3",
+   "Assaí",
+   -0.09
+  ]
+ ],
+ "nota_baixas": "Só 4 ações do Ibovespa<br>fecharam em queda",
+ "fonte": "Fechamento de 02/10/2026. Fonte: B3"
+}
