@@ -12,7 +12,7 @@ cfg:
   logo_fundo: cor do quadrado do logo (padrão branco)
   ajustes: {titulo_size, numero_size, sub_size, bloco_bottom, escuro}
 """
-import json, sys
+import json, os, sys
 
 FS = "fonts/node_modules/@fontsource/"
 CSS = f"""
@@ -63,7 +63,13 @@ def build(cfg):
     if cfg.get("logo"):
         tag = f'<div class="lg" style="background:{cfg.get("logo_fundo", "#fff")}"><img src="{cfg["logo"]}" alt=""></div>' + tag
     sub = f'<div class="sub">{cfg["sub"]}</div>' if cfg.get("sub") else ""
-    fonte = f'<div class="fonte">{cfg["fonte"]}</div>' if cfg.get("fonte") else ""
+    fonte = cfg.get("fonte", "")
+    cr = os.path.join(os.path.dirname(cfg["fundo"]), "creditos.json")
+    if os.path.exists(cr):
+        cred = json.load(open(cr)).get(os.path.basename(cfg["fundo"]), {}).get("credito")
+        if cred:
+            fonte = f"{fonte}. {cred}" if fonte else cred
+    fonte = f'<div class="fonte">{fonte}</div>' if fonte else ""
     return f"""<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><style>{CSS % p}</style></head><body>
 <div class="bg" style="background-image:url('{cfg['fundo']}')"></div><div class="sombra"></div>

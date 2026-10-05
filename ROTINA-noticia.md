@@ -28,23 +28,31 @@ Crie `kit/configs/noticia/AAAA-MM-DD.json` (veja `exemplo-manchete.json` e `exem
 - `titulo`: até 3 linhas de no máximo uns 20 caracteres cada, quebradas com `<br>`. Uma palavra ou número em `<em>` (fica azul). Se passar de 3 linhas, use `"ajustes": {"titulo_size": 92}`.
 - `sub`: 1 ou 2 linhas de apoio (uns 48 caracteres por linha, com `<br>`), números importantes em `<b>`.
 - `fonte`: "Dados de DD/MM/AAAA às HHhMM. Fontes: X e Y" (ou "Fontes: X e Y" quando não for número de mercado).
-- `fundo` e `foco` conforme o tema (repetir foto não tem problema):
+- `fundo` e `foco`: SEMPRE uma foto real de `kit/assets/fundos/` ligada ao assunto (repetir foto não tem problema). Nunca use desenho, ícone, ilustração ou fundo gerado. Veja as fotos disponíveis com `ls kit/assets/fundos` e, na dúvida, olhe a foto (Read) antes de escolher. Use `foco` (ex.: `"50% 40%"`) para centralizar o assunto da foto no corte vertical.
 
-| Tema | fundo | foco |
-|---|---|---|
-| Ibovespa, bolsa, ações em geral, recorde | `assets/fundos/fundo-touro-b3.jpg` | `62% 50%` |
-| Bolsa ou ação subindo forte | `assets/fundos/desenho-alta.jpg` | |
-| Bolsa ou ação caindo forte | `assets/fundos/desenho-queda.jpg` | |
-| FIIs, imóveis, construção | `assets/fundos/desenho-imoveis-fii.jpg` | |
-| Dólar, câmbio | `assets/fundos/desenho-dolar.jpg` | |
-| Selic, Copom, juros, Tesouro, CDI, poupança | `assets/fundos/desenho-juros-selic.jpg` | |
-| Inflação, IPCA | `assets/fundos/desenho-inflacao.jpg` | |
-| Governo, Congresso, eleição, impostos, contas públicas | `assets/fundos/desenho-governo-brasilia.jpg` | |
-| Bancos (Itaú, BB, Bradesco, Santander, Nubank) | `assets/fundos/desenho-bancos.jpg` | |
-| Petróleo, Petrobras, PRIO | `assets/fundos/desenho-petroleo.jpg` | |
-| Agro, commodities agrícolas | `assets/fundos/desenho-agro.jpg` | |
+| Tema | fotos |
+|---|---|
+| Ibovespa, bolsa, ações em geral, recorde | `fundo-touro-b3.jpg` (foco `62% 50%`), `foto-b3-pregao-1.jpg` |
+| Banco do Brasil | `foto-banco-do-brasil-*.jpg` |
+| Itaú | `foto-itau-*.jpg` |
+| Bradesco | `foto-bradesco-*.jpg` |
+| Santander | `foto-santander-*.jpg` |
+| Caixa, FGTS, habitação | `foto-caixa-*.jpg` |
+| Petrobras | `foto-petrobras-plataforma-*.jpg`, `foto-petrobras-sede-*.jpg` |
+| Combustíveis, preço da gasolina | `foto-posto-combustivel-*.jpg` |
+| Vale, minério de ferro | `foto-vale-mina-*.jpg`, `foto-minerio-de-ferro-*.jpg` |
+| Selic, Copom, juros, Banco Central | `foto-banco-central-*.jpg` |
+| Congresso, votações, impostos, reforma | `foto-congresso-*.jpg` |
+| Governo, presidente, Planalto, contas públicas | `foto-planalto-*.jpg` |
+| Dólar, câmbio, exterior | `foto-dolar-*.jpg`, `foto-wall-street-1.jpg` (bolsa americana, Fed) |
+| Real, salário, poupança, inflação, finanças pessoais | `foto-real-dinheiro-*.jpg` |
+| Ouro | `foto-ouro-*.jpg` |
+| FIIs de lajes, escritórios, mercado imobiliário | `foto-faria-lima-*.jpg`, `foto-avenida-paulista-*.jpg` |
+| FIIs de shopping, varejo | `foto-shopping-*.jpg`, `foto-varejo-loja-*.jpg` |
+| Agro, Fiagros, safra | `foto-agro-*.jpg`, `foto-gado-*.jpg` |
+| Energia, elétricas | `foto-itaipu-energia-*.jpg`, `foto-angra-energia-nuclear-1.jpg` |
 
-Se houver uma foto em `assets/fundos/` com o nome do tema ou da empresa (ex.: `foto-banco-do-brasil.jpg`), prefira a foto ao desenho.
+Se nenhuma foto combinar com o assunto, use a mais próxima da lista (ex.: notícia de empresa sem foto própria: `fundo-touro-b3.jpg` ou Faria Lima). O crédito da foto entra sozinho no rodapé (vem de `kit/assets/fundos/creditos.json`), não apague.
 
 - `logo`: se a notícia cita UMA empresa da bolsa, coloque o logo dela. Baixe `https://raw.githubusercontent.com/thefintz/icones-b3/main/icones/TICKER.png` para `kit/assets/logos_b3/TICKER.png` (se não existir, tente o ticker com final 3, 4, 11 ou só as 4 letras). `logo_fundo`: cor da marca quando o logo for claro sobre fundo colorido (ex.: BB `#fcfc30`), senão deixe sem (branco).
 
