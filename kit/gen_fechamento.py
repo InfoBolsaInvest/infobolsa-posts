@@ -42,11 +42,11 @@ body{{position:relative;font-family:"P",sans-serif;font-weight:300;color:#fff;-w
 .luz{{position:absolute;inset:0;background:radial-gradient(ellipse 760px 620px at 100% 100%,rgba(40,120,255,.35),transparent 70%)}}
 .curva{{position:absolute;inset:0}}
 .cab{{position:absolute;top:70px;left:96px;display:flex;align-items:center;gap:18px}}
-.cab .ft{{width:76px;height:76px;border-radius:50%;overflow:hidden;border:2px solid rgba(255,255,255,.85);flex:none}}
+.cab .ft{{width:88px;height:88px;border-radius:50%;overflow:hidden;border:2px solid rgba(255,255,255,.85);flex:none}}
 .cab .ft img{{width:100%;height:100%;object-fit:cover}}
-.cab .nm{{font-weight:600;font-size:27px;line-height:32px;display:flex;align-items:center;gap:8px}}
-.cab .nm svg{{width:24px;height:24px}}
-.cab .ar{{font-weight:300;font-size:21px;line-height:28px;opacity:.75}}
+.cab .nm{{font-weight:600;font-size:31px;line-height:36px;display:flex;align-items:center;gap:8px}}
+.cab .nm svg{{width:28px;height:28px}}
+.cab .ar{{font-weight:300;font-size:24px;line-height:31px;opacity:.75}}
 .tit{{position:absolute;top:196px;left:96px}}
 .tit h1{{font-weight:400;font-size:98px;line-height:1.02;letter-spacing:-1px}}
 .tit h1 span{{color:{AZUL}}}
