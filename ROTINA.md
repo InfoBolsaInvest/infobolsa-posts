@@ -1,6 +1,6 @@
 # Rotina diária: post "Fechamento de mercado" (@infobolsainvestimentos)
 
-Roda nos dias úteis às 18h30 (horário de Brasília), sem nenhum computador ligado.
+Roda nos dias úteis às 18h20 (horário de Brasília), sem nenhum computador ligado.
 
 ## 1. Teve pregão hoje?
 Confira se a B3 abriu hoje (feriado nacional ou da B3 = sem pregão). Pesquise "Ibovespa fecha hoje DD/MM/AAAA". Se não teve pregão, pare aqui e não poste nada.
@@ -26,6 +26,7 @@ Dentro de `kit/`:
 1. `git add -A && git commit -m "Fechamento DD/MM/AAAA" && git push` (branch main).
 2. Confira que `https://raw.githubusercontent.com/InfoBolsaInvest/infobolsa-posts/main/posts/fechamento-AAAA-MM-DD.jpg` abre (pode levar alguns segundos).
 3. Poste no Instagram com o conector Windsor.ai: `execute_action`, connector `instagram`, conta `17841445716975551`, ação `create_image_post`, com `image_url` acima e a legenda.
+4. Leia a resposta: se vier qualquer erro (ex.: falta de permissão instagram_content_publish), NÃO considere postado e avise o Douglas com o texto do erro.
 
 ## 5. Legenda (modelo)
 ```
