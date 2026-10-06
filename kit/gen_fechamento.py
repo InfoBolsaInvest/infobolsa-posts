@@ -17,7 +17,7 @@ FS = "fonts/node_modules/@fontsource/"
 DIAS = ["Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado", "Domingo"]
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro",
          "outubro", "novembro", "dezembro"]
-AZUL, VERDE, VERM = "#3aa2ff", "#4ee39b", "#ff6b7a"
+AZUL, VERDE, VERM = "#ffb400", "#3fd98a", "#ff6b6b"  # AZUL = cor de destaque (amarelo da marca)
 
 
 def pct(v, sinal=True):
@@ -38,8 +38,8 @@ CSS = f"""
 *{{margin:0;padding:0;box-sizing:border-box}}
 html,body{{width:1080px;height:1350px;overflow:hidden}}
 body{{position:relative;font-family:"P",sans-serif;font-weight:300;color:#fff;-webkit-font-smoothing:antialiased;
- background:linear-gradient(155deg,#030722 0%,#050c33 38%,#0a2a86 78%,#0d4bd0 100%)}}
-.luz{{position:absolute;inset:0;background:radial-gradient(ellipse 760px 620px at 100% 100%,rgba(40,120,255,.35),transparent 70%)}}
+ background:linear-gradient(155deg,#0b1516 0%,#162526 40%,#173a2f 78%,#0f5a35 100%)}}
+.luz{{position:absolute;inset:0;background:radial-gradient(ellipse 760px 620px at 100% 100%,rgba(0,128,58,.40),transparent 70%)}}
 .curva{{position:absolute;inset:0}}
 .cab{{position:absolute;top:70px;left:96px;display:flex;align-items:center;gap:18px}}
 .cab .ft{{width:88px;height:88px;border-radius:50%;overflow:hidden;border:2px solid rgba(255,255,255,.85);flex:none}}
@@ -53,7 +53,7 @@ body{{position:relative;font-family:"P",sans-serif;font-weight:300;color:#fff;-w
 .tit p{{font-size:30px;line-height:1.35;margin-top:18px;color:rgba(255,255,255,.82)}}
 .trilho{{position:absolute;left:150px;top:500px;bottom:130px;width:1px;background:linear-gradient(180deg,rgba(255,255,255,.28),rgba(255,255,255,.06))}}
 .no{{position:absolute;left:96px;width:108px;height:108px;border-radius:50%;border:1.5px solid rgba(255,255,255,.30);
- background:#071447;display:flex;align-items:center;justify-content:center;color:#fff}}
+ background:#122021;display:flex;align-items:center;justify-content:center;color:#fff}}
 .no svg{{width:46px;height:46px}}
 .ibov{{position:absolute;top:520px;left:236px;right:96px}}
 .ibov .lb{{font-size:24px;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.65)}}
@@ -70,17 +70,18 @@ body{{position:relative;font-family:"P",sans-serif;font-weight:300;color:#fff;-w
 .grid>div>.it:last-child{{border-bottom:none}}
 .it{{display:flex;align-items:center;gap:16px;height:60px;border-bottom:1px solid rgba(255,255,255,.10)}}
 .lg{{width:46px;height:46px;border-radius:50%;overflow:hidden;flex:none;background:#fff;display:flex;align-items:center;justify-content:center;
- font-weight:600;font-size:14px;color:#0b1a36;box-shadow:0 0 0 1.5px rgba(255,255,255,.35)}}
+ font-weight:600;font-size:14px;color:#162526;box-shadow:0 0 0 1.5px rgba(255,255,255,.35)}}
 .lg img{{width:100%;height:100%;object-fit:cover}}
 .it .tk{{flex:1;font-weight:400;font-size:28px;letter-spacing:.5px}}
 .it .vr{{font-weight:400;font-size:28px}}
 .nota{{height:120px;display:flex;align-items:center;font-size:21px;line-height:1.4;color:rgba(255,255,255,.6)}}
+.marca{{position:absolute;top:78px;right:96px;height:76px}}
 .rod{{position:absolute;left:96px;bottom:40px;font-size:19px;line-height:1.5;color:rgba(255,255,255,.55)}}
 """
 
 SELO = """<svg viewBox="0 0 40 40" aria-hidden="true"><path id="selo" fill="#2799ff" d=""/><path fill="none" stroke="#fff" stroke-width="3.7" stroke-linecap="round" stroke-linejoin="round" d="M12.4 20.7l5.1 4.9 10-10.6"/></svg>"""
 SCRIPT = """<script>(function(){var p=[],N=360;for(var i=0;i<N;i++){var t=2*Math.PI*i/N,r=17.3+1.25*Math.cos(12*t);p.push((20+r*Math.sin(t)).toFixed(2)+' '+(20-r*Math.cos(t)).toFixed(2));}document.getElementById('selo').setAttribute('d','M'+p.join(' L')+'Z');})();</script>"""
-CURVA = """<svg class="curva" viewBox="0 0 1080 1350" width="1080" height="1350"><path d="M850 1350 C 950 1265, 1010 1280, 1080 1185" fill="none" stroke="rgba(120,180,255,.35)" stroke-width="1.5"/><path d="M900 1350 C 960 1300, 1020 1300, 1080 1240" fill="none" stroke="rgba(120,180,255,.18)" stroke-width="1.2"/></svg>"""
+CURVA = """<svg class="curva" viewBox="0 0 1080 1350" width="1080" height="1350"><path d="M850 1350 C 950 1265, 1010 1280, 1080 1185" fill="none" stroke="rgba(255,180,0,.40)" stroke-width="1.5"/><path d="M900 1350 C 960 1300, 1020 1300, 1080 1240" fill="none" stroke="rgba(255,180,0,.22)" stroke-width="1.2"/></svg>"""
 
 
 def logo(tk):
@@ -184,6 +185,7 @@ def build(cfg, layout=None):
 <div class="luz"></div>{CURVA}
 <div class="cab"><div class="ft"><img src="assets/foto.png" alt=""></div>
 <div><div class="nm">Douglas Medeiros {SELO}</div><div class="ar">@infobolsainvestimentos</div></div></div>
+<img class="marca" src="assets/logo_infobolsa.png" alt="">
 <div class="tit"><h1><span>Fechamento</span><br>de mercado</h1><p>{data_txt}</p></div>
 {corpo}
 <div class="rod">{cfg.get("fonte", "Fonte: B3")}. Não é uma recomendação de compra ou venda.</div>
