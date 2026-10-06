@@ -185,7 +185,6 @@ def build(cfg, layout=None):
 <div class="luz"></div>{CURVA}
 <div class="cab"><div class="ft"><img src="assets/foto.png" alt=""></div>
 <div><div class="nm">Douglas Medeiros {SELO}</div><div class="ar">@infobolsainvestimentos</div></div></div>
-<img class="marca" src="assets/logo_infobolsa.png" alt="">
 <div class="tit"><h1><span>Fechamento</span><br>de mercado</h1><p>{data_txt}</p></div>
 {corpo}
 <div class="rod">{cfg.get("fonte", "Fonte: B3")}. Não é uma recomendação de compra ou venda.</div>
