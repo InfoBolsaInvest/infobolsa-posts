@@ -23,9 +23,9 @@ Regras da escolha:
 
 ## 3. Montar o config
 Crie `kit/configs/noticia/AAAA-MM-DD.json` (veja `exemplo-manchete.json` e `exemplo-numero.json`):
-- `modo`: "manchete" (padrão) ou "numero" quando a notícia cabe num número forte (ex.: "209 mil", "15,00%", "R$ 4,98"). No modo número use `rotulo` (curto) e `numero` (até 8 caracteres). Não aumente `numero_size` (o padrão já é o máximo).
+- `modo`: "manchete" (padrão) ou "numero" quando a notícia cabe num número forte (ex.: "209 mil", "15,00%", "R$ 4,98"). No modo número use `rotulo` (curto) e `numero` (até 8 caracteres). 
 - `tag`: uma palavra em maiúsculas ou curta (Mercado, Bolsa, Dólar, Juros, FIIs, Dividendos, Economia, Política, Bancos, Petróleo, Agro, Inflação, Exterior).
-- `titulo`: até 3 linhas de no máximo uns 20 caracteres cada, quebradas com `<br>`. Uma palavra ou número em `<em>` (fica amarelo, cor de destaque da marca). Se passar de 3 linhas, use `"ajustes": {"titulo_size": 78}`.
+- `titulo`: até 3 linhas de no máximo uns 20 caracteres cada, quebradas com `<br>`. Uma palavra ou número em `<em>` (fica amarelo, cor de destaque da marca). Se passar de 3 linhas, use `"ajustes": {"titulo_size": 92}`.
 - `sub`: 1 ou 2 linhas de apoio (uns 48 caracteres por linha, com `<br>`), números importantes em `<b>`.
 - `fonte`: "Dados de DD/MM/AAAA às HHhMM. Fontes: X e Y" (ou "Fontes: X e Y" quando não for número de mercado).
 - `fundo` e `foco`: SEMPRE uma foto real de `kit/assets/fundos/` ligada ao assunto (repetir foto não tem problema). Nunca use desenho, ícone, ilustração ou fundo gerado. Veja as fotos disponíveis com `ls kit/assets/fundos` e, na dúvida, olhe a foto (Read) antes de escolher. Use `foco` (ex.: `"50% 40%"`) para centralizar o assunto da foto no corte vertical.
@@ -57,7 +57,7 @@ Se nenhuma foto combinar com o assunto, use a mais próxima da lista (ex.: notí
 - `logo`: se a notícia cita UMA empresa da bolsa, coloque o logo dela. Baixe `https://raw.githubusercontent.com/thefintz/icones-b3/main/icones/TICKER.png` para `kit/assets/logos_b3/TICKER.png` (se não existir, tente o ticker com final 3, 4, 11 ou só as 4 letras). `logo_fundo`: cor da marca quando o logo for claro sobre fundo colorido (ex.: BB `#fcfc30`), senão deixe sem (branco).
 
 ## Identidade visual
-O gen_escuro.py já está nas cores da InfoBolsa (base #162526 com degradê verde, amarelo #FFB400 de destaque, branco). Não usar azul nem colocar o logo da InfoBolsa no topo. Não mude as cores no config.
+O gen_escuro.py já está no padrão aprovado: fundo escuro sobre a foto, título grosso (Anton) em branco, destaque e etiqueta em amarelo da marca (#FFB400). Não usar azul nem colocar o logo da InfoBolsa no topo. Não mude cores nem fontes no config.
 
 ## 4. Gerar e conferir a arte
 Dentro de `kit/`:
