@@ -25,15 +25,17 @@ CSS = f"""
 html,body{{width:1080px;height:1350px;overflow:hidden;background:#05070b}}
 body{{position:relative;font-family:"Poppins",sans-serif;color:#fff;-webkit-font-smoothing:antialiased}}
 .bg{{position:absolute;inset:0;background-size:%(zoom)s;background-position:%(foco)s;background-repeat:no-repeat}}
-.sombra{{position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,5,9,.55) 0%%,rgba(3,5,9,.12) 22%%,rgba(3,5,9,.10) 38%%,rgba(3,5,9,%(escuro)s) 62%%,rgba(3,5,9,.97) 100%%)}}
+.sombra{{position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,5,9,.55) 0%%,rgba(3,5,9,.12) 22%%,rgba(6,16,14,.10) 38%%,rgba(8,26,20,%(escuro)s) 62%%,rgba(9,38,26,.97) 100%%)}}
+.verde{{position:absolute;inset:0;background:radial-gradient(ellipse 1100px 560px at 50%% 105%%,rgba(0,128,58,.55),transparent 70%%)}}
+.faixa{{position:absolute;left:0;right:0;bottom:0;height:10px;background:linear-gradient(90deg,#00803A,#3fd98a)}}
 .cab{{position:absolute;top:56px;left:0;width:1080px;display:flex;justify-content:center;align-items:center;gap:18px}}
-.cab .ft{{width:86px;height:86px;border-radius:50%%;overflow:hidden;border:3px solid #fff;flex:none}}
+.cab .ft{{width:86px;height:86px;border-radius:50%%;overflow:hidden;border:3px solid #3fd98a;flex:none}}
 .cab .ft img{{width:100%%;height:100%%;object-fit:cover}}
 .cab .nm{{font-weight:700;font-size:31px;line-height:36px;display:flex;align-items:center;gap:8px;text-shadow:0 2px 10px rgba(0,0,0,.45)}}
 .cab .nm svg{{width:28px;height:28px}}
 .cab .ar{{font-weight:400;font-size:23px;line-height:30px;opacity:.92;text-shadow:0 2px 10px rgba(0,0,0,.45)}}
 .bloco{{position:absolute;left:72px;right:72px;bottom:%(bloco_bottom)spx}}
-.tag{{display:inline-block;background:#FFB400;color:#162526;font-weight:700;font-size:26px;letter-spacing:2px;padding:8px 26px;border-radius:8px;margin-bottom:26px;text-transform:uppercase}}
+.tag{{display:inline-block;background:#00803A;color:#fff;font-weight:700;font-size:26px;letter-spacing:2px;padding:8px 26px;border-radius:8px;margin-bottom:26px;text-transform:uppercase}}
 .lg{{width:118px;height:118px;border-radius:24px;display:flex;align-items:center;justify-content:center;margin-bottom:26px;box-shadow:0 8px 30px rgba(0,0,0,.45);overflow:hidden}}
 .lg img{{width:86%%;height:86%%;object-fit:contain}}
 .titulo{{font-family:"Anton";font-size:%(titulo_size)spx;line-height:1.08;letter-spacing:.5px;text-transform:none}}
@@ -72,7 +74,7 @@ def build(cfg):
     fonte = f'<div class="fonte">{fonte}</div>' if fonte else ""
     return f"""<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><style>{CSS % p}</style></head><body>
-<div class="bg" style="background-image:url('{cfg['fundo']}')"></div><div class="sombra"></div>
+<div class="bg" style="background-image:url('{cfg['fundo']}')"></div><div class="sombra"></div><div class="verde"></div><div class="faixa"></div>
 <div class="cab"><div class="ft"><img src="assets/foto.png" alt=""></div>
 <div><div class="nm">Douglas Medeiros {SELO}</div><div class="ar">@infobolsainvestimentos</div></div></div>
 <div class="bloco">{tag}{miolo}{sub}</div>
