@@ -57,7 +57,7 @@ Se nenhuma foto combinar com o assunto, use a mais próxima da lista (ex.: notí
 - `logo`: se a notícia cita UMA empresa da bolsa, coloque o logo dela. Baixe `https://raw.githubusercontent.com/thefintz/icones-b3/main/icones/TICKER.png` para `kit/assets/logos_b3/TICKER.png` (se não existir, tente o ticker com final 3, 4, 11 ou só as 4 letras). `logo_fundo`: cor da marca quando o logo for claro sobre fundo colorido (ex.: BB `#fcfc30`), senão deixe sem (branco).
 
 ## Identidade visual
-O gen_escuro.py já está no padrão aprovado: fundo escuro sobre a foto com degradê verde da marca embaixo, faixa verde no rodapé, etiqueta verde, título grosso (Anton) em branco e destaque em amarelo da marca (#FFB400). Não usar azul nem colocar o logo da InfoBolsa no topo. Não mude cores nem fontes no config.
+O gen_escuro.py já está no padrão aprovado: fundo escuro sobre a foto, título grosso (Anton) em branco, destaque e etiqueta em amarelo da marca (#FFB400). Não usar azul nem colocar o logo da InfoBolsa no topo. Não mude cores nem fontes no config.
 
 ## 4. Gerar e conferir a arte
 Dentro de `kit/`:
