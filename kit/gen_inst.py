@@ -147,6 +147,8 @@ def curva(t):
 
 def pasta(top, h, titulo, miolo, tema, tw=330, th=56, r=20, w=888):
     T = TEMAS[tema]
+    # a aba cresce com o texto, para o título nunca passar da borda da pasta
+    tw = max(tw, int(30 + 22 + len(limpa(re.sub(r"<[^>]+>", "", titulo))) * 15.5 + 44))
     d = (f"M0 {r} Q0 0 {r} 0 H{tw-34} Q{tw-16} 0 {tw-8} 14 L{tw+8} {th-12} Q{tw+15} {th} {tw+34} {th} "
          f"H{w-r} Q{w} {th} {w} {th+r} V{h-r} Q{w} {h} {w-r} {h} H{r} Q0 {h} 0 {h-r} Z")
     svg = (f'<svg class="psvg" width="{w}" height="{h}" viewBox="0 0 {w} {h}"><defs><linearGradient id="gp{top}" x1="0" y1="0" x2="0" y2="1">'

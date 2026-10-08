@@ -49,7 +49,7 @@ Use `kit/gen_inst.py` com o tema `verde` (é o padrão): cabeçalho pequeno com 
 - `prefere`: enquete "Qual ação/FII/banco você prefere?" com 2 ou 3 opções (ticker, nome, logo, preço e até 2 indicadores, ex.: DY 12M e P/L ou P/VP). Exemplos: `kit/configs/sugestoes/exemplo-prefere.json` (2 opções) e `exemplo-prefere-3.json` (3 opções). O Douglas gosta muito desse formato porque gera muito comentário.
 - Se precisar de um formato que o gen_inst.py ainda não tem, crie um novo tipo nele seguindo o mesmo visual (não volte para o modelo branco antigo).
 - Crie o config em `kit/configs/sugestoes/AAAA-MM-DD-HHh.json`.
-- Olhe a imagem (Read) e confira: nada cortado, sobreposto ou quebrando linha feio (título, frase final e rodapé), números certos, logos aparecendo, sem travessão.
+- Olhe a imagem (Read) e confira, com atenção aos detalhes: o texto da aba da pasta tem que caber dentro da aba (não pode passar da borda), nada cortado, sobreposto ou quebrando linha feio (título, frase final e rodapé), números certos, logos aparecendo, sem travessão.
 - Salve o slide 1 em `sugestoes/AAAA-MM-DD-07h-1.png` (ou `-15h-1.png`) e a legenda em `sugestoes/AAAA-MM-DD-07h.txt`. Apague t.html e t.png.
 - `git add -A && git commit -m "Sugestão DD/MM HHh" && git push` (branch main).
 
