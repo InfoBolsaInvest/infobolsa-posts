@@ -2,7 +2,7 @@
 """Posts no estilo institucional (mesma linha do Fechamento de mercado), 1080x1350.
 Uso: python3 gen_inst.py TIPO config.json saida.html [tema]
 TIPO: pag (dividendos / data de pagamento), vs (comparativo), fii (quanto investir para receber X por mes),
-      tab (tabela genérica), socio (empresas com preço de 1 ação e total), segue (último slide do carrossel; config "-" usa o padrão)
+      tab (tabela genérica), socio (empresas com preço de 1 ação e total), prefere (enquete "qual você prefere?"), segue (último slide do carrossel; config "-" usa o padrão)
 tema: verde (claro levemente verde, cores da InfoBolsa, PADRÃO das sugestões), azul, claro, preto. Padrao: verde.
 Le os mesmos json usados por gen_pag.py, gen_vs.py e gen_fii.py.
 """
@@ -115,6 +115,24 @@ body{position:relative;font-family:"P",sans-serif;font-weight:300;color:var(--fg
 .acoes{position:absolute;left:96px;right:96px;display:flex;gap:16px}
 .acoes div{flex:1;text-align:center;border:1px solid var(--borda);background:var(--card1);border-radius:18px;padding:16px 10px;font-size:22px;line-height:1.3;color:var(--sub)}
 .acoes b{display:block;font-size:26px;color:var(--fg);font-weight:600}
+/* prefere */
+.pf-t{position:absolute;top:220px;left:60px;right:60px;text-align:center}
+.pf-t h1{font-weight:500;font-size:var(--tsize,96px);line-height:1.05;letter-spacing:-1.5px}
+.pf-t h1 span{color:var(--acc);font-weight:600}
+.pf-t p{font-size:30px;line-height:1.35;margin-top:18px;color:var(--sub)}
+.pf{position:absolute;left:0;right:0;display:flex;justify-content:center;gap:var(--gap,64px)}
+.op{width:var(--cw,370px);display:flex;flex-direction:column;align-items:center;background:linear-gradient(180deg,var(--card1),var(--card2));border:1.5px solid var(--borda);border-radius:32px;padding:34px 20px 30px;box-shadow:0 18px 40px rgba(22,37,38,.08)}
+.op .tk{font-weight:600;font-size:46px;letter-spacing:.5px;line-height:1}
+.op .nmo{font-size:20px;color:var(--mute);margin-top:6px;letter-spacing:.5px}
+.op .lgx{width:var(--lgw,210px);height:var(--lgw,210px);border-radius:36px;overflow:hidden;margin:26px 0 26px;box-shadow:0 10px 24px rgba(22,37,38,.15)}
+.op .lgx img{width:100%;height:100%;object-fit:cover;image-rendering:auto}
+.op .pr{background:var(--fg);color:#fff;border-radius:16px;padding:10px 26px;font-size:36px;font-weight:600}
+.op .ex{display:flex;gap:10px;margin-top:20px}
+.op .ex div{background:var(--chip);border:1px solid var(--borda);border-radius:14px;padding:8px 14px;text-align:center;font-size:24px;font-weight:500;min-width:120px}
+.op .ex small{display:block;font-size:15px;font-weight:400;color:var(--mute);letter-spacing:.5px}
+.xvs{position:absolute;width:84px;height:84px;border-radius:50%;background:var(--dot,var(--acc));color:#162526;display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:700;box-shadow:0 8px 20px rgba(22,37,38,.18)}
+.pg{position:absolute;left:96px;right:96px;text-align:center;font-size:32px;line-height:1.35;color:var(--sub)}
+.pg b{color:var(--fg);font-weight:600}
 """
 
 SELO = """<svg viewBox="0 0 40 40" aria-hidden="true"><path id="selo" fill="#2799ff" d=""/><path fill="none" stroke="#fff" stroke-width="3.7" stroke-linecap="round" stroke-linejoin="round" d="M12.4 20.7l5.1 4.9 10-10.6"/></svg>"""
@@ -247,6 +265,38 @@ def build_socio(c, tema):
     return pagina(tema, c["titulo"], c.get("sub", ""), corpo, c["rodape"], tsize=c.get("tsize", 72))
 
 
+def build_prefere(c, tema):
+    """Post de enquete "Qual ação/FII você prefere?" (gera muito comentário).
+    cfg: titulo (HTML, <span> = destaque), sub, opcoes [{ticker, nome, logo, preco, extras:[[rotulo, valor], ...]}] (2 ou 3),
+    pergunta (frase abaixo dos cards), rodape, tsize, top (topo dos cards)."""
+    ops = c["opcoes"]
+    n = len(ops)
+    cw, lgw, gap = (370, 210, 64) if n == 2 else (290, 170, 28)
+    cards = ""
+    for o in ops:
+        ex = "".join(f'<div>{v}<small>{r}</small></div>' for r, v in o.get("extras", []))
+        ex = f'<div class="ex">{ex}</div>' if ex else ""
+        nm = f'<div class="nmo">{o["nome"]}</div>' if o.get("nome") else ""
+        cards += (f'<div class="op"><div class="tk">{o["ticker"]}</div>{nm}<div class="lgx"><img src="{o["logo"]}"></div>'
+                  f'<div class="pr num">R$ {o["preco"]}</div>{ex}</div>')
+    top = c.get("top", 500)
+    corpo = f'<div class="pf" style="top:{top}px;--cw:{cw}px;--lgw:{lgw}px;--gap:{gap}px">{cards}</div>'
+    if n == 2:
+        corpo += f'<div class="xvs" style="left:{540 - 42}px;top:{top + 190}px">x</div>'
+    if c.get("pergunta"):
+        corpo += f'<div class="pg" style="top:{c.get("top_pergunta", 1100)}px">{c["pergunta"]}</div>'
+    T = TEMAS[tema]
+    vars_ = ";".join(f"--{k}:{v}" for k, v in T.items())
+    rod = "<br>".join(c["rodape"])
+    return f"""<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>{CSS.replace('FS/', FS)}</style></head>
+<body style="{vars_};--tsize:{c.get('tsize', 96)}px"><div class="luz"></div>{curva(tema)}
+<div class="cab"><div class="ft"><img src="assets/foto.png" alt=""></div>
+<div><div class="nm">Douglas Medeiros {SELO}</div><div class="ar">@infobolsainvestimentos</div></div></div>
+<div class="pf-t"><h1>{c["titulo"]}</h1><p>{c.get("sub", "")}</p></div>
+{corpo}
+<div class="rod">{rod}</div>{SCRIPT}</body></html>"""
+
+
 SEGUE_PADRAO = {
     "titulo": "Tá começando agora?<br><span>Me segue.</span>",
     "sub": "Aqui eu mostro com números como fazer<br>o seu dinheiro trabalhar por você",
@@ -276,5 +326,5 @@ if __name__ == "__main__":
     tema = sys.argv[4] if len(sys.argv) > 4 else "verde"
     c = json.load(open(cfgp)) if cfgp != "-" else {}
     html = {"pag": build_pag, "vs": build_vs, "fii": build_fii, "tab": build_tab, "socio": build_socio,
-            "segue": build_segue}[tipo](c, tema)
+            "segue": build_segue, "prefere": build_prefere}[tipo](c, tema)
     open(out, "w").write(html)

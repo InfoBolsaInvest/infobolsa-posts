@@ -1,0 +1,47 @@
+{
+ "titulo": "Qual banco você<br><span>prefere?</span>",
+ "sub": "Comenta aqui embaixo qual você escolheria 👇",
+ "opcoes": [
+  {
+   "ticker": "ITUB4",
+   "nome": "Itaú",
+   "logo": "assets/logos_b3/ITUB4.png",
+   "preco": "49,98",
+   "extras": [
+    [
+     "DY 12M",
+     "6,27%"
+    ]
+   ]
+  },
+  {
+   "ticker": "BBAS3",
+   "nome": "Banco do Brasil",
+   "logo": "assets/logos_b3/BBAS3.png",
+   "preco": "26,62",
+   "extras": [
+    [
+     "DY 12M",
+     "2,60%"
+    ]
+   ]
+  },
+  {
+   "ticker": "BBDC4",
+   "nome": "Bradesco",
+   "logo": "assets/logos_b3/BBDC4.png",
+   "preco": "21,98",
+   "extras": [
+    [
+     "DY 12M",
+     "5,73%"
+    ]
+   ]
+  }
+ ],
+ "pergunta": "Os três pagam dividendos. <b>Se só pudesse ter um,<br>qual seria?</b> Comenta aqui 👇",
+ "rodape": [
+  "Exemplo de layout. Cotações e indicadores do StatusInvest em DD/MM/AAAA.",
+  "Não é uma recomendação de compra ou venda."
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "titulo": "Qual ação você<br><span>prefere?</span>",
+ "sub": "Comenta aqui embaixo qual você escolheria 👇",
+ "opcoes": [
+  {
+   "ticker": "B3SA3",
+   "nome": "B3",
+   "logo": "assets/logos_b3/B3SA3.png",
+   "preco": "22,67",
+   "extras": [
+    [
+     "DY 12M",
+     "4,80%"
+    ],
+    [
+     "P/L",
+     "15,20"
+    ]
+   ]
+  },
+  {
+   "ticker": "BPAC11",
+   "nome": "BTG Pactual",
+   "logo": "assets/logos_b3/BPAC11.png",
+   "preco": "78,60",
+   "extras": [
+    [
+     "DY 12M",
+     "2,10%"
+    ],
+    [
+     "P/L",
+     "13,40"
+    ]
+   ]
+  }
+ ],
+ "pergunta": "Uma é a <b>dona da bolsa</b>, a outra é <b>o maior banco<br>de investimentos</b>. Qual vai pra sua carteira?",
+ "rodape": [
+  "Exemplo de layout. Cotações e indicadores do StatusInvest em DD/MM/AAAA.",
+  "Não é uma recomendação de compra ou venda."
+ ]
+}
