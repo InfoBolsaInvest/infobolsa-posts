@@ -1,0 +1,23 @@
+{
+ "data": "2026-10-08",
+ "ibov": {"pontos": "206.220", "var": 0.94},
+ "extras": [
+  {"rotulo": "Dólar", "valor": "R$ 5,02", "var": 0.27},
+  {"rotulo": "Na semana", "var": 7.34}
+ ],
+ "altas": [
+  ["AZZA3", "Azzas 2154", 7.71],
+  ["ASAI3", "Assaí", 7.37],
+  ["VAMO3", "Vamos", 7.26],
+  ["MGLU3", "Magazine Luiza", 5.56],
+  ["SMFT3", "Smart Fit", 5.51]
+ ],
+ "baixas": [
+  ["BEEF3", "Minerva", -3.91],
+  ["TEND3", "Tenda", -2.54],
+  ["CURY3", "Cury", -2.45],
+  ["HYPE3", "Hypera", -2.27],
+  ["GOAU4", "Gerdau Metalúrgica", -2.10]
+ ],
+ "fonte": "Fechamento de 08/10/2026. Fonte: B3"
+}
