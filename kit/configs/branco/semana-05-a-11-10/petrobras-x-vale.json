@@ -1,0 +1,69 @@
+{
+ "titulo": "<b>Petrobras x Vale</b>",
+ "sub": "As duas gigantes da bolsa hoje",
+ "empresas": [
+  {
+   "nome": "Petrobras",
+   "logo": "assets/logo_petrobras.svg",
+   "fundo": "#ffffff",
+   "logo_w": 70
+  },
+  {
+   "nome": "Vale",
+   "logo": "assets/logo_vale.svg",
+   "fundo": "#ffffff",
+   "logo_w": 84
+  }
+ ],
+ "linhas": [
+  [
+   "Cotação",
+   "em 02/10/2026",
+   "R$ 51,17",
+   "R$ 72,10"
+  ],
+  [
+   "Dividend yield",
+   "últimos 12 meses",
+   "7,17%",
+   "7,78%"
+  ],
+  [
+   "P/L",
+   "preço sobre lucro",
+   "4,94",
+   "30,87"
+  ],
+  [
+   "ROE",
+   "retorno sobre o patrimônio",
+   "27,73%",
+   "5,27%"
+  ],
+  [
+   "Valorização",
+   "últimos 12 meses",
+   "+80,49%",
+   "+29,96%",
+   "pos",
+   "pos"
+  ],
+  [
+   "Valor de mercado",
+   "",
+   "R$ 700 bi",
+   "R$ 320 bi"
+  ]
+ ],
+ "rodape": [
+  "Dados do StatusInvest. Ações PETR4 e VALE3",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "tab_top": 478,
+  "head_h": 182,
+  "lin_h": 88,
+  "cel_h": 66,
+  "rod_top": 1236
+ }
+}

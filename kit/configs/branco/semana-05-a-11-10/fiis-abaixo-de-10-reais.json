@@ -1,0 +1,73 @@
+{
+ "titulo": "FIIs com cota <b>abaixo de R$ 10</b><br>que pagam todo mês <span class=\"emo\">👇</span>",
+ "colunas": [
+  "Fundo",
+  "Cotação",
+  "Último rendimento",
+  "100 cotas rendem"
+ ],
+ "linhas": [
+  [
+   "VGIR11",
+   "R$ 9,65",
+   "R$ 0,13",
+   "R$ 13,00"
+  ],
+  [
+   "KNSC11",
+   "R$ 9,11",
+   "R$ 0,08",
+   "R$ 8,00"
+  ],
+  [
+   "MXRF11",
+   "R$ 9,09",
+   "R$ 0,10",
+   "R$ 10,00"
+  ],
+  [
+   "GGRC11",
+   "R$ 8,91",
+   "R$ 0,10",
+   "R$ 10,00"
+  ],
+  [
+   "RBVA11",
+   "R$ 8,67",
+   "R$ 0,09",
+   "R$ 9,00"
+  ],
+  [
+   "GARE11",
+   "R$ 8,39",
+   "R$ 0,083",
+   "R$ 8,30"
+  ],
+  [
+   "SNEL11",
+   "R$ 7,96",
+   "R$ 0,10",
+   "R$ 10,00"
+  ],
+  [
+   "CPTS11",
+   "R$ 7,56",
+   "R$ 0,09",
+   "R$ 9,00"
+  ]
+ ],
+ "destaque": 3,
+ "data": "Cotações de 02/10/26 e último rendimento anunciado",
+ "rodape": [
+  "Os rendimentos mudam todo mês",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "cols": "222px 216px 250px 240px",
+  "tk_size": 38,
+  "vl_size": 34,
+  "lin_h": 74,
+  "cab_size": 19,
+  "tab_top": 500
+ }
+}

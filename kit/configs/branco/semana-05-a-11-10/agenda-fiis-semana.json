@@ -1,0 +1,77 @@
+{
+ "titulo": "FIIs que <b>pagam nesta semana</b> <span class=\"emo\">🗓️</span>",
+ "sub": "Rendimentos de 12 a 16 de outubro",
+ "colunas": [
+  "Fundo",
+  "Pagamento",
+  "Valor por cota",
+  "Rendimento no mês"
+ ],
+ "linhas": [
+  [
+   "KNCR11",
+   "14/10",
+   "R$ 1,13",
+   "1,07%"
+  ],
+  [
+   "MXRF11",
+   "15/10",
+   "R$ 0,10",
+   "1,10%"
+  ],
+  [
+   "HGLG11",
+   "15/10",
+   "R$ 1,17",
+   "0,79%"
+  ],
+  [
+   "KNRI11",
+   "15/10",
+   "R$ 1,10",
+   "0,70%"
+  ],
+  [
+   "VISC11",
+   "15/10",
+   "R$ 0,84",
+   "0,80%"
+  ],
+  [
+   "XPLG11",
+   "15/10",
+   "R$ 0,82",
+   "0,87%"
+  ],
+  [
+   "HGRU11",
+   "15/10",
+   "R$ 0,95",
+   "0,83%"
+  ],
+  [
+   "BRCO11",
+   "15/10",
+   "R$ 0,91",
+   "0,83%"
+  ]
+ ],
+ "destaque": 2,
+ "data": "Rendimento no mês sobre a cotação de 02/10/26",
+ "rodape": [
+  "Recebe quem tinha as cotas na data COM, em 30/09",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "cols": "232px 220px 246px 230px",
+  "tk_size": 37,
+  "vl_size": 33,
+  "lin_h": 72,
+  "cab_size": 18.5,
+  "tab_top": 520,
+  "sub_top": 412,
+  "data_top": 1150,
+  "rod_top": 1200
+ }
+}

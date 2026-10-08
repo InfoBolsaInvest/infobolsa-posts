@@ -1,0 +1,45 @@
+{
+ "titulo": "Quanto você precisa ter<br>investido para <b>viver de renda?</b>",
+ "colunas": [
+  "Renda por mês",
+  "Rendendo 0,80% ao mês",
+  "Rendendo 1,00% ao mês"
+ ],
+ "linhas": [
+  [
+   "R$ 3.000",
+   "R$ 375.000",
+   "R$ 300.000"
+  ],
+  [
+   "R$ 5.000",
+   "R$ 625.000",
+   "R$ 500.000"
+  ],
+  [
+   "R$ 10.000",
+   "R$ 1.250.000",
+   "R$ 1.000.000"
+  ],
+  [
+   "R$ 20.000",
+   "R$ 2.500.000",
+   "R$ 2.000.000"
+  ]
+ ],
+ "fim": "Para manter o poder de compra, o ideal é<br><b>reinvestir uma parte para cobrir a inflação</b>",
+ "data": "Simulação. Rendimentos líquidos e hipotéticos",
+ "rodape": [
+  "Rentabilidade hipotética, não é garantia de retorno"
+ ],
+ "ajustes": {
+  "cols": "268px 330px 330px",
+  "tk_size": 36,
+  "vl_size": 36,
+  "lin_h": 104,
+  "tab_top": 500,
+  "fim_top": 1012,
+  "data_top": 1150,
+  "rod_top": 1206
+ }
+}

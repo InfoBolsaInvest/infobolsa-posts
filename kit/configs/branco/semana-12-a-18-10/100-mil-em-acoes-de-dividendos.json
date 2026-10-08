@@ -1,0 +1,61 @@
+{
+ "titulo": "Quanto rendem <b>R$ 100 mil</b> em<br>ações que pagam dividendos? <span class=\"emo\">👇</span>",
+ "valor": "100000",
+ "colunas": [
+  "Ação",
+  "Média por mês",
+  "Em 12 meses"
+ ],
+ "fundos": [
+  [
+   "BBSE3",
+   "0.3825083333333333333333333333",
+   "41.02"
+  ],
+  [
+   "SANB11",
+   "0.1922666666666666666666666667",
+   "28.55"
+  ],
+  [
+   "VALE3",
+   "0.4677083333333333333333333333",
+   "70.67"
+  ],
+  [
+   "CPFE3",
+   "0.311325",
+   "50.80"
+  ],
+  [
+   "ITSA4",
+   "0.09430833333333333333333333333",
+   "16.24"
+  ],
+  [
+   "TAEE11",
+   "0.2505416666666666666666666667",
+   "44.40"
+  ],
+  [
+   "PETR4",
+   "0.3055583333333333333333333333",
+   "56.09"
+  ],
+  [
+   "ITUB4",
+   "0.2612833333333333333333333333",
+   "49.98"
+  ]
+ ],
+ "data": "Cotações de 05/10/26 e proventos dos últimos 12 meses",
+ "rodape": [
+  "Valores brutos. Dividendos passados não garantem dividendos futuros",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "lin_h": 78,
+  "tk_size": 44,
+  "vl_size": 40
+ }
+}

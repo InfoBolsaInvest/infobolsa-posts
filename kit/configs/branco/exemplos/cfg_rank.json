@@ -1,0 +1,62 @@
+{
+ "titulo": "Investimentos que <b>mais</b><br><b>renderam em 2026</b>",
+ "sub": "De janeiro a setembro",
+ "colunas": [
+  "Investimento",
+  "Retorno no ano"
+ ],
+ "itens": [
+  [
+   "🇧🇷",
+   "Ações BR",
+   "(Ibovespa)",
+   "15.65"
+  ],
+  [
+   "📊",
+   "CDI",
+   "",
+   "10.46"
+  ],
+  [
+   "🏛️",
+   "Tesouro IPCA+ 2050",
+   "",
+   "8.55"
+  ],
+  [
+   "🐷",
+   "Poupança",
+   "",
+   "6.15"
+  ],
+  [
+   "🏢",
+   "Fundos Imobiliários",
+   "(IFIX)",
+   "-0.53"
+  ],
+  [
+   "💵",
+   "Dólar",
+   "(à vista)",
+   "-5.72"
+  ],
+  [
+   "🪙",
+   "Ouro",
+   "(GOLD11)",
+   "-10.05"
+  ],
+  [
+   "btc",
+   "Bitcoin",
+   "",
+   "-10.59"
+  ]
+ ],
+ "rodape": [
+  "Acumulado de 2026 até setembro, em reais. Fonte: Seu Dinheiro",
+  "(dados de BC, Anbima, Tesouro Direto, Broadcast e Coinbase)"
+ ]
+}

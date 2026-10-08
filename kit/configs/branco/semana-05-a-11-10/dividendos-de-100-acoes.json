@@ -1,0 +1,63 @@
+{
+ "titulo": "Quanto <b>100 ações</b> de cada empresa<br>pagaram em 12 meses? <span class=\"emo\">💰</span>",
+ "colunas": [
+  "Ação",
+  "100 ações custam",
+  "Proventos em 12 meses"
+ ],
+ "linhas": [
+  [
+   "VALE3",
+   "R$ 7.210,00",
+   "R$ 561,25"
+  ],
+  [
+   "BBSE3",
+   "R$ 4.045,00",
+   "R$ 459,01"
+  ],
+  [
+   "PETR4",
+   "R$ 5.117,00",
+   "R$ 366,67"
+  ],
+  [
+   "ITUB4",
+   "R$ 4.483,00",
+   "R$ 313,54"
+  ],
+  [
+   "TAEE11",
+   "R$ 4.285,00",
+   "R$ 300,65"
+  ],
+  [
+   "BBDC4",
+   "R$ 1.923,00",
+   "R$ 125,96"
+  ],
+  [
+   "ITSA4",
+   "R$ 1.467,00",
+   "R$ 113,17"
+  ],
+  [
+   "CMIG4",
+   "R$ 1.141,00",
+   "R$ 78,78"
+  ]
+ ],
+ "destaque": 2,
+ "data": "Cotações de 02/10/26 e proventos brutos dos últimos 12 meses",
+ "rodape": [
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "cols": "250px 320px 358px",
+  "tk_size": 40,
+  "vl_size": 36,
+  "lin_h": 76,
+  "tab_top": 498,
+  "rod_top": 1234
+ }
+}

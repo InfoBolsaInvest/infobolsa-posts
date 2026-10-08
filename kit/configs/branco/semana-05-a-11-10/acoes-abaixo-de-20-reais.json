@@ -1,0 +1,65 @@
+{
+ "titulo": "Ações <b>abaixo de R$ 20</b> que<br>pagam dividendos <span class=\"emo\">👇</span>",
+ "colunas": [
+  "Ação",
+  "Cotação",
+  "Dividend yield 12 meses"
+ ],
+ "linhas": [
+  [
+   "BLAU3",
+   "R$ 10,82",
+   "8,34%"
+  ],
+  [
+   "TIMS3",
+   "R$ 18,55",
+   "7,94%"
+  ],
+  [
+   "ABEV3",
+   "R$ 15,84",
+   "7,89%"
+  ],
+  [
+   "CMIN3",
+   "R$ 4,97",
+   "7,76%"
+  ],
+  [
+   "ITSA4",
+   "R$ 14,67",
+   "7,71%"
+  ],
+  [
+   "CMIG4",
+   "R$ 11,41",
+   "6,90%"
+  ],
+  [
+   "BBDC4",
+   "R$ 19,23",
+   "6,55%"
+  ],
+  [
+   "KLBN11",
+   "R$ 18,62",
+   "6,30%"
+  ]
+ ],
+ "destaque": 2,
+ "data": "Dados do StatusInvest em 02/10/26",
+ "rodape": [
+  "Dividendos passados não garantem dividendos futuros",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "cols": "260px 300px 368px",
+  "tk_size": 40,
+  "vl_size": 37,
+  "lin_h": 76,
+  "tab_top": 498,
+  "data_top": 1150,
+  "rod_top": 1200
+ }
+}

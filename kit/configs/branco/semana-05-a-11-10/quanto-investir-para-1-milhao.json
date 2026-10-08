@@ -1,0 +1,51 @@
+{
+ "titulo": "Quanto investir por mês para<br>ter <b>R$ 1 milhão?</b> <span class=\"emo\">🎯</span>",
+ "colunas": [
+  "Em quanto tempo",
+  "Investindo por mês",
+  "Saiu do seu bolso"
+ ],
+ "linhas": [
+  [
+   "10 anos",
+   "R$ 4.347,09",
+   "R$ 521.651"
+  ],
+  [
+   "15 anos",
+   "R$ 2.001,68",
+   "R$ 360.303"
+  ],
+  [
+   "20 anos",
+   "R$ 1.010,86",
+   "R$ 242.607"
+  ],
+  [
+   "25 anos",
+   "R$ 532,24",
+   "R$ 159.672"
+  ],
+  [
+   "30 anos",
+   "R$ 286,13",
+   "R$ 103.005"
+  ]
+ ],
+ "destaque": 1,
+ "fim": "Quanto antes começar, <b>menos sai do seu bolso</b>",
+ "data": "Simulação com rendimento de 1,00% ao mês",
+ "rodape": [
+  "Rentabilidade hipotética, não é garantia de retorno"
+ ],
+ "ajustes": {
+  "cols": "280px 330px 318px",
+  "tk_size": 38,
+  "vl_size": 36,
+  "lin_h": 100,
+  "tab_top": 496,
+  "fim_top": 1090,
+  "data_top": 1150,
+  "rod_top": 1206
+ }
+}

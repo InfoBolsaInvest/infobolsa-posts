@@ -1,0 +1,76 @@
+{
+ "titulo": "FIIs de tijolo negociados<br><b>abaixo do valor patrimonial</b>",
+ "colunas": [
+  "Fundo",
+  "Cotação",
+  "P/VP",
+  "Dividend yield"
+ ],
+ "linhas": [
+  [
+   "PVBI11",
+   "R$ 65,50",
+   "0,63",
+   "7,62%"
+  ],
+  [
+   "LVBI11",
+   "R$ 96,84",
+   "0,80",
+   "9,40%"
+  ],
+  [
+   "HSML11",
+   "R$ 83,00",
+   "0,83",
+   "10,43%"
+  ],
+  [
+   "HGLG11",
+   "R$ 147,90",
+   "0,89",
+   "9,07%"
+  ],
+  [
+   "VISC11",
+   "R$ 105,51",
+   "0,91",
+   "9,47%"
+  ],
+  [
+   "XPML11",
+   "R$ 101,90",
+   "0,93",
+   "10,83%"
+  ],
+  [
+   "BTLG11",
+   "R$ 100,00",
+   "0,93",
+   "9,62%"
+  ],
+  [
+   "KNRI11",
+   "R$ 157,91",
+   "0,97",
+   "8,37%"
+  ]
+ ],
+ "destaque": 2,
+ "fim": "P/VP abaixo de 1 não quer dizer que o fundo está barato.<br><b>Vale olhar vacância, inadimplência e a qualidade dos imóveis</b>",
+ "data": "Dados do StatusInvest em 02/10/26",
+ "rodape": [
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "cols": "232px 250px 196px 250px",
+  "tk_size": 37,
+  "vl_size": 34,
+  "lin_h": 66,
+  "tab_top": 496,
+  "fim_top": 1074,
+  "fim_size": 25,
+  "data_top": 1162,
+  "rod_top": 1214
+ }
+}

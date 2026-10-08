@@ -1,0 +1,51 @@
+{
+ "titulo": "<b>Dividendos do Itaú</b>",
+ "sub": "Quanto teria recebido se tivesse...",
+ "ticker": "ITUB4",
+ "logo": "assets/logo_itau_wiki.svg",
+ "itens": [
+  [
+   "Proventos por ação em 12 meses:",
+   "R$ 3,1354"
+  ],
+  [
+   "Tipo:",
+   "Dividendos e JCP"
+  ],
+  [
+   "Dividend yield:",
+   "6,99%"
+  ],
+  [
+   "Cotação em 02/10:",
+   "R$ 44,83"
+  ]
+ ],
+ "valor_por_cota": "3.1354",
+ "cotacao": "44.83",
+ "quantidades": [
+  10,
+  30,
+  50,
+  100,
+  300,
+  500,
+  1000
+ ],
+ "colunas": [
+  "Qtd de ações",
+  "Proventos em 12 meses",
+  "Valor hoje"
+ ],
+ "rodape": [
+  "Proventos brutos com data COM nos últimos 12 meses",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "quadro": 212,
+  "itens_mt": 4,
+  "item_h": 37.5,
+  "cols": "0.82fr 1.2fr 0.98fr",
+  "logo_w": 100
+ }
+}

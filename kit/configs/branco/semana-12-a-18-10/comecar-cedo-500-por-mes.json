@@ -1,0 +1,62 @@
+{
+ "titulo": "Investindo <b>R$ 500 por mês</b> até<br>os 60 anos, quanto você teria? <span class=\"emo\">⏳</span>",
+ "colunas": [
+  "Começou com",
+  "Saiu do seu bolso",
+  "Aos 60 anos teria"
+ ],
+ "linhas": [
+  [
+   "20 anos",
+   "R$ 240.000",
+   "R$ 2.801.252"
+  ],
+  [
+   "25 anos",
+   "R$ 210.000",
+   "R$ 1.712.930"
+  ],
+  [
+   "30 anos",
+   "R$ 180.000",
+   "R$ 1.038.207"
+  ],
+  [
+   "35 anos",
+   "R$ 150.000",
+   "R$ 619.901"
+  ],
+  [
+   "40 anos",
+   "R$ 120.000",
+   "R$ 360.566"
+  ],
+  [
+   "45 anos",
+   "R$ 90.000",
+   "R$ 199.786"
+  ],
+  [
+   "50 anos",
+   "R$ 60.000",
+   "R$ 100.109"
+  ]
+ ],
+ "destaque": 2,
+ "fim": "Quem começa aos 25 chega aos 60 com<br><b>2,8 vezes mais</b> do que quem começa aos 35",
+ "data": "Simulação com rendimento de 0,80% ao mês, sem descontar a inflação",
+ "rodape": [
+  "Rentabilidade hipotética, não é garantia de retorno"
+ ],
+ "ajustes": {
+  "cols": "270px 320px 338px",
+  "tk_size": 38,
+  "vl_size": 36,
+  "lin_h": 72,
+  "tab_top": 492,
+  "fim_top": 1066,
+  "fim_size": 27,
+  "data_top": 1168,
+  "rod_top": 1220
+ }
+}

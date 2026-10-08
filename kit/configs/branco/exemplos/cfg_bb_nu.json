@@ -1,0 +1,61 @@
+{
+ "titulo": "<b>Banco do Brasil x Nubank</b>",
+ "sub": "O confronto dos gigantes no 2º trimestre",
+ "empresas": [
+  {
+   "nome": "Banco do Brasil",
+   "logo": "assets/logo_bb.svg",
+   "fundo": "#fcfc30",
+   "logo_w": 62
+  },
+  {
+   "nome": "Nubank",
+   "logo": "assets/logo_nubank_branco.svg",
+   "fundo": "#820ad1",
+   "logo_w": 60
+  }
+ ],
+ "linhas": [
+  [
+   "Lucro líquido",
+   "2º trimestre de 2026",
+   "R$ 3,9 bi",
+   "R$ 5,4 bi"
+  ],
+  [
+   "Variação do lucro",
+   "em 12 meses",
+   "+3,3%",
+   "+49%",
+   "pos",
+   "pos"
+  ],
+  [
+   "ROE",
+   "retorno sobre o patrimônio",
+   "8,3%",
+   "33%"
+  ],
+  [
+   "Carteira de crédito",
+   "",
+   "R$ 1,31 tri",
+   "R$ 204 bi"
+  ],
+  [
+   "Valor de mercado",
+   "em 02/10/2026",
+   "R$ 136 bi",
+   "R$ 339 bi"
+  ]
+ ],
+ "rodape": [
+  "Dados do 2º trimestre de 2026 divulgados pelas empresas",
+  "Nubank divulga em dólar: lucro de US$ 1,06 bi e carteira de US$ 39,4 bi, convertidos pela PTAX",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "rod_size": 22,
+  "rod_top": 1218
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "titulo": "<b>Dividendos da Cemig</b>",
+ "sub": "Quanto teria recebido se tivesse...",
+ "ticker": "CMIG4",
+ "logo": "assets/logo_cmig.png",
+ "itens": [
+  [
+   "Proventos por ação em 12 meses:",
+   "R$ 0,7878"
+  ],
+  [
+   "Tipo:",
+   "Dividendos e JCP"
+  ],
+  [
+   "Dividend yield:",
+   "6,90%"
+  ],
+  [
+   "Cotação em 02/10:",
+   "R$ 11,41"
+  ]
+ ],
+ "valor_por_cota": "0.7878",
+ "cotacao": "11.41",
+ "quantidades": [
+  100,
+  300,
+  500,
+  1000,
+  3000,
+  5000,
+  10000
+ ],
+ "colunas": [
+  "Qtd de ações",
+  "Proventos em 12 meses",
+  "Valor hoje"
+ ],
+ "rodape": [
+  "Proventos brutos com data COM nos últimos 12 meses",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "quadro": 212,
+  "itens_mt": 4,
+  "item_h": 37.5,
+  "cols": "0.82fr 1.2fr 0.98fr",
+  "logo_w": 92
+ }
+}

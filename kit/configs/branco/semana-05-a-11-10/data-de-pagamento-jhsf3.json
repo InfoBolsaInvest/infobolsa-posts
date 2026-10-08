@@ -1,0 +1,50 @@
+{
+ "titulo": "Hoje é a <b>data de pagamento</b>",
+ "sub": "Quanto teria recebido se tivesse...",
+ "ticker": "JHSF3",
+ "logo": "assets/logo_txt_jhsf.svg",
+ "itens": [
+  [
+   "Dividendo por ação:",
+   "R$ 0,0692"
+  ],
+  [
+   "Imposto de renda:",
+   "isento"
+  ],
+  [
+   "Data COM:",
+   "30/09/2026"
+  ],
+  [
+   "DY deste pagamento:",
+   "0,59%"
+  ]
+ ],
+ "valor_por_cota": "0.0691563395",
+ "cotacao": "11.73",
+ "quantidades": [
+  100,
+  300,
+  500,
+  1000,
+  3000,
+  5000,
+  10000
+ ],
+ "colunas": [
+  "Qtd de ações",
+  "Dividendos",
+  "Valor investido"
+ ],
+ "rodape": [
+  "Valor investido pela cotação da data COM (R$ 11,73)",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "quadro": 212,
+  "itens_mt": 4,
+  "item_h": 37.5,
+  "logo_w": 92
+ }
+}

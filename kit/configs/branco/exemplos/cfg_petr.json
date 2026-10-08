@@ -1,0 +1,52 @@
+{
+ "titulo": "<b>Dividendos da Petrobras</b>",
+ "sub": "Quanto teria recebido se tivesse...",
+ "ticker": "PETR4",
+ "logo": "assets/logo_petrobras.svg",
+ "itens": [
+  [
+   "Proventos por ação em 12 meses:",
+   "R$ 3,6667"
+  ],
+  [
+   "Tipo:",
+   "Dividendos e JCP"
+  ],
+  [
+   "Dividend yield:",
+   "7,17%"
+  ],
+  [
+   "Cotação em 02/10:",
+   "R$ 51,17"
+  ]
+ ],
+ "valor_por_cota": "3.6666822372",
+ "cotacao": "51.17",
+ "quantidades": [
+  10,
+  30,
+  50,
+  100,
+  300,
+  500,
+  1000
+ ],
+ "colunas": [
+  "Qtd de ações",
+  "Proventos em 12 meses",
+  "Valor hoje"
+ ],
+ "rodape": [
+  "Proventos brutos com data COM nos últimos 12 meses (até 03/10/26).",
+  "Parte ainda será paga em nov e dez/26. Não é recomendação de compra ou venda."
+ ],
+ "ajustes": {
+  "quadro": 212,
+  "itens_mt": 4,
+  "item_h": 37.5,
+  "cols": "0.82fr 1.2fr 0.98fr",
+  "rod_size": 24,
+  "logo_w": 60
+ }
+}

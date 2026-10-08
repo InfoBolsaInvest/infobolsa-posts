@@ -1,0 +1,56 @@
+{
+ "titulo": "Investindo <b>R$ 500 por mês</b>,<br>quanto você teria? <span class=\"emo\">📈</span>",
+ "colunas": [
+  "Tempo",
+  "Saiu do seu bolso",
+  "Você teria"
+ ],
+ "linhas": [
+  [
+   "5 anos",
+   "R$ 30.000",
+   "R$ 40.835"
+  ],
+  [
+   "10 anos",
+   "R$ 60.000",
+   "R$ 115.019"
+  ],
+  [
+   "15 anos",
+   "R$ 90.000",
+   "R$ 249.790"
+  ],
+  [
+   "20 anos",
+   "R$ 120.000",
+   "R$ 494.628"
+  ],
+  [
+   "25 anos",
+   "R$ 150.000",
+   "R$ 939.423"
+  ],
+  [
+   "30 anos",
+   "R$ 180.000",
+   "R$ 1.747.482"
+  ]
+ ],
+ "destaque": 2,
+ "fim": "Em 30 anos, <b>R$ 1.567.482 vieram dos juros</b>",
+ "data": "Simulação com rendimento de 1,00% ao mês",
+ "rodape": [
+  "Rentabilidade hipotética, não é garantia de retorno"
+ ],
+ "ajustes": {
+  "cols": "250px 320px 358px",
+  "tk_size": 40,
+  "vl_size": 37,
+  "lin_h": 90,
+  "tab_top": 492,
+  "fim_top": 1088,
+  "data_top": 1150,
+  "rod_top": 1206
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "titulo": "Quanto rende <b>R$ 100 mil</b><br>na renda fixa em 1 ano? <span class=\"emo\">👇</span>",
+ "colunas": [
+  "Investimento",
+  "Por mês (média)",
+  "Em 1 ano"
+ ],
+ "linhas": [
+  [
+   "Poupança<small>isenta de IR</small>",
+   "R$ 687,07",
+   "R$ 8.244,88"
+  ],
+  [
+   "Tesouro Selic<small>13,75% ao ano</small>",
+   "R$ 928,65",
+   "R$ 11.143,75"
+  ],
+  [
+   "CDB 100% do CDI<small>13,65% ao ano</small>",
+   "R$ 938,44",
+   "R$ 11.261,25"
+  ],
+  [
+   "LCI e LCA 90% do CDI<small>isentas de IR</small>",
+   "R$ 1.023,75",
+   "R$ 12.285,00"
+  ],
+  [
+   "CDB 110% do CDI<small>15,02% ao ano</small>",
+   "R$ 1.032,28",
+   "R$ 12.387,38"
+  ]
+ ],
+ "destaque": 2,
+ "data": "Valores líquidos, com Selic de 13,75% e CDI de 13,65% ao ano",
+ "rodape": [
+  "IR de 17,5% (1 ano) e taxa de custódia de 0,20% no Tesouro. Simulação",
+  "Rentabilidade passada ou projetada não é garantia de retorno"
+ ],
+ "ajustes": {
+  "cols": "380px 264px 284px",
+  "tk_size": 31,
+  "vl_size": 37,
+  "tab_top": 500,
+  "lin_h": 106,
+  "data_top": 1112,
+  "rod_top": 1170,
+  "rod_size": 22.5
+ }
+}

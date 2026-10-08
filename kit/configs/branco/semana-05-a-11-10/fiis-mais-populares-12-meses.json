@@ -1,0 +1,75 @@
+{
+ "titulo": "Quanto os FIIs mais famosos<br><b>pagaram em 12 meses</b> <span class=\"emo\">🏢</span>",
+ "colunas": [
+  "Fundo",
+  "Cotação",
+  "Pago por cota em 12 meses",
+  "Dividend yield"
+ ],
+ "linhas": [
+  [
+   "HGLG11",
+   "R$ 147,90",
+   "R$ 13,41",
+   "9,07%"
+  ],
+  [
+   "KNRI11",
+   "R$ 157,91",
+   "R$ 13,21",
+   "8,37%"
+  ],
+  [
+   "XPML11",
+   "R$ 101,90",
+   "R$ 11,04",
+   "10,83%"
+  ],
+  [
+   "VISC11",
+   "R$ 105,51",
+   "R$ 9,99",
+   "9,47%"
+  ],
+  [
+   "BTLG11",
+   "R$ 100,00",
+   "R$ 9,62",
+   "9,62%"
+  ],
+  [
+   "KNCR11",
+   "R$ 105,50",
+   "R$ 13,92",
+   "13,19%"
+  ],
+  [
+   "HSML11",
+   "R$ 83,00",
+   "R$ 8,66",
+   "10,43%"
+  ],
+  [
+   "MXRF11",
+   "R$ 9,09",
+   "R$ 1,20",
+   "13,15%"
+  ]
+ ],
+ "destaque": 3,
+ "data": "Dados do StatusInvest em 02/10/26",
+ "rodape": [
+  "Rendimentos passados não garantem rendimentos futuros",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "cols": "226px 230px 262px 210px",
+  "tk_size": 37,
+  "vl_size": 33,
+  "lin_h": 74,
+  "cab_size": 18.5,
+  "tab_top": 498,
+  "data_top": 1150,
+  "rod_top": 1200
+ }
+}

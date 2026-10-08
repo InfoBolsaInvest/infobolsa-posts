@@ -1,0 +1,51 @@
+{
+ "titulo": "<b>Dividendos da Itaúsa</b>",
+ "sub": "Quanto teria recebido se tivesse...",
+ "ticker": "ITSA4",
+ "logo": "assets/logo_txt_itausa.svg",
+ "itens": [
+  [
+   "Proventos por ação em 12 meses:",
+   "R$ 1,1317"
+  ],
+  [
+   "Tipo:",
+   "Dividendos e JCP"
+  ],
+  [
+   "Dividend yield:",
+   "7,71%"
+  ],
+  [
+   "Cotação em 02/10:",
+   "R$ 14,67"
+  ]
+ ],
+ "valor_por_cota": "1.1317",
+ "cotacao": "14.67",
+ "quantidades": [
+  100,
+  300,
+  500,
+  1000,
+  3000,
+  5000,
+  10000
+ ],
+ "colunas": [
+  "Qtd de ações",
+  "Proventos em 12 meses",
+  "Valor hoje"
+ ],
+ "rodape": [
+  "Proventos brutos com data COM nos últimos 12 meses",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "quadro": 212,
+  "itens_mt": 4,
+  "item_h": 37.5,
+  "cols": "0.82fr 1.2fr 0.98fr",
+  "logo_w": 92
+ }
+}

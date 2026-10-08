@@ -1,0 +1,66 @@
+{
+ "salario": "19452",
+ "ordenar": true,
+ "titulo": "Quanto preciso investir em cada<br>ação para <b>receber um salário<br>mínimo por mês? (R$ 1.621,00)</b>",
+ "cabecalho": [
+  "Ação",
+  "Prov. 12 meses",
+  "Preço",
+  "Invest. Necessário"
+ ],
+ "fundos": [
+  [
+   "BBSE3",
+   "4.5901",
+   "40.45"
+  ],
+  [
+   "ITSA4",
+   "1.1317",
+   "14.67"
+  ],
+  [
+   "PETR4",
+   "3.6667",
+   "51.17"
+  ],
+  [
+   "TAEE11",
+   "3.0065",
+   "42.85"
+  ],
+  [
+   "CMIG4",
+   "0.7878",
+   "11.41"
+  ],
+  [
+   "BBDC4",
+   "1.2596",
+   "19.23"
+  ],
+  [
+   "ITUB4",
+   "3.1354",
+   "44.83"
+  ],
+  [
+   "ABEV3",
+   "1.2505",
+   "15.84"
+  ],
+  [
+   "CXSE3",
+   "1.3500",
+   "20.41"
+  ]
+ ],
+ "rodape": [
+  "Com base nos proventos dos últimos 12 meses. Cotações de 02/10/26",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "rod_top": 1218,
+  "rod_size": 23
+ }
+}

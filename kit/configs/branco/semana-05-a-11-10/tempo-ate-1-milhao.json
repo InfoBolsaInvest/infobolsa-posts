@@ -1,0 +1,54 @@
+{
+ "titulo": "Quanto tempo leva para<br>juntar <b>R$ 1 milhão?</b>",
+ "colunas": [
+  "Investindo por mês",
+  "Tempo até R$ 1 milhão",
+  "Saiu do seu bolso"
+ ],
+ "linhas": [
+  [
+   "R$ 300",
+   "29 anos e 8 meses",
+   "R$ 106.800"
+  ],
+  [
+   "R$ 500",
+   "25 anos e 6 meses",
+   "R$ 153.000"
+  ],
+  [
+   "R$ 1.000",
+   "20 anos e 1 mês",
+   "R$ 241.000"
+  ],
+  [
+   "R$ 2.000",
+   "15 anos e 1 mês",
+   "R$ 362.000"
+  ],
+  [
+   "R$ 3.000",
+   "12 anos e 4 meses",
+   "R$ 444.000"
+  ],
+  [
+   "R$ 5.000",
+   "9 anos e 3 meses",
+   "R$ 555.000"
+  ]
+ ],
+ "destaque": 1,
+ "data": "Simulação com rendimento de 1,00% ao mês",
+ "rodape": [
+  "Rentabilidade hipotética, não é garantia de retorno"
+ ],
+ "ajustes": {
+  "cols": "300px 340px 288px",
+  "tk_size": 38,
+  "vl_size": 33,
+  "lin_h": 92,
+  "tab_top": 492,
+  "data_top": 1150,
+  "rod_top": 1206
+ }
+}

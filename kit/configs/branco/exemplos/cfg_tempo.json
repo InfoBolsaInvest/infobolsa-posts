@@ -1,0 +1,10 @@
+{
+  "titulo": "Os <b>primeiros R$ 100 mil</b><br>são os mais difíceis",
+  "sub": "Investindo <b>R$ 1.000 por mês</b>, veja quanto tempo<br>leva para juntar cada R$ 100 mil:",
+  "aporte": "1000",
+  "taxa_mes": "1.00",
+  "alvo": "100000",
+  "marcos": 10,
+  "fim": "Em <b>{total}</b> o total chega a <b>R$ 1 milhão</b>,<br>e só <b>R$ {aportes}</b> saíram do seu bolso.",
+  "rodape": ["Simulação com aportes mensais de R$ 1.000 e rendimento de 1,00% ao mês", "Rentabilidade hipotética, não é garantia de retorno"]
+}

@@ -1,0 +1,58 @@
+{
+ "titulo": "De quanto precisa ser a sua<br><b>reserva de emergência?</b> <span class=\"emo\">🛟</span>",
+ "colunas": [
+  "Custo de vida por mês",
+  "6 meses<br>(carteira assinada)",
+  "12 meses<br>(autônomo)"
+ ],
+ "linhas": [
+  [
+   "R$ 2.000",
+   "R$ 12.000",
+   "R$ 24.000"
+  ],
+  [
+   "R$ 3.000",
+   "R$ 18.000",
+   "R$ 36.000"
+  ],
+  [
+   "R$ 5.000",
+   "R$ 30.000",
+   "R$ 60.000"
+  ],
+  [
+   "R$ 8.000",
+   "R$ 48.000",
+   "R$ 96.000"
+  ],
+  [
+   "R$ 10.000",
+   "R$ 60.000",
+   "R$ 120.000"
+  ],
+  [
+   "R$ 15.000",
+   "R$ 90.000",
+   "R$ 180.000"
+  ]
+ ],
+ "destaque": 1,
+ "fim": "O lugar dela é onde dá para resgatar no mesmo dia,<br><b>como Tesouro Selic ou CDB com liquidez diária</b>",
+ "data": "Regra comum: 6 meses para CLT e 12 meses para autônomo",
+ "rodape": [
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "cols": "320px 304px 304px",
+  "tk_size": 38,
+  "vl_size": 36,
+  "lin_h": 88,
+  "cab_h": 56,
+  "tab_top": 492,
+  "fim_top": 1080,
+  "fim_size": 27,
+  "data_top": 1170,
+  "rod_top": 1218
+ }
+}

@@ -1,0 +1,16 @@
+{
+  "titulo": "Veja quanto rende <b>100 MIL REAIS</b><br>investidos em cada FII <span class=\"emo\">👇</span>",
+  "valor": "100000",
+  "colunas": ["Fundo imobiliário", "Rendimento no mês", "Rendimento no ano"],
+  "fundos": [
+    ["SNAG11", "0.12", "9.92"],
+    ["MXRF11", "0.10", "9.09"],
+    ["HSML11", "0.75", "83.00"],
+    ["XPML11", "0.92", "101.90"],
+    ["HGLG11", "1.17", "147.90"],
+    ["SNEL11", "0.10", "7.96"],
+    ["KNCR11", "1.13", "105.50"]
+  ],
+  "data": "Valores com base no dia 02/10/26",
+  "rodape": ["Simulação com a cotação do dia e o último rendimento de cada fundo", "Não é uma recomendação de compra ou venda de ativos"]
+}

@@ -1,0 +1,50 @@
+{
+ "titulo": "Hoje é a <b>data de pagamento</b>",
+ "sub": "Quanto teria recebido se tivesse...",
+ "ticker": "ABEV3",
+ "logo": "assets/logo_ambev.svg",
+ "itens": [
+  [
+   "JCP por ação (bruto):",
+   "R$ 0,1185"
+  ],
+  [
+   "Valor líquido, após o IR:",
+   "R$ 0,1007"
+  ],
+  [
+   "Data COM:",
+   "18/12/2025"
+  ],
+  [
+   "DY deste pagamento:",
+   "0,94%"
+  ]
+ ],
+ "valor_por_cota": "0.1007",
+ "cotacao": "12.54",
+ "quantidades": [
+  100,
+  300,
+  500,
+  1000,
+  3000,
+  5000,
+  10000
+ ],
+ "colunas": [
+  "Qtd de ações",
+  "Valor líquido",
+  "Valor investido"
+ ],
+ "rodape": [
+  "Valor investido pela cotação da data COM (R$ 12,54)",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "quadro": 212,
+  "itens_mt": 4,
+  "item_h": 37.5,
+  "logo_w": 76
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "titulo": "Quanto tempo leva para<br>juntar <b>R$ 100 mil?</b> <span class=\"emo\">💰</span>",
+ "colunas": [
+  "Investindo por mês",
+  "Tempo até R$ 100 mil",
+  "Saiu do seu bolso"
+ ],
+ "linhas": [
+  [
+   "R$ 300",
+   "12 anos e 4 meses",
+   "R$ 44.400"
+  ],
+  [
+   "R$ 500",
+   "9 anos e 3 meses",
+   "R$ 55.500"
+  ],
+  [
+   "R$ 800",
+   "6 anos e 10 meses",
+   "R$ 65.600"
+  ],
+  [
+   "R$ 1.000",
+   "5 anos e 10 meses",
+   "R$ 70.000"
+  ],
+  [
+   "R$ 1.500",
+   "4 anos e 4 meses",
+   "R$ 78.000"
+  ],
+  [
+   "R$ 2.000",
+   "3 anos e 5 meses",
+   "R$ 82.000"
+  ],
+  [
+   "R$ 3.000",
+   "2 anos e 5 meses",
+   "R$ 87.000"
+  ]
+ ],
+ "destaque": 1,
+ "fim": "O que falta para os R$ 100 mil <b>vem dos juros</b>",
+ "data": "Simulação com rendimento de 1,00% ao mês",
+ "rodape": [
+  "Rentabilidade hipotética, não é garantia de retorno"
+ ],
+ "ajustes": {
+  "cols": "300px 340px 288px",
+  "tk_size": 38,
+  "vl_size": 33,
+  "lin_h": 78,
+  "tab_top": 492,
+  "fim_top": 1098,
+  "data_top": 1160,
+  "rod_top": 1210
+ }
+}

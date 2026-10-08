@@ -1,0 +1,77 @@
+{
+ "titulo": "Empresas de energia e quanto<br><b>pagaram de dividendos</b> <span class=\"emo\">⚡</span>",
+ "colunas": [
+  "Ação",
+  "Cotação",
+  "Dividend yield 12 meses",
+  "100 ações pagaram"
+ ],
+ "linhas": [
+  [
+   "CPFE3",
+   "R$ 50,80",
+   "7,36%",
+   "R$ 373,59"
+  ],
+  [
+   "TAEE11",
+   "R$ 44,40",
+   "6,78%",
+   "R$ 300,65"
+  ],
+  [
+   "CMIG4",
+   "R$ 12,13",
+   "6,50%",
+   "R$ 78,78"
+  ],
+  [
+   "ISAE4",
+   "R$ 29,50",
+   "6,27%",
+   "R$ 185,06"
+  ],
+  [
+   "CPLE3",
+   "R$ 17,65",
+   "6,01%",
+   "R$ 106,26"
+  ],
+  [
+   "EQTL3",
+   "R$ 48,26",
+   "3,95%",
+   "R$ 190,02"
+  ],
+  [
+   "EGIE3",
+   "R$ 32,62",
+   "3,44%",
+   "R$ 112,00"
+  ],
+  [
+   "ALUP11",
+   "R$ 36,44",
+   "2,97%",
+   "R$ 108,00"
+  ]
+ ],
+ "destaque": 2,
+ "data": "Dados do StatusInvest em 05/10/26. Proventos brutos dos últimos 12 meses",
+ "rodape": [
+  "Dividendos passados não garantem dividendos futuros",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "cols": "236px 222px 232px 238px",
+  "tk_size": 36,
+  "vl_size": 33,
+  "lin_h": 74,
+  "cab_size": 18.5,
+  "cab_h": 56,
+  "tab_top": 492,
+  "data_top": 1150,
+  "rod_top": 1200,
+  "data_size": 22
+ }
+}

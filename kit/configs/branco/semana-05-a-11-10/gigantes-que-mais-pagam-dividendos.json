@@ -1,0 +1,68 @@
+{
+ "titulo": "As gigantes da bolsa que<br><b>mais pagaram dividendos</b>",
+ "sub": "Empresas com valor de mercado acima de R$ 50 bilhões",
+ "colunas": [
+  "Ação",
+  "Cotação",
+  "Dividend yield 12 meses"
+ ],
+ "linhas": [
+  [
+   "BBSE3",
+   "R$ 40,45",
+   "11,35%"
+  ],
+  [
+   "SANB11",
+   "R$ 28,09",
+   "8,21%"
+  ],
+  [
+   "ABEV3",
+   "R$ 15,84",
+   "7,89%"
+  ],
+  [
+   "VALE3",
+   "R$ 72,10",
+   "7,78%"
+  ],
+  [
+   "CPFE3",
+   "R$ 48,09",
+   "7,77%"
+  ],
+  [
+   "ITSA4",
+   "R$ 14,67",
+   "7,71%"
+  ],
+  [
+   "PETR4",
+   "R$ 51,17",
+   "7,17%"
+  ],
+  [
+   "ITUB4",
+   "R$ 44,83",
+   "6,99%"
+  ]
+ ],
+ "destaque": 2,
+ "data": "Dados do StatusInvest em 02/10/26",
+ "rodape": [
+  "Dividendos passados não garantem dividendos futuros",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "cols": "260px 300px 368px",
+  "tk_size": 40,
+  "vl_size": 37,
+  "lin_h": 68,
+  "tab_top": 524,
+  "sub_top": 466,
+  "sub_size": 28,
+  "data_top": 1160,
+  "rod_top": 1206
+ }
+}

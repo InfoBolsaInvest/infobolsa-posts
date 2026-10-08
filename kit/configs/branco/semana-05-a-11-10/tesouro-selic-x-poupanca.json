@@ -1,0 +1,61 @@
+{
+ "titulo": "<b>Tesouro Selic x Poupança</b>",
+ "sub": "Onde deixar a sua reserva?",
+ "empresas": [
+  {
+   "nome": "Tesouro Selic",
+   "logo": "assets/logo_tesouro.svg",
+   "fundo": "#eef3fb",
+   "logo_w": 78
+  },
+  {
+   "nome": "Poupança",
+   "logo": "assets/logo_poupanca.svg",
+   "fundo": "#fdeef3",
+   "logo_w": 78
+  }
+ ],
+ "linhas": [
+  [
+   "Rendimento",
+   "ao ano, antes do IR",
+   "13,75%",
+   "8,24%"
+  ],
+  [
+   "Imposto de renda",
+   "",
+   "22,5% a 15%",
+   "Isenta"
+  ],
+  [
+   "R$ 10 mil em 1 ano",
+   "lucro líquido",
+   "R$ 1.134",
+   "R$ 824",
+   "pos",
+   ""
+  ],
+  [
+   "Garantia",
+   "",
+   "Tesouro Nacional",
+   "FGC"
+  ],
+  [
+   "Resgate",
+   "",
+   "Todo dia útil",
+   "Qualquer dia"
+  ]
+ ],
+ "rodape": [
+  "Selic de 13,75% ao ano e poupança de 0,66% ao mês (out/26). Simulação",
+  "IR de 17,5% para 1 ano. Até R$ 10 mil, o Tesouro Selic não cobra custódia"
+ ],
+ "ajustes": {
+  "rod_top": 1218,
+  "rod_size": 22,
+  "val_size": 33
+ }
+}

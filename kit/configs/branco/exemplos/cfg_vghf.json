@@ -1,0 +1,48 @@
+{
+ "titulo": "Hoje é a <b>data de pagamento</b>",
+ "sub": "Quanto teria recebido se tivesse...",
+ "ticker": "VGHF11",
+ "itens": [
+  [
+   "Valor por cota:",
+   "R$ 0,06"
+  ],
+  [
+   "Data COM:",
+   "30/09/2026"
+  ],
+  [
+   "Pagamento:",
+   "07/10/2026"
+  ],
+  [
+   "DY deste pagamento:",
+   "1,19%"
+  ]
+ ],
+ "valor_por_cota": "0.06",
+ "cotacao": "5.06",
+ "quantidades": [
+  100,
+  300,
+  500,
+  1000,
+  3000,
+  5000,
+  10000
+ ],
+ "colunas": [
+  "Qtd de cotas",
+  "Rend. recebidos",
+  "Valor investido"
+ ],
+ "rodape": [
+  "Valor investido pela cotação da data COM (R$ 5,06)",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "quadro": 212,
+  "itens_mt": 4,
+  "item_h": 37.5
+ }
+}

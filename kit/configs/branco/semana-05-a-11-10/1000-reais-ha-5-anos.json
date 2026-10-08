@@ -1,0 +1,71 @@
+{
+ "titulo": "Quanto valeriam hoje <b>R$ 1.000</b><br>investidos há 5 anos? <span class=\"emo\">⏳</span>",
+ "colunas": [
+  "Investimento",
+  "Valeria hoje",
+  "Variação"
+ ],
+ "linhas": [
+  [
+   "PETR4",
+   "R$ 5.957",
+   "+495,69%"
+  ],
+  [
+   "BBSE3",
+   "R$ 3.297",
+   "+229,67%"
+  ],
+  [
+   "ITUB4",
+   "R$ 2.688",
+   "+168,76%"
+  ],
+  [
+   "ITSA4",
+   "R$ 2.401",
+   "+140,10%"
+  ],
+  [
+   "BBAS3",
+   "R$ 2.227",
+   "+122,72%"
+  ],
+  [
+   "TAEE11",
+   "R$ 1.846",
+   "+84,62%"
+  ],
+  [
+   "WEGE3",
+   "R$ 1.524",
+   "+52,44%"
+  ],
+  [
+   "BBDC4",
+   "R$ 1.387",
+   "+38,74%"
+  ],
+  [
+   "CDI<small>referência</small>",
+   "R$ 1.813",
+   "+81,26%"
+  ]
+ ],
+ "destaque": 1,
+ "data": "De 05/10/2021 a 02/10/2026",
+ "rodape": [
+  "Cotações ajustadas por proventos (StatusInvest) e CDI acumulado (Banco Central)",
+  "Rentabilidade passada não é garantia de retorno futuro"
+ ],
+ "ajustes": {
+  "cols": "292px 336px 300px",
+  "tk_size": 37,
+  "vl_size": 34,
+  "lin_h": 67,
+  "tab_top": 494,
+  "data_top": 1170,
+  "rod_top": 1218,
+  "rod_size": 22
+ }
+}

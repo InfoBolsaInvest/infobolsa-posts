@@ -1,0 +1,60 @@
+{
+ "salario": "1000",
+ "ordenar": true,
+ "titulo": "Quanto preciso investir em cada<br>FII para <b>receber R$ 1.000,00<br>todo mês?</b>",
+ "fundos": [
+  [
+   "HGLG11",
+   "1.17",
+   "147.90"
+  ],
+  [
+   "KNRI11",
+   "1.10",
+   "157.91"
+  ],
+  [
+   "XPML11",
+   "0.92",
+   "101.90"
+  ],
+  [
+   "VISC11",
+   "0.84",
+   "105.51"
+  ],
+  [
+   "BTLG11",
+   "0.81",
+   "100.00"
+  ],
+  [
+   "KNCR11",
+   "1.13",
+   "105.50"
+  ],
+  [
+   "MXRF11",
+   "0.10",
+   "9.09"
+  ],
+  [
+   "HSML11",
+   "0.75",
+   "83.00"
+  ],
+  [
+   "CPTS11",
+   "0.09",
+   "7.56"
+  ]
+ ],
+ "rodape": [
+  "Cotações de 02/10/26 e último rendimento de cada fundo",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "rod_top": 1218,
+  "rod_size": 23
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "titulo": "<b>Itaú x Bradesco</b>",
+ "sub": "Os números dos dois gigantes hoje",
+ "empresas": [
+  {
+   "nome": "Itaú",
+   "logo": "assets/logo_itau_wiki.svg",
+   "fundo": "#ffffff",
+   "logo_w": 92
+  },
+  {
+   "nome": "Bradesco",
+   "logo": "assets/logo_bradesco_branco.svg",
+   "fundo": "#e5173f",
+   "logo_w": 90
+  }
+ ],
+ "linhas": [
+  [
+   "Cotação",
+   "em 02/10/2026",
+   "R$ 44,83",
+   "R$ 19,23"
+  ],
+  [
+   "Dividend yield",
+   "últimos 12 meses",
+   "6,99%",
+   "6,55%"
+  ],
+  [
+   "P/L",
+   "preço sobre lucro",
+   "10,56",
+   "8,28"
+  ],
+  [
+   "P/VP",
+   "preço sobre valor patrimonial",
+   "2,27",
+   "1,12"
+  ],
+  [
+   "ROE",
+   "retorno sobre o patrimônio",
+   "21,50%",
+   "13,56%"
+  ],
+  [
+   "Valor de mercado",
+   "",
+   "R$ 517 bi",
+   "R$ 191 bi"
+  ]
+ ],
+ "rodape": [
+  "Dados do StatusInvest. Ações ITUB4 e BBDC4",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "tab_top": 478,
+  "head_h": 182,
+  "lin_h": 88,
+  "cel_h": 66,
+  "rod_top": 1236
+ }
+}

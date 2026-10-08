@@ -1,0 +1,5 @@
+{"salario": "1621", "ordenar": true,
+ "titulo": "Quanto preciso investir em cada<br>FII para <b>receber um salário<br>mínimo todo mês? (R$ 1.621,00)</b>",
+ "fundos": [["VGIA11","0.12","8.85"],["SNAG11","0.12","9.92"],["SNEL11","0.10","7.96"],["VGIR11","0.13","9.65"],["HGLG11","1.17","147.90"],["HSML11","0.75","83.00"],["VGHF11","0.06","4.97"],["TRXF11","0.93","70.32"],["MXRF11","0.10","9.09"]],
+ "rodape": ["Cotações de 02/10/26 e último rendimento de cada fundo"],
+ "ajustes": {"rod_top": 1238}}

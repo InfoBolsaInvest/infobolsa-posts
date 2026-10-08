@@ -1,0 +1,67 @@
+{
+ "titulo": "<b>Itaú x Banco do Brasil</b>",
+ "sub": "Os números dos dois bancos hoje",
+ "empresas": [
+  {
+   "nome": "Itaú",
+   "logo": "assets/logo_itau_wiki.svg",
+   "fundo": "#ffffff",
+   "logo_w": 92
+  },
+  {
+   "nome": "Banco do Brasil",
+   "logo": "assets/logo_bb.svg",
+   "fundo": "#fcfc30",
+   "logo_w": 62
+  }
+ ],
+ "linhas": [
+  [
+   "Cotação",
+   "em 05/10/2026",
+   "R$ 49,98",
+   "R$ 26,62"
+  ],
+  [
+   "Dividend yield",
+   "últimos 12 meses",
+   "6,27%",
+   "2,60%"
+  ],
+  [
+   "P/L",
+   "preço sobre lucro",
+   "11,77",
+   "9,89"
+  ],
+  [
+   "P/VP",
+   "preço sobre valor patrimonial",
+   "2,53",
+   "0,82"
+  ],
+  [
+   "ROE",
+   "retorno sobre o patrimônio",
+   "21,50%",
+   "8,27%"
+  ],
+  [
+   "Valor de mercado",
+   "",
+   "R$ 575 bi",
+   "R$ 153 bi"
+  ]
+ ],
+ "rodape": [
+  "Dados do StatusInvest. Ações ITUB4 e BBAS3",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "tab_top": 478,
+  "head_h": 182,
+  "lin_h": 88,
+  "cel_h": 66,
+  "rod_top": 1236
+ }
+}

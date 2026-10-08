@@ -1,0 +1,51 @@
+{
+ "titulo": "<b>Dividendos da Taesa</b>",
+ "sub": "Quanto teria recebido se tivesse...",
+ "ticker": "TAEE11",
+ "logo": "assets/logo_taee.png",
+ "itens": [
+  [
+   "Proventos por unit em 12 meses:",
+   "R$ 3,0065"
+  ],
+  [
+   "Tipo:",
+   "Dividendos e JCP"
+  ],
+  [
+   "Dividend yield:",
+   "7,02%"
+  ],
+  [
+   "Cotação em 02/10:",
+   "R$ 42,85"
+  ]
+ ],
+ "valor_por_cota": "3.0065",
+ "cotacao": "42.85",
+ "quantidades": [
+  10,
+  30,
+  50,
+  100,
+  300,
+  500,
+  1000
+ ],
+ "colunas": [
+  "Qtd de units",
+  "Proventos em 12 meses",
+  "Valor hoje"
+ ],
+ "rodape": [
+  "Proventos brutos com data COM nos últimos 12 meses",
+  "Não é uma recomendação de compra ou venda de ativos"
+ ],
+ "ajustes": {
+  "quadro": 212,
+  "itens_mt": 4,
+  "item_h": 37.5,
+  "cols": "0.82fr 1.2fr 0.98fr",
+  "logo_w": 92
+ }
+}
