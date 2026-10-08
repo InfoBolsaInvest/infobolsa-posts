@@ -150,7 +150,7 @@ EXTRA_CSS = """
 """
 
 
-def build(cfg, layout=None):
+def build(cfg, layout=None, alt=74):
     layout = layout or cfg.get("layout", "lado")
     d = datetime.date.fromisoformat(cfg["data"])
     iv = cfg["ibov"]["var"]
@@ -166,11 +166,11 @@ def build(cfg, layout=None):
                  + f'<div class="no" style="top:964px;color:{VERM}">{ICO_DN}</div>'
                  + pasta(236, 990, 748, H2, "Maiores baixas", VERM, lista_2col(B, VERM, nb)))
     elif layout == "lado":  # Ibovespa solto + pastas lado a lado
-        hp = 56 + 14 + 5 * 74 + 16
+        hp = 56 + 14 + 5 * alt + 16
         corpo = (f'<div class="no" style="top:514px">{ICO_IBOV}</div>'
                  f'<div class="ibov"><div class="lb">Ibovespa</div>{ibov_txt(cfg, iv)}</div>'
-                 + pasta(96, 742, 432, hp, "Maiores altas", VERDE, lista_1col(A, VERDE, na, 74), tw=270)
-                 + pasta(552, 742, 432, hp, "Maiores baixas", VERM, lista_1col(B, VERM, nb, 74), tw=270))
+                 + pasta(96, 742, 432, hp, "Maiores altas", VERDE, lista_1col(A, VERDE, na, alt), tw=270)
+                 + pasta(552, 742, 432, hp, "Maiores baixas", VERM, lista_1col(B, VERM, nb, alt), tw=270))
     elif layout == "pilha3":  # tres pastas empilhadas, largura total
         corpo = (pasta(96, 484, 888, 214, "Ibovespa", AZUL, f'<div class="ibp">{ibov_txt(cfg, iv)}</div>', tw=280)
                  + pasta(96, 714, 888, H2, "Maiores altas", VERDE, lista_2col(A, VERDE, na))
@@ -192,17 +192,22 @@ def build(cfg, layout=None):
 </body></html>"""
 
 
-def story(html):
-    """Versao para stories (1080x1920): a mesma arte centralizada, com o fundo cobrindo a tela toda."""
+STORY_ALT, STORY_ESCALA = 100, 1.07
+
+
+def story(cfg, layout=None):
+    """Versao para stories (1080x1920): linhas das pastas mais espacadas e arte um pouco maior, centralizada."""
+    html = build(cfg, layout, alt=STORY_ALT)
+    h = 1350 + 5 * (STORY_ALT - 74)
+    top = round((1920 - h * STORY_ESCALA) / 2)
     html = html.replace("html,body{width:1080px;height:1350px", "html,body{width:1080px;height:1920px", 1)
-    html = html.replace('<div class="luz"></div>', '<div class="luz"></div><div style="position:absolute;left:0;top:285px;width:1080px;height:1350px">', 1)
-    return html.replace("{SCRIPT_MARK}", "").replace("</body>", "</div></body>", 1)
+    html = html.replace('<div class="luz"></div>', f'<div class="luz"></div><div style="position:absolute;left:0;top:{top}px;width:1080px;height:{h}px;transform:scale({STORY_ESCALA});transform-origin:50% 0">', 1)
+    return html.replace("</body>", "</div></body>", 1)
 
 
 if __name__ == "__main__":
     args = [a for a in sys.argv[1:] if a != "--story"]
     cfg = json.load(open(args[0]))
-    html = build(cfg, args[2] if len(args) > 2 else None)
-    if "--story" in sys.argv:
-        html = story(html)
+    lay = args[2] if len(args) > 2 else None
+    html = story(cfg, lay) if "--story" in sys.argv else build(cfg, lay)
     open(args[1], "w").write(html)
