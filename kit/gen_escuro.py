@@ -51,6 +51,24 @@ SELO = """<svg viewBox="0 0 40 40" aria-hidden="true"><path id="selo" fill="#279
 SCRIPT = """<script>(function(){var p=[],N=360;for(var i=0;i<N;i++){var t=2*Math.PI*i/N,r=17.3+1.25*Math.cos(12*t);p.push((20+r*Math.sin(t)).toFixed(2)+' '+(20-r*Math.cos(t)).toFixed(2));}document.getElementById('selo').setAttribute('d','M'+p.join(' L')+'Z');})();</script>"""
 
 
+
+def cor_logo(caminho):
+    """Cor de fundo do quadrado do logo, tirada da borda do próprio logo (nunca deixar o logo num quadrado branco
+    quando ele tem cor própria). Retorna (cor, cheio): cheio=True quando o logo já ocupa o quadrado inteiro."""
+    from PIL import Image
+    try:
+        im = Image.open(caminho).convert("RGBA")
+    except Exception:
+        return "#fff", False
+    w, h = im.size
+    pts = [im.getpixel((x, y)) for x in range(0, w, max(1, w // 16)) for y in (1, h - 2)] + \
+          [im.getpixel((x, y)) for y in range(0, h, max(1, h // 16)) for x in (1, w - 2)]
+    opacos = [p for p in pts if p[3] > 200]
+    if len(opacos) < len(pts) * 0.8:
+        return "#fff", False
+    r, g, b = (sorted(p[i] for p in opacos)[len(opacos) // 2] for i in range(3))
+    return f"#{r:02x}{g:02x}{b:02x}", True
+
 def build(cfg):
     p = dict(DEF); p.update(cfg.get("ajustes", {}))
     for k in ("foco", "zoom"):
@@ -61,7 +79,10 @@ def build(cfg):
     else:
         miolo = f'<div class="titulo">{cfg["titulo"]}</div>'
     if cfg.get("logo"):
-        tag = f'<div class="lg" style="background:{cfg.get("logo_fundo", "#fff")}"><img src="{cfg["logo"]}" alt=""></div>' + tag
+        fundo_lg, cheio = cor_logo(cfg["logo"])
+        fundo_lg = cfg.get("logo_fundo", fundo_lg)
+        estilo_img = ' style="width:100%;height:100%;object-fit:cover"' if cheio else ""
+        tag = f'<div class="lg" style="background:{fundo_lg}"><img src="{cfg["logo"]}"{estilo_img} alt=""></div>' + tag
     sub = f'<div class="sub">{cfg["sub"]}</div>' if cfg.get("sub") else ""
     fonte = cfg.get("fonte", "")
     cr = os.path.join(os.path.dirname(cfg["fundo"]), "creditos.json")
