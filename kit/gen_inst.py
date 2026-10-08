@@ -297,6 +297,9 @@ def build_prefere(c, tema):
 <div class="rod">{rod}</div>{SCRIPT}</body></html>"""
 
 
+IC_SALVA = '<svg viewBox="0 0 24 24" fill="none" stroke="#162526" stroke-width="1.9" stroke-linejoin="round"><path d="M6 3.5h12a.5.5 0 0 1 .5.5v16.6a.4.4 0 0 1-.65.3L12 16.3l-5.85 4.6a.4.4 0 0 1-.65-.3V4a.5.5 0 0 1 .5-.5z"/></svg>'
+IC_MANDA = '<svg viewBox="0 0 24 24" fill="none" stroke="#162526" stroke-width="1.9" stroke-linejoin="round"><path d="M21.5 3 2.8 9.2l7.6 3.6L21.5 3z"/><path d="M21.5 3 15.2 21.2l-4.8-8.4"/></svg>'
+
 SEGUE_PADRAO = {
     "titulo": "Tá começando agora?<br><span>Me segue.</span>",
     "sub": "Todo dia um post simples, com números,<br>pra fazer seu dinheiro trabalhar por você.",
@@ -310,14 +313,18 @@ def build_segue(c, tema):
     T = TEMAS[tema]
     vars_ = ";".join(f"--{k}:{v}" for k, v in T.items())
     css = """.sg{position:absolute;left:0;right:0;text-align:center}
-.sg-ft{top:150px;left:50%;width:360px;height:360px;margin-left:-180px;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:0 0 0 4px var(--acc),0 24px 60px rgba(22,37,38,.18)}
+.sg-ft{top:110px;left:50%;width:330px;height:330px;margin-left:-165px;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:0 0 0 4px var(--acc),0 24px 60px rgba(22,37,38,.18)}
 .sg-ft img{width:100%;height:100%;object-fit:cover}
-.sg-nm{top:545px;font-size:40px;font-weight:600;color:var(--fg)}
+.sg-nm{top:475px;font-size:40px;font-weight:600;color:var(--fg)}
 .sg-nm svg,.sg-nm img{width:36px;height:36px;vertical-align:-5px;margin-left:6px}
-.sg-ar{top:600px;font-size:30px;font-weight:300;color:var(--sub)}
-.sg-t{top:695px;font-size:82px;line-height:1.02;font-weight:400;color:var(--fg);letter-spacing:-1px}
+.sg-ar{top:530px;font-size:30px;font-weight:300;color:var(--sub)}
+.sg-t{top:610px;font-size:82px;line-height:1.02;font-weight:400;color:var(--fg);letter-spacing:-1px}
 .sg-t span{color:var(--acc);font-weight:500}
-.sg-s{top:905px;font-size:31px;line-height:1.35;font-weight:300;color:var(--sub)}"""
+.sg-s{top:815px;font-size:31px;line-height:1.35;font-weight:300;color:var(--sub)}
+.sga{position:absolute;top:955px;left:96px;right:96px;display:flex;gap:16px}
+.sga>div{flex:1;display:flex;align-items:center;justify-content:center;gap:18px;border:1px solid var(--borda);background:var(--card1);border-radius:18px;padding:18px 10px;font-size:22px;line-height:1.3;color:var(--sub);text-align:left}
+.sga b{display:block;font-size:27px;color:var(--fg);font-weight:600}
+.sga .ic svg{width:46px;height:46px;display:block}"""
     return f"""<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>{CSS.replace('FS/', FS)}{css}</style></head>
 <body style="{vars_}"><div class="luz"></div>{curva(tema)}
 <div class="sg sg-ft"><img src="assets/foto.png" alt=""></div>
@@ -325,7 +332,8 @@ def build_segue(c, tema):
 <div class="sg sg-ar">@infobolsainvestimentos</div>
 <div class="sg sg-t">{c["titulo"]}</div>
 <div class="sg sg-s">{c["sub"]}</div>
-<div class="btn" style="top:1060px"><span class="m">+</span>Seguir @infobolsainvestimentos</div>
+<div class="sga"><div><span class="ic">{IC_SALVA}</span><span><b>Salva</b>pra ver de novo depois</span></div><div><span class="ic">{IC_MANDA}</span><span><b>Manda</b>pra quem quer começar</span></div></div>
+<div class="btn" style="top:1100px"><span class="m">+</span>Seguir @infobolsainvestimentos</div>
 <div class="rod">{"<br>".join(c["rodape"])}</div>{SCRIPT}</body></html>"""
 
 
