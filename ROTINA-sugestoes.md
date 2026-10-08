@@ -2,7 +2,7 @@
 
 Roda todos os dias às 06h50 e às 14h50 (horário de Brasília), na nuvem, sem computador ligado. Cada execução cria UMA sugestão de post: a das 06h50 é a sugestão das 07h, a das 14h50 é a das 15h.
 
-IMPORTANTE: por enquanto NÃO POSTE em lugar nenhum (nada de Windsor execute_action, Meta, Facebook ou YouTube). Só crie a arte e a legenda e mande para o Douglas avaliar.
+IMPORTANTE: a partir de 09/10/2026 o post é PUBLICADO DIRETO no Instagram, sem aprovação do Douglas (seção 5b). Antes dessa data, só crie e mande para ele avaliar. Facebook e YouTube ficam fora (não dá sem o navegador dele).
 
 ## 1. Ver o que está funcionando no perfil
 1. Puxe os posts dos últimos 90 dias pelo conector Windsor.ai: `get_data`, connector `instagram`, conta `17841445716975551`, campos `date`, `timestamp`, `media_type`, `media_caption`, `media_reach`, `media_saved`, `media_shares`, `media_like_count`, `media_comments_count`, `date_preset` "last_90d". Se vier "pending", chame de novo com os mesmos parâmetros até vir (espere até uns 10 minutos).
@@ -57,7 +57,15 @@ Frase de gancho, 1 ou 2 parágrafos curtos com os números principais, "Manda pr
 - Nunca usar travessão, nem na imagem nem na legenda. Linguagem simples, sem frases com cara de IA.
 - Números no padrão brasileiro (200.000,00) e percentuais com 2 casas decimais.
 - Nunca prometer rentabilidade nem recomendar compra ou venda.
-- NÃO postar. Só mandar para o Douglas.
+- A partir de 09/10/2026: postar no Instagram (seção 5b). Se algum número não estiver conferido ou algo falhar, NÃO poste e avise.
+
+## 5b. Publicar no Instagram (a partir de 09/10/2026)
+1. Converta os dois slides para JPEG: `python3 -c "from PIL import Image; [Image.open(f'../sugestoes/AAAA-MM-DD-HHh-{i}.png').convert('RGB').save(f'../posts/sugestao-AAAA-MM-DD-HHh-{i}.jpg', quality=93) for i in (1,2)]"` (rode dentro de `kit/`).
+2. `git add -A && git commit -m "Post DD/MM HHh" && git push` (branch main).
+3. Confira que os dois links abrem: `https://raw.githubusercontent.com/InfoBolsaInvest/infobolsa-posts/main/posts/sugestao-AAAA-MM-DD-HHh-1.jpg` e `-2.jpg` (pode levar alguns segundos).
+4. Publique com o conector Windsor.ai: `execute_action`, connector `instagram`, conta `17841445716975551`, ação `create_carousel_post`, `image_urls` = [link do slide 1, link do slide 2] (nessa ordem), `caption` = legenda.
+5. Leia a resposta: se vier qualquer erro, NÃO considere postado, não tente por outro caminho e avise o Douglas com o texto do erro.
+6. Não publique duas vezes: antes de postar, confira se `posts/sugestao-AAAA-MM-DD-HHh-1.jpg` já existia no repositório antes desta execução; se já existia, é porque já foi postado, então pare.
 
 ## 6. Mandar para o Douglas
-SendUserMessage curto começando com "SUGESTÃO 07h DD/MM" (ou 15h), com: o post escolhido e por quê (quais posts do perfil inspiraram, com o alcance deles), os dados usados e a data, e a legenda pronta. Depois SendUserFile com as duas imagens do carrossel (slide 1 e slide 2). Se algo falhar, diga o que falhou.
+SendUserMessage curto começando com "POSTADO 07h DD/MM" ou "NÃO POSTADO 07h DD/MM" (com o motivo) a partir de 09/10/2026, ou "SUGESTÃO 07h DD/MM" antes disso (ou 15h), com: o post escolhido e por quê (quais posts do perfil inspiraram, com o alcance deles), os dados usados e a data, e a legenda pronta. Depois SendUserFile com as duas imagens do carrossel (slide 1 e slide 2). Se algo falhar, diga o que falhou.
