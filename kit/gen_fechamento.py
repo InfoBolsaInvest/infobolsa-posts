@@ -192,6 +192,17 @@ def build(cfg, layout=None):
 </body></html>"""
 
 
+def story(html):
+    """Versao para stories (1080x1920): a mesma arte centralizada, com o fundo cobrindo a tela toda."""
+    html = html.replace("html,body{width:1080px;height:1350px", "html,body{width:1080px;height:1920px", 1)
+    html = html.replace('<div class="luz"></div>', '<div class="luz"></div><div style="position:absolute;left:0;top:285px;width:1080px;height:1350px">', 1)
+    return html.replace("{SCRIPT_MARK}", "").replace("</body>", "</div></body>", 1)
+
+
 if __name__ == "__main__":
-    cfg = json.load(open(sys.argv[1]))
-    open(sys.argv[2], "w").write(build(cfg, sys.argv[3] if len(sys.argv) > 3 else None))
+    args = [a for a in sys.argv[1:] if a != "--story"]
+    cfg = json.load(open(args[0]))
+    html = build(cfg, args[2] if len(args) > 2 else None)
+    if "--story" in sys.argv:
+        html = story(html)
+    open(args[1], "w").write(html)

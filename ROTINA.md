@@ -21,12 +21,14 @@ Dentro de `kit/`:
 3. `python3 gen_fechamento.py configs/fechamento/AAAA-MM-DD.json t.html && python3 render.py t.html t.png`
 4. Olhe a imagem (Read) e confira: textos sem sobrepor, números certos, logos aparecendo.
 5. Converta para JPEG: `python3 -c "from PIL import Image; Image.open('t.png').convert('RGB').save('../posts/fechamento-AAAA-MM-DD.jpg', quality=93)"` e apague t.html e t.png.
+6. Versão para stories (1080x1920): `python3 gen_fechamento.py configs/fechamento/AAAA-MM-DD.json s.html --story && python3 render.py s.html s.png 1 1920`, olhe a imagem, converta para `../posts/fechamento-AAAA-MM-DD-story.jpg` (mesmo comando de JPEG) e apague s.html e s.png.
 
 ## 4. Publicar a imagem e postar
 1. `git add -A && git commit -m "Fechamento DD/MM/AAAA" && git push` (branch main).
 2. Confira que `https://raw.githubusercontent.com/InfoBolsaInvest/infobolsa-posts/main/posts/fechamento-AAAA-MM-DD.jpg` abre (pode levar alguns segundos).
 3. Poste no Instagram com o conector Windsor.ai: `execute_action`, connector `instagram`, conta `17841445716975551`, ação `create_image_post`, com `image_url` acima e a legenda.
-4. Leia a resposta: se vier qualquer erro (ex.: falta de permissão instagram_content_publish), NÃO considere postado e avise o Douglas com o texto do erro.
+4. Poste também o stories: `execute_action`, connector `instagram`, conta `17841445716975551`, ação `create_story`, com `image_url` = `https://raw.githubusercontent.com/InfoBolsaInvest/infobolsa-posts/main/posts/fechamento-AAAA-MM-DD-story.jpg` (stories não tem legenda).
+5. Leia as respostas: se vier qualquer erro (ex.: falta de permissão instagram_content_publish), NÃO considere postado e avise o Douglas com o texto do erro.
 
 ## 5. Legenda (modelo)
 ```
