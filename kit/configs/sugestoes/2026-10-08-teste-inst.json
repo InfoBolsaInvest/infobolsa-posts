@@ -1,7 +1,7 @@
 {
- "titulo": "Em quanto tempo o seu<br>dinheiro <span>dobra?</span>",
- "sub": "Na renda fixa, com as taxas de hoje",
- "aba": "Renda fixa",
+ "titulo": "Dinheiro parado<br><span>nunca</span> vai dobrar",
+ "sub": "Olha em quanto tempo ele dobra em cada lugar 👇",
+ "aba": "Renda fixa hoje",
  "colunas": [
   "Onde está o dinheiro",
   "Rende ao ano",
@@ -42,10 +42,12 @@
    "5 anos e 7 meses"
   ]
  ],
- "fim": "Quanto antes começar, <b>mais os juros trabalham por você.</b>",
+ "fim": "Não precisa ser rico. <b>Precisa começar e dar tempo ao tempo.</b>",
  "rodape": [
   "Selic 13,75% e CDI 13,65% ao ano (Banco Central, 06/10/2026). Taxas constantes.",
   "Rentabilidade hipotética, não é garantia de retorno.",
   "Não é uma recomendação de compra ou venda."
- ]
+ ],
+ "tsize": 80,
+ "top": 445
 }

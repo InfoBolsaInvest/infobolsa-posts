@@ -237,7 +237,7 @@ def build_socio(c, tema):
     lh = c.get("lh", 92)
     linhas = "".join(f'<div class="ln"><div class="tk"><div class="lgq"><img src="{lg}"></div><div class="nmx">{tk}<small>{nm}</small></div></div>'
                      f'<div class="r num"><b>R$ {pr}</b></div></div>' for lg, tk, nm, pr in c["linhas"])
-    tab = f'<div class="tb so" style="--cols:1fr auto;--lh:{lh}px"><div class="hd"><div>Empresa</div><div class="r">1 ação custa</div></div>{linhas}</div>'
+    tab = f'<div class="tb so" style="--cols:1fr auto;--lh:{lh}px"><div class="hd"><div>{c.get("col1", "Empresa")}</div><div class="r">{c.get("col2", "1 ação custa")}</div></div>{linhas}</div>'
     n = len(c["linhas"])
     tt = 70 + 44 + n * lh + 22
     h = tt + 118 + 30
@@ -248,11 +248,12 @@ def build_socio(c, tema):
 
 
 SEGUE_PADRAO = {
-    "titulo": "Me segue e <span>não perca</span><br>os próximos posts",
-    "sub": "Conteúdo novo todos os dias aqui no perfil",
-    "itens": [["Números do mercado atualizados", "ações, FIIs e renda fixa"],
-              ["Dividendos e renda passiva", "quem paga, quanto e quando"],
-              ["Educação financeira sem complicação", "para quem está começando"]],
+    "titulo": "Tá começando agora?<br><span>Me segue.</span>",
+    "sub": "Aqui eu mostro com números como fazer<br>o seu dinheiro trabalhar por você",
+    "aba": "Todo dia por aqui",
+    "itens": [["Como começar a investir com pouco", "sem complicação e sem economês"],
+              ["Quanto investir para ter renda todo mês", "com ações, FIIs e renda fixa"],
+              ["Quem paga dividendos, quanto e quando", "pra você não ficar de fora"]],
     "rodape": ["Conteúdo educativo. Não é uma recomendação de compra ou venda."],
 }
 
@@ -264,10 +265,10 @@ def build_segue(c, tema):
                   for i, (a, b) in enumerate(c["itens"]))
     miolo = f'<div style="position:absolute;top:96px;left:40px;right:40px">{its}</div>'
     h = 96 + len(c["itens"]) * 100 - 6
-    corpo = (pasta(480, h, "Por aqui você encontra", miolo, tema, tw=360)
-             + f'<div class="acoes" style="top:{480 + h + 40}px"><div><b>Salve</b>para consultar depois</div><div><b>Compartilhe</b>com quem está começando</div></div>'
-             + f'<div class="btn" style="top:{480 + h + 40 + 140}px"><span class="m">+</span>Seguir @infobolsainvestimentos</div>')
-    return pagina(tema, c["titulo"], c["sub"], corpo, c["rodape"], tsize=c.get("tsize", 80))
+    corpo = (pasta(500, h, c["aba"], miolo, tema, tw=330)
+             + f'<div class="acoes" style="top:{500 + h + 40}px"><div><b>Salva</b>pra ver de novo depois</div><div><b>Manda</b>pra quem quer começar</div></div>'
+             + f'<div class="btn" style="top:{500 + h + 40 + 140}px"><span class="m">+</span>Seguir @infobolsainvestimentos</div>')
+    return pagina(tema, c["titulo"], c["sub"], corpo, c["rodape"], tsize=c.get("tsize", 76))
 
 
 if __name__ == "__main__":

@@ -11,6 +11,9 @@ IMPORTANTE: por enquanto NÃO POSTE em lugar nenhum (nada de Windsor execute_act
 4. Não repita: veja `sugestoes/` (sugestões dos últimos 14 dias) e as legendas dos posts dos últimos 30 dias. Não sugira o mesmo tema com os mesmos ativos de um post recente. Pode repetir um formato que funciona, com outro recorte ou outros ativos.
 
 ## 2. Escolher o post
+O objetivo é GANHAR SEGUIDORES. Dados do perfil (Windsor, campo `media_follows`, 90 dias até 08/10/2026): os 3 posts que mais trouxeram seguidores foram "Precisa ser rico para investir..." (187 seguidores, 55 mil de alcance), "a maior barreira é mental, com pouco mais de cem reais..." (84) e "dá pra começar em FII com bem menos dinheiro" (45), quase metade de todos os seguidores ganhos por posts de imagem. Posts de notícia e de dados de mercado têm alcance alto, mas trazem poucos seguidores (ex.: "Bolsa amanheceu em festa", 31 mil de alcance e 22 seguidores). Puxe também `media_follows` no passo 1 e ranqueie por ele.
+- Prefira temas que quebram uma crença de quem ainda não investe ou está começando ("precisa ser rico", "não sobra nada", "é arriscado", "dinheiro parado") e mostram com números que dá.
+
 - Escolha UM post baseado nos formatos que mais performam, refeito com números atuais ou com um ângulo novo.
 - Varie: alterne entre ações, FIIs, renda fixa e educação financeira ao longo dos dias. Não faça duas sugestões seguidas do mesmo assunto.
 - Sugestão: às 07h algo mais educativo e leve (simulação, metas, juntar dinheiro, comparação simples); às 15h algo com dados de mercado (dividendos, comparativos, FIIs, ações).
@@ -31,13 +34,20 @@ Use `kit/gen_inst.py` com o tema `verde` (é o padrão): cabeçalho pequeno com 
 - Salve o slide 1 em `sugestoes/AAAA-MM-DD-07h-1.png` (ou `-15h-1.png`) e a legenda em `sugestoes/AAAA-MM-DD-07h.txt`. Apague t.html e t.png.
 - `git add -A && git commit -m "Sugestão DD/MM HHh" && git push` (branch main).
 
+## Linguagem (para trazer seguidor)
+- Título = gancho de conversa, não título de relatório. Use a frase que a pessoa pensa entre aspas ("“Bolsa é coisa de rico”", "“Não sobra nada pra investir”") ou uma afirmação que provoca ("Dinheiro parado nunca vai dobrar"). Nada de "Comparativo de...", "Análise de...".
+- Subtítulo fala com "você" e manda olhar a tabela ("Olha quanto custa...", "Olha em quanto tempo... 👇").
+- Cabeçalhos e frases da arte em linguagem de gente ("Você vira sócio de", "Tudo isso por"), não termos técnicos sem explicação.
+- Frase final na arte com a lição em uma linha ("Não precisa ser rico. Precisa começar.").
+- Legenda: primeira linha é o gancho, frases curtas, "pra" e "tá" pode, sem economês. Antes dos avisos, peça para mandar para alguém específico ("Manda pra aquele amigo que acha que precisa ser rico pra investir") e para seguir ("me segue se você tá começando agora").
+
 ## 4b. Último slide: convite para seguir (carrossel)
 Toda sugestão é um carrossel de 2 slides:
 - Slide 1: a arte do post (seção 4), salva como `sugestoes/AAAA-MM-DD-HHh-1.png`.
 - Slide 2: convite genérico para seguir e salvar, SEM anunciar tema do dia seguinte (a programação muda com as notícias): `python3 gen_inst.py segue - t.html verde && python3 render.py t.html t.png`. Salve como `sugestoes/AAAA-MM-DD-HHh-2.png`.
 
 ## 5. Legenda
-Frase de gancho, 1 ou 2 parágrafos curtos com os números principais, "Me segue para não perder os próximos posts e salva este para consultar depois!", "👉 [pergunta]? Comenta aqui!", "Não é uma recomendação de compra ou venda." (e "Rentabilidade hipotética, não é garantia de retorno." quando for simulação) e 5 ou 6 hashtags.
+Frase de gancho, 1 ou 2 parágrafos curtos com os números principais, "Manda pra [alguém específico]. E me segue se [identificação, ex.: você tá começando agora].", "👉 [pergunta]? Comenta aqui!", "Não é uma recomendação de compra ou venda." (e "Rentabilidade hipotética, não é garantia de retorno." quando for simulação) e 5 ou 6 hashtags.
 
 ## Regras
 - Nunca usar travessão, nem na imagem nem na legenda. Linguagem simples, sem frases com cara de IA.

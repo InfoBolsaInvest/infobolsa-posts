@@ -1,7 +1,7 @@
 {
- "titulo": "Sócio das marcas do<br><span>dia a dia</span> com R$ 100",
- "sub": "Quanto custa 1 ação de cada uma hoje",
- "aba": "Marcas do dia a dia",
+ "titulo": "“Bolsa é coisa<br>de <span>rico</span>”",
+ "sub": "Olha quanto custa ser sócio das marcas<br>que você usa toda semana 👇",
+ "aba": "Com menos de R$ 100",
  "linhas": [
   [
    "assets/logo_abev.png",
@@ -35,10 +35,14 @@
   ]
  ],
  "total": "94,65",
- "total_txt": "Total para ter<br><b>1 ação de cada</b>",
+ "total_txt": "Tudo isso por<br><b>menos de R$ 100</b>",
  "rodape": [
   "Cotações do StatusInvest em 08/10/2026.",
   "Não é uma recomendação de compra ou venda."
  ],
- "top": 440
+ "top": 505,
+ "col1": "Você vira sócio de",
+ "col2": "1 ação custa",
+ "tsize": 84,
+ "lh": 86
 }
