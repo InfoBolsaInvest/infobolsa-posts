@@ -21,6 +21,9 @@ Regras da escolha:
 - Números de mercado em tempo real: use o valor mais recente das fontes e escreva o horário no campo "fonte". Dados de ação (cotação, DY, proventos) do StatusInvest quando precisar.
 - Se não achar nenhuma notícia confirmada que valha o post, NÃO poste: avise o Douglas.
 
+### Eleições: 25, 26 e 27/10/2026
+Nesses três dias a notícia das 12h é EXCLUSIVAMENTE sobre a eleição (segundo turno no domingo 25) e o efeito nos investimentos: dia de votação e o que está em jogo (25, sem boca de urna nem parcial, que só podem sair depois das 17h), resultado oficial do TSE e reação do mercado (26), ações, FIIs, dólar, juros e Selic depois do resultado (27). Neutralidade total, só fatos, sem opinião sobre candidato ou partido. Pesquisa eleitoral só registrada no TSE, com instituto, data e número de registro. Nunca enquete sobre voto. Foto: `foto-congresso-*.jpg`, `foto-planalto-*.jpg` ou `fundo-touro-b3.jpg` para a reação da bolsa.
+
 ## 3. Montar o config
 Crie `kit/configs/noticia/AAAA-MM-DD.json` (veja `exemplo-manchete.json` e `exemplo-numero.json`):
 - `modo`: "manchete" (padrão) ou "numero" quando a notícia cabe num número forte (ex.: "209 mil", "15,00%", "R$ 4,98"). No modo número use `rotulo` (curto) e `numero` (até 8 caracteres). 

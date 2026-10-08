@@ -2,7 +2,21 @@
 
 Roda todos os dias às 06h50 e às 14h50 (horário de Brasília), na nuvem, sem computador ligado. Cada execução cria UMA sugestão de post: a das 06h50 é a sugestão das 07h, a das 14h50 é a das 15h.
 
+IMPORTANTE (outubro/2026): até 31/10/2026 só existe o post das 15h. O Planner do Douglas já tem posts programados às 07h até o fim do mês, então a execução das 06h50 até 31/10/2026 não faz nada: pare logo no começo, sem criar arte, sem postar e sem mandar mensagem. A partir de 01/11/2026 volta a fazer os dois horários.
+
 IMPORTANTE: a partir de 09/10/2026 o post é PUBLICADO DIRETO no Instagram, sem aprovação do Douglas (seção 5b). Antes dessa data, só crie e mande para ele avaliar. Facebook e YouTube ficam fora (não dá sem o navegador dele).
+
+## Eleições: 25, 26 e 27/10/2026 (segundo turno no domingo 25)
+Nesses três dias o post das 15h é EXCLUSIVAMENTE sobre a eleição e o efeito dela nos investimentos (pule a escolha normal da seção 2, mas siga o resto: dados conferidos, arte, legenda, publicação).
+- 25/10 (domingo, votação): o que está em jogo para o investidor, como a bolsa, o dólar, os juros e os FIIs reagiram ao primeiro turno, o que observar na segunda-feira, horário de divulgação do resultado. ATENÇÃO: o post sai antes do fim da votação (17h), então NADA de boca de urna nem de resultado parcial.
+- 26/10 (segunda): resultado oficial do segundo turno (TSE) e a reação do mercado no dia (Ibovespa, dólar, juros futuros, IFIX, ações que mais subiram e mais caíram até o horário do post, com horário escrito na arte).
+- 27/10 (terça): as ações e os FIIs que mais se valorizaram (e caíram) na segunda, o que muda para Selic, juros e renda fixa segundo as projeções divulgadas (Focus, bancos, corretoras, sempre com a fonte), setores mais sensíveis ao novo governo (estatais, bancos, elétricas, construção, varejo).
+Regras para esses posts:
+- Neutralidade total: só fatos e efeito no mercado, sem opinião sobre candidato, partido ou governo, sem torcer, sem adjetivos sobre políticos. Trate os candidatos com o mesmo peso.
+- Pesquisa eleitoral só se for registrada no TSE, com instituto, data e número de registro na arte ou na legenda. Proibido fazer enquete "quem vai ganhar?" ou "em quem você vota?" antes do resultado (enquete eleitoral é vedada pela lei eleitoral). Depois do resultado oficial, pode perguntar como o seguidor vai investir, nunca sobre voto.
+- "Ações que podem subir": só como o que analistas e casas citam como mais sensíveis ao resultado, com a fonte; nunca indicar compra ou venda.
+- Confirme resultado e números em pelo menos duas fontes confiáveis (TSE, B3, Banco Central, InfoMoney, Valor, Estadão, Folha, G1, CNN Brasil).
+- Pode usar o formato `tab` (ranking de altas e baixas), `vs` (antes x depois) ou outro tipo do gen_inst.py; logo das empresas citadas.
 
 ## 1. Ver o que está funcionando no perfil
 1. Puxe os posts dos últimos 90 dias pelo conector Windsor.ai: `get_data`, connector `instagram`, conta `17841445716975551`, campos `date`, `timestamp`, `media_type`, `media_caption`, `media_reach`, `media_saved`, `media_shares`, `media_like_count`, `media_comments_count`, `date_preset` "last_90d". Se vier "pending", chame de novo com os mesmos parâmetros até vir (espere até uns 10 minutos).
