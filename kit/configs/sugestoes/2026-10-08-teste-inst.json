@@ -1,0 +1,51 @@
+{
+ "titulo": "Em quanto tempo o seu<br>dinheiro <span>dobra?</span>",
+ "sub": "Na renda fixa, com as taxas de hoje",
+ "aba": "Renda fixa",
+ "colunas": [
+  "Onde está o dinheiro",
+  "Rende ao ano",
+  "Dobra em"
+ ],
+ "cols": "1.45fr .8fr 1.25fr",
+ "lh": 82,
+ "destaque": 2,
+ "linhas": [
+  [
+   "Parado na conta<small>sem rendimento</small>",
+   "0,00%",
+   "Nunca"
+  ],
+  [
+   "Poupança<small>isenta de IR</small>",
+   "7,88%",
+   "9 anos e 2 meses"
+  ],
+  [
+   "Tesouro Selic<small>custódia de 0,20% e IR de 15%</small>",
+   "13,75%",
+   "6 anos e 2 meses"
+  ],
+  [
+   "CDB 100% do CDI<small>com IR de 15%</small>",
+   "13,65%",
+   "6 anos e 1 mês"
+  ],
+  [
+   "LCI e LCA 90% do CDI<small>isentas de IR</small>",
+   "12,29%",
+   "6 anos"
+  ],
+  [
+   "CDB 110% do CDI<small>com IR de 15%</small>",
+   "15,02%",
+   "5 anos e 7 meses"
+  ]
+ ],
+ "fim": "Quanto antes começar, <b>mais os juros trabalham por você.</b>",
+ "rodape": [
+  "Selic 13,75% e CDI 13,65% ao ano (Banco Central, 06/10/2026). Taxas constantes.",
+  "Rentabilidade hipotética, não é garantia de retorno.",
+  "Não é uma recomendação de compra ou venda."
+ ]
+}

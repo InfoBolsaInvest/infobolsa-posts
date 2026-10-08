@@ -11,7 +11,6 @@ IMPORTANTE: por enquanto NÃO POSTE em lugar nenhum (nada de Windsor execute_act
 4. Não repita: veja `sugestoes/` (sugestões dos últimos 14 dias) e as legendas dos posts dos últimos 30 dias. Não sugira o mesmo tema com os mesmos ativos de um post recente. Pode repetir um formato que funciona, com outro recorte ou outros ativos.
 
 ## 2. Escolher o post
-- PRIMEIRO veja `sugestoes/proximos.md`: se houver um tema anunciado para hoje neste horário, o post é esse (é promessa feita ao seguidor). Marque como feito no arquivo.
 - Escolha UM post baseado nos formatos que mais performam, refeito com números atuais ou com um ângulo novo.
 - Varie: alterne entre ações, FIIs, renda fixa e educação financeira ao longo dos dias. Não faça duas sugestões seguidas do mesmo assunto.
 - Sugestão: às 07h algo mais educativo e leve (simulação, metas, juntar dinheiro, comparação simples); às 15h algo com dados de mercado (dividendos, comparativos, FIIs, ações).
@@ -22,23 +21,23 @@ IMPORTANTE: por enquanto NÃO POSTE em lugar nenhum (nada de Windsor execute_act
 - Cotação, dividend yield, proventos de 12 meses, P/L, P/VP, ROE: StatusInvest (statusinvest.com.br, use WebFetch). Selic, CDI, poupança e PTAX: Banco Central. Confira os números antes de usar e escreva a data dos dados na imagem.
 - Simulações: deixe claro que é simulação ("Rentabilidade hipotética, não é garantia de retorno").
 
-## 4. Fazer a arte (modelo branco padrão)
-Dentro de `kit/`, com os geradores do modelo branco (cabeçalho com foto, nome, selo e @, fundo branco):
-- `gen_tab.py` tabela genérica (rankings, listas, simulações), `gen_pag.py` "Hoje é a data de pagamento" / dividendos em 12 meses, `gen_vs.py` comparativo entre duas empresas, `gen_rend100.py` quanto rendem R$ 100 mil, `gen_fii.py` quanto investir para receber X por mês, `gen_tempo.py` primeiros R$ 100 mil (barras), `gen_rank.py` ranking com ícones, `gen.py` salário mínimo / sócio de grandes empresas (quadros de logos com preço).
-- Use como modelo os configs de `kit/configs/branco/` (exemplos, semana-05-a-11-10 e semana-12-a-18-10; o `build.py` de cada semana mostra como os números são montados).
-- Crie o config em `kit/configs/sugestoes/AAAA-MM-DD-HHh.json`, depois `python3 GERADOR.py config.json t.html && python3 render.py t.html t.png`.
-- Olhe a imagem (Read) e confira: nada cortado ou sobreposto, números certos, logos aparecendo, sem travessão.
-- Salve em `sugestoes/AAAA-MM-DD-07h-1.png` (ou `-15h-1.png`) e a legenda em `sugestoes/AAAA-MM-DD-07h.txt`. Apague t.html e t.png.
+## 4. Fazer a arte (padrão novo desde 08/10/2026: estilo institucional, fundo claro levemente verde, cores da InfoBolsa)
+Use `kit/gen_inst.py` com o tema `verde` (é o padrão): cabeçalho pequeno com foto, nome, selo e @, título grande com uma palavra em verde (`<span>`), subtítulo, conteúdo dentro de uma "pasta" com aba (bolinha amarela), rodapé discreto. Base #162526, verde #0f7a43, amarelo #FFB400. Sem azul.
+- `python3 gen_inst.py TIPO config.json t.html verde && python3 render.py t.html t.png`
+- Tipos: `tab` tabela genérica (rankings, listas, simulações, comparativos de renda fixa), `socio` empresas com logo e preço de 1 ação + total (formato "Precisa ser rico" / "sócio de grandes empresas"), `vs` comparativo entre duas empresas, `pag` dividendos / data de pagamento, `fii` quanto investir para receber X por mês. Exemplos: `kit/configs/sugestoes/2026-10-08-07h-inst.json` (socio) e `2026-10-08-teste-inst.json` (tab); para `vs`, `pag` e `fii` os json de `kit/configs/branco/` servem.
+- Se precisar de um formato que o gen_inst.py ainda não tem, crie um novo tipo nele seguindo o mesmo visual (não volte para o modelo branco antigo).
+- Crie o config em `kit/configs/sugestoes/AAAA-MM-DD-HHh.json`.
+- Olhe a imagem (Read) e confira: nada cortado, sobreposto ou quebrando linha feio (título, frase final e rodapé), números certos, logos aparecendo, sem travessão.
+- Salve o slide 1 em `sugestoes/AAAA-MM-DD-07h-1.png` (ou `-15h-1.png`) e a legenda em `sugestoes/AAAA-MM-DD-07h.txt`. Apague t.html e t.png.
 - `git add -A && git commit -m "Sugestão DD/MM HHh" && git push` (branch main).
 
 ## 4b. Último slide: convite para seguir (carrossel)
 Toda sugestão é um carrossel de 2 slides:
 - Slide 1: a arte do post (seção 4), salva como `sugestoes/AAAA-MM-DD-HHh-1.png`.
-- Slide 2: convite para seguir anunciando o post de AMANHÃ no mesmo horário, com `gen_segue.py` (config em `kit/configs/sugestoes/AAAA-MM-DD-HHh-segue.json`, campos `quando` "Amanhã, às <b>07h</b>, eu posto:", `tema`, `sub`, `rodape`). Salve como `sugestoes/AAAA-MM-DD-HHh-2.png`.
-- Escolha o tema de amanhã seguindo as mesmas regras (formatos que performam, sem repetir, variar o assunto) e registre em `sugestoes/proximos.md` como pendente. Só anuncie algo que dá para fazer com dados públicos.
+- Slide 2: convite genérico para seguir e salvar, SEM anunciar tema do dia seguinte (a programação muda com as notícias): `python3 gen_inst.py segue - t.html verde && python3 render.py t.html t.png`. Salve como `sugestoes/AAAA-MM-DD-HHh-2.png`.
 
 ## 5. Legenda
-Frase de gancho, 1 ou 2 parágrafos curtos com os números principais, "Amanhã, às XXh, eu posto [tema]. Me segue para não perder!", "👉 [pergunta]? Comenta aqui!", "Não é uma recomendação de compra ou venda." (e "Rentabilidade hipotética, não é garantia de retorno." quando for simulação) e 5 ou 6 hashtags.
+Frase de gancho, 1 ou 2 parágrafos curtos com os números principais, "Me segue para não perder os próximos posts e salva este para consultar depois!", "👉 [pergunta]? Comenta aqui!", "Não é uma recomendação de compra ou venda." (e "Rentabilidade hipotética, não é garantia de retorno." quando for simulação) e 5 ou 6 hashtags.
 
 ## Regras
 - Nunca usar travessão, nem na imagem nem na legenda. Linguagem simples, sem frases com cara de IA.

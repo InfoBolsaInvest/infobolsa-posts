@@ -1,4 +1,7 @@
-# Estilo novo dos posts (em espera)
+# Estilo novo dos posts
+
+Atualização 08/10/2026: aprovado pelo Douglas e virou o padrão das sugestões diárias, no tema `verde` do gen_inst.py (claro levemente verde, cores da InfoBolsa). Tipos novos: tab, socio, segue.
+
 
 Status: aprovado como visual, mas em espera. Só usar quando o Douglas pedir posts de novo.
 Quando ele pedir, gerar os posts nesse formato institucional:

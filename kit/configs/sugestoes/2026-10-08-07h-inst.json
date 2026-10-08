@@ -1,0 +1,44 @@
+{
+ "titulo": "Sócio das marcas do<br><span>dia a dia</span> com R$ 100",
+ "sub": "Quanto custa 1 ação de cada uma hoje",
+ "aba": "Marcas do dia a dia",
+ "linhas": [
+  [
+   "assets/logo_abev.png",
+   "ABEV3",
+   "Ambev, a cerveja",
+   "15,97"
+  ],
+  [
+   "assets/logos_b3/RADL3.png",
+   "RADL3",
+   "Raia Drogasil, a farmácia",
+   "21,09"
+  ],
+  [
+   "assets/logos_b3/ASAI3.png",
+   "ASAI3",
+   "Assaí, o mercado",
+   "12,07"
+  ],
+  [
+   "assets/logos_b3/LREN3.png",
+   "LREN3",
+   "Renner, a loja de roupa",
+   "13,64"
+  ],
+  [
+   "assets/logos_b3/VIVT3.png",
+   "VIVT3",
+   "Vivo, o celular",
+   "31,88"
+  ]
+ ],
+ "total": "94,65",
+ "total_txt": "Total para ter<br><b>1 ação de cada</b>",
+ "rodape": [
+  "Cotações do StatusInvest em 08/10/2026.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "top": 440
+}

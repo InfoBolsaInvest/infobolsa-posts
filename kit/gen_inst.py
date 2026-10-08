@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Posts no estilo institucional (mesma linha do Fechamento de mercado), 1080x1350.
 Uso: python3 gen_inst.py TIPO config.json saida.html [tema]
-TIPO: pag (dividendos / data de pagamento), vs (comparativo), fii (quanto investir para receber X por mes)
-tema: azul (degradê azul), claro (fundo branco), preto (quase preto). Padrao: azul.
+TIPO: pag (dividendos / data de pagamento), vs (comparativo), fii (quanto investir para receber X por mes),
+      tab (tabela genérica), socio (empresas com preço de 1 ação e total), segue (último slide do carrossel; config "-" usa o padrão)
+tema: verde (claro levemente verde, cores da InfoBolsa, PADRÃO das sugestões), azul, claro, preto. Padrao: verde.
 Le os mesmos json usados por gen_pag.py, gen_vs.py e gen_fii.py.
 """
 import json, sys, re
@@ -19,6 +20,11 @@ TEMAS = {
                   luz="rgba(40,110,255,.20)", fg="#ffffff", sub="rgba(255,255,255,.78)", mute="rgba(255,255,255,.50)",
                   acc="#3aa2ff", card1="rgba(255,255,255,.07)", card2="rgba(255,255,255,.025)", borda="rgba(255,255,255,.13)",
                   linha="rgba(255,255,255,.09)", chip="rgba(255,255,255,.06)", curva="rgba(90,150,255,.30)", foto="rgba(255,255,255,.85)"),
+    # padrão das sugestões desde 08/10/2026: claro levemente verde, cores da InfoBolsa (base #162526, verde, amarelo #FFB400)
+    "verde": dict(bg="linear-gradient(160deg,#ffffff 0%,#f3f8f5 55%,#e2f0e8 100%)",
+                  luz="rgba(15,122,67,.10)", fg="#162526", sub="#3f5552", mute="#7b8f8a",
+                  acc="#0f7a43", dot="#FFB400", card1="#ffffff", card2="#f8fbf9", borda="#d6e5dc",
+                  linha="#e4eee8", chip="#eef6f1", curva="rgba(15,122,67,.28)", foto="#162526"),
     "claro": dict(bg="linear-gradient(160deg,#ffffff 0%,#f4f7fc 55%,#e7eefb 100%)",
                   luz="rgba(29,111,224,.10)", fg="#0a1633", sub="#3d4a66", mute="#7a869e",
                   acc="#1d6fe0", card1="#ffffff", card2="#f7f9fd", borda="#d9e1ef",
@@ -49,7 +55,7 @@ body{position:relative;font-family:"P",sans-serif;font-weight:300;color:var(--fg
 .pasta{position:absolute;left:96px;width:888px}
 .psvg{position:absolute;inset:0}
 .aba{position:absolute;top:0;left:30px;height:56px;display:flex;align-items:center;gap:12px;font-weight:400;font-size:26px;letter-spacing:.5px}
-.aba em{font-style:normal;width:10px;height:10px;border-radius:50%;background:var(--acc)}
+.aba em{font-style:normal;width:10px;height:10px;border-radius:50%;background:var(--dot,var(--acc))}
 .rod{position:absolute;left:96px;right:96px;bottom:44px;font-size:19px;line-height:1.5;color:var(--mute)}
 .num{font-variant-numeric:tabular-nums}
 /* tabela */
@@ -82,6 +88,33 @@ body{position:relative;font-family:"P",sans-serif;font-weight:300;color:var(--fg
 .vs .lb{font-size:26px;font-weight:500;line-height:1.2}
 .vs .lb small{display:block;font-size:18px;font-weight:300;color:var(--mute)}
 .vs .vl{text-align:center;font-size:32px;font-weight:500}
+/* tabela generica */
+.tg .ln{font-size:28px}
+.tg .lb{font-weight:500;line-height:1.15}
+.tg .lb small{display:block;font-size:18px;font-weight:300;color:var(--mute);margin-top:2px}
+.tg .c{text-align:center}
+.tg .dst{font-weight:600;color:var(--acc)}
+.fim{position:absolute;left:96px;right:96px;font-size:28px;line-height:1.35;color:var(--sub)}
+.fim b{font-weight:600;color:var(--fg)}
+/* socio */
+.lgq{width:64px;height:64px;border-radius:16px;overflow:hidden;border:1.5px solid var(--borda);background:#fff;flex:none}
+.lgq img{width:100%;height:100%;object-fit:cover}
+.so .ln{font-size:28px}
+.so .nmx{display:flex;flex-direction:column;line-height:1.15}
+.so .nmx small{font-size:18px;color:var(--mute);font-weight:300}
+.total{position:absolute;left:34px;right:34px;display:flex;align-items:center;justify-content:space-between;border-radius:18px;background:var(--chip);border:1px solid var(--borda);padding:0 30px}
+.total .r1{font-size:24px;color:var(--sub);line-height:1.3}
+.total .r1 b{color:var(--fg);font-weight:600}
+.total .v{font-size:54px;font-weight:600;color:var(--acc)}
+/* segue */
+.it{display:flex;align-items:center;gap:22px;font-size:30px;line-height:1.25;font-weight:400}
+.it .n{width:48px;height:48px;border-radius:50%;background:var(--chip);border:1.5px solid var(--borda);display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:600;color:var(--acc);flex:none}
+.it small{display:block;font-size:20px;color:var(--mute);font-weight:300}
+.btn{position:absolute;left:96px;right:96px;height:96px;border-radius:999px;background:var(--fg);color:#fff;display:flex;align-items:center;justify-content:center;gap:18px;font-size:34px;font-weight:600}
+.btn .m{width:46px;height:46px;border-radius:50%;background:var(--dot,var(--acc));color:var(--fg);display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:700;line-height:1}
+.acoes{position:absolute;left:96px;right:96px;display:flex;gap:16px}
+.acoes div{flex:1;text-align:center;border:1px solid var(--borda);background:var(--card1);border-radius:18px;padding:16px 10px;font-size:22px;line-height:1.3;color:var(--sub)}
+.acoes b{display:block;font-size:26px;color:var(--fg);font-weight:600}
 """
 
 SELO = """<svg viewBox="0 0 40 40" aria-hidden="true"><path id="selo" fill="#2799ff" d=""/><path fill="none" stroke="#fff" stroke-width="3.7" stroke-linecap="round" stroke-linejoin="round" d="M12.4 20.7l5.1 4.9 10-10.6"/></svg>"""
@@ -178,9 +211,69 @@ def build_fii(c, tema):
     return pagina(tema, titulo, "", corpo, c["rodape"], tsize=72)
 
 
+def build_tab(c, tema):
+    """cfg: titulo (HTML, <span> = cor de destaque), sub, aba, colunas, linhas [[rotulo<small>..</small>, v1, v2..]],
+    destaque (índice da coluna), cols (grid), lh, fim (frase abaixo), rodape, tsize, top."""
+    dst = c.get("destaque")
+    linhas = ""
+    for row in c["linhas"]:
+        cel = f'<div class="lb">{row[0]}</div>'
+        for j, v in enumerate(row[1:], 1):
+            cel += f'<div class="c num{" dst" if j == dst else ""}">{v}</div>'
+        linhas += f'<div class="ln">{cel}</div>'
+    hd = "".join(f'<div{"" if i == 0 else " class=\"c\""}>{h}</div>' for i, h in enumerate(c["colunas"]))
+    lh = c.get("lh", 84)
+    cols = c.get("cols", "1.5fr 1fr 1fr")
+    tab = f'<div class="tb tg" style="--cols:{cols};--lh:{lh}px"><div class="hd">{hd}</div>{linhas}</div>'
+    h = 70 + 44 + len(c["linhas"]) * lh + 18
+    top = c.get("top", 430)
+    fim = f'<div class="fim" style="top:{top + h + 34}px">{c["fim"]}</div>' if c.get("fim") else ""
+    corpo = pasta(top, h, c.get("aba", "Comparativo"), tab, tema) + fim
+    return pagina(tema, c["titulo"], c.get("sub", ""), corpo, c["rodape"], tsize=c.get("tsize", 72))
+
+
+def build_socio(c, tema):
+    """cfg: titulo, sub, aba, linhas [[logo_path, ticker, nome, preco]], total, total_txt, rodape, tsize."""
+    lh = c.get("lh", 92)
+    linhas = "".join(f'<div class="ln"><div class="tk"><div class="lgq"><img src="{lg}"></div><div class="nmx">{tk}<small>{nm}</small></div></div>'
+                     f'<div class="r num"><b>R$ {pr}</b></div></div>' for lg, tk, nm, pr in c["linhas"])
+    tab = f'<div class="tb so" style="--cols:1fr auto;--lh:{lh}px"><div class="hd"><div>Empresa</div><div class="r">1 ação custa</div></div>{linhas}</div>'
+    n = len(c["linhas"])
+    tt = 70 + 44 + n * lh + 22
+    h = tt + 118 + 30
+    tot = f'<div class="total" style="top:{tt}px;height:118px"><div class="r1">{c["total_txt"]}</div><div class="v num">R$ {c["total"]}</div></div>'
+    top = c.get("top", 400)
+    corpo = pasta(top, h, c.get("aba", "Carteira"), tab + tot, tema)
+    return pagina(tema, c["titulo"], c.get("sub", ""), corpo, c["rodape"], tsize=c.get("tsize", 72))
+
+
+SEGUE_PADRAO = {
+    "titulo": "Me segue e <span>não perca</span><br>os próximos posts",
+    "sub": "Conteúdo novo todos os dias aqui no perfil",
+    "itens": [["Números do mercado atualizados", "ações, FIIs e renda fixa"],
+              ["Dividendos e renda passiva", "quem paga, quanto e quando"],
+              ["Educação financeira sem complicação", "para quem está começando"]],
+    "rodape": ["Conteúdo educativo. Não é uma recomendação de compra ou venda."],
+}
+
+
+def build_segue(c, tema):
+    """Último slide do carrossel, genérico (não anuncia tema). cfg opcional; sem cfg usa SEGUE_PADRAO."""
+    c = {**SEGUE_PADRAO, **(c or {})}
+    its = "".join(f'<div class="it" style="margin-bottom:30px"><div class="n">{i + 1}</div><div>{a}<small>{b}</small></div></div>'
+                  for i, (a, b) in enumerate(c["itens"]))
+    miolo = f'<div style="position:absolute;top:96px;left:40px;right:40px">{its}</div>'
+    h = 96 + len(c["itens"]) * 100 - 6
+    corpo = (pasta(480, h, "Por aqui você encontra", miolo, tema, tw=360)
+             + f'<div class="acoes" style="top:{480 + h + 40}px"><div><b>Salve</b>para consultar depois</div><div><b>Compartilhe</b>com quem está começando</div></div>'
+             + f'<div class="btn" style="top:{480 + h + 40 + 140}px"><span class="m">+</span>Seguir @infobolsainvestimentos</div>')
+    return pagina(tema, c["titulo"], c["sub"], corpo, c["rodape"], tsize=c.get("tsize", 80))
+
+
 if __name__ == "__main__":
     tipo, cfgp, out = sys.argv[1:4]
-    tema = sys.argv[4] if len(sys.argv) > 4 else "azul"
-    c = json.load(open(cfgp))
-    html = {"pag": build_pag, "vs": build_vs, "fii": build_fii}[tipo](c, tema)
+    tema = sys.argv[4] if len(sys.argv) > 4 else "verde"
+    c = json.load(open(cfgp)) if cfgp != "-" else {}
+    html = {"pag": build_pag, "vs": build_vs, "fii": build_fii, "tab": build_tab, "socio": build_socio,
+            "segue": build_segue}[tipo](c, tema)
     open(out, "w").write(html)
