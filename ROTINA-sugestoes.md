@@ -60,12 +60,12 @@ Frase de gancho, 1 ou 2 parágrafos curtos com os números principais, "Manda pr
 - A partir de 09/10/2026: postar no Instagram (seção 5b). Se algum número não estiver conferido ou algo falhar, NÃO poste e avise.
 
 ## 5b. Publicar no Instagram (a partir de 09/10/2026)
+0. Não publique duas vezes: logo no começo da execução (antes da seção 1), veja se `posts/sugestao-AAAA-MM-DD-HHh-1.jpg` deste dia e horário já existe no repositório. Se existir, já foi postado: pare e avise o Douglas.
 1. Converta os dois slides para JPEG: `python3 -c "from PIL import Image; [Image.open(f'../sugestoes/AAAA-MM-DD-HHh-{i}.png').convert('RGB').save(f'../posts/sugestao-AAAA-MM-DD-HHh-{i}.jpg', quality=93) for i in (1,2)]"` (rode dentro de `kit/`).
 2. `git add -A && git commit -m "Post DD/MM HHh" && git push` (branch main).
 3. Confira que os dois links abrem: `https://raw.githubusercontent.com/InfoBolsaInvest/infobolsa-posts/main/posts/sugestao-AAAA-MM-DD-HHh-1.jpg` e `-2.jpg` (pode levar alguns segundos).
 4. Publique com o conector Windsor.ai: `execute_action`, connector `instagram`, conta `17841445716975551`, ação `create_carousel_post`, `image_urls` = [link do slide 1, link do slide 2] (nessa ordem), `caption` = legenda.
 5. Leia a resposta: se vier qualquer erro, NÃO considere postado, não tente por outro caminho e avise o Douglas com o texto do erro.
-6. Não publique duas vezes: antes de postar, confira se `posts/sugestao-AAAA-MM-DD-HHh-1.jpg` já existia no repositório antes desta execução; se já existia, é porque já foi postado, então pare.
 
 ## 6. Mandar para o Douglas
 SendUserMessage curto começando com "POSTADO 07h DD/MM" ou "NÃO POSTADO 07h DD/MM" (com o motivo) a partir de 09/10/2026, ou "SUGESTÃO 07h DD/MM" antes disso (ou 15h), com: o post escolhido e por quê (quais posts do perfil inspiraram, com o alcance deles), os dados usados e a data, e a legenda pronta. Depois SendUserFile com as duas imagens do carrossel (slide 1 e slide 2). Se algo falhar, diga o que falhou.
