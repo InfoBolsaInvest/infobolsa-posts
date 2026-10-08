@@ -87,6 +87,7 @@ Não é uma recomendação de compra ou venda.
 ```
 
 ## Regras
+- Linguagem: siga `LINGUAGEM.md` (a mais fácil do mundo, gancho de conversa, zero economês).
 - Nunca usar travessão (nem na imagem nem na legenda). Linguagem simples, sem frases com cara de IA.
 - Números no padrão brasileiro (200.000,00) e percentuais com 2 casas decimais.
 - Nunca prometer rentabilidade nem recomendar compra ou venda.

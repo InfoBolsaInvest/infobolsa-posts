@@ -50,6 +50,7 @@ Toda sugestão é um carrossel de 2 slides:
 Frase de gancho, 1 ou 2 parágrafos curtos com os números principais, "Manda pra [alguém específico]. E me segue se [identificação, ex.: você tá começando agora].", "👉 [pergunta]? Comenta aqui!", "Não é uma recomendação de compra ou venda." (e "Rentabilidade hipotética, não é garantia de retorno." quando for simulação) e 5 ou 6 hashtags.
 
 ## Regras
+- Linguagem: siga `LINGUAGEM.md` (a mais fácil do mundo, gancho de conversa, zero economês).
 - Nunca usar travessão, nem na imagem nem na legenda. Linguagem simples, sem frases com cara de IA.
 - Números no padrão brasileiro (200.000,00) e percentuais com 2 casas decimais.
 - Nunca prometer rentabilidade nem recomendar compra ou venda.
