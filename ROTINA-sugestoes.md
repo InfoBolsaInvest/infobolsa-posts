@@ -11,6 +11,7 @@ IMPORTANTE: por enquanto NÃO POSTE em lugar nenhum (nada de Windsor execute_act
 4. Não repita: veja `sugestoes/` (sugestões dos últimos 14 dias) e as legendas dos posts dos últimos 30 dias. Não sugira o mesmo tema com os mesmos ativos de um post recente. Pode repetir um formato que funciona, com outro recorte ou outros ativos.
 
 ## 2. Escolher o post
+- PRIMEIRO veja `sugestoes/proximos.md`: se houver um tema anunciado para hoje neste horário, o post é esse (é promessa feita ao seguidor). Marque como feito no arquivo.
 - Escolha UM post baseado nos formatos que mais performam, refeito com números atuais ou com um ângulo novo.
 - Varie: alterne entre ações, FIIs, renda fixa e educação financeira ao longo dos dias. Não faça duas sugestões seguidas do mesmo assunto.
 - Sugestão: às 07h algo mais educativo e leve (simulação, metas, juntar dinheiro, comparação simples); às 15h algo com dados de mercado (dividendos, comparativos, FIIs, ações).
@@ -27,11 +28,17 @@ Dentro de `kit/`, com os geradores do modelo branco (cabeçalho com foto, nome, 
 - Use como modelo os configs de `kit/configs/branco/` (exemplos, semana-05-a-11-10 e semana-12-a-18-10; o `build.py` de cada semana mostra como os números são montados).
 - Crie o config em `kit/configs/sugestoes/AAAA-MM-DD-HHh.json`, depois `python3 GERADOR.py config.json t.html && python3 render.py t.html t.png`.
 - Olhe a imagem (Read) e confira: nada cortado ou sobreposto, números certos, logos aparecendo, sem travessão.
-- Salve em `sugestoes/AAAA-MM-DD-07h.png` (ou `-15h.png`) e a legenda em `sugestoes/AAAA-MM-DD-07h.txt`. Apague t.html e t.png.
+- Salve em `sugestoes/AAAA-MM-DD-07h-1.png` (ou `-15h-1.png`) e a legenda em `sugestoes/AAAA-MM-DD-07h.txt`. Apague t.html e t.png.
 - `git add -A && git commit -m "Sugestão DD/MM HHh" && git push` (branch main).
 
+## 4b. Último slide: convite para seguir (carrossel)
+Toda sugestão é um carrossel de 2 slides:
+- Slide 1: a arte do post (seção 4), salva como `sugestoes/AAAA-MM-DD-HHh-1.png`.
+- Slide 2: convite para seguir anunciando o post de AMANHÃ no mesmo horário, com `gen_segue.py` (config em `kit/configs/sugestoes/AAAA-MM-DD-HHh-segue.json`, campos `quando` "Amanhã, às <b>07h</b>, eu posto:", `tema`, `sub`, `rodape`). Salve como `sugestoes/AAAA-MM-DD-HHh-2.png`.
+- Escolha o tema de amanhã seguindo as mesmas regras (formatos que performam, sem repetir, variar o assunto) e registre em `sugestoes/proximos.md` como pendente. Só anuncie algo que dá para fazer com dados públicos.
+
 ## 5. Legenda
-Frase de gancho, 1 ou 2 parágrafos curtos com os números principais, "👉 [pergunta]? Comenta aqui!", "Não é uma recomendação de compra ou venda." (e "Rentabilidade hipotética, não é garantia de retorno." quando for simulação) e 5 ou 6 hashtags.
+Frase de gancho, 1 ou 2 parágrafos curtos com os números principais, "Amanhã, às XXh, eu posto [tema]. Me segue para não perder!", "👉 [pergunta]? Comenta aqui!", "Não é uma recomendação de compra ou venda." (e "Rentabilidade hipotética, não é garantia de retorno." quando for simulação) e 5 ou 6 hashtags.
 
 ## Regras
 - Nunca usar travessão, nem na imagem nem na legenda. Linguagem simples, sem frases com cara de IA.
@@ -40,4 +47,4 @@ Frase de gancho, 1 ou 2 parágrafos curtos com os números principais, "👉 [pe
 - NÃO postar. Só mandar para o Douglas.
 
 ## 6. Mandar para o Douglas
-SendUserMessage curto começando com "SUGESTÃO 07h DD/MM" (ou 15h), com: o post escolhido e por quê (quais posts do perfil inspiraram, com o alcance deles), os dados usados e a data, e a legenda pronta. Depois SendUserFile com a imagem. Se algo falhar, diga o que falhou.
+SendUserMessage curto começando com "SUGESTÃO 07h DD/MM" (ou 15h), com: o post escolhido e por quê (quais posts do perfil inspiraram, com o alcance deles), os dados usados e a data, e a legenda pronta. Depois SendUserFile com as duas imagens do carrossel (slide 1 e slide 2). Se algo falhar, diga o que falhou.
