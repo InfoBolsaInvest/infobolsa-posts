@@ -40,7 +40,7 @@ def build(cfg):
     for i, (logo, ticker, preco) in enumerate(cfg["linhas"]):
         top = round(t0 + i * p["passo"])
         rows.append(
-            f'<div class="linha" style="top:{top}px"><div class="quadro"><img src="assets/logo_{logo}.png" alt=""></div>'
+            f'<div class="linha" style="top:{top}px"><div class="quadro"><img src="{logo if '/' in logo else f'assets/logo_{logo}.png'}" alt=""></div>'
             f'<div class="ticker">{ticker}</div><div class="preco">R$ {preco}</div></div>'
         )
     html = f"""<!doctype html>
