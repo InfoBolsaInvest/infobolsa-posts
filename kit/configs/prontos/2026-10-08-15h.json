@@ -1,0 +1,76 @@
+{
+ "titulo": "Quanto você precisa pra ganhar <span>R$ 1.621</span> por mês?",
+ "sub": "Olha quanto investir em cada ação pra receber isso em dividendos 👇",
+ "aba": "Salário mínimo em dividendos",
+ "colunas": [
+  "Ação",
+  "Prov. 12M",
+  "Preço",
+  "Precisa investir"
+ ],
+ "cols": "1.25fr .95fr .8fr 1.35fr",
+ "lh": 64,
+ "destaque": 3,
+ "linhas": [
+  [
+   "<img src=\"assets/logos_b3/BBSE3.png\" style=\"width:46px;height:46px;border-radius:12px;background:#fff;object-fit:contain;vertical-align:middle;margin-right:16px\">BBSE3",
+   "R$ 4,59",
+   "R$ 40,45",
+   "R$ 171.419,66"
+  ],
+  [
+   "<img src=\"assets/logos_b3/ABEV3.png\" style=\"width:46px;height:46px;border-radius:12px;background:#fff;object-fit:contain;vertical-align:middle;margin-right:16px\">ABEV3",
+   "R$ 1,25",
+   "R$ 15,84",
+   "R$ 246.397,19"
+  ],
+  [
+   "<img src=\"assets/logos_b3/ITSA4.png\" style=\"width:46px;height:46px;border-radius:12px;background:#fff;object-fit:contain;vertical-align:middle;margin-right:16px\">ITSA4",
+   "R$ 1,13",
+   "R$ 14,67",
+   "R$ 252.152,37"
+  ],
+  [
+   "<img src=\"assets/logos_b3/PETR4.png\" style=\"width:46px;height:46px;border-radius:12px;background:#fff;object-fit:contain;vertical-align:middle;margin-right:16px\">PETR4",
+   "R$ 3,67",
+   "R$ 51,17",
+   "R$ 271.459,03"
+  ],
+  [
+   "<img src=\"assets/logos_b3/TAEE11.png\" style=\"width:46px;height:46px;border-radius:12px;background:#fff;object-fit:contain;vertical-align:middle;margin-right:16px\">TAEE11",
+   "R$ 3,01",
+   "R$ 42,85",
+   "R$ 277.238,72"
+  ],
+  [
+   "<img src=\"assets/logos_b3/ITUB4.png\" style=\"width:46px;height:46px;border-radius:12px;background:#fff;object-fit:contain;vertical-align:middle;margin-right:16px\">ITUB4",
+   "R$ 3,14",
+   "R$ 44,83",
+   "R$ 278.125,01"
+  ],
+  [
+   "<img src=\"assets/logos_b3/CMIG4.png\" style=\"width:46px;height:46px;border-radius:12px;background:#fff;object-fit:contain;vertical-align:middle;margin-right:16px\">CMIG4",
+   "R$ 0,79",
+   "R$ 11,41",
+   "R$ 281.730,54"
+  ],
+  [
+   "<img src=\"assets/logos_b3/CXSE3.png\" style=\"width:46px;height:46px;border-radius:12px;background:#fff;object-fit:contain;vertical-align:middle;margin-right:16px\">CXSE3",
+   "R$ 1,35",
+   "R$ 20,41",
+   "R$ 294.085,42"
+  ],
+  [
+   "<img src=\"assets/logos_b3/BBDC4.png\" style=\"width:46px;height:46px;border-radius:12px;background:#fff;object-fit:contain;vertical-align:middle;margin-right:16px\">BBDC4",
+   "R$ 1,26",
+   "R$ 19,23",
+   "R$ 296.968,85"
+  ]
+ ],
+ "rodape": [
+  "Com base nos proventos dos últimos 12 meses. Cotações de 02/10/2026.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "tsize": 70,
+ "top": 490
+}
