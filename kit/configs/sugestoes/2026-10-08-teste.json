@@ -1,0 +1,17 @@
+{
+ "titulo": "Em quanto tempo o seu<br><b>dinheiro dobra</b> na renda fixa? <span class=\"emo\">👇</span>",
+ "colunas": ["Onde está o dinheiro", "Rende ao ano", "Dobra em"],
+ "linhas": [
+  ["Parado na conta<small>conta corrente sem rendimento</small>", "0,00%", "Nunca"],
+  ["Poupança<small>isenta de IR</small>", "7,88%", "9 anos e 2 meses"],
+  ["Tesouro Selic<small>taxa de custódia de 0,20%</small>", "13,75%", "6 anos e 2 meses"],
+  ["CDB 100% do CDI<small>com IR de 15%</small>", "13,65%", "6 anos e 1 mês"],
+  ["LCI e LCA 90% do CDI<small>isentas de IR</small>", "12,29%", "6 anos"],
+  ["CDB 110% do CDI<small>com IR de 15%</small>", "15,02%", "5 anos e 7 meses"]
+ ],
+ "destaque": 2,
+ "fim": "Quanto antes começa, <b>mais tempo os juros trabalham por você</b>",
+ "data": "Selic de 13,75% e CDI de 13,65% ao ano (Banco Central, 06/10/26)",
+ "rodape": ["Simulação com taxas constantes. Rentabilidade hipotética, não é garantia de retorno", "Não é uma recomendação de compra ou venda"],
+ "ajustes": {"cols": "390px 230px 308px", "tk_size": 31, "vl_size": 33, "tab_top": 496, "lin_h": 94, "fim_top": 1118, "data_top": 1176, "rod_top": 1222, "rod_size": 22, "data_size": 23}
+}
