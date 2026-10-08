@@ -5,6 +5,9 @@ Roda todos os dias por volta das 11h40 (horário de Brasília), sem nenhum compu
 ## 1. Já postou hoje?
 Se `posts/noticia-AAAA-MM-DD.jpg` de hoje já existe no repositório, pare aqui e não poste de novo.
 
+## 1b. Post pronto
+Se existir a pasta `pronto/AAAA-MM-DD-12h/` de hoje (com `arte.png`, `config.json` e `legenda.txt`), o Douglas já escolheu a notícia: NÃO escolha outra. Faça só uma busca rápida para confirmar que não saiu fato novo que deixe o post errado (se saiu, ajuste o config, gere a arte de novo e diga isso na mensagem). Depois converta `arte.png` para `posts/noticia-AAAA-MM-DD.jpg` (quality 93), use `legenda.txt` como legenda e vá direto para a seção 5.
+
 ## 2. Escolher a notícia do dia
 Pesquise (WebSearch) as notícias de HOJE (ou da noite anterior) que mexem com quem investe:
 - Ibovespa, dólar, juros, Selic, Copom, inflação (IPCA), Tesouro Direto, poupança
