@@ -56,7 +56,10 @@ Crie `kit/configs/noticia/AAAA-MM-DD.json` (veja `exemplo-manchete.json` e `exem
 | FIIs de lajes, escritórios, mercado imobiliário | `foto-faria-lima-*.jpg`, `foto-avenida-paulista-*.jpg` |
 | FIIs de shopping, varejo | `foto-shopping-*.jpg`, `foto-varejo-loja-*.jpg` |
 | Agro, Fiagros, safra | `foto-agro-*.jpg`, `foto-gado-*.jpg` |
+| BlackRock, gestoras estrangeiras | `foto-blackrock-sede-1.jpg` (foco `12% 100%`, `"zoom": "auto 125%"`), `foto-blackrock-sede-2.jpg` |
 | Energia, elétricas | `foto-itaipu-energia-*.jpg`, `foto-angra-energia-nuclear-1.jpg` |
+
+VARIE AS FOTOS: o Douglas não quer o mesmo fundo repetido. Veja o `fundo` dos configs dos últimos 7 dias em `kit/configs/noticia/` (e de `pronto/`) e NÃO repita uma foto usada nesse período; se o tema tiver várias fotos, use outra do mesmo tema. O touro (`fundo-touro-b3.jpg`) só quando não houver outra opção ligada ao assunto.
 
 Se nenhuma foto combinar com o assunto, use a mais próxima da lista (ex.: notícia de empresa sem foto própria: `fundo-touro-b3.jpg` ou Faria Lima). O crédito da foto entra sozinho no rodapé (vem de `kit/assets/fundos/creditos.json`), não apague.
 
