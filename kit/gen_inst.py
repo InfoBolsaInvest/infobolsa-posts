@@ -299,26 +299,34 @@ def build_prefere(c, tema):
 
 SEGUE_PADRAO = {
     "titulo": "Tá começando agora?<br><span>Me segue.</span>",
-    "sub": "Aqui eu mostro com números como fazer<br>o seu dinheiro trabalhar por você",
-    "aba": "Todo dia por aqui",
-    "itens": [["Como começar a investir com pouco", "sem complicação e sem economês"],
-              ["Quanto investir para ter renda todo mês", "com ações, FIIs e renda fixa"],
-              ["Quem paga dividendos, quanto e quando", "pra você não ficar de fora"]],
+    "sub": "Todo dia um post simples, com números,<br>pra fazer seu dinheiro trabalhar por você.",
     "rodape": ["Conteúdo educativo. Não é uma recomendação de compra ou venda."],
 }
 
 
 def build_segue(c, tema):
-    """Último slide do carrossel, genérico (não anuncia tema). cfg opcional; sem cfg usa SEGUE_PADRAO."""
+    """Último slide do carrossel, enxuto: foto grande, chamada para seguir e botão. Não anuncia tema."""
     c = {**SEGUE_PADRAO, **(c or {})}
-    its = "".join(f'<div class="it" style="margin-bottom:30px"><div class="n">{i + 1}</div><div>{a}<small>{b}</small></div></div>'
-                  for i, (a, b) in enumerate(c["itens"]))
-    miolo = f'<div style="position:absolute;top:96px;left:40px;right:40px">{its}</div>'
-    h = 96 + len(c["itens"]) * 100 - 6
-    corpo = (pasta(500, h, c["aba"], miolo, tema, tw=330)
-             + f'<div class="acoes" style="top:{500 + h + 40}px"><div><b>Salva</b>pra ver de novo depois</div><div><b>Manda</b>pra quem quer começar</div></div>'
-             + f'<div class="btn" style="top:{500 + h + 40 + 140}px"><span class="m">+</span>Seguir @infobolsainvestimentos</div>')
-    return pagina(tema, c["titulo"], c["sub"], corpo, c["rodape"], tsize=c.get("tsize", 76))
+    T = TEMAS[tema]
+    vars_ = ";".join(f"--{k}:{v}" for k, v in T.items())
+    css = """.sg{position:absolute;left:0;right:0;text-align:center}
+.sg-ft{top:150px;left:50%;width:360px;height:360px;margin-left:-180px;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:0 0 0 4px var(--acc),0 24px 60px rgba(22,37,38,.18)}
+.sg-ft img{width:100%;height:100%;object-fit:cover}
+.sg-nm{top:545px;font-size:40px;font-weight:600;color:var(--fg)}
+.sg-nm svg,.sg-nm img{width:36px;height:36px;vertical-align:-5px;margin-left:6px}
+.sg-ar{top:600px;font-size:30px;font-weight:300;color:var(--sub)}
+.sg-t{top:695px;font-size:82px;line-height:1.02;font-weight:400;color:var(--fg);letter-spacing:-1px}
+.sg-t span{color:var(--acc);font-weight:500}
+.sg-s{top:905px;font-size:31px;line-height:1.35;font-weight:300;color:var(--sub)}"""
+    return f"""<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>{CSS.replace('FS/', FS)}{css}</style></head>
+<body style="{vars_}"><div class="luz"></div>{curva(tema)}
+<div class="sg sg-ft"><img src="assets/foto.png" alt=""></div>
+<div class="sg sg-nm">Douglas Medeiros {SELO}</div>
+<div class="sg sg-ar">@infobolsainvestimentos</div>
+<div class="sg sg-t">{c["titulo"]}</div>
+<div class="sg sg-s">{c["sub"]}</div>
+<div class="btn" style="top:1060px"><span class="m">+</span>Seguir @infobolsainvestimentos</div>
+<div class="rod">{"<br>".join(c["rodape"])}</div>{SCRIPT}</body></html>"""
 
 
 if __name__ == "__main__":
