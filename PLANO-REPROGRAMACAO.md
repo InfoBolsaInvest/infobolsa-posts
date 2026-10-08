@@ -53,3 +53,28 @@ Por que essa divisão: nos dados do Instagram dos últimos 90 dias, quem trouxe 
 
 ## Registro
 (anotar aqui data, o que foi excluído e para onde cada post MANTER foi movido)
+
+### 08/10/2026
+Os posts "excluídos" foram movidos para Rascunhos no Meta Business Suite (Instagram e Facebook), sem exclusão definitiva. Saíram da agenda e não serão publicados. Se quiser apagar de vez, é só excluir na aba Rascunhos.
+
+Saíram da agenda (15 posts, 30 itens contando Instagram e Facebook):
+- Da lista EXCLUIR: dividendos-itausa (29/10), eletricas-que-pagam-dividendos (28/10), dividendos-bradesco (23/10), fiis-de-tijolo-p-vp-abaixo-de-1 (22/10), dividendos-itau (21/10), petrobras-x-vale (21/10), dividendos-cemig (20/10), fiis-mais-populares-12-meses (19/10), dividendos-taesa (19/10), gigantes-que-mais-pagam-dividendos (18/10), itau-x-bradesco (15/10), itau-x-banco-do-brasil (13/10), agenda-fiis-semana (11/10)
+- Fora das listas, decidido pelo Douglas: dividendos da Petrobras (12/10) e Banco do Brasil x Nubank (14/10)
+
+Fora das listas e mantidos (já estavam às 07h, ou foram para 07h no mesmo dia): Uma carteira que paga todo mês (13/10), Os primeiros R$ 100 mil (14/10), Quanto rende R$ 100 mil em FIIs (15/10), MXRF11 ponto de virada (29/10)
+
+MANTER que estavam às 15h e foram movidos:
+- 500-por-mes-juros-compostos: 09/10 15h para 19/10 07h
+- quanto-precisa-para-viver-de-renda: 10/10 15h para 21/10 07h
+- 100-mil-em-acoes-de-dividendos: 12/10 15h para 12/10 07h
+- fiis-abaixo-de-10-reais: 16/10 15h para 25/10 07h
+- dividendos-de-100-acoes: 17/10 15h para 26/10 07h
+- comecar-cedo-500-por-mes: 24/10 15h para 27/10 07h
+- quanto-tempo-para-juntar-100-mil: 28/10 15h para 28/10 07h
+- Uma carteira que paga todo mês: 13/10 15h para 13/10 07h
+- MXRF11 ponto de virada: 29/10 15h para 29/10 07h
+
+data-de-pagamento-jhsf3 ficou em 09/10 07h. data-de-pagamento-tots3 não estava programado no período.
+
+Calendário final: 1 post por dia às 07h de 09/10 a 29/10 e as 15h livres todos os dias. De 30/10 em diante, 07h e 15h livres.
+Não foi conferida a aba Posts do YouTube.
