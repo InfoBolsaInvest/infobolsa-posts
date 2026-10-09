@@ -1,0 +1,44 @@
+{
+ "titulo": "Qual ação você<br><span>prefere?</span>",
+ "sub": "As duas gigantes da bolsa. Comenta qual você escolheria 👇",
+ "opcoes": [
+  {
+   "ticker": "PETR4",
+   "nome": "Petrobras",
+   "logo": "assets/logos_b3/PETR4.png",
+   "preco": "56,67",
+   "extras": [
+    [
+     "DY 12M",
+     "6,48%"
+    ],
+    [
+     "Pagou por ação",
+     "R$ 3,67"
+    ]
+   ]
+  },
+  {
+   "ticker": "VALE3",
+   "nome": "Vale",
+   "logo": "assets/logos_b3/VALE3.png",
+   "preco": "67,60",
+   "extras": [
+    [
+     "DY 12M",
+     "8,30%"
+    ],
+    [
+     "Pagou por ação",
+     "R$ 5,61"
+    ]
+   ]
+  }
+ ],
+ "pergunta": "Uma vive do <b>petróleo</b>, a outra do <b>minério de ferro</b>.<br>Qual vai pra sua carteira?",
+ "rodape": [
+  "DY 12M: quanto a empresa pagou em dividendos nos últimos 12 meses, em % do preço.",
+  "Cotações e proventos do StatusInvest em 09/10/2026, às 14h50.",
+  "Não é uma recomendação de compra ou venda."
+ ]
+}
