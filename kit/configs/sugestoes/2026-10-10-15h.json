@@ -1,0 +1,61 @@
+{
+ "titulo": "Qual FII você<br><span>prefere?</span>",
+ "sub": "Três jeitos de receber aluguel todo mês 👇",
+ "opcoes": [
+  {
+   "ticker": "MXRF11",
+   "nome": "Maxi Renda · papel",
+   "logo": "assets/icones_fii/papel.svg",
+   "preco": "9,45",
+   "extras": [
+    [
+     "DY 12M",
+     "12,65%"
+    ],
+    [
+     "P/VP",
+     "1,02"
+    ]
+   ]
+  },
+  {
+   "ticker": "HGLG11",
+   "nome": "Pátria Log · galpões",
+   "logo": "assets/icones_fii/galpao.svg",
+   "preco": "157,58",
+   "extras": [
+    [
+     "DY 12M",
+     "8,51%"
+    ],
+    [
+     "P/VP",
+     "0,95"
+    ]
+   ]
+  },
+  {
+   "ticker": "XPML11",
+   "nome": "XP Malls · shoppings",
+   "logo": "assets/icones_fii/shopping.svg",
+   "preco": "107,82",
+   "extras": [
+    [
+     "DY 12M",
+     "10,24%"
+    ],
+    [
+     "P/VP",
+     "0,98"
+    ]
+   ]
+  }
+ ],
+ "pergunta": "Se só pudesse ter um, <b>qual vai pra sua carteira?</b><br>Comenta o ticker aqui 👇",
+ "rodape": [
+  "DY 12M: quanto pagou em 12 meses, em % do preço. P/VP: preço da cota ÷ valor patrimonial.",
+  "Cotações e indicadores do StatusInvest em 10/10/2026 (fechamento de 09/10).",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "top_pergunta": 1080
+}
