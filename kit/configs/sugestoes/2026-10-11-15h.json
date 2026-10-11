@@ -1,0 +1,44 @@
+{
+ "titulo": "Qual ação você<br><span>prefere?</span>",
+ "sub": "Dona da bolsa ou banco de investimento? Comenta 👇",
+ "opcoes": [
+  {
+   "ticker": "B3SA3",
+   "nome": "B3",
+   "logo": "assets/logos_b3/B3SA3.png",
+   "preco": "23,35",
+   "extras": [
+    [
+     "DY 12M",
+     "3,87%"
+    ],
+    [
+     "Pagou por ação",
+     "R$ 0,90"
+    ]
+   ]
+  },
+  {
+   "ticker": "BPAC11",
+   "nome": "BTG Pactual",
+   "logo": "assets/logos_b3/BPAC11.png",
+   "preco": "81,50",
+   "extras": [
+    [
+     "DY 12M",
+     "1,74%"
+    ],
+    [
+     "Pagou por ação",
+     "R$ 1,42"
+    ]
+   ]
+  }
+ ],
+ "pergunta": "Uma ganha com <b>cada negócio na bolsa</b>, a outra<br>é <b>banco de investimentos</b>. Qual você escolhe?",
+ "rodape": [
+  "DY 12M: quanto a empresa pagou nos últimos 12 meses, em % do preço.",
+  "Fechamento de 09/10/2026 (HG Brasil, brapi, Dados de Mercado).",
+  "Não é uma recomendação de compra ou venda."
+ ]
+}
