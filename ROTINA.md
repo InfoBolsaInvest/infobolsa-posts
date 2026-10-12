@@ -4,6 +4,7 @@ Roda nos dias úteis às 18h20 (horário de Brasília), sem nenhum computador li
 
 ## 1. Teve pregão hoje?
 Confira se a B3 abriu hoje (feriado nacional ou da B3 = sem pregão). Pesquise "Ibovespa fecha hoje DD/MM/AAAA". Se não teve pregão, pare aqui e não poste nada.
+Dias sem pregão já conhecidos (não postar, nem gerar arte): 12/10/2026, 02/11/2026, 20/11/2026, 24/12/2026, 25/12/2026, 31/12/2026 e 01/01/2027. Em qualquer outro feriado nacional ou da B3, também não postar. Na dúvida, confira o calendário de feriados da B3 antes de seguir.
 
 ## 2. Números do fechamento de hoje
 Busque e confira em pelo menos duas fontes (InfoMoney, Suno, Money Times, Investing, Seu Dinheiro, DGABC):
