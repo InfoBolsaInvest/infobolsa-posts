@@ -1,0 +1,121 @@
+{
+ "slides": [
+  {
+   "tipo": "numero",
+   "titulo": "A inadimplência das<br>famílias <i>bateu recorde</i>",
+   "tsize": 76,
+   "numero": "8,00%",
+   "neg": true,
+   "top": 520,
+   "legenda": "das dívidas das famílias no cartão, cheque especial e empréstimo pessoal estão <b>com mais de 90 dias de atraso</b>.<br>É o maior nível desde 2011.",
+   "rodape": [
+    "Inadimplência no crédito livre das pessoas físicas, agosto/2026.",
+    "Fonte: Banco Central (divulgado em 29/09/2026)."
+   ]
+  },
+  {
+   "tipo": "manchete",
+   "titulo": "E o cartão de crédito<br>é <i>o grande vilão</i>",
+   "tsize": 76,
+   "top": 560,
+   "tarja": "Juros e atraso no maior nível",
+   "manchetes": [
+    {
+     "veiculo": "Gazeta do Povo",
+     "data": "29/09/2026",
+     "titulo": "Inadimplência das famílias bate recorde e chega a 8% em agosto"
+    },
+    {
+     "veiculo": "Seu Crédito Digital",
+     "data": "30/09/2026",
+     "titulo": "Rotativo do cartão: inadimplência chega a 66,2%"
+    }
+   ],
+   "rodape": [
+    "Manchetes reproduzidas com veículo e data. Dados do Banco Central."
+   ],
+   "sub": "Quem entra no rotativo quase não sai: <b>66,20%</b> dessas dívidas estão atrasadas."
+  },
+  {
+   "tipo": "barras",
+   "titulo": "O cartão cobra <i>444,90%</i>",
+   "tsize": 76,
+   "sub": "de juros por ano. Olha a diferença pra taxa básica de juros do país 👇",
+   "barras": [
+    {
+     "rotulo": "Rotativo do cartão",
+     "sub": "juros médios em agosto",
+     "txt": "444,90%",
+     "valor": 444.9,
+     "cor": "neg"
+    },
+    {
+     "rotulo": "Selic",
+     "sub": "taxa básica de juros",
+     "txt": "13,75%",
+     "valor": 13.75
+    }
+   ],
+   "base": 1100,
+   "hmax": 430,
+   "badge": "mais de 32x",
+   "badge_x": 470,
+   "badge_y": 860,
+   "rodape": [
+    "Fontes: Banco Central (taxa média do rotativo, agosto/2026; meta Selic definida pelo Copom em 16/09/2026)."
+   ]
+  },
+  {
+   "tipo": "fluxo",
+   "titulo": "Assim nasce a<br><i>bola de neve</i>",
+   "tsize": 80,
+   "top": 430,
+   "passos": [
+    {
+     "txt": "Paga só o mínimo da fatura",
+     "sub": "o resto vai pro rotativo"
+    },
+    {
+     "txt": "Juros de 444,90% ao ano",
+     "sub": "a dívida cresce todo mês",
+     "alerta": true
+    },
+    {
+     "txt": "A parcela aperta o orçamento",
+     "sub": "e falta pro resto das contas",
+     "alerta": true
+    },
+    {
+     "txt": "Uma dívida paga a outra",
+     "sub": "e o salário já chega comprometido"
+    }
+   ],
+   "rodape": []
+  },
+  {
+   "tipo": "texto",
+   "titulo": "E o que isso tem a ver<br>com <span>investir?</span>",
+   "tsize": 76,
+   "top": 470,
+   "paragrafos": [
+    "<b>Nenhum investimento</b> rende 444,90% ao ano.",
+    "A lei limita juros e encargos do rotativo a 100% da dívida. Mesmo assim, <i>R$ 1.000 podem virar R$ 2.000</i>.",
+    "Por isso, quem tá no rotativo ganha mais <span>saindo da dívida</span> primeiro. Depois é hora de começar a investir, nem que seja pouco."
+   ],
+   "rodape": [
+    "Teto de juros do rotativo: Lei 14.690/2023, em vigor desde 03/01/2024."
+   ]
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Quem paga juros<br><i>trabalha pro banco.</i><br><br>Quem investe faz<br><span>o dinheiro trabalhar<br>pra você.</span>",
+   "tsize": 76,
+   "top": 300,
+   "pergunta": "Você já caiu no rotativo do cartão?<br><b>Comenta aqui 👇</b>",
+   "rodape": [
+    "Conteúdo educativo. Não é uma recomendação de compra ou venda."
+   ]
+  }
+ ],
+ "segue": true
+}
