@@ -31,7 +31,7 @@ Antes de escolher, leia `PESQUISA-CRESCIMENTO.md` (o que traz seguidor, pelo per
 O objetivo é GANHAR SEGUIDORES. Dados do perfil (Windsor, campo `media_follows`, 90 dias até 08/10/2026): os 3 posts que mais trouxeram seguidores foram "Precisa ser rico para investir..." (187 seguidores, 55 mil de alcance), "a maior barreira é mental, com pouco mais de cem reais..." (84) e "dá pra começar em FII com bem menos dinheiro" (45), quase metade de todos os seguidores ganhos por posts de imagem. Posts de notícia e de dados de mercado têm alcance alto, mas trazem poucos seguidores (ex.: "Bolsa amanheceu em festa", 31 mil de alcance e 22 seguidores). Puxe também `media_follows` no passo 1 e ranqueie por ele.
 - Prefira temas que quebram uma crença de quem ainda não investe ou está começando ("precisa ser rico", "não sobra nada", "é arriscado", "dinheiro parado") e mostram com números que dá.
 
-- USE BASTANTE O FORMATO `prefere` (enquete "Qual você prefere?"): pelo menos UMA sugestão por dia deve ser desse tipo, alternando entre 07h e 15h. Varie as duplas/trios: bancos (Itaú x BB x Bradesco), elétricas (Taesa x Cemig x Copel), Petrobras x Vale, B3 x BTG, varejo, FII de tijolo x FII de papel, FIIs de shopping, logística, etc. Sempre empresas/fundos conhecidos do público, com preço e indicadores reais do StatusInvest do dia. Título curto ("Qual ação você <span>prefere?</span>", "Qual banco você <span>prefere?</span>", "Qual FII você <span>prefere?</span>") e uma frase final de 1 ou 2 linhas que dá contexto simples sobre cada opção e chama para comentar. Na legenda, peça para comentar o ticker escolhido e o motivo.
+- Formato `prefere` (enquete): no máximo 3 por mês (veja a seção 4c).
 - Escolha UM post baseado nos formatos que mais performam, refeito com números atuais ou com um ângulo novo.
 - Varie: alterne entre ações, FIIs, renda fixa e educação financeira ao longo dos dias. Não faça duas sugestões seguidas do mesmo assunto.
 - Sugestão: às 07h algo mais educativo e leve (simulação, metas, juntar dinheiro, comparação simples); às 15h algo com dados de mercado (dividendos, comparativos, FIIs, ações).
@@ -68,9 +68,9 @@ Todo post é um carrossel de 2 slides:
 ## 4c. Formatos e temas (atualizado em 12/10/2026 pelo Douglas)
 TEMA: SEMPRE do mundo de investimentos: ações, fundos imobiliários (FIIs), dividendos, renda passiva, comparativos entre empresas/fundos, quanto investir para receber X. NÃO fazer post de economia geral (inadimplência das famílias, dívidas, emprego, inflação, gasto público e afins), mesmo com dado oficial: o Douglas testou em 12/10 (carrossel "inadimplência bateu recorde", 7 slides) e não performou. Juros/Selic só quando o assunto for o efeito direto em ações, FIIs ou renda fixa.
 FORMATO: carrossel de 2 slides (arte + `segue`). O formato `historia` (carrossel longo, 5 a 8 slides) NÃO deve ser usado, a não ser que o Douglas peça um específico.
-Base da escolha: os posts do perfil que mais trazem alcance, salvamento e seguidor (seções 1 e 2). Alterne entre:
-1. `prefere` (enquete "Qual ação/banco/FII você prefere?").
-2. Post de dado de 1 arte (`tab`, `socio`, `vs`, `pag`, `fii`): quanto investir para receber um salário mínimo, quanto rendem R$ X em FIIs, sócio de grandes empresas com pouco dinheiro, data de pagamento de dividendos, comparativos.
+Base da escolha: os posts do perfil que mais trazem alcance, salvamento e seguidor (seções 1 e 2).
+- `prefere` (enquete "Qual ação/banco/FII você prefere?"): NO MÁXIMO 3 por mês (pedido do Douglas em 12/10/2026, já saíram muitos). Antes de usar, conte em `sugestoes/` quantos prefere já saíram no mês; se já foram 3, não use.
+- No resto dos dias: post de dado de 1 arte (`tab`, `socio`, `vs`, `pag`, `fii`): quanto investir para receber um salário mínimo, quanto rendem R$ X em FIIs, sócio de grandes empresas com pouco dinheiro, data de pagamento de dividendos, comparativos.
 Anote cada post em `kit/desempenho/testes-formato.md` (data, horário, formato, tema). Na execução de segunda, puxe pelo Windsor o alcance, os salvamentos, os compartilhamentos e o `media_follows` dos posts da semana anterior, preencha a tabela e use isso para pesar a escolha das semanas seguintes.
 
 ## 5. Legenda
