@@ -61,21 +61,17 @@ Use `kit/gen_inst.py` com o tema `verde` (é o padrão): cabeçalho pequeno com 
 - Legenda: primeira linha é o gancho, frases curtas, "pra" e "tá" pode, sem economês. Antes dos avisos, peça para mandar para alguém específico ("Manda pra aquele amigo que acha que precisa ser rico pra investir") e para seguir ("me segue se você tá começando agora").
 
 ## 4b. Último slide: convite para seguir (carrossel)
-Nos formatos de 1 arte (prefere, tab, socio, vs, pag, fii) o carrossel tem 2 slides (no formato `historia` são vários, veja a seção 4c; o último também é o `segue`):
+Todo post é um carrossel de 2 slides:
 - Slide 1: a arte do post (seção 4), salva como `sugestoes/AAAA-MM-DD-HHh-1.png`.
 - Slide 2: convite genérico para seguir e salvar, SEM anunciar tema do dia seguinte (a programação muda com as notícias): `python3 gen_inst.py segue - t.html verde && python3 render.py t.html t.png`. Salve como `sugestoes/AAAA-MM-DD-HHh-2.png`.
 
-## 4c. Testar formatos (pedido do Douglas em 11/10/2026)
-O Douglas pediu para ir variando e testando formatos. Alterne, sem repetir o mesmo formato dois dias seguidos no mesmo horário:
-1. `prefere` (enquete, seção 2).
-2. `historia`: carrossel narrativo de 5 a 8 slides, estilo "conta uma história com dados" (inspirado em posts como os do @charles.wicz, sem copiar): slide 1 com gancho forte (número gigante ou manchete do momento), slides de contexto com manchete de veículo confiável (veículo e data), gráfico de barras simples, fluxo "bola de neve" / passo a passo, um slide "e o que isso tem a ver com investir?" e um slide final de frase forte + pergunta, mais o `segue`. Muito bom no período eleitoral para temas de economia que mexem com o bolso (juros, inadimplência, dólar, inflação, gasto público, emprego), SEMPRE neutro: dado oficial, nada de opinião sobre candidato, partido ou governo.
-   - Config em `kit/configs/historia/AAAA-MM-DD-HHh.json` (exemplo completo: `kit/configs/historia/exemplo-inadimplencia.json`). Tipos de slide: `numero`, `manchete`, `barras`, `fluxo`, `texto`, `frase`. No título, `<span>` = verde, `<i>` = vermelho (use o vermelho só para o lado ruim: dívida, juros, queda).
-   - Gere tudo de uma vez (dentro de `kit/`): `python3 carrossel.py configs/historia/AAAA-MM-DD-HHh.json ../sugestoes/AAAA-MM-DD-HHh` (cria `-1.png` ... `-N.png`, o último é o `segue`).
-   - Manchete: copie o título exatamente como o veículo publicou e ponha veículo e data. Não use print de site nem logo de veículo. Os números da manchete têm que bater com a fonte oficial (Banco Central, IBGE, B3, TSE).
-   - Olhe TODOS os slides (dá pra montar uma folha de contato com PIL) e confira se nada sobrepõe nem quebra feio.
-   - Legenda mais longa, contando a história em parágrafos curtos, com as fontes no final.
-3. Post de dado de 1 arte (`tab`, `socio`, `vs`, `pag`, `fii`) com tema que quebra crença.
-Anote cada post em `kit/desempenho/testes-formato.md` (data, horário, formato, tema). Na execução das 07h de segunda, puxe pelo Windsor o alcance, os salvamentos, os compartilhamentos e o `media_follows` dos posts da semana anterior, preencha a tabela e escreva em uma linha qual formato está trazendo mais seguidor. Use isso para pesar a escolha das semanas seguintes.
+## 4c. Formatos e temas (atualizado em 12/10/2026 pelo Douglas)
+TEMA: SEMPRE do mundo de investimentos: ações, fundos imobiliários (FIIs), dividendos, renda passiva, comparativos entre empresas/fundos, quanto investir para receber X. NÃO fazer post de economia geral (inadimplência das famílias, dívidas, emprego, inflação, gasto público e afins), mesmo com dado oficial: o Douglas testou em 12/10 (carrossel "inadimplência bateu recorde", 7 slides) e não performou. Juros/Selic só quando o assunto for o efeito direto em ações, FIIs ou renda fixa.
+FORMATO: carrossel de 2 slides (arte + `segue`). O formato `historia` (carrossel longo, 5 a 8 slides) NÃO deve ser usado, a não ser que o Douglas peça um específico.
+Base da escolha: os posts do perfil que mais trazem alcance, salvamento e seguidor (seções 1 e 2). Alterne entre:
+1. `prefere` (enquete "Qual ação/banco/FII você prefere?").
+2. Post de dado de 1 arte (`tab`, `socio`, `vs`, `pag`, `fii`): quanto investir para receber um salário mínimo, quanto rendem R$ X em FIIs, sócio de grandes empresas com pouco dinheiro, data de pagamento de dividendos, comparativos.
+Anote cada post em `kit/desempenho/testes-formato.md` (data, horário, formato, tema). Na execução de segunda, puxe pelo Windsor o alcance, os salvamentos, os compartilhamentos e o `media_follows` dos posts da semana anterior, preencha a tabela e use isso para pesar a escolha das semanas seguintes.
 
 ## 5. Legenda
 Frase de gancho, 1 ou 2 parágrafos curtos com os números principais, "Manda pra [alguém específico]. E me segue se [identificação, ex.: você tá começando agora].", "👉 [pergunta]? Comenta aqui!", "Não é uma recomendação de compra ou venda." (e "Rentabilidade hipotética, não é garantia de retorno." quando for simulação) e 3 a 5 hashtags do nicho. Coloque a palavra principal do tema na primeira frase da legenda.
