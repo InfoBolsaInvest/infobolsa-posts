@@ -2,7 +2,7 @@
 """Posts no estilo institucional (mesma linha do Fechamento de mercado), 1080x1350.
 Uso: python3 gen_inst.py TIPO config.json saida.html [tema]
 TIPO: pag (dividendos / data de pagamento), vs (comparativo), fii (quanto investir para receber X por mes),
-      tab (tabela genérica), socio (empresas com preço de 1 ação e total), prefere (enquete "qual você prefere?"), segue (último slide do carrossel; config "-" usa o padrão)
+      tab (tabela genérica), socio (empresas com preço de 1 ação e total), prefere (enquete "qual você prefere?"), historia (carrossel narrativo de vários slides: gera saida-1.html, saida-2.html...), segue (último slide do carrossel; config "-" usa o padrão)
 tema: verde (claro levemente verde, cores da InfoBolsa, PADRÃO das sugestões), azul, claro, preto. Padrao: verde.
 Le os mesmos json usados por gen_pag.py, gen_vs.py e gen_fii.py.
 """
@@ -339,10 +339,155 @@ def build_segue(c, tema):
 <div class="rod">{"<br>".join(c["rodape"])}</div>{SCRIPT}</body></html>"""
 
 
+# ---------------- historia: carrossel narrativo (vários slides de texto, dado, manchete, fluxo) ----------------
+CSS_HIST = """
+.hs-n{position:absolute;top:96px;right:96px;font-size:22px;font-weight:500;color:var(--mute);letter-spacing:1px}
+.hs-n b{color:var(--acc);font-weight:600}
+.hs-t{position:absolute;top:var(--ttop,215px);left:96px;right:96px}
+.hs-t h1{font-weight:600;font-size:var(--tsize,78px);line-height:1.06;letter-spacing:-1.5px}
+.hs-t h1 span{color:var(--acc)}
+.hs-t h1 i{font-style:normal;color:var(--neg)}
+.hs-t p{font-size:31px;line-height:1.4;margin-top:22px;color:var(--sub);font-weight:300}
+.hs-t p b{color:var(--fg);font-weight:600}
+.hs-b{position:absolute;left:96px;right:96px}
+.big{font-weight:600;font-size:250px;line-height:1;letter-spacing:-6px;color:var(--acc)}
+.big.neg{color:var(--neg)}
+.bigc{font-size:34px;line-height:1.38;color:var(--sub);margin-top:22px}
+.bigc b{color:var(--fg);font-weight:600}
+.txt p{font-size:34px;line-height:1.42;color:var(--sub);margin-bottom:34px}
+.txt p b{color:var(--fg);font-weight:600}
+.txt p span{color:var(--acc);font-weight:600}
+.txt p i{font-style:normal;color:var(--neg);font-weight:600}
+.tarja{display:inline-block;background:var(--dot);color:#162526;font-weight:600;font-size:26px;padding:10px 22px;border-radius:12px}
+.mch{background:var(--card1);border:1.5px solid var(--borda);border-left:8px solid var(--acc);border-radius:20px;padding:28px 34px;margin-top:28px;box-shadow:0 14px 34px rgba(22,37,38,.07)}
+.mch .vc{font-size:20px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--acc)}
+.mch .vc small{font-weight:400;letter-spacing:0;text-transform:none;color:var(--mute);font-size:20px;margin-left:10px}
+.mch h3{font-size:40px;line-height:1.18;font-weight:600;margin-top:10px;letter-spacing:-.5px}
+.mch p{font-size:24px;line-height:1.4;color:var(--sub);margin-top:10px}
+.bars{position:absolute;left:96px;right:96px;display:flex;align-items:flex-end;justify-content:space-around;border-bottom:2px solid var(--linha)}
+.bar{display:flex;flex-direction:column;align-items:center;width:250px}
+.bar .v{font-size:46px;font-weight:600;margin-bottom:14px;white-space:nowrap}
+.bar .c{width:180px;border-radius:18px 18px 0 0}
+.barl{position:absolute;left:96px;right:96px;display:flex;justify-content:space-around}
+.barl div{width:250px;text-align:center;font-size:28px;line-height:1.25;font-weight:500}
+.barl small{display:block;font-size:20px;font-weight:300;color:var(--mute)}
+.badge{position:absolute;background:var(--dot);color:#162526;font-weight:600;font-size:30px;padding:12px 26px;border-radius:14px;box-shadow:0 8px 20px rgba(22,37,38,.15);white-space:nowrap}
+.fx{display:flex;flex-direction:column;align-items:stretch}
+.fx .st{display:flex;align-items:center;gap:24px;background:var(--card1);border:3px solid var(--dot);border-radius:20px;padding:22px 30px;font-size:34px;font-weight:600}
+.fx .st small{display:block;font-size:22px;font-weight:300;color:var(--sub);margin-top:2px}
+.fx .st .nn{width:54px;height:54px;border-radius:50%;background:var(--chip);color:var(--acc);display:flex;align-items:center;justify-content:center;font-size:26px;flex:none}
+.fx .st.al{border-color:var(--neg)}
+.fx .st.al .nn{color:var(--neg)}
+.fx .st.ult{background:var(--neg);border-color:var(--neg);color:#fff}
+.fx .st.ult small{color:rgba(255,255,255,.85)}
+.fx .st.ult .nn{background:rgba(255,255,255,.18);color:#fff}
+.fx .ar{height:46px;display:flex;align-items:center;justify-content:center;color:var(--acc);font-size:30px;line-height:1}
+.fr{position:absolute;left:96px;right:96px;top:var(--ftop,330px)}
+.fr h1{font-weight:600;font-size:var(--tsize,80px);line-height:1.08;letter-spacing:-1.5px}
+.fr h1 span{color:var(--acc)}
+.fr h1 i{font-style:normal;color:var(--neg)}
+.fr p{font-size:36px;line-height:1.4;color:var(--sub);margin-top:70px;text-align:center}
+.fr p b{color:var(--fg);font-weight:600}
+.arrasta{position:absolute;right:96px;bottom:118px;font-size:24px;font-weight:600;color:var(--acc);letter-spacing:.5px}
+"""
+
+
+def _hs_corpo(s):
+    t = s.get("tipo", "texto")
+    if t == "numero":
+        top = s.get("top", 560)
+        return (f'<div class="hs-b" style="top:{top}px"><div class="big num{" neg" if s.get("neg") else ""}">{s["numero"]}</div>'
+                f'<div class="bigc">{s.get("legenda", "")}</div></div>')
+    if t == "texto":
+        top = s.get("top", 520)
+        ps = "".join(f"<p>{x}</p>" for x in s["paragrafos"])
+        return f'<div class="hs-b txt" style="top:{top}px">{ps}</div>'
+    if t == "manchete":
+        top = s.get("top", 470)
+        tj = f'<div class="tarja">{s["tarja"]}</div>' if s.get("tarja") else ""
+        cards = "".join(f'<div class="mch"><div class="vc">{m["veiculo"]}<small>{m.get("data", "")}</small></div><h3>{m["titulo"]}</h3>'
+                        + (f'<p>{m["linha"]}</p>' if m.get("linha") else "") + '</div>' for m in s["manchetes"])
+        return f'<div class="hs-b" style="top:{top}px">{tj}{cards}</div>'
+    if t == "barras":
+        base = s.get("base", 1110)
+        hmax = s.get("hmax", 520)
+        vmax = max(float(b["valor"]) for b in s["barras"])
+        hmin = s.get("hmin", 46)
+        bars, labs = "", ""
+        for b in s["barras"]:
+            h = max(hmin, int(hmax * float(b["valor"]) / vmax))
+            cor = "var(--neg)" if b.get("cor") == "neg" else "var(--acc)"
+            bars += f'<div class="bar"><div class="v num" style="color:{cor}">{b["txt"]}</div><div class="c" style="height:{h}px;background:{cor}"></div></div>'
+            labs += f'<div>{b["rotulo"]}<small>{b.get("sub", "")}</small></div>'
+        out = f'<div class="bars" style="top:{base - hmax - 80}px;height:{hmax + 80}px">{bars}</div><div class="barl" style="top:{base + 18}px">{labs}</div>'
+        if s.get("badge"):
+            out += f'<div class="badge" style="left:{s.get("badge_x", 430)}px;top:{s.get("badge_y", base - 260)}px">{s["badge"]}</div>'
+        return out
+    if t == "fluxo":
+        top = s.get("top", 430)
+        n = len(s["passos"])
+        it = ""
+        for i, p in enumerate(s["passos"]):
+            cls = "ult" if i == n - 1 and s.get("ultimo_vermelho", True) else ("al" if p.get("alerta") else "")
+            sub = f'<small>{p["sub"]}</small>' if p.get("sub") else ""
+            it += f'<div class="st {cls}"><div class="nn">{i + 1}</div><div>{p["txt"]}{sub}</div></div>'
+            if i < n - 1:
+                it += '<div class="ar">▼</div>'
+        fim = f'<div class="fim" style="position:static;margin-top:34px;text-align:center">{s["fim"]}</div>' if s.get("fim") else ""
+        return f'<div class="hs-b fx" style="top:{top}px">{it}{fim}</div>'
+    if t == "frase":
+        return ""
+    raise SystemExit(f"tipo de slide desconhecido: {t}")
+
+
+def build_historia_slide(s, i, n, tema):
+    T = {**TEMAS[tema], "neg": "#c0392b"}
+    vars_ = ";".join(f"--{k}:{v}" for k, v in T.items())
+    if s.get("tipo") == "frase":
+        topo = (f'<div class="fr" style="--ftop:{s.get("top", 360)}px;--tsize:{s.get("tsize", 80)}px"><h1>{s["titulo"]}</h1>'
+                + (f'<p>{s["pergunta"]}</p>' if s.get("pergunta") else "") + '</div>')
+    else:
+        sub = f'<p>{s["sub"]}</p>' if s.get("sub") else ""
+        topo = f'<div class="hs-t" style="--tsize:{s.get("tsize", 78)}px;--ttop:{s.get("ttop", 215)}px"><h1>{s["titulo"]}</h1>{sub}</div>'
+    arr = '<div class="arrasta">Arrasta pro lado →</div>' if i == 1 and s.get("arrasta", True) else ""
+    rod = "<br>".join(s.get("rodape", []))
+    return f"""<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>{CSS.replace('FS/', FS)}{CSS_HIST}</style></head>
+<body style="{vars_}"><div class="luz"></div>{curva(tema)}
+<div class="cab"><div class="ft"><img src="assets/foto.png" alt=""></div>
+<div><div class="nm">Douglas Medeiros {SELO}</div><div class="ar">@infobolsainvestimentos</div></div></div>
+<div class="hs-n"><b>{i}</b> / {n}</div>
+{topo}{_hs_corpo(s)}{arr}
+<div class="rod">{rod}</div>{SCRIPT}</body></html>"""
+
+
+def build_historia(c, tema, out):
+    """Carrossel narrativo. cfg: {"slides": [ {tipo, titulo, sub, ...}, ... ], "segue": true}
+    tipos de slide: numero (número gigante + legenda), manchete (tarja + cards de notícia com veículo e data),
+    barras (2 ou 3 barras com valor, rótulo e selo tipo "mais de 32x"), fluxo (passos com setas, o último em vermelho),
+    texto (parágrafos com <b>, <span> verde, <i> vermelho), frase (frase grande de fechamento + pergunta).
+    Gera out-1.html ... out-N.html (o slide "segue" entra por último se segue=true)."""
+    sl = c["slides"]
+    n = len(sl) + (1 if c.get("segue", True) else 0)
+    base = out[:-5] if out.endswith(".html") else out
+    arqs = []
+    for i, s in enumerate(sl, 1):
+        a = f"{base}-{i}.html"
+        open(a, "w").write(build_historia_slide(s, i, n, tema))
+        arqs.append(a)
+    if c.get("segue", True):
+        a = f"{base}-{n}.html"
+        open(a, "w").write(build_segue(c.get("segue_cfg"), tema))
+        arqs.append(a)
+    print("\n".join(arqs))
+
+
 if __name__ == "__main__":
     tipo, cfgp, out = sys.argv[1:4]
     tema = sys.argv[4] if len(sys.argv) > 4 else "verde"
     c = json.load(open(cfgp)) if cfgp != "-" else {}
+    if tipo == "historia":
+        build_historia(c, tema, out)
+        sys.exit()
     html = {"pag": build_pag, "vs": build_vs, "fii": build_fii, "tab": build_tab, "socio": build_socio,
             "segue": build_segue, "prefere": build_prefere}[tipo](c, tema)
     open(out, "w").write(html)
