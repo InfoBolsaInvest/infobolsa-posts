@@ -1,0 +1,48 @@
+{
+ "titulo": "“Imóvel é coisa<br>de <span>rico</span>”",
+ "sub": "Olha quanto custa virar dono de um pedaço<br>de shopping, galpão e escola 👇",
+ "aba": "Com pouco mais de R$ 500",
+ "linhas": [
+  [
+   "assets/logos_b3/HGBS11.png",
+   "HGBS11",
+   "Shoppings | último rendimento R$ 0,17",
+   "19,41"
+  ],
+  [
+   "assets/logos_b3/BTLG11.png",
+   "BTLG11",
+   "Galpões de logística | R$ 0,81",
+   "105,10"
+  ],
+  [
+   "assets/logos_b3/HGRU11.png",
+   "HGRU11",
+   "Lojas e escolas | R$ 0,95",
+   "123,14"
+  ],
+  [
+   "assets/logos_b3/KNCR11.png",
+   "KNCR11",
+   "Empréstimos do setor imobiliário | R$ 1,13",
+   "105,22"
+  ],
+  [
+   "assets/logos_b3/KNRI11.png",
+   "KNRI11",
+   "Escritórios e galpões | R$ 1,10",
+   "163,52"
+  ]
+ ],
+ "total": "516,39",
+ "total_txt": "Rendeu <b>R$ 4,16</b> no último mês.<br><b>Tudo isso por</b>",
+ "rodape": [
+  "Cotações do StatusInvest em 13/10/2026 às 14h50, conferidas no Funds Explorer. Rendimento: último valor por cota.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "top": 505,
+ "col1": "Você vira dono de um pedaço de",
+ "col2": "1 cota custa",
+ "tsize": 84,
+ "lh": 86
+}

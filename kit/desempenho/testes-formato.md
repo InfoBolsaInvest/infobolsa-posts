@@ -8,5 +8,6 @@ Cada post das 07h e das 15h entra aqui. Os números são preenchidos na segunda 
 | 10/10/2026 | 15h | prefere (3) | MXRF11 x HGLG11 x XPML11 | 1.828 | 19 | 3 | 2 |
 | 11/10/2026 | 15h | prefere (2) | B3 x BTG | | | | |
 | 12/10/2026 | 15h | historia (7) | Inadimplência recorde e juros do rotativo | | | | |
+| 13/10/2026 | 15h | socio (1 arte) | "Imóvel é coisa de rico": 5 FIIs por R$ 516,39 (HGBS11, BTLG11, HGRU11, KNCR11, KNRI11) | | | | |
 
 Conclusões:
