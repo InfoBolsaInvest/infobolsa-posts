@@ -1,0 +1,40 @@
+{
+ "_aviso": "EXEMPLO de layout com números fictícios. Nunca publicar estes valores.",
+ "slides": [
+  {
+   "titulo": "<span>Dividendos</span> da semana<br>em ações",
+   "sub": "Quem cai na conta de 19/10 a 23/10 👇",
+   "aba": "Ações que pagam esta semana",
+   "col1": "Ação",
+   "linhas": [
+    ["assets/logos_b3/ITUB4.png", "ITUB4", "JCP", "0,02", "0,05%", "19/10"],
+    ["assets/logos_b3/BBAS3.png", "BBAS3", "Dividendo", "0,10", "0,45%", "20/10"],
+    ["assets/logos_b3/PETR4.png", "PETR4", "Dividendo e JCP", "0,50", "1,40%", "21/10"],
+    ["assets/logos_b3/TAEE11.png", "TAEE11", "Dividendo", "0,80", "2,10%", "22/10"],
+    ["assets/logos_b3/BBSE3.png", "BBSE3", "Dividendo", "1,00", "2,80%", "23/10"],
+    ["assets/logos_b3/VALE3.png", "VALE3", "JCP", "1,20", "2,00%", "23/10"]
+   ],
+   "rodape": ["Yield = valor ÷ cotação. Cotações e proventos do StatusInvest em DD/MM/AAAA.", "Não é uma recomendação de compra ou venda."]
+  },
+  {
+   "titulo": "<span>Dividendos</span> da semana<br>em FIIs",
+   "sub": "Os fundos imobiliários que pagam de 19/10 a 23/10 👇",
+   "aba": "FIIs que pagam esta semana",
+   "col1": "Fundo",
+   "linhas": [
+    ["assets/logos_b3/MXRF11.png", "MXRF11", "Rendimento", "0,10", "1,05%", "19/10"],
+    ["assets/logos_b3/HGLG11.png", "HGLG11", "Rendimento", "1,10", "0,70%", "19/10"],
+    ["assets/logos_b3/XPML11.png", "XPML11", "Rendimento", "0,92", "0,85%", "20/10"],
+    ["assets/logos_b3/KNCR11.png", "KNCR11", "Rendimento", "1,13", "1,07%", "20/10"],
+    ["assets/logos_b3/KNRI11.png", "KNRI11", "Rendimento", "1,10", "0,67%", "21/10"],
+    ["assets/logos_b3/BTLG11.png", "BTLG11", "Rendimento", "0,81", "0,77%", "21/10"],
+    ["assets/logos_b3/HGRU11.png", "HGRU11", "Rendimento", "0,95", "0,77%", "22/10"],
+    ["assets/logos_b3/HGBS11.png", "HGBS11", "Rendimento", "0,17", "0,88%", "22/10"],
+    ["assets/logos_b3/MXRF11.png", "MXRF11", "Rendimento", "0,10", "1,05%", "23/10"],
+    ["assets/logos_b3/HGLG11.png", "HGLG11", "Rendimento", "1,10", "0,70%", "23/10"]
+   ],
+   "rodape": ["Yield = valor ÷ cotação. Cotações e proventos do StatusInvest em DD/MM/AAAA.", "Não é uma recomendação de compra ou venda."]
+  }
+ ],
+ "segue": true
+}

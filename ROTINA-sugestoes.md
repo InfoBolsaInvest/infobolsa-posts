@@ -6,6 +6,8 @@ IMPORTANTE (outubro/2026): até 31/10/2026 só existe o post das 15h. O Planner 
 
 IMPORTANTE: desde 08/10/2026 (15h) o post é PUBLICADO DIRETO no Instagram, sem aprovação do Douglas e sem agendar (seção 5b).
 
+SEGUNDA-FEIRA: post fixo "Dividendos da semana" (ações e FIIs), veja a seção "Dividendos da semana" abaixo. Até 31/10/2026 às 15h; a partir de 01/11/2026 às 07h. Em 26/10/2026 vale a eleição.
+
 POST PRONTO: se existir a pasta `pronto/AAAA-MM-DD-HHh/` deste dia e horário (com `1.png`, `2.png`... e `legenda.txt`), NÃO crie post novo: copie todos os slides numerados (`1.png`, `2.png`, `3.png`...) para `sugestoes/AAAA-MM-DD-HHh-1.png`, `-2.png`, `-3.png`... na mesma ordem, use a `legenda.txt` como legenda e vá direto para a seção 5b. Facebook e YouTube ficam fora (não dá sem o navegador dele).
 
 ## Eleições: 25, 26 e 27/10/2026 (segundo turno no domingo 25)
@@ -19,6 +21,18 @@ Regras para esses posts:
 - "Ações que podem subir": só como o que analistas e casas citam como mais sensíveis ao resultado, com a fonte; nunca indicar compra ou venda.
 - Confirme resultado e números em pelo menos duas fontes confiáveis (TSE, B3, Banco Central, InfoMoney, Valor, Estadão, Folha, G1, CNN Brasil).
 - Pode usar o formato `tab` (ranking de altas e baixas), `vs` (antes x depois) ou outro tipo do gen_inst.py; logo das empresas citadas.
+
+## Dividendos da semana: TODA SEGUNDA (pedido do Douglas em 13/10/2026)
+Toda segunda-feira, um post fixo com os dividendos que caem na conta naquela semana (segunda a sexta), de ações E de fundos imobiliários. Pule a escolha normal da seção 2 (o tema já está definido), mas siga o resto: dados conferidos, arte, olhar as imagens, legenda, publicação (5b), anotar em `testes-formato.md` (formato `semana`).
+- HORÁRIO: até 31/10/2026 o post sai às 15h (a execução das 14h50; as 07h de outubro já estão no Planner). A partir de 01/11/2026 passa para as 07h (execução das 06h50) e o post das 15h de segunda volta a ser o normal. A primeira vez é segunda 19/10/2026 às 15h.
+- EXCEÇÃO 26/10/2026: é dia de eleição (seção "Eleições"), que tem prioridade. Nesse dia NÃO faça o post de dividendos.
+- "Dividendos" no sentido geral (dividendo, JCP, rendimento de FII). No título use "Dividendos"; na tabela, na coluna do tipo, escreva o que é cada um: "Dividendo", "JCP", "Dividendo e JCP", "Rendimento" (FII).
+- Critério: entra o provento com DATA DE PAGAMENTO entre a segunda e a sexta da semana do post. Confira cada um (tipo, valor por ação/cota e data de pagamento) na página do ativo no StatusInvest, ou em duas outras fontes que batam (Funds Explorer, Investidor10, Dados de Mercado, comunicado da empresa/RI). Para achar a lista da semana, procure "agenda de dividendos" da semana na web (StatusInvest, Investidor10, InfoMoney, Suno) e confirme ativo por ativo.
+- Yield = valor do provento ÷ cotação atual (StatusInvest no momento do post), com 2 casas.
+- Seleção: no máximo 10 linhas por slide; priorize ações conhecidas e FIIs grandes e líquidos; fora FII problemático ou restrito a investidor qualificado (seção 2). Se tiver mais que cabe, faça mais slides (ex.: Ações 1/2 e 2/2), máximo 10 slides no total. Se uma das classes não tiver nenhum pagamento na semana, faça só a outra e diga isso na legenda.
+- Arte: `python3 gen_inst.py semana configs/sugestoes/AAAA-MM-DD-HHh.json t.html verde` gera t-1.html, t-2.html... (ações, FIIs e o "segue" por último); renderize cada um com `render.py`. Modelo de config: `kit/configs/sugestoes/exemplo-semana.json` (os números do exemplo são FICTÍCIOS, nunca publique). Ordene por data de pagamento. Logo de todos os ativos.
+- Rodapé de cada slide: "Yield = valor ÷ cotação. Proventos e cotações do StatusInvest em DD/MM/AAAA." (+ "JCP: valor bruto, tem 15% de IR." quando tiver JCP) e "Não é uma recomendação de compra ou venda."
+- Legenda: gancho com a palavra "dividendos" na primeira frase ("Dividendos da semana: quem paga de 19/10 a 23/10 💰"), os destaques em 1 ou 2 frases, deixe claro que recebe quem tinha o ativo na data com (já passou; quem compra agora não recebe estes), pedido de envio e de seguir, "Salva pra conferir na conta", pergunta, "Não é uma recomendação de compra ou venda." e 3 a 5 hashtags.
 
 ## 1. Ver o que está funcionando no perfil
 1. Puxe os posts dos últimos 90 dias pelo conector Windsor.ai: `get_data`, connector `instagram`, conta `17841445716975551`, campos `date`, `timestamp`, `media_type`, `media_caption`, `media_reach`, `media_saved`, `media_shares`, `media_like_count`, `media_comments_count`, `date_preset` "last_90d". Se vier "pending", chame de novo com os mesmos parâmetros até vir (espere até uns 10 minutos).
@@ -70,6 +84,7 @@ TEMA: SEMPRE do mundo de investimentos: ações, fundos imobiliários (FIIs), di
 FORMATO: carrossel de 2 slides (arte + `segue`). O formato `historia` (carrossel longo, 5 a 8 slides) NÃO deve ser usado, a não ser que o Douglas peça um específico.
 Base da escolha: os posts do perfil que mais trazem alcance, salvamento e seguidor (seções 1 e 2).
 - `prefere` (enquete "Qual ação/banco/FII você prefere?"): NO MÁXIMO 3 por mês (pedido do Douglas em 12/10/2026, já saíram muitos). Antes de usar, conte em `sugestoes/` quantos prefere já saíram no mês; se já foram 3, não use.
+- Segunda-feira: `semana` (Dividendos da semana, seção própria acima).
 - No resto dos dias: post de dado de 1 arte (`tab`, `socio`, `vs`, `pag`, `fii`): quanto investir para receber um salário mínimo, quanto rendem R$ X em FIIs, sócio de grandes empresas com pouco dinheiro, data de pagamento de dividendos, comparativos.
 Anote cada post em `kit/desempenho/testes-formato.md` (data, horário, formato, tema). Na execução de segunda, puxe pelo Windsor o alcance, os salvamentos, os compartilhamentos e o `media_follows` dos posts da semana anterior, preencha a tabela e use isso para pesar a escolha das semanas seguintes.
 

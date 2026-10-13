@@ -2,7 +2,7 @@
 """Posts no estilo institucional (mesma linha do Fechamento de mercado), 1080x1350.
 Uso: python3 gen_inst.py TIPO config.json saida.html [tema]
 TIPO: pag (dividendos / data de pagamento), vs (comparativo), fii (quanto investir para receber X por mes),
-      tab (tabela genérica), socio (empresas com preço de 1 ação e total), prefere (enquete "qual você prefere?"), historia (carrossel narrativo de vários slides: gera saida-1.html, saida-2.html...), segue (último slide do carrossel; config "-" usa o padrão)
+      tab (tabela genérica), socio (empresas com preço de 1 ação e total), prefere (enquete "qual você prefere?"), historia (carrossel narrativo de vários slides: gera saida-1.html, saida-2.html...), segue (último slide do carrossel; config "-" usa o padrão), semana (dividendos da semana, toda segunda: um slide de ações e um de FIIs + segue; gera saida-1.html, saida-2.html...)
 tema: verde (claro levemente verde, cores da InfoBolsa, PADRÃO das sugestões), azul, claro, preto. Padrao: verde.
 Le os mesmos json usados por gen_pag.py, gen_vs.py e gen_fii.py.
 """
@@ -481,12 +481,54 @@ def build_historia(c, tema, out):
     print("\n".join(arqs))
 
 
+def build_semana_slide(s, tema):
+    """Um slide da agenda: tabela Ativo (logo, ticker, tipo do provento) | Valor | Yield | Paga em."""
+    rows = s["linhas"]
+    n = len(rows)
+    if n > 10:
+        raise SystemExit("semana: no máximo 10 linhas por slide; divida em mais slides")
+    top = s.get("top", 455 if n <= 6 else 430)
+    lh = s.get("lh", min(86, (1225 - top - 132) // n))
+    lg_px = min(60, lh - 18)
+    linhas = "".join(
+        f'<div class="ln"><div class="tk"><div class="lgq" style="width:{lg_px}px;height:{lg_px}px"><img src="{lg}"></div>'
+        f'<div class="nmx">{tk}<small>{tp}</small></div></div>'
+        f'<div class="r num"><b>R$ {vl}</b></div><div class="r num ac">{y}</div><div class="r num">{dt}</div></div>'
+        for lg, tk, tp, vl, y, dt in rows)
+    hd = ('<div class="hd"><div>' + s.get("col1", "Ativo") + '</div><div class="r">Valor</div>'
+          '<div class="r">Yield</div><div class="r">Paga em</div></div>')
+    tab = f'<div class="tb so" style="--cols:1.7fr 1fr .8fr .8fr;--lh:{lh}px">{hd}{linhas}</div>'
+    h = 70 + 44 + n * lh + 18
+    corpo = pasta(top, h, s.get("aba", "Pagamentos da semana"), tab, tema)
+    return pagina(tema, s["titulo"], s.get("sub", ""), corpo, s["rodape"], tsize=s.get("tsize", 76))
+
+
+def build_semana(c, tema, out):
+    """Dividendos da semana (toda segunda). cfg: {"slides": [ {titulo, sub, aba, col1, linhas [[logo, ticker, tipo, valor, yield, data]], rodape}, ...],
+    "segue": true}. Um slide para ações, outro para FIIs (divida em mais slides se passar de 10 linhas).
+    Gera out-1.html ... out-N.html (o "segue" por último)."""
+    base = out[:-5] if out.endswith(".html") else out
+    arqs = []
+    for i, s in enumerate(c["slides"], 1):
+        a = f"{base}-{i}.html"
+        open(a, "w").write(build_semana_slide(s, tema))
+        arqs.append(a)
+    if c.get("segue", True):
+        a = f"{base}-{len(arqs) + 1}.html"
+        open(a, "w").write(build_segue(c.get("segue_cfg"), tema))
+        arqs.append(a)
+    print("\n".join(arqs))
+
+
 if __name__ == "__main__":
     tipo, cfgp, out = sys.argv[1:4]
     tema = sys.argv[4] if len(sys.argv) > 4 else "verde"
     c = json.load(open(cfgp)) if cfgp != "-" else {}
     if tipo == "historia":
         build_historia(c, tema, out)
+        sys.exit()
+    if tipo == "semana":
+        build_semana(c, tema, out)
         sys.exit()
     html = {"pag": build_pag, "vs": build_vs, "fii": build_fii, "tab": build_tab, "socio": build_socio,
             "segue": build_segue, "prefere": build_prefere}[tipo](c, tema)
