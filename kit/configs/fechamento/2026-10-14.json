@@ -1,0 +1,23 @@
+{
+ "data": "2026-10-14",
+ "ibov": {"pontos": "206.506", "var": -0.18},
+ "extras": [
+  {"rotulo": "Dólar", "valor": "R$ 5,03", "var": 0.17},
+  {"rotulo": "Na semana", "var": -1.22}
+ ],
+ "altas": [
+  ["PRIO3", "PRIO", 2.29],
+  ["PETR4", "Petrobras PN", 2.22],
+  ["CSMG3", "Copasa", 1.97],
+  ["PETR3", "Petrobras ON", 1.94],
+  ["AXIA3", "Axia Energia", 1.80]
+ ],
+ "baixas": [
+  ["TEND3", "Tenda", -5.46],
+  ["USIM5", "Usiminas", -4.76],
+  ["MGLU3", "Magazine Luiza", -4.49],
+  ["CYRE3", "Cyrela", -4.31],
+  ["BEEF3", "Minerva", -4.13]
+ ],
+ "fonte": "Fechamento de 14/10/2026. Fonte: B3"
+}
