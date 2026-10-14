@@ -1,0 +1,21 @@
+{
+ "titulo": "“Banco só lucra<br>em cima de <span>mim</span>”",
+ "sub": "Então vira sócio dele. Olha quanto custa<br>1 ação de cada um 👇",
+ "aba": "Com pouco mais de R$ 100",
+ "linhas": [
+  ["assets/logos_b3/ITUB4.png", "ITUB4", "Itaú Unibanco", "49,68"],
+  ["assets/logos_b3/BBAS3.png", "BBAS3", "Banco do Brasil", "24,25"],
+  ["assets/logos_b3/SANB11.png", "SANB11", "Santander Brasil", "28,88"]
+ ],
+ "total": "102,81",
+ "total_txt": "Sócio dos 3 bancos,<br><b>tudo isso por</b>",
+ "rodape": [
+  "Fechamento de 13/10/2026 (StatusInvest, conferido no Dados de Mercado e InfoMoney).",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "top": 520,
+ "col1": "Você vira sócio do",
+ "col2": "1 ação custa",
+ "tsize": 84,
+ "lh": 104
+}

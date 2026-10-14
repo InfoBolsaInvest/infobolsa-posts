@@ -9,5 +9,6 @@ Cada post das 07h e das 15h entra aqui. Os números são preenchidos na segunda 
 | 11/10/2026 | 15h | prefere (2) | B3 x BTG | | | | |
 | 12/10/2026 | 15h | historia (7) | Inadimplência recorde e juros do rotativo | | | | |
 | 13/10/2026 | 15h | socio (1 arte) | "Imóvel é coisa de rico": 5 FIIs por R$ 516,39 (HGBS11, BTLG11, HGRU11, KNCR11, KNRI11) | | | | |
+| 14/10/2026 | 15h | socio (1 arte) | "Banco só lucra em cima de mim": sócio de 3 bancos por R$ 102,81 (ITUB4, BBAS3, SANB11) | | | | |
 
 Conclusões:
