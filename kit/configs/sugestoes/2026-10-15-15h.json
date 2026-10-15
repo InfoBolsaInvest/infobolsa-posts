@@ -1,0 +1,53 @@
+{
+ "titulo": "Quanto rendem<br><span>R$ 100 mil</span> em FIIs?",
+ "sub": "Olha o aluguel que cai na conta todo mês 👇",
+ "aba": "Com R$ 100 mil em cada um",
+ "colunas": [
+  "Fundo",
+  "Cotas",
+  "Rende por mês"
+ ],
+ "cols": "1.9fr .7fr 1fr",
+ "lh": 86,
+ "destaque": 2,
+ "linhas": [
+  [
+   "<div class=\"tk\"><div class=\"lgq\"><img src=\"assets/logos_b3/MXRF11.png\"></div><div>MXRF11<small>Papel (recebíveis) | R$ 0,10 por cota</small></div></div>",
+   "10.660",
+   "R$ 1.066,00"
+  ],
+  [
+   "<div class=\"tk\"><div class=\"lgq\"><img src=\"assets/logos_b3/XPML11.png\"></div><div>XPML11<small>Shoppings | R$ 0,92 por cota</small></div></div>",
+   "926",
+   "R$ 851,92"
+  ],
+  [
+   "<div class=\"tk\"><div class=\"lgq\"><img src=\"assets/logos_b3/XPLG11.png\"></div><div>XPLG11<small>Galpões logísticos | R$ 0,82 por cota</small></div></div>",
+   "983",
+   "R$ 806,06"
+  ],
+  [
+   "<div class=\"tk\"><div class=\"lgq\"><img src=\"assets/logos_b3/HSML11.png\"></div><div>HSML11<small>Shoppings | R$ 0,75 por cota</small></div></div>",
+   "1.074",
+   "R$ 805,50"
+  ],
+  [
+   "<div class=\"tk\"><div class=\"lgq\"><img src=\"assets/logos_b3/HGLG11.png\"></div><div>HGLG11<small>Galpões logísticos | R$ 1,17 por cota</small></div></div>",
+   "640",
+   "R$ 748,80"
+  ],
+  [
+   "<div class=\"tk\"><div class=\"lgq\"><img src=\"assets/logos_b3/VISC11.png\"></div><div>VISC11<small>Shoppings | R$ 0,84 por cota</small></div></div>",
+   "879",
+   "R$ 738,36"
+  ]
+ ],
+ "fim": "Aluguel todo mês, <b>sem inquilino pra cobrar.</b>",
+ "rodape": [
+  "Cotações e último rendimento por cota do StatusInvest em 15/10/2026. Valores brutos.",
+  "Rentabilidade hipotética, não é garantia de retorno.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "tsize": 84,
+ "top": 462
+}
