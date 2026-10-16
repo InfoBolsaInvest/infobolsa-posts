@@ -1,0 +1,57 @@
+{
+ "titulo": "Qual cartão do <span>Nubank</span> vale mais a pena?",
+ "sub": "Os 3 cartões lado a lado. Salva pra comparar depois 👇",
+ "aba": "Cartões Nubank",
+ "colunas": [
+  "",
+  "Roxinho",
+  "Croma",
+  "Ultravioleta"
+ ],
+ "cols": "1fr 1.1fr 1.1fr 1.1fr",
+ "lh": 96,
+ "linhas": [
+  [
+   "Cartão",
+   "<div style=\"width:150px;height:92px;border-radius:12px;background:linear-gradient(135deg,#8a05be,#5c0a8f);margin:0 auto;position:relative;box-shadow:0 6px 14px rgba(22,37,38,.18)\"><div style=\"position:absolute;left:12px;top:9px;font:700 22px Poppins,sans-serif;color:#fff\">nu</div><div style=\"position:absolute;left:12px;top:38px;width:22px;height:16px;border-radius:3px;background:#d9b65c\"></div><div style=\"position:absolute;left:12px;bottom:8px;font:500 11px Poppins,sans-serif;letter-spacing:1px;color:#fff;opacity:.85\">GOLD</div><div style=\"position:absolute;right:10px;bottom:8px;width:16px;height:16px;border-radius:50%;background:#eb001b\"></div><div style=\"position:absolute;right:21px;bottom:8px;width:16px;height:16px;border-radius:50%;background:#f79e1b;opacity:.9\"></div></div>",
+   "<div style=\"width:150px;height:92px;border-radius:12px;background:linear-gradient(135deg,#e9e6df,#b9b4aa);margin:0 auto;position:relative;box-shadow:0 6px 14px rgba(22,37,38,.18)\"><div style=\"position:absolute;left:12px;top:9px;font:700 22px Poppins,sans-serif;color:#3a3530\">nu</div><div style=\"position:absolute;left:12px;top:38px;width:22px;height:16px;border-radius:3px;background:#d9b65c\"></div><div style=\"position:absolute;left:12px;bottom:8px;font:500 11px Poppins,sans-serif;letter-spacing:1px;color:#3a3530;opacity:.85\">CROMA</div><div style=\"position:absolute;right:10px;bottom:8px;width:16px;height:16px;border-radius:50%;background:#eb001b\"></div><div style=\"position:absolute;right:21px;bottom:8px;width:16px;height:16px;border-radius:50%;background:#f79e1b;opacity:.9\"></div></div>",
+   "<div style=\"width:150px;height:92px;border-radius:12px;background:linear-gradient(135deg,#3b1450,#14061c);margin:0 auto;position:relative;box-shadow:0 6px 14px rgba(22,37,38,.18)\"><div style=\"position:absolute;left:12px;top:9px;font:700 22px Poppins,sans-serif;color:#fff\">nu</div><div style=\"position:absolute;left:12px;top:38px;width:22px;height:16px;border-radius:3px;background:#d9b65c\"></div><div style=\"position:absolute;left:12px;bottom:8px;font:500 11px Poppins,sans-serif;letter-spacing:1px;color:#fff;opacity:.85\">ULTRAVIOLETA</div><div style=\"position:absolute;right:10px;bottom:8px;width:16px;height:16px;border-radius:50%;background:#eb001b\"></div><div style=\"position:absolute;right:21px;bottom:8px;width:16px;height:16px;border-radius:50%;background:#f79e1b;opacity:.9\"></div></div>"
+  ],
+  [
+   "Mensalidade",
+   "<div style=\"line-height:1.2\"><b style=\"display:block;font-size:27px;font-weight:600;color:#162526\">Grátis</b></div>",
+   "<div style=\"line-height:1.2\"><b style=\"display:block;font-size:27px;font-weight:600;color:#162526\">R$ 39</b><span style=\"display:block;font-size:16px;font-weight:400;color:#7b8f8a;margin-top:3px\">R$ 468 por ano</span></div>",
+   "<div style=\"line-height:1.2\"><b style=\"display:block;font-size:27px;font-weight:600;color:#162526\">R$ 89</b><span style=\"display:block;font-size:16px;font-weight:400;color:#7b8f8a;margin-top:3px\">R$ 1.068 por ano</span></div>"
+  ],
+  [
+   "Cashback",
+   "<div style=\"font-size:24px;color:#3f5552\">Não tem</div>",
+   "<div style=\"line-height:1.2\"><b style=\"display:block;font-size:27px;font-weight:600;color:#162526\">0,80%</b><span style=\"display:block;font-size:16px;font-weight:400;color:#7b8f8a;margin-top:3px\">ou 1,4 ponto por US$</span></div>",
+   "<div style=\"line-height:1.2\"><b style=\"display:block;font-size:27px;font-weight:600;color:#162526\">1,25%</b><span style=\"display:block;font-size:16px;font-weight:400;color:#7b8f8a;margin-top:3px\">ou 2,2 pontos por US$</span></div>"
+  ],
+  [
+   "Salas VIP",
+   "<div style=\"font-size:24px;color:#3f5552\">Não tem</div>",
+   "<div style=\"font-size:24px;color:#3f5552\">Não tem</div>",
+   "<div style=\"line-height:1.2\"><b style=\"display:block;font-size:27px;font-weight:600;color:#162526\">4 por ano</b><span style=\"display:block;font-size:16px;font-weight:400;color:#7b8f8a;margin-top:3px\">Priority Pass</span></div>"
+  ],
+  [
+   "Destaque",
+   "<div style=\"font-size:24px;color:#3f5552\">Sem custo</div>",
+   "<div style=\"line-height:1.2\"><b style=\"display:block;font-size:27px;font-weight:600;color:#162526\">5% de volta</b><span style=\"display:block;font-size:16px;font-weight:400;color:#7b8f8a;margin-top:3px\">em 28 assinaturas</span></div>",
+   "<div style=\"line-height:1.2\"><b style=\"display:block;font-size:27px;font-weight:600;color:#162526\">IOF zero</b><span style=\"display:block;font-size:16px;font-weight:400;color:#7b8f8a;margin-top:3px\">em compras no exterior</span></div>"
+  ],
+  [
+   "Isenção",
+   "<div style=\"font-size:24px;color:#3f5552\">Já é grátis</div>",
+   "<div style=\"line-height:1.2\"><b style=\"display:block;font-size:27px;font-weight:600;color:#162526\">R$ 4 mil/mês</b><span style=\"display:block;font-size:16px;font-weight:400;color:#7b8f8a;margin-top:3px\">na fatura ou R$ 30 mil guardados</span></div>",
+   "<div style=\"line-height:1.2\"><b style=\"display:block;font-size:27px;font-weight:600;color:#162526\">R$ 8 mil/mês</b><span style=\"display:block;font-size:16px;font-weight:400;color:#7b8f8a;margin-top:3px\">na fatura ou R$ 50 mil guardados</span></div>"
+  ]
+ ],
+ "rodape": [
+  "Condições do Nubank em outubro/2026. Croma e Ultravioleta dependem de análise.",
+  "Não é uma recomendação de produto financeiro."
+ ],
+ "tsize": 64,
+ "top": 425
+}

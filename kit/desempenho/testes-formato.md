@@ -11,5 +11,6 @@ Cada post das 07h e das 15h entra aqui. Os números são preenchidos na segunda 
 | 13/10/2026 | 15h | socio (1 arte) | "Imóvel é coisa de rico": 5 FIIs por R$ 516,39 (HGBS11, BTLG11, HGRU11, KNCR11, KNRI11) | | | | |
 | 14/10/2026 | 15h | socio (1 arte) | "Banco só lucra em cima de mim": sócio de 3 bancos por R$ 102,81 (ITUB4, BBAS3, SANB11) | | | | |
 | 15/10/2026 | 15h | tab (1 arte) | Quanto rendem R$ 100 mil em FIIs por mês (MXRF11, XPML11, XPLG11, HSML11, HGLG11, VISC11) | | | | |
+| 16/10/2026 | 15h | tab/vs (1 arte, post pronto) | Qual cartão do Nubank vale mais a pena (Roxinho x Croma x Ultravioleta) | | | | |
 
 Conclusões:
