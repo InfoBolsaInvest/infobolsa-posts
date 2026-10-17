@@ -1,0 +1,64 @@
+{
+ "titulo": "Qual cartão do <span>PicPay</span> vale mais a pena?",
+ "sub": "Os 4 cartões lado a lado. Salva pra comparar depois 👇",
+ "aba": "Cartões PicPay",
+ "colunas": [
+  "",
+  "Gold",
+  "Platinum",
+  "Black",
+  "Epic"
+ ],
+ "cols": "0.82fr 1fr 1fr 1fr 1fr",
+ "lh": 96,
+ "linhas": [
+  [
+   "Cartão",
+   "<div style=\"width:122px;height:78px;border-radius:10px;background:linear-gradient(135deg,#21c25e,#11843c);margin:0 auto;position:relative;box-shadow:0 6px 14px rgba(22,37,38,.18)\"><div style=\"position:absolute;left:9px;top:7px;font:700 15px Poppins,sans-serif;color:#fff\">picpay</div><div style=\"position:absolute;left:9px;top:31px;width:18px;height:13px;border-radius:3px;background:#d9b65c\"></div><div style=\"position:absolute;left:9px;bottom:6px;font:600 9px Poppins,sans-serif;letter-spacing:1px;color:#fff;opacity:.9\">GOLD</div><div style=\"position:absolute;right:8px;bottom:6px;width:13px;height:13px;border-radius:50%;background:#eb001b\"></div><div style=\"position:absolute;right:17px;bottom:6px;width:13px;height:13px;border-radius:50%;background:#f79e1b;opacity:.9\"></div></div>",
+   "<div style=\"width:122px;height:78px;border-radius:10px;background:linear-gradient(135deg,#9aa3a6,#5d6669);margin:0 auto;position:relative;box-shadow:0 6px 14px rgba(22,37,38,.18)\"><div style=\"position:absolute;left:9px;top:7px;font:700 15px Poppins,sans-serif;color:#fff\">picpay</div><div style=\"position:absolute;left:9px;top:31px;width:18px;height:13px;border-radius:3px;background:#d9b65c\"></div><div style=\"position:absolute;left:9px;bottom:6px;font:600 9px Poppins,sans-serif;letter-spacing:1px;color:#fff;opacity:.9\">PLATINUM</div><div style=\"position:absolute;right:8px;bottom:6px;width:13px;height:13px;border-radius:50%;background:#eb001b\"></div><div style=\"position:absolute;right:17px;bottom:6px;width:13px;height:13px;border-radius:50%;background:#f79e1b;opacity:.9\"></div></div>",
+   "<div style=\"width:122px;height:78px;border-radius:10px;background:linear-gradient(135deg,#2a2a2a,#050505);margin:0 auto;position:relative;box-shadow:0 6px 14px rgba(22,37,38,.18)\"><div style=\"position:absolute;left:9px;top:7px;font:700 15px Poppins,sans-serif;color:#fff\">picpay</div><div style=\"position:absolute;left:9px;top:31px;width:18px;height:13px;border-radius:3px;background:#d9b65c\"></div><div style=\"position:absolute;left:9px;bottom:6px;font:600 9px Poppins,sans-serif;letter-spacing:1px;color:#fff;opacity:.9\">BLACK</div><div style=\"position:absolute;right:8px;bottom:6px;width:13px;height:13px;border-radius:50%;background:#eb001b\"></div><div style=\"position:absolute;right:17px;bottom:6px;width:13px;height:13px;border-radius:50%;background:#f79e1b;opacity:.9\"></div></div>",
+   "<div style=\"width:122px;height:78px;border-radius:10px;background:linear-gradient(135deg,#1d3b2a,#0a0f0c 60%,#21c25e);margin:0 auto;position:relative;box-shadow:0 6px 14px rgba(22,37,38,.18)\"><div style=\"position:absolute;left:9px;top:7px;font:700 15px Poppins,sans-serif;color:#fff\">picpay</div><div style=\"position:absolute;left:9px;top:31px;width:18px;height:13px;border-radius:3px;background:#d9b65c\"></div><div style=\"position:absolute;left:9px;bottom:6px;font:600 9px Poppins,sans-serif;letter-spacing:1px;color:#fff;opacity:.9\">EPIC</div><div style=\"position:absolute;right:8px;bottom:6px;width:13px;height:13px;border-radius:50%;background:#eb001b\"></div><div style=\"position:absolute;right:17px;bottom:6px;width:13px;height:13px;border-radius:50%;background:#f79e1b;opacity:.9\"></div></div>"
+  ],
+  [
+   "Mensalidade",
+   "<div style=\"line-height:1.18\"><b style=\"display:block;font-size:23px;font-weight:600;color:#162526\">Grátis</b></div>",
+   "<div style=\"line-height:1.18\"><b style=\"display:block;font-size:23px;font-weight:600;color:#162526\">R$ 34,90</b><span style=\"display:block;font-size:14px;font-weight:400;color:#7b8f8a;margin-top:3px\">R$ 418,80 por ano</span></div>",
+   "<div style=\"line-height:1.18\"><b style=\"display:block;font-size:23px;font-weight:600;color:#162526\">R$ 89</b><span style=\"display:block;font-size:14px;font-weight:400;color:#7b8f8a;margin-top:3px\">R$ 1.068 por ano</span></div>",
+   "<div style=\"line-height:1.18\"><b style=\"display:block;font-size:23px;font-weight:600;color:#162526\">R$ 89,90</b><span style=\"display:block;font-size:14px;font-weight:400;color:#7b8f8a;margin-top:3px\">R$ 1.078,80 por ano</span></div>"
+  ],
+  [
+   "Cashback",
+   "<div style=\"font-size:21px;color:#3f5552\">Não tem</div>",
+   "<div style=\"line-height:1.18\"><b style=\"display:block;font-size:23px;font-weight:600;color:#162526\">0,50%</b><span style=\"display:block;font-size:14px;font-weight:400;color:#7b8f8a;margin-top:3px\">rende 102% do CDI</span></div>",
+   "<div style=\"line-height:1.18\"><b style=\"display:block;font-size:23px;font-weight:600;color:#162526\">1,20%</b><span style=\"display:block;font-size:14px;font-weight:400;color:#7b8f8a;margin-top:3px\">rende 102% do CDI</span></div>",
+   "<div style=\"line-height:1.18\"><b style=\"display:block;font-size:23px;font-weight:600;color:#162526\">Até 1,30%</b><span style=\"display:block;font-size:14px;font-weight:400;color:#7b8f8a;margin-top:3px\">até 4% no exterior</span></div>"
+  ],
+  [
+   "Salas VIP",
+   "<div style=\"font-size:21px;color:#3f5552\">Não tem</div>",
+   "<div style=\"font-size:21px;color:#3f5552\">Não tem</div>",
+   "<div style=\"line-height:1.18\"><b style=\"display:block;font-size:23px;font-weight:600;color:#162526\">Ilimitada</b><span style=\"display:block;font-size:14px;font-weight:400;color:#7b8f8a;margin-top:3px\">Mastercard em GRU</span></div>",
+   "<div style=\"line-height:1.18\"><b style=\"display:block;font-size:23px;font-weight:600;color:#162526\">Ilimitada</b><span style=\"display:block;font-size:14px;font-weight:400;color:#7b8f8a;margin-top:3px\">GRU + 2 LoungeKey/ano</span></div>"
+  ],
+  [
+   "Destaque",
+   "<div style=\"font-size:21px;color:#3f5552\">Sem custo</div>",
+   "<div style=\"line-height:1.18\"><b style=\"display:block;font-size:23px;font-weight:600;color:#162526\">Seguro</b><span style=\"display:block;font-size:14px;font-weight:400;color:#7b8f8a;margin-top:3px\">viagem</span></div>",
+   "<div style=\"line-height:1.18\"><b style=\"display:block;font-size:23px;font-weight:600;color:#162526\">5 adicionais</b><span style=\"display:block;font-size:14px;font-weight:400;color:#7b8f8a;margin-top:3px\">grátis</span></div>",
+   "<div style=\"line-height:1.18\"><b style=\"display:block;font-size:23px;font-weight:600;color:#162526\">Prime</b><span style=\"display:block;font-size:14px;font-weight:400;color:#7b8f8a;margin-top:3px\">Amazon incluso</span></div>"
+  ],
+  [
+   "Isenção",
+   "<div style=\"font-size:21px;color:#3f5552\">Já é grátis</div>",
+   "<div style=\"line-height:1.18\"><b style=\"display:block;font-size:23px;font-weight:600;color:#162526\">R$ 2 mil</b><span style=\"display:block;font-size:14px;font-weight:400;color:#7b8f8a;margin-top:3px\">por mês ou R$ 20 mil investidos</span></div>",
+   "<div style=\"line-height:1.18\"><b style=\"display:block;font-size:23px;font-weight:600;color:#162526\">R$ 5 mil</b><span style=\"display:block;font-size:14px;font-weight:400;color:#7b8f8a;margin-top:3px\">por mês ou R$ 50 mil investidos</span></div>",
+   "<div style=\"line-height:1.18\"><b style=\"display:block;font-size:23px;font-weight:600;color:#162526\">R$ 5 mil</b><span style=\"display:block;font-size:14px;font-weight:400;color:#7b8f8a;margin-top:3px\">por mês ou R$ 50 mil investidos</span></div>"
+  ]
+ ],
+ "rodape": [
+  "Condições divulgadas em 2026. Platinum, Black e Epic dependem de análise de crédito.",
+  "Não é uma recomendação de produto financeiro."
+ ],
+ "tsize": 64,
+ "top": 425
+}
