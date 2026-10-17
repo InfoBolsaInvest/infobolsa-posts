@@ -8,7 +8,7 @@ IMPORTANTE: desde 08/10/2026 (15h) o post é PUBLICADO DIRETO no Instagram, sem 
 
 SEGUNDA-FEIRA: dois posts fixos de "Dividendos da semana", separados: às 07h o de AÇÕES e às 15h o de FIIs (seção "Dividendos da semana" abaixo). Vale já a partir de 19/10/2026, inclusive na execução das 06h50 de outubro (o Douglas tirou do Planner os posts das 07h de segunda). Exceção: 26/10/2026 (eleição).
 
-POST PRONTO: se existir a pasta `pronto/AAAA-MM-DD-HHh/` deste dia e horário (com `1.png`, `2.png`... e `legenda.txt`), NÃO crie post novo: copie todos os slides numerados (`1.png`, `2.png`, `3.png`...) para `sugestoes/AAAA-MM-DD-HHh-1.png`, `-2.png`, `-3.png`... na mesma ordem, use a `legenda.txt` como legenda e vá direto para a seção 5b. Facebook e YouTube ficam fora (não dá sem o navegador dele).
+POST PRONTO: se existir a pasta `pronto/AAAA-MM-DD-HHh/` deste dia e horário (com `1.png`, `2.png`... e `legenda.txt`), NÃO crie post novo: copie todos os slides numerados (`1.png`, `2.png`, `3.png`...) para `sugestoes/AAAA-MM-DD-HHh-1.png`, `-2.png`, `-3.png`... na mesma ordem, use a `legenda.txt` como legenda e vá direto para a seção 5b. Facebook e YouTube ficam fora (não dá sem o navegador dele). Mesmo no post pronto, olhe os slides (Read) e confira o alinhamento da seção 4; se der para corrigir regerando pelo `config.json` da pasta, corrija antes de postar.
 
 ## Eleições: 25, 26 e 27/10/2026 (segundo turno no domingo 25)
 Nesses três dias o post das 15h é EXCLUSIVAMENTE sobre a eleição e o efeito dela nos investimentos (pule a escolha normal da seção 2, mas siga o resto: dados conferidos, arte, legenda, publicação).
@@ -69,6 +69,7 @@ Use `kit/gen_inst.py` com o tema `verde` (é o padrão): cabeçalho pequeno com 
 - Se precisar de um formato que o gen_inst.py ainda não tem, crie um novo tipo nele seguindo o mesmo visual (não volte para o modelo branco antigo).
 - Crie o config em `kit/configs/sugestoes/AAAA-MM-DD-HHh.json`.
 - Olhe a imagem (Read) e confira, com atenção aos detalhes: o texto da aba da pasta tem que caber dentro da aba (não pode passar da borda), nada cortado, sobreposto ou quebrando linha feio (título, frase final e rodapé), números certos, logos aparecendo, sem travessão.
+- ALINHAMENTO (pedido do Douglas em 17/10/2026): em tabelas e comparativos, cada linha tem que ficar alinhada. Os valores de todas as colunas centralizados embaixo do título da coluna e na mesma altura, inclusive quando uma célula tem só uma palavra ("Grátis", "Não tem") e as outras têm valor + linha pequena embaixo. No post do PicPay de 17/10 a linha "Mensalidade" saiu desalinhada (o "Grátis" ficou fora do eixo da coluna GOLD). Se algo estiver desalinhado, ajuste e gere de novo antes de postar.
 - Salve o slide 1 em `sugestoes/AAAA-MM-DD-07h-1.png` (ou `-15h-1.png`) e a legenda em `sugestoes/AAAA-MM-DD-07h.txt`. Apague t.html e t.png.
 - `git add -A && git commit -m "Sugestão DD/MM HHh" && git push` (branch main).
 
