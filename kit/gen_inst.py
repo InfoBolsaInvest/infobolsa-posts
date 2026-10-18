@@ -252,6 +252,30 @@ def build_tab(c, tema):
     return pagina(tema, c["titulo"], c.get("sub", ""), corpo, c["rodape"], tsize=c.get("tsize", 72))
 
 
+def build_top3(c, tema):
+    """cfg: titulo, sub, aba, blocos [[segmento, [[ticker, dy], ...3]]], criterio [linhas], rodape, tsize, top, h.
+    Grade 2 colunas; o último card (criterio) explica como foi feito o ranking."""
+    top = c.get("top", 400)
+    h = c.get("h", 830)
+    cards = ""
+    for seg, itens in c["blocos"]:
+        ln = "".join(f'<div class="t3r"><i>{i}</i><b>{tk}</b><span class="num">{dy}</span></div>' for i, (tk, dy) in enumerate(itens, 1))
+        cards += f'<div class="t3c"><div class="t3h">{seg}</div>{ln}</div>'
+    crit = "".join(f"<li>{x}</li>" for x in c["criterio"])
+    cards += f'<div class="t3c t3k"><div class="t3h">Como montei</div><ul>{crit}</ul></div>'
+    css = ("<style>.t3g{position:absolute;left:24px;right:24px;top:78px;bottom:24px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr 1fr;gap:14px}"
+           ".t3c{background:#fff;border:1.5px solid var(--borda);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}"
+           ".t3h{background:#FFB400;color:#162526;font-weight:600;font-size:23px;letter-spacing:.3px;padding:9px 18px;text-transform:uppercase}"
+           ".t3r{flex:1;display:flex;align-items:center;gap:14px;padding:0 18px;border-top:1px solid var(--linha);font-size:28px}"
+           ".t3r:first-of-type{border-top:0}"
+           ".t3r i{font-style:normal;width:34px;height:34px;border-radius:50%;background:var(--acc);color:#fff;font-weight:600;font-size:19px;display:flex;align-items:center;justify-content:center;flex:none}"
+           ".t3r b{font-weight:600;color:var(--fg);flex:1}.t3r span{color:var(--acc);font-weight:600;font-size:26px}"
+           ".t3k{background:#eef6f1}.t3k ul{list-style:none;padding:10px 18px;font-size:19.5px;line-height:1.38;color:var(--sub);display:flex;flex-direction:column;justify-content:space-around;flex:1}"
+           ".t3k li:before{content:'';display:inline-block;width:8px;height:8px;border-radius:50%;background:#FFB400;margin-right:10px}</style>")
+    corpo = css + pasta(top, h, c.get("aba", "Ranking por segmento"), f'<div class="t3g">{cards}</div>', tema)
+    return pagina(tema, c["titulo"], c.get("sub", ""), corpo, c["rodape"], tsize=c.get("tsize", 72))
+
+
 def build_socio(c, tema):
     """cfg: titulo, sub, aba, linhas [[logo_path, ticker, nome, preco]], total, total_txt, rodape, tsize."""
     lh = c.get("lh", 92)
@@ -531,5 +555,5 @@ if __name__ == "__main__":
         build_semana(c, tema, out)
         sys.exit()
     html = {"pag": build_pag, "vs": build_vs, "fii": build_fii, "tab": build_tab, "socio": build_socio,
-            "segue": build_segue, "prefere": build_prefere}[tipo](c, tema)
+            "segue": build_segue, "top3": build_top3, "prefere": build_prefere}[tipo](c, tema)
     open(out, "w").write(html)
