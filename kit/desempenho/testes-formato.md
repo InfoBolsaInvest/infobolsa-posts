@@ -13,6 +13,6 @@ Cada post das 07h e das 15h entra aqui. Os números são preenchidos na segunda 
 | 15/10/2026 | 15h | tab (1 arte) | Quanto rendem R$ 100 mil em FIIs por mês (MXRF11, XPML11, XPLG11, HSML11, HGLG11, VISC11) | | | | |
 | 16/10/2026 | 15h | tab/vs (1 arte, post pronto) | Qual cartão do Nubank vale mais a pena (Roxinho x Croma x Ultravioleta) | | | | |
 | 17/10/2026 | 15h (publicado ~15h20) | tab/vs (1 arte, post pronto) | Qual cartão do PicPay vale mais a pena (Gold x Platinum x Black x Epic) | | | | |
-| 18/10/2026 | 15h | tab (1 arte, post pronto) | Top 3 FIIs por segmento pelo DY 12M (logística, recebíveis, shoppings, híbridos) | | | | |
+| 18/10/2026 | 15h | tab (1 arte, post pronto) | Top 3 FIIs por segmento pelo DY 12M (logística, recebíveis, shoppings, híbridos) (media 17994958434013017) | | | | |
 
 Conclusões:
