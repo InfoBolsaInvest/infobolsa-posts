@@ -6,12 +6,83 @@
  "top": 392,
  "h": 842,
  "blocos": [
-  ["Galpões logísticos", [["GGRC11","13,04%"],["XPLG11","9,85%"],["BTLG11","9,40%"]]],
-  ["Recebíveis", [["VGIR11","15,65%"],["KNCR11","13,17%"],["MXRF11","12,79%"]]],
-  ["Shoppings", [["XPML11","11,28%"],["HSML11","9,21%"],["VISC11","8,79%"]]],
-  ["Híbridos", [["GARE11","11,55%"],["ALZR11","10,46%"],["KNRI11","8,16%"]]],
-  ["Agro", [["SNAG11","16,04%"],["RZTR11","14,63%"],["KNCA11","13,83%"]]]
+  [
+   "Galpões logísticos",
+   [
+    [
+     "GGRC11",
+     "13,04%"
+    ],
+    [
+     "XPLG11",
+     "9,85%"
+    ],
+    [
+     "BTLG11",
+     "9,40%"
+    ]
+   ]
+  ],
+  [
+   "Recebíveis",
+   [
+    [
+     "VGIR11",
+     "15,65%"
+    ],
+    [
+     "KNCR11",
+     "13,17%"
+    ],
+    [
+     "MXRF11",
+     "12,79%"
+    ]
+   ]
+  ],
+  [
+   "Shoppings",
+   [
+    [
+     "XPML11",
+     "11,28%"
+    ],
+    [
+     "HSML11",
+     "9,21%"
+    ],
+    [
+     "VISC11",
+     "8,79%"
+    ]
+   ]
+  ],
+  [
+   "Híbridos",
+   [
+    [
+     "GARE11",
+     "11,55%"
+    ],
+    [
+     "ALZR11",
+     "10,46%"
+    ],
+    [
+     "KNRI11",
+     "8,16%"
+    ]
+   ]
+  ]
  ],
- "criterio": ["Dividend yield dos últimos 12 meses","Liquidez diária acima de R$ 1 milhão","P/VP a partir de 0,80","Só fundos entre os mais negociados"],
- "rodape": ["Fonte: Funds Explorer, 18/10/2026. Rendimentos passados não garantem os futuros.","Não é uma recomendação de compra ou venda."]
+ "criterio": [
+  "Dividend yield dos últimos 12 meses",
+  "Liquidez diária acima de R$ 1 milhão",
+  "P/VP a partir de 0,80",
+  "Só fundos entre os mais negociados"
+ ],
+ "rodape": [
+  "Fonte: Funds Explorer, 18/10/2026. Rendimentos passados não garantem os futuros.",
+  "Não é uma recomendação de compra ou venda."
+ ]
 }
