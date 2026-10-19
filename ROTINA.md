@@ -1,4 +1,6 @@
-# Rotina diária: post "Fechamento de mercado" (@infobolsainvestimentos)
+# Rotina diária: post "Fechamento de mercado" (@infobolsainvest)
+
+IMPORTANTE (19/10/2026, pedido do Douglas): este post agora vai para o perfil NOVO @infobolsainvest (conta Windsor 17841475583342876). O @infobolsainvestimentos não recebe mais posts automáticos. A arte já sai com @infobolsainvest no cabeçalho.
 
 Roda nos dias úteis às 18h20 (horário de Brasília), sem nenhum computador ligado.
 
@@ -27,8 +29,8 @@ Dentro de `kit/`:
 ## 4. Publicar a imagem e postar
 1. `git add -A && git commit -m "Fechamento DD/MM/AAAA" && git push` (branch main).
 2. Confira que `https://raw.githubusercontent.com/InfoBolsaInvest/infobolsa-posts/main/posts/fechamento-AAAA-MM-DD.jpg` abre (pode levar alguns segundos).
-3. Poste no Instagram com o conector Windsor.ai: `execute_action`, connector `instagram`, conta `17841445716975551`, ação `create_image_post`, com `image_url` acima e a legenda.
-4. Poste também o stories: `execute_action`, connector `instagram`, conta `17841445716975551`, ação `create_story`, com `image_url` = `https://raw.githubusercontent.com/InfoBolsaInvest/infobolsa-posts/main/posts/fechamento-AAAA-MM-DD-story.jpg` (stories não tem legenda).
+3. Poste no Instagram com o conector Windsor.ai: `execute_action`, connector `instagram`, conta `17841475583342876`, ação `create_image_post`, com `image_url` acima e a legenda.
+4. Poste também o stories: `execute_action`, connector `instagram`, conta `17841475583342876`, ação `create_story`, com `image_url` = `https://raw.githubusercontent.com/InfoBolsaInvest/infobolsa-posts/main/posts/fechamento-AAAA-MM-DD-story.jpg` (stories não tem legenda).
 5. Leia as respostas: se vier qualquer erro (ex.: falta de permissão instagram_content_publish), NÃO considere postado e avise o Douglas com o texto do erro.
 
 ## 5. Legenda (modelo)

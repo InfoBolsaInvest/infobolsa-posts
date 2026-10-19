@@ -1,4 +1,6 @@
-# Rotina diária: post escuro de notícia das 12h (@infobolsainvestimentos)
+# Rotina diária: post escuro de notícia das 12h (@infobolsainvest)
+
+IMPORTANTE (19/10/2026, pedido do Douglas): este post agora vai para o perfil NOVO @infobolsainvest (conta Windsor 17841475583342876). O @infobolsainvestimentos não recebe mais posts automáticos. A arte já sai com @infobolsainvest no cabeçalho.
 
 Roda todos os dias por volta das 11h40 (horário de Brasília), sem nenhum computador ligado. O Douglas pediu para postar direto, sem aprovação. O post deve sair perto das 12h.
 
@@ -78,7 +80,7 @@ Dentro de `kit/`:
 ## 5. Publicar a imagem e postar
 1. `git add -A && git commit -m "Notícia DD/MM/AAAA" && git push` (branch main).
 2. Confira que `https://raw.githubusercontent.com/InfoBolsaInvest/infobolsa-posts/main/posts/noticia-AAAA-MM-DD.jpg` abre (pode levar alguns segundos).
-3. Poste no Instagram com o conector Windsor.ai: `execute_action`, connector `instagram`, conta `17841445716975551`, ação `create_image_post`, com `image_url` acima e a legenda.
+3. Poste no Instagram com o conector Windsor.ai: `execute_action`, connector `instagram`, conta `17841475583342876`, ação `create_image_post`, com `image_url` acima e a legenda.
 4. Leia a resposta: se vier qualquer erro (ex.: falta de permissão instagram_content_publish), NÃO considere postado, não tente de novo por outro caminho e avise o Douglas com o texto do erro.
 
 ## 6. Legenda (modelo)

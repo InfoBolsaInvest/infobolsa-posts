@@ -1,5 +1,7 @@
 # Rotina diária: sugestão de post branco para as 07h e as 15h (@infobolsainvestimentos)
 
+PAUSADA desde 19/10/2026 (pedido do Douglas): os posts das 07h e 15h do @infobolsainvestimentos passam a ser feitos com ele, conversa a conversa, e agendados no Planner. A tarefa agendada desta rotina foi desligada. O Windsor agora está ligado só ao perfil novo @infobolsainvest (17841475583342876).
+
 Roda todos os dias às 06h50 e às 14h50 (horário de Brasília), na nuvem, sem computador ligado. Cada execução cria UMA sugestão de post: a das 06h50 é a sugestão das 07h, a das 14h50 é a das 15h.
 
 IMPORTANTE (outubro/2026): até 31/10/2026 só existe o post das 15h, MENOS às segundas 19/10 (dividendos de ações às 07h). O Planner do Douglas já tem posts programados às 07h até o fim do mês (menos as segundas), então a execução das 06h50 até 31/10/2026 não faz nada, a não ser na segunda 19/10: pare logo no começo, sem criar arte, sem postar e sem mandar mensagem. A partir de 01/11/2026 volta a fazer os dois horários.
