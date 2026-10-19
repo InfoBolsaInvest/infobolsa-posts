@@ -302,6 +302,29 @@ def build_seg(c, tema):
     return pagina(tema, c["titulo"], c.get("sub", ""), corpo, c["rodape"], tsize=c.get("tsize", 72))
 
 
+def build_pizza(c, tema):
+    """cfg: titulo, fixo (frase abaixo), fatias [[ticker, logo]], raio, cy, rodape, tsize. Fatia começa no topo, sentido horário."""
+    import math
+    from gen_escuro import cor_logo
+    n = len(c["fatias"])
+    R, cx, cy = c.get("raio", 290), 540, c.get("cy", 790)
+    ang = 360 / n
+    svg, logos, rot = "", "", ""
+    for i, (tk, lg) in enumerate(c["fatias"]):
+        a0, a1 = math.radians(i * ang - 90), math.radians((i + 1) * ang - 90)
+        x0, y0, x1, y1 = cx + R * math.cos(a0), cy + R * math.sin(a0), cx + R * math.cos(a1), cy + R * math.sin(a1)
+        cor = cor_logo(lg)[0]
+        svg += f'<path d="M{cx} {cy} L{x0:.1f} {y0:.1f} A{R} {R} 0 0 1 {x1:.1f} {y1:.1f} Z" fill="{cor}" stroke="#ffffff" stroke-width="3"/>'
+        am = math.radians((i + .5) * ang - 90)
+        lx, ly = cx + R * .66 * math.cos(am), cy + R * .66 * math.sin(am)
+        logos += f'<img src="{lg}" style="position:absolute;left:{lx-42:.1f}px;top:{ly-42:.1f}px;width:84px;height:84px;border-radius:12px" alt="">'
+        tx, ty = cx + (R + 52) * math.cos(am), cy + (R + 40) * math.sin(am)
+        rot += f'<div style="position:absolute;left:{tx-80:.1f}px;top:{ty-16:.1f}px;width:160px;text-align:center;font-weight:600;font-size:23px;letter-spacing:.5px;color:var(--fg)">{tk}</div>'
+    corpo = (f'<svg style="position:absolute;left:0;top:0" width="1080" height="1350">{svg}</svg>{logos}{rot}'
+             f'<div style="position:absolute;left:96px;right:96px;top:{cy + R + 92}px;text-align:center;font-size:34px;color:var(--fg)">{c["fixo"]}</div>')
+    return pagina(tema, c["titulo"], c.get("sub", ""), corpo, c["rodape"], tsize=c.get("tsize", 72))
+
+
 def build_socio(c, tema):
     """cfg: titulo, sub, aba, linhas [[logo_path, ticker, nome, preco]], total, total_txt, rodape, tsize."""
     lh = c.get("lh", 92)
@@ -581,5 +604,5 @@ if __name__ == "__main__":
         build_semana(c, tema, out)
         sys.exit()
     html = {"pag": build_pag, "vs": build_vs, "fii": build_fii, "tab": build_tab, "socio": build_socio,
-            "segue": build_segue, "top3": build_top3, "seg": build_seg, "prefere": build_prefere}[tipo](c, tema)
+            "segue": build_segue, "top3": build_top3, "seg": build_seg, "pizza": build_pizza, "prefere": build_prefere}[tipo](c, tema)
     open(out, "w").write(html)
