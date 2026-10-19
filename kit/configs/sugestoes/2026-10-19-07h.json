@@ -1,0 +1,59 @@
+{
+ "slides": [
+  {
+   "titulo": "<span>Dividendos</span> da semana<br>em ações",
+   "sub": "Só 2 pagam esta semana. Fui até 30/10 👇",
+   "aba": "Ações que pagam de 19/10 a 30/10",
+   "col1": "Ação",
+   "lh": 108,
+   "linhas": [
+    [
+     "assets/logos_b3/VITT3.png",
+     "VITT3",
+     "JCP",
+     "0,0850",
+     "2,43%",
+     "21/10"
+    ],
+    [
+     "assets/logos_b3/CPFE3.png",
+     "CPFE3",
+     "Dividendo",
+     "0,2170",
+     "0,44%",
+     "23/10"
+    ],
+    [
+     "assets/logos_b3/IGTI11.png",
+     "IGTI11",
+     "Dividendo",
+     "0,1687",
+     "0,54%",
+     "29/10"
+    ],
+    [
+     "assets/logos_b3/SEER3.png",
+     "SEER3",
+     "Dividendo",
+     "0,2028",
+     "1,21%",
+     "30/10"
+    ],
+    [
+     "assets/logos_b3/SMFT3.png",
+     "SMFT3",
+     "JCP",
+     "0,0654",
+     "0,26%",
+     "30/10"
+    ]
+   ],
+   "rodape": [
+    "Yield = valor ÷ cotação de 16/10/2026. Proventos e cotações do StatusInvest (SEER3: Meus Dividendos, Eu Quero Investir e brapi). JCP: valor bruto, antes do IR.",
+    "Não é uma recomendação de compra ou venda."
+   ],
+   "top": 470
+  }
+ ],
+ "segue": true
+}
