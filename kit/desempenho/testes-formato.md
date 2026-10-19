@@ -15,6 +15,7 @@ Cada post das 07h e das 15h entra aqui. Os números são preenchidos na segunda 
 | 17/10/2026 | 15h (publicado ~15h20) | tab/vs (1 arte, post pronto) | Qual cartão do PicPay vale mais a pena (Gold x Platinum x Black x Epic) | 2.689 | 13 | 1 | 0 |
 | 18/10/2026 | 15h | tab (1 arte, post pronto) | Top 3 FIIs por segmento pelo DY 12M (logística, recebíveis, shoppings, híbridos) (media 17994958434013017) | 1.514 | 27 | 8 | 3 |
 | 19/10/2026 | 07h | semana acoes (1 arte + segue) | Dividendos da semana em ações: só VITT3 e CPFE3 pagam de 19 a 23/10, incluí IGTI11, SEER3, SMFT3 (26 a 30/10) (media 18134053699679141) | | | | |
+| 19/10/2026 | 15h | tab (1 arte com fotos, post pronto; substituiu o semana fiis) | 5 segmentos de FIIs para diversificar (BTLG11, XPML11, MXRF11, HGRU11, KNRI11) | | | | |
 
 Conclusões:
 - 19/10/2026 (dados Windsor da semana 11 a 18/10): o comparativo de cartões do Nubank (16/10) teve de longe o maior alcance (13.313) e 3 seguidores; o top 3 FIIs por segmento (18/10) e o R$ 100 mil em FIIs (15/10) foram os que mais tiveram salvamento por alcance. Os 'socio' (13 e 14/10) e o prefere B3 x BTG não trouxeram seguidor. O post de 12/10 15h (historia) não aparece no Windsor.
