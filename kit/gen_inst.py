@@ -277,20 +277,27 @@ def build_top3(c, tema):
 
 
 def build_seg(c, tema):
-    """cfg: titulo, sub, aba, linhas [[segmento, descricao, ticker, dy]], rodape, tsize, top, h."""
+    """cfg: titulo, sub, aba, linhas [[segmento, descricao, ticker, dy, foto, logo, logo_fundo?]], rodape, tsize, top, h."""
+    from gen_escuro import cor_logo
     top = c.get("top", 400)
     h = c.get("h", 830)
-    n = len(c["linhas"])
-    ln = "".join(f'<div class="sgr"><div class="sgn">{i}</div><div class="sgt"><b>{seg}</b><small>{d}</small></div>'
-                 f'<div class="sgk"><b>{tk}</b><small>DY 12 meses <em class="num">{dy}</em></small></div></div>'
-                 for i, (seg, d, tk, dy) in enumerate(c["linhas"], 1))
+    ln = ""
+    for i, (seg, d, tk, dy, foto, logo, *x) in enumerate(c["linhas"], 1):
+        fundo = x[0] if x else cor_logo(logo)[0]
+        ln += (f'<div class="sgr"><div class="sgf" style="background-image:url(\'{foto}\')"></div>'
+               f'<div class="sgt"><b>{seg}</b><small>{d}</small></div><div class="sgd"></div>'
+               f'<div class="sgk"><div class="sgl" style="background:{fundo}"><img src="{logo}" alt=""></div>'
+               f'<div><b>{tk}</b><small>DY 12 meses<br><em class="num">{dy}</em></small></div></div></div>')
     css = ("<style>.sgg{position:absolute;left:24px;right:24px;top:78px;bottom:24px;display:flex;flex-direction:column;gap:12px}"
-           ".sgr{flex:1;display:flex;align-items:center;gap:20px;background:#fff;border:1.5px solid var(--borda);border-left:8px solid #FFB400;border-radius:16px;padding:0 24px}"
-           ".sgn{width:46px;height:46px;border-radius:50%;background:var(--acc);color:#fff;font-weight:600;font-size:25px;display:flex;align-items:center;justify-content:center;flex:none}"
-           ".sgt{flex:1}.sgt b{display:block;font-weight:600;font-size:33px;line-height:1.15;color:var(--fg)}"
-           ".sgt small{display:block;font-size:20px;line-height:1.3;color:var(--mute);margin-top:4px}"
-           ".sgk{text-align:right}.sgk b{display:block;font-weight:700;font-size:35px;color:var(--acc);letter-spacing:.5px}"
-           ".sgk small{display:block;font-size:19px;color:var(--mute);margin-top:2px}.sgk em{font-style:normal;font-weight:600;color:var(--fg)}</style>")
+           ".sgr{flex:1;display:flex;align-items:center;background:#fff;border:1.5px solid var(--borda);border-left:8px solid #FFB400;border-radius:16px;overflow:hidden}"
+           ".sgf{width:210px;height:100%;background-size:cover;background-position:center;flex:none}"
+           ".sgt{flex:1;padding:0 24px}.sgt b{display:block;font-weight:600;font-size:34px;line-height:1.15;color:var(--fg)}"
+           ".sgt small{display:block;font-size:19.5px;line-height:1.3;color:var(--mute);margin-top:5px}"
+           ".sgd{width:1.5px;height:78%;background:var(--linha);flex:none}"
+           ".sgk{width:276px;display:flex;align-items:center;gap:14px;padding-left:20px;flex:none}"
+           ".sgl{width:78px;height:78px;border-radius:16px;overflow:hidden;flex:none}.sgl img{width:100%;height:100%;object-fit:cover}"
+           ".sgk b{display:block;font-weight:700;font-size:29px;color:var(--acc);letter-spacing:.5px}"
+           ".sgk small{display:block;font-size:17px;line-height:1.25;color:var(--mute);margin-top:2px}.sgk em{font-style:normal;font-weight:600;font-size:21px;color:var(--fg)}</style>")
     corpo = css + pasta(top, h, c.get("aba", "Um exemplo de cada"), f'<div class="sgg">{ln}</div>', tema)
     return pagina(tema, c["titulo"], c.get("sub", ""), corpo, c["rodape"], tsize=c.get("tsize", 72))
 
