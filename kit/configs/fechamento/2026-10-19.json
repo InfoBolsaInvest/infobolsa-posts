@@ -1,0 +1,23 @@
+{
+ "data": "2026-10-19",
+ "ibov": {"pontos": "205.079", "var": -0.17},
+ "extras": [
+  {"rotulo": "Dólar", "valor": "R$ 5,05", "var": -0.49},
+  {"rotulo": "Na semana", "var": -0.17}
+ ],
+ "altas": [
+  ["AZZA3", "Azzas 2154", 13.25],
+  ["MRVE3", "MRV", 10.94],
+  ["COGN3", "Cogna", 8.65],
+  ["VAMO3", "Vamos", 8.11],
+  ["CEAB3", "C&A", 7.40]
+ ],
+ "baixas": [
+  ["MBRF3", "MBRF", -4.11],
+  ["PSSA3", "Porto Seguro", -3.13],
+  ["CXSE3", "Caixa Seguridade", -2.95],
+  ["PETR3", "Petrobras ON", -2.93],
+  ["PETR4", "Petrobras PN", -2.82]
+ ],
+ "fonte": "Fechamento de 19/10/2026. Fonte: B3"
+}
