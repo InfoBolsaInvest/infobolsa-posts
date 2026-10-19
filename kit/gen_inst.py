@@ -276,6 +276,25 @@ def build_top3(c, tema):
     return pagina(tema, c["titulo"], c.get("sub", ""), corpo, c["rodape"], tsize=c.get("tsize", 72))
 
 
+def build_seg(c, tema):
+    """cfg: titulo, sub, aba, linhas [[segmento, descricao, ticker, dy]], rodape, tsize, top, h."""
+    top = c.get("top", 400)
+    h = c.get("h", 830)
+    n = len(c["linhas"])
+    ln = "".join(f'<div class="sgr"><div class="sgn">{i}</div><div class="sgt"><b>{seg}</b><small>{d}</small></div>'
+                 f'<div class="sgk"><b>{tk}</b><small>DY 12 meses <em class="num">{dy}</em></small></div></div>'
+                 for i, (seg, d, tk, dy) in enumerate(c["linhas"], 1))
+    css = ("<style>.sgg{position:absolute;left:24px;right:24px;top:78px;bottom:24px;display:flex;flex-direction:column;gap:12px}"
+           ".sgr{flex:1;display:flex;align-items:center;gap:20px;background:#fff;border:1.5px solid var(--borda);border-left:8px solid #FFB400;border-radius:16px;padding:0 24px}"
+           ".sgn{width:46px;height:46px;border-radius:50%;background:var(--acc);color:#fff;font-weight:600;font-size:25px;display:flex;align-items:center;justify-content:center;flex:none}"
+           ".sgt{flex:1}.sgt b{display:block;font-weight:600;font-size:33px;line-height:1.15;color:var(--fg)}"
+           ".sgt small{display:block;font-size:20px;line-height:1.3;color:var(--mute);margin-top:4px}"
+           ".sgk{text-align:right}.sgk b{display:block;font-weight:700;font-size:35px;color:var(--acc);letter-spacing:.5px}"
+           ".sgk small{display:block;font-size:19px;color:var(--mute);margin-top:2px}.sgk em{font-style:normal;font-weight:600;color:var(--fg)}</style>")
+    corpo = css + pasta(top, h, c.get("aba", "Um exemplo de cada"), f'<div class="sgg">{ln}</div>', tema)
+    return pagina(tema, c["titulo"], c.get("sub", ""), corpo, c["rodape"], tsize=c.get("tsize", 72))
+
+
 def build_socio(c, tema):
     """cfg: titulo, sub, aba, linhas [[logo_path, ticker, nome, preco]], total, total_txt, rodape, tsize."""
     lh = c.get("lh", 92)
@@ -555,5 +574,5 @@ if __name__ == "__main__":
         build_semana(c, tema, out)
         sys.exit()
     html = {"pag": build_pag, "vs": build_vs, "fii": build_fii, "tab": build_tab, "socio": build_socio,
-            "segue": build_segue, "top3": build_top3, "prefere": build_prefere}[tipo](c, tema)
+            "segue": build_segue, "top3": build_top3, "seg": build_seg, "prefere": build_prefere}[tipo](c, tema)
     open(out, "w").write(html)
