@@ -115,6 +115,16 @@ body{position:relative;font-family:"P",sans-serif;font-weight:300;color:var(--fg
 .acoes{position:absolute;left:96px;right:96px;display:flex;gap:16px}
 .acoes div{flex:1;text-align:center;border:1px solid var(--borda);background:var(--card1);border-radius:18px;padding:16px 10px;font-size:22px;line-height:1.3;color:var(--sub)}
 .acoes b{display:block;font-size:26px;color:var(--fg);font-weight:600}
+/* colunas (estilo ficha por ativo) */
+.cl{position:absolute;top:64px;left:20px;right:20px;bottom:24px;display:flex}
+.cl .co{flex:1;display:flex;flex-direction:column;align-items:center;border-left:1.5px solid var(--linha);padding:0 8px}
+.cl .co:first-child{border-left:none}
+.cl .tk4{font-weight:700;font-size:34px;letter-spacing:.5px;margin-top:6px}
+.cl .lg4{width:150px;height:150px;border-radius:34px;overflow:hidden;margin:22px 0 30px;box-shadow:0 8px 20px rgba(22,37,38,.14)}
+.cl .lg4 img{width:100%;height:100%;object-fit:cover}
+.cl .rt{font-size:22px;color:var(--sub);margin-top:22px}
+.cl .vl4{width:100%;margin-top:6px;border-radius:14px;background:var(--chip);border:1px solid var(--borda);text-align:center;font-size:27px;font-weight:500;padding:15px 0;font-variant-numeric:tabular-nums}
+.cl .vl4.dst{color:var(--acc);font-weight:700;background:#e6f3ec}
 /* prefere */
 .pf-t{position:absolute;top:220px;left:60px;right:60px;text-align:center}
 .pf-t h1{font-weight:500;font-size:var(--tsize,96px);line-height:1.05;letter-spacing:-1.5px}
@@ -322,6 +332,22 @@ def build_pizza(c, tema):
         rot += f'<div style="position:absolute;left:{tx-80:.1f}px;top:{ty-16:.1f}px;width:160px;text-align:center;font-weight:600;font-size:23px;letter-spacing:.5px;color:var(--fg)">{tk}</div>'
     corpo = (f'<svg style="position:absolute;left:0;top:0" width="1080" height="1350">{svg}</svg>{logos}{rot}'
              f'<div style="position:absolute;left:96px;right:96px;top:{cy + R + 92}px;text-align:center;font-size:34px;color:var(--fg)">{c["fixo"]}</div>')
+    return pagina(tema, c["titulo"], c.get("sub", ""), corpo, c["rodape"], tsize=c.get("tsize", 72))
+
+
+def build_colunas(c, tema):
+    """cfg: titulo, sub, aba, top, h, fim, rodape, colunas [{tk, logo, cor, itens [[rotulo, valor]]}], destaque (índice do item)."""
+    cols = ""
+    for col in c["colunas"]:
+        it = "".join(f'<div class="rt">{r}</div><div class="vl4{" dst" if i == c.get("destaque") else ""}">{v}</div>'
+                     for i, (r, v) in enumerate(col["itens"]))
+        cols += (f'<div class="co"><div class="tk4">{col["tk"]}</div>'
+                 f'<div class="lg4" style="background:{col["cor"]}"><img src="assets/logos_b3/{col["logo"]}.png"></div>{it}</div>')
+    top = c.get("top", 400)
+    h = c.get("h", 640)
+    corpo = pasta(top, h, c.get("aba", "Comparativo"), f'<div class="cl">{cols}</div>', tema)
+    if c.get("fim"):
+        corpo += f'<div class="fim" style="top:{top + h + 34}px">{c["fim"]}</div>'
     return pagina(tema, c["titulo"], c.get("sub", ""), corpo, c["rodape"], tsize=c.get("tsize", 72))
 
 
@@ -604,5 +630,5 @@ if __name__ == "__main__":
         build_semana(c, tema, out)
         sys.exit()
     html = {"pag": build_pag, "vs": build_vs, "fii": build_fii, "tab": build_tab, "socio": build_socio,
-            "segue": build_segue, "top3": build_top3, "seg": build_seg, "pizza": build_pizza, "prefere": build_prefere}[tipo](c, tema)
+            "segue": build_segue, "top3": build_top3, "seg": build_seg, "pizza": build_pizza, "colunas": build_colunas, "prefere": build_prefere}[tipo](c, tema)
     open(out, "w").write(html)
