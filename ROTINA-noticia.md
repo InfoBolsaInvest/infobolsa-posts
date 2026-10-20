@@ -2,6 +2,8 @@
 
 IMPORTANTE (19/10/2026, pedido do Douglas): este post agora vai para o perfil NOVO @infobolsainvest (conta Windsor 17841475583342876). O @infobolsainvestimentos não recebe mais posts automáticos. A arte já sai com @infobolsainvest no cabeçalho.
 
+IMPORTANTE (20/10/2026, pedido do Douglas): o perfil @infobolsainvest é da marca, não do Douglas. O cabeçalho da arte mostra o logo da InfoBolsa (`kit/assets/avatar_infobolsa.png`), o nome "InfoBolsa Investimentos" e @infobolsainvest. Nunca use a foto nem o nome do Douglas nos posts desse perfil (isso fica no @infobolsainvestimentos). Se uma arte pronta mostrar a foto ou o nome do Douglas, gere de novo pelo config.json.
+
 Roda todos os dias por volta das 11h40 (horário de Brasília), sem nenhum computador ligado. O Douglas pediu para postar direto, sem aprovação. O post deve sair perto das 12h.
 
 ## 1. Já postou hoje?

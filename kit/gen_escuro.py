@@ -94,8 +94,8 @@ def build(cfg):
     return f"""<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><style>{CSS % p}</style></head><body>
 <div class="bg" style="background-image:url('{cfg['fundo']}')"></div><div class="sombra"></div>
-<div class="cab"><div class="ft"><img src="assets/foto.png" alt=""></div>
-<div><div class="nm">Douglas Medeiros {SELO}</div><div class="ar">@infobolsainvest</div></div></div>
+<div class="cab"><div class="ft"><img src="assets/avatar_infobolsa.png" alt=""></div>
+<div><div class="nm">InfoBolsa Investimentos {SELO}</div><div class="ar">@infobolsainvest</div></div></div>
 <div class="bloco">{tag}{miolo}{sub}</div>
 {fonte}
 {SCRIPT}
