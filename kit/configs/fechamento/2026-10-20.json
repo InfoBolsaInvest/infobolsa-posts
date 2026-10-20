@@ -1,0 +1,23 @@
+{
+ "data": "2026-10-20",
+ "ibov": {"pontos": "208.296", "var": 1.57},
+ "extras": [
+  {"rotulo": "Dólar", "valor": "R$ 5,02", "var": -0.58},
+  {"rotulo": "Na semana", "var": 1.39}
+ ],
+ "altas": [
+  ["MGLU3", "Magazine Luiza", 14.79],
+  ["VAMO3", "Vamos", 8.32],
+  ["NATU3", "Natura", 7.75],
+  ["HAPV3", "Hapvida", 7.55],
+  ["POMO4", "Marcopolo", 6.00]
+ ],
+ "baixas": [
+  ["EMBJ3", "Embraer", -1.71],
+  ["VALE3", "Vale", -1.39],
+  ["SUZB3", "Suzano", -1.03],
+  ["BRAP4", "Bradespar", -0.59],
+  ["BEEF3", "Minerva", -0.23]
+ ],
+ "fonte": "Fechamento de 20/10/2026. Fonte: B3"
+}
