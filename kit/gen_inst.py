@@ -580,6 +580,35 @@ def build_historia(c, tema, out):
     print("\n".join(arqs))
 
 
+CSS_CONTO = """
+body{background:#f5f4ef}
+.ct{position:absolute;left:96px;right:96px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;gap:50px;padding-bottom:30px}
+.ct p{font-weight:700;font-size:var(--fs,56px);line-height:1.2;letter-spacing:-.8px;color:#162526}
+.ct p.l{font-weight:400}
+.ct .g{font-size:var(--fs2,116px);line-height:1;letter-spacing:-3px;font-weight:700}
+.ct mark{background:linear-gradient(transparent 12%,#FFB400 12%,#FFB400 92%,transparent 92%);color:#162526;padding:0 14px;margin-left:-14px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.hdl{position:absolute;left:0;right:0;bottom:48px;text-align:center;font-size:24px;font-weight:400;color:#7b8f8a;letter-spacing:.3px}
+"""
+
+
+def build_conto_slide(s, c):
+    fs = s.get("fs", c.get("fs", 56))
+    ps = "".join(f'<p class="{x[0] if isinstance(x, list) else ""}"' + (' style="font-size:var(--fs2)"' if isinstance(x, list) and x[0] == "g" else "") + f'>{x[1] if isinstance(x, list) else x}</p>' for x in s["p"])
+    return f"""<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>{CSS.replace('FS/', FS)}{CSS_CONTO}</style></head>
+<body style="--fg:#162526;--fs:{fs}px;--fs2:{s.get("fs2", 116)}px"><div class="ct">{ps}</div><div class="hdl">@infobolsainvestimentos</div></body></html>"""
+
+
+def build_conto(c, tema, out):
+    """Carrossel de conto em texto puro. cfg: {"fs":56, "slides":[{"p":["parágrafo", ["g","texto grande"], ...], "fs":56}]}; <mark> = marca-texto amarelo."""
+    base = out[:-5] if out.endswith(".html") else out
+    arqs = []
+    for i, s in enumerate(c["slides"], 1):
+        a = f"{base}-{i}.html"
+        open(a, "w").write(build_conto_slide(s, c))
+        arqs.append(a)
+    print("\n".join(arqs))
+
+
 def build_semana_slide(s, tema):
     """Um slide da agenda: tabela Ativo (logo, ticker, tipo do provento) | Valor | Yield | Paga em."""
     rows = s["linhas"]
@@ -625,6 +654,9 @@ if __name__ == "__main__":
     c = json.load(open(cfgp)) if cfgp != "-" else {}
     if tipo == "historia":
         build_historia(c, tema, out)
+        sys.exit()
+    if tipo == "conto":
+        build_conto(c, tema, out)
         sys.exit()
     if tipo == "semana":
         build_semana(c, tema, out)
