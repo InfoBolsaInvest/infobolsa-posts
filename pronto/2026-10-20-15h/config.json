@@ -1,53 +1,61 @@
 {
- "titulo": "10 ações que vão te <span>aposentar</span> 👇",
- "tsize": 54,
- "raio": 310,
- "cy": 745,
- "fixo": "📌 <b style=\"font-weight:600\">Mudaria alguma?</b> Deixe nos comentários",
- "fatias": [
+ "titulo": "Ações <b style=\"font-weight:600\">abaixo de R$ 20</b> que pagam <span>dividendos</span> 👇",
+ "sub": "",
+ "aba": "Dividendos e cotação",
+ "colunas": [
+  "Ação",
+  "Cotação",
+  "Dividend yield 12 meses"
+ ],
+ "cols": "1.25fr 1fr 1.15fr",
+ "lh": 82,
+ "destaque": 2,
+ "top": 392,
+ "linhas": [
   [
-   "BBAS3",
-   "assets/logos_b3/BBAS3.png"
+   "<div style=\"display:flex;align-items:center;gap:16px\"><span style=\"width:56px;height:56px;border-radius:12px;background:#00588c;overflow:hidden;flex:none;display:block\"><img src=\"assets/logos_b3/BRSR6.png\" style=\"width:100%;height:100%;object-fit:cover\"></span><b style=\"font-weight:700;font-size:30px\">BRSR6</b></div>",
+   "R$ 17,56",
+   "8,76%"
   ],
   [
-   "BBDC4",
-   "assets/logos_b3/BBDC4.png"
+   "<div style=\"display:flex;align-items:center;gap:16px\"><span style=\"width:56px;height:56px;border-radius:12px;background:#0b3c85;overflow:hidden;flex:none;display:block\"><img src=\"assets/logos_b3/TIMS3.png\" style=\"width:100%;height:100%;object-fit:cover\"></span><b style=\"font-weight:700;font-size:30px\">TIMS3</b></div>",
+   "R$ 18,77",
+   "7,84%"
   ],
   [
-   "ITUB4",
-   "assets/logos_b3/ITUB4.png"
+   "<div style=\"display:flex;align-items:center;gap:16px\"><span style=\"width:56px;height:56px;border-radius:12px;background:#293253;overflow:hidden;flex:none;display:block\"><img src=\"assets/logos_b3/CMIN3.png\" style=\"width:100%;height:100%;object-fit:cover\"></span><b style=\"font-weight:700;font-size:30px\">CMIN3</b></div>",
+   "R$ 4,95",
+   "7,76%"
   ],
   [
-   "CMIG4",
-   "assets/logos_b3/CMIG4.png"
+   "<div style=\"display:flex;align-items:center;gap:16px\"><span style=\"width:56px;height:56px;border-radius:12px;background:#193ea0;overflow:hidden;flex:none;display:block\"><img src=\"assets/logos_b3/ABEV3.png\" style=\"width:100%;height:100%;object-fit:cover\"></span><b style=\"font-weight:700;font-size:30px\">ABEV3</b></div>",
+   "R$ 16,56",
+   "7,55%"
   ],
   [
-   "EMBJ3",
-   "assets/logos_b3/EMBJ3.png"
+   "<div style=\"display:flex;align-items:center;gap:16px\"><span style=\"width:56px;height:56px;border-radius:12px;background:#1d3c97;overflow:hidden;flex:none;display:block\"><img src=\"assets/logos_b3/ITSA4.png\" style=\"width:100%;height:100%;object-fit:cover\"></span><b style=\"font-weight:700;font-size:30px\">ITSA4</b></div>",
+   "R$ 15,45",
+   "7,32%"
   ],
   [
-   "TAEE11",
-   "assets/logos_b3/TAEE11.png"
+   "<div style=\"display:flex;align-items:center;gap:16px\"><span style=\"width:56px;height:56px;border-radius:12px;background:#dff3fb;overflow:hidden;flex:none;display:block\"><img src=\"assets/logos_b3/BLAU3.png\" style=\"width:100%;height:100%;object-fit:cover\"></span><b style=\"font-weight:700;font-size:30px\">BLAU3</b></div>",
+   "R$ 12,71",
+   "7,12%"
   ],
   [
-   "WEGE3",
-   "assets/logos_b3/WEGE3.png"
+   "<div style=\"display:flex;align-items:center;gap:16px\"><span style=\"width:56px;height:56px;border-radius:12px;background:#89d600;overflow:hidden;flex:none;display:block\"><img src=\"assets/logos_b3/CMIG4.png\" style=\"width:100%;height:100%;object-fit:cover\"></span><b style=\"font-weight:700;font-size:30px\">CMIG4</b></div>",
+   "R$ 11,61",
+   "6,79%"
   ],
   [
-   "PETR4",
-   "assets/logos_b3/PETR4.png"
-  ],
-  [
-   "CPLE6",
-   "assets/logos_b3/CPLE6.png"
-  ],
-  [
-   "CSMG3",
-   "assets/logos_b3/CSMG3.png"
+   "<div style=\"display:flex;align-items:center;gap:16px\"><span style=\"width:56px;height:56px;border-radius:12px;background:#009148;overflow:hidden;flex:none;display:block\"><img src=\"assets/logos_b3/KLBN11.png\" style=\"width:100%;height:100%;object-fit:cover\"></span><b style=\"font-weight:700;font-size:30px\">KLBN11</b></div>",
+   "R$ 18,13",
+   "6,46%"
   ]
  ],
  "rodape": [
-  "Lista de exemplo, sem ordem de preferência. Rentabilidade passada não garante a futura.",
+  "Dados do StatusInvest em 20/10/26. Dividendos passados não garantem dividendos futuros.",
   "Não é uma recomendação de compra ou venda."
- ]
+ ],
+ "tsize": 60
 }
