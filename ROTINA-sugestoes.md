@@ -1,6 +1,10 @@
-# Rotina diária: sugestão de post branco para as 07h e as 15h (@infobolsainvestimentos)
+# Post branco do @infobolsainvestimentos: uma arte por dia ao meio-dia (Planner)
 
-PAUSADA desde 19/10/2026 (pedido do Douglas): os posts das 07h e 15h do @infobolsainvestimentos passam a ser feitos com ele, conversa a conversa, e agendados no Planner. A tarefa agendada desta rotina foi desligada. O Windsor agora está ligado só ao perfil novo @infobolsainvest (17841475583342876).
+ATUALIZADO EM 20/10/2026 (pedido do Douglas): o @infobolsainvestimentos passa a ter UMA arte por dia, sempre ao MEIO-DIA (12h). Não existem mais os posts das 07h e das 15h. A arte é feita com ele, conversa a conversa, e ele mesmo agenda no Planner (não vai pelo Windsor). A tarefa agendada desta rotina está DESLIGADA, não religue. O Windsor está ligado só ao perfil novo @infobolsainvest (17841475583342876), que recebe a notícia das 12h e o fechamento das 18h20 (ROTINA-noticia.md e ROTINA.md).
+
+Onde ficam as artes prontas do Planner: `pronto/AAAA-MM-DD-planner/` (1.png, 2.png com o slide de seguir, legenda.txt, config.json). Não use o nome `-12h`, que é da notícia do @infobolsainvest. Cabeçalho da arte: @infobolsainvestimentos (padrão do gen_inst.py).
+
+O restante deste arquivo é histórico das rotinas de 07h e 15h; vale como guia de estilo, formatos e regras de conteúdo (seções 4 a 5), não como agenda.
 
 Roda todos os dias às 06h50 e às 14h50 (horário de Brasília), na nuvem, sem computador ligado. Cada execução cria UMA sugestão de post: a das 06h50 é a sugestão das 07h, a das 14h50 é a das 15h.
 
