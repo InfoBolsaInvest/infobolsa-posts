@@ -7,7 +7,7 @@ BBDC3 (Bradesco): R$ 17,84, DY de 8,23%
 BEES3 (Banestes): R$ 9,98, DY de 7,85%
 ITUB3 (Itaú): R$ 51,81, DY de 6,05%
 
-A coluna "Pagou 12m" mostra quanto cada ação pagou por papel nos últimos 12 meses. O dividend yield é esse valor dividido pela cotação. Ele mostra o passado, não promete o futuro. Em Bradesco, Itaú e Banestes boa parte do pagamento mensal é em valores pequenos, e o restante vem em pagamentos extras ao longo do ano.
+A coluna "Pagou 12m" mostra quanto cada ação pagou por papel nos últimos 12 meses. O dividend yield é esse valor dividido pela cotação. Ele mostra o passado, não promete o futuro.
 
 Salva esse post pra consultar depois e manda pra aquele amigo que quer receber todo mês. E me segue pra mais conteúdo assim.
 
