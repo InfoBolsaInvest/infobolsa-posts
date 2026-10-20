@@ -1,0 +1,47 @@
+{
+ "titulo": "Ações que pagam <span>dividendos</span> <b style=\"font-weight:600\">todos os meses</b> 👇",
+ "sub": "",
+ "aba": "Proventos mensais",
+ "colunas": [
+  "Ação",
+  "Cotação",
+  "DY 12m",
+  "Pagou 12m"
+ ],
+ "cols": "1.25fr 1fr .8fr 1fr",
+ "lh": 128,
+ "destaque": 2,
+ "top": 380,
+ "linhas": [
+  [
+   "<div style=\"display:flex;align-items:center;gap:16px\"><span style=\"width:56px;height:56px;border-radius:12px;background:#086874;overflow:hidden;flex:none;display:block\"><img src=\"assets/logos_b3/ALOS3.png\" style=\"width:100%;height:100%;object-fit:cover\"></span><b style=\"font-weight:700;font-size:30px\">ALOS3</b></div>",
+   "R$ 34,88",
+   "9,51%",
+   "R$ 3,32"
+  ],
+  [
+   "<div style=\"display:flex;align-items:center;gap:16px\"><span style=\"width:56px;height:56px;border-radius:12px;background:#ff0000;overflow:hidden;flex:none;display:block\"><img src=\"assets/logos_b3/BBDC3.png\" style=\"width:100%;height:100%;object-fit:cover\"></span><b style=\"font-weight:700;font-size:30px\">BBDC3</b></div>",
+   "R$ 17,84",
+   "8,23%",
+   "R$ 1,47"
+  ],
+  [
+   "<div style=\"display:flex;align-items:center;gap:16px\"><span style=\"width:56px;height:56px;border-radius:12px;background:#004a91;overflow:hidden;flex:none;display:block\"><img src=\"assets/logos_b3/BEES3.png\" style=\"width:100%;height:100%;object-fit:cover\"></span><b style=\"font-weight:700;font-size:30px\">BEES3</b></div>",
+   "R$ 9,98",
+   "7,85%",
+   "R$ 0,78"
+  ],
+  [
+   "<div style=\"display:flex;align-items:center;gap:16px\"><span style=\"width:56px;height:56px;border-radius:12px;background:#ee7000;overflow:hidden;flex:none;display:block\"><img src=\"assets/logos_b3/ITUB3.png\" style=\"width:100%;height:100%;object-fit:cover\"></span><b style=\"font-weight:700;font-size:30px\">ITUB3</b></div>",
+   "R$ 51,81",
+   "6,05%",
+   "R$ 3,14"
+  ]
+ ],
+ "fim": "Essas ações pagam proventos todos os meses.",
+ "rodape": [
+  "Dados do StatusInvest em 20/10/26. Dividendos passados não garantem dividendos futuros.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "tsize": 60
+}
