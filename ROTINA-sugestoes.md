@@ -1,3 +1,5 @@
+TÍTULOS EM NEGRITO (21/10/2026): Douglas pediu títulos mais chamativos, fonte mais grossa (h1 peso 600). Vale para os posts novos, sem refazer os antigos.
+
 # Post branco do @infobolsainvestimentos: uma arte por dia ao meio-dia (Planner)
 
 ATUALIZADO EM 20/10/2026 (pedido do Douglas): o @infobolsainvestimentos passa a ter UMA arte por dia, sempre ao MEIO-DIA (12h). Não existem mais os posts das 07h e das 15h. A arte é feita com ele, conversa a conversa, e ele mesmo agenda no Planner (não vai pelo Windsor). A tarefa agendada desta rotina está DESLIGADA, não religue. O Windsor está ligado só ao perfil novo @infobolsainvest (17841475583342876), que recebe a notícia das 12h e o fechamento das 18h20 (ROTINA-noticia.md e ROTINA.md).
