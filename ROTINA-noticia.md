@@ -83,7 +83,7 @@ Dentro de `kit/`:
 1. `git add -A && git commit -m "Notícia DD/MM/AAAA" && git push` (branch main).
 2. Confira que `https://raw.githubusercontent.com/InfoBolsaInvest/infobolsa-posts/main/posts/noticia-AAAA-MM-DD.jpg` abre (pode levar alguns segundos).
 3. Poste no Instagram com o conector Windsor.ai: `execute_action`, connector `instagram`, conta `17841475583342876`, ação `create_image_post`, com `image_url` acima e a legenda.
-4. Leia a resposta: se vier qualquer erro (ex.: falta de permissão instagram_content_publish), NÃO considere postado, não tente de novo por outro caminho e avise o Douglas com o texto do erro.
+4. Leia a resposta. Se vier erro (qualquer erro), espere 1 minuto (`sleep 60`) e tente de novo UMA vez, com a mesma ação e os mesmos dados (pedido do Douglas em 21/10/2026: às vezes é erro à toa do Instagram). Se a segunda tentativa também der erro, NÃO considere postado, não tente mais nem por outro caminho e avise o Douglas com o texto do erro.
 
 ## 6. Legenda (modelo)
 ```
