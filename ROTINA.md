@@ -28,10 +28,10 @@ Dentro de `kit/`:
 
 ## 4. Publicar a imagem e postar
 1. `git add -A && git commit -m "Fechamento DD/MM/AAAA" && git push` (branch main).
-2. Confira que `https://raw.githubusercontent.com/InfoBolsaInvest/infobolsa-posts/main/posts/fechamento-AAAA-MM-DD.jpg` abre (pode levar alguns segundos).
-3. Poste no Instagram com o conector Windsor.ai: `execute_action`, connector `instagram`, conta `17841475583342876`, ação `create_image_post`, com `image_url` acima e a legenda.
-4. Poste também o stories: `execute_action`, connector `instagram`, conta `17841475583342876`, ação `create_story`, com `image_url` = `https://raw.githubusercontent.com/InfoBolsaInvest/infobolsa-posts/main/posts/fechamento-AAAA-MM-DD-story.jpg` (stories não tem legenda).
-5. Leia as respostas: se vier qualquer erro (ex.: falta de permissão instagram_content_publish), NÃO considere postado e avise o Douglas com o texto do erro.
+2. Confira que os links `https://raw.githubusercontent.com/InfoBolsaInvest/infobolsa-posts/main/posts/fechamento-AAAA-MM-DD.jpg` e `...-story.jpg` abrem. Depois espere uns 30 segundos antes de postar (`sleep 30`).
+3. Poste no Instagram com o conector Windsor.ai: `execute_action`, connector `instagram`, conta `17841475583342876`, ação `create_image_post`, com `image_url` do feed e a legenda. Espere a resposta.
+4. Espere uns 30 a 60 segundos (`sleep 45`) e só então poste o stories: `execute_action`, connector `instagram`, conta `17841475583342876`, ação `create_story`, com `image_url` = `https://raw.githubusercontent.com/InfoBolsaInvest/infobolsa-posts/main/posts/fechamento-AAAA-MM-DD-story.jpg` (stories não tem legenda). Nunca poste feed e stories ao mesmo tempo, sempre um depois do outro.
+5. Leia as respostas. Se o feed ou o stories der erro (qualquer erro), espere 1 minuto (`sleep 60`) e tente de novo UMA vez, com a mesma ação e os mesmos dados (pedido do Douglas em 21/10/2026: às vezes é erro à toa do Instagram, como "The requested resource does not exist"). Se a segunda tentativa também der erro, NÃO considere postado, não tente mais nem por outro caminho e avise o Douglas com o texto do erro.
 
 ## 5. Legenda (modelo)
 ```
