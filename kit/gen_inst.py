@@ -279,7 +279,7 @@ def build_top3(c, tema):
     css = ("<style>.t3g{position:absolute;left:24px;right:24px;top:78px;bottom:24px;display:grid;grid-template-columns:repeat(NC,1fr);grid-template-rows:ROWS;gap:14px}"
            ".t3c{background:#fff;border:1.5px solid var(--borda);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}"
            ".t3h{background:#FFB400;color:#162526;font-weight:600;font-size:FHpx;letter-spacing:.3px;padding:9px 12px;text-transform:uppercase;text-align:center}"
-           ".t3r{flex:1;display:flex;align-items:center;gap:10px;padding:0 14px;border-top:1px solid var(--linha);font-size:FRpx}"
+           ".t3r{flex:1;display:flex;align-items:center;gap:7px;padding:0 10px;border-top:1px solid var(--linha);font-size:FRpx}"
            ".t3r:first-of-type{border-top:0}"
            ".t3r i{font-style:normal;width:32px;height:32px;border-radius:50%;background:var(--acc);color:#fff;font-weight:600;font-size:18px;display:flex;align-items:center;justify-content:center;flex:none}"
            ".t3r b{font-weight:600;color:var(--fg);flex:1}.t3r span{color:var(--acc);font-weight:600;font-size:FDpx}"

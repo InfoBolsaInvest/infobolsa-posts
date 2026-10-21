@@ -1,0 +1,161 @@
+{
+ "titulo": "Top 3 FIIs por <span>segmento</span>",
+ "sub": "Os maiores dividend yields em 12 meses 👇",
+ "aba": "Ranking por segmento",
+ "tsize": 66,
+ "top": 372,
+ "h": 870,
+ "cols": 4,
+ "rows": "1fr 1fr .62fr",
+ "fh": 19,
+ "fr": 19,
+ "fd": 18,
+ "fk": 19,
+ "blocos": [
+  [
+   "Galpões",
+   [
+    [
+     "GGRC11",
+     "12,97%"
+    ],
+    [
+     "BRCO11",
+     "9,86%"
+    ],
+    [
+     "XPLG11",
+     "9,81%"
+    ]
+   ]
+  ],
+  [
+   "Recebíveis",
+   [
+    [
+     "VGIR11",
+     "15,70%"
+    ],
+    [
+     "CPTS11",
+     "13,90%"
+    ],
+    [
+     "RBRR11",
+     "13,29%"
+    ]
+   ]
+  ],
+  [
+   "FOFs",
+   [
+    [
+     "JSAF11",
+     "13,02%"
+    ],
+    [
+     "KFOF11",
+     "11,85%"
+    ],
+    [
+     "HFOF11",
+     "10,55%"
+    ]
+   ]
+  ],
+  [
+   "Agro",
+   [
+    [
+     "VGIA11",
+     "18,02%"
+    ],
+    [
+     "SNAG11",
+     "16,09%"
+    ],
+    [
+     "KNCA11",
+     "13,71%"
+    ]
+   ]
+  ],
+  [
+   "Shoppings",
+   [
+    [
+     "PMLL11",
+     "10,59%"
+    ],
+    [
+     "XPML11",
+     "10,42%"
+    ],
+    [
+     "HGBS11",
+     "10,21%"
+    ]
+   ]
+  ],
+  [
+   "Renda urbana",
+   [
+    [
+     "RBVA11",
+     "11,91%"
+    ],
+    [
+     "GARE11",
+     "11,46%"
+    ],
+    [
+     "HGRU11",
+     "9,46%"
+    ]
+   ]
+  ],
+  [
+   "Escritórios",
+   [
+    [
+     "KORE11",
+     "12,51%"
+    ],
+    [
+     "HGRE11",
+     "9,03%"
+    ],
+    [
+     "RBRP11",
+     "8,89%"
+    ]
+   ]
+  ],
+  [
+   "Híbridos",
+   [
+    [
+     "ALZR11",
+     "9,68%"
+    ],
+    [
+     "KNRI11",
+     "8,05%"
+    ],
+    [
+     "Só 2 elegíveis",
+     ""
+    ]
+   ]
+  ]
+ ],
+ "criterio": [
+  "Ordenado pelo dividend yield dos últimos 12 meses",
+  "Liquidez acima de R$ 1 mi por dia e P/VP a partir de 0,80",
+  "Escritórios: P/VP a partir de 0,65 (setor negocia com desconto)"
+ ],
+ "rodape": [
+  "Fonte: Funds Explorer, 21/10/2026. Rendimentos passados não garantem os futuros.",
+  "Não é uma recomendação de compra ou venda."
+ ]
+}
