@@ -273,15 +273,20 @@ def build_top3(c, tema):
         cards += f'<div class="t3c"><div class="t3h">{seg}</div>{ln}</div>'
     crit = "".join(f"<li>{x}</li>" for x in c["criterio"])
     cards += f'<div class="t3c t3k"><div class="t3h">Como montei</div><ul>{crit}</ul></div>'
-    css = ("<style>.t3g{position:absolute;left:24px;right:24px;top:78px;bottom:24px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1.1fr 1.1fr .9fr;gap:14px}"
+    nc = c.get("cols", 2)
+    rows = c.get("rows", "1.1fr 1.1fr .9fr")
+    fh, fr, fd, fk = c.get("fh", 23), c.get("fr", 28), c.get("fd", 26), c.get("fk", 22)
+    css = ("<style>.t3g{position:absolute;left:24px;right:24px;top:78px;bottom:24px;display:grid;grid-template-columns:repeat(NC,1fr);grid-template-rows:ROWS;gap:14px}"
            ".t3c{background:#fff;border:1.5px solid var(--borda);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}"
-           ".t3h{background:#FFB400;color:#162526;font-weight:600;font-size:23px;letter-spacing:.3px;padding:9px 18px;text-transform:uppercase}"
-           ".t3r{flex:1;display:flex;align-items:center;gap:14px;padding:0 18px;border-top:1px solid var(--linha);font-size:28px}"
+           ".t3h{background:#FFB400;color:#162526;font-weight:600;font-size:FHpx;letter-spacing:.3px;padding:9px 12px;text-transform:uppercase;text-align:center}"
+           ".t3r{flex:1;display:flex;align-items:center;gap:10px;padding:0 14px;border-top:1px solid var(--linha);font-size:FRpx}"
            ".t3r:first-of-type{border-top:0}"
-           ".t3r i{font-style:normal;width:34px;height:34px;border-radius:50%;background:var(--acc);color:#fff;font-weight:600;font-size:19px;display:flex;align-items:center;justify-content:center;flex:none}"
-           ".t3r b{font-weight:600;color:var(--fg);flex:1}.t3r span{color:var(--acc);font-weight:600;font-size:26px}"
-           ".t3k{background:#eef6f1;grid-column:1/-1}.t3k ul{list-style:none;padding:10px 22px;font-size:22px;line-height:1.4;color:var(--sub);display:flex;flex-direction:column;justify-content:space-around;flex:1}"
+           ".t3r i{font-style:normal;width:32px;height:32px;border-radius:50%;background:var(--acc);color:#fff;font-weight:600;font-size:18px;display:flex;align-items:center;justify-content:center;flex:none}"
+           ".t3r b{font-weight:600;color:var(--fg);flex:1}.t3r span{color:var(--acc);font-weight:600;font-size:FDpx}"
+           ".t3k{background:#eef6f1;grid-column:1/-1}.t3k ul{list-style:none;padding:10px 22px;font-size:FKpx;line-height:1.4;color:var(--sub);display:flex;flex-direction:column;justify-content:space-around;flex:1}"
            ".t3k li:before{content:'';display:inline-block;width:8px;height:8px;border-radius:50%;background:#FFB400;margin-right:10px}</style>")
+    for k, v in {"NC": nc, "ROWS": rows, "FH": fh, "FR": fr, "FD": fd, "FK": fk}.items():
+        css = css.replace(k, str(v))
     corpo = css + pasta(top, h, c.get("aba", "Ranking por segmento"), f'<div class="t3g">{cards}</div>', tema)
     return pagina(tema, c["titulo"], c.get("sub", ""), corpo, c["rodape"], tsize=c.get("tsize", 72))
 
