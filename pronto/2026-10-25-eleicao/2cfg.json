@@ -1,0 +1,50 @@
+{
+ "titulo": "As propostas na <span>economia</span>",
+ "sub": "O que cada plano de governo registrado no TSE prevê 👇",
+ "aba": "Flávio x Lula",
+ "tsize": 62,
+ "top": 385,
+ "lh": 106,
+ "colunas": [
+  "",
+  "Flávio Bolsonaro",
+  "Lula"
+ ],
+ "cols": "0.8fr 1.3fr 1.3fr",
+ "linhas": [
+  [
+   "Gastos",
+   "<span style=\"font-size:25px;line-height:1.22;display:block\">Cortar despesas e reformar a máquina pública</span>",
+   "<span style=\"font-size:25px;line-height:1.22;display:block\">Manter o arcabouço fiscal atual</span>"
+  ],
+  [
+   "Consumo",
+   "<span style=\"font-size:25px;line-height:1.22;display:block\">Rever a reforma tributária e baixar o IVA</span>",
+   "<span style=\"font-size:25px;line-height:1.22;display:block\">Aplicar a reforma já aprovada (CBS e IBS)</span>"
+  ],
+  [
+   "Imposto de Renda",
+   "<span style=\"font-size:25px;line-height:1.22;display:block\">Não consta no plano</span>",
+   "<span style=\"font-size:25px;line-height:1.22;display:block\">Manter isenção até R$ 5.000 por mês</span>"
+  ],
+  [
+   "Estatais",
+   "<span style=\"font-size:25px;line-height:1.22;display:block\">Retomar privatizações e concessões</span>",
+   "<span style=\"font-size:25px;line-height:1.22;display:block\">Fortalecer as estatais estratégicas</span>"
+  ],
+  [
+   "Petrobras",
+   "<span style=\"font-size:25px;line-height:1.22;display:block\">Sem plano específico no documento</span>",
+   "<span style=\"font-size:25px;line-height:1.22;display:block\">Ampliar petróleo, refino e fertilizantes</span>"
+  ],
+  [
+   "Escala 6x1",
+   "<span style=\"font-size:25px;line-height:1.22;display:block\">Disse que vota pelo fim</span>",
+   "<span style=\"font-size:25px;line-height:1.22;display:block\">Defende jornada de 40 horas</span>"
+  ]
+ ],
+ "rodape": [
+  "Fontes: programas registrados no TSE, via Gazeta SP, SBT News, BPMoney e Forbes (06 a 14/10/2026).",
+  "Resumo neutro, sem opinião. Não é uma recomendação de voto, de compra ou de venda."
+ ]
+}
