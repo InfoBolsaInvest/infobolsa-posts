@@ -4,9 +4,9 @@ o,tit,pct,fp,lp,fv,lv,l1,par=sys.argv[1:10]
 n=lambda s: float(s.replace('.','').replace(',','.'))
 w=n(pct); a=n(fp); b=n(lp)
 def card(nome,tag,foto,pos,p,v,cor,wd):
-    return f'''<div class="cd"><div class="av" style="background-image:url(assets/{foto});background-position:{pos}"></div>
-<div class="in"><div class="nm">{nome}<small>{tag}</small></div><div class="vt">{v} votos</div>
-<div class="tr"><i style="width:{wd}%;background:{cor}"></i></div></div><div class="pc" style="color:{cor}">{p}%</div></div>'''
+    return f'''<div class="cd"><div class="ph" style="background-image:url(assets/{foto});background-position:{pos}"></div><div class="gr"></div>
+<div class="nm">{nome}<small>{tag}</small></div><div class="pc" style="color:{cor}">{p}%</div><div class="vt">{v} votos</div>
+<div class="tr"><i style="width:{wd}%;background:{cor}"></i></div></div>'''
 html=f'''<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face{{font-family:"P";font-weight:300;src:url("fonts/node_modules/@fontsource/poppins/files/poppins-latin-300-normal.woff2")}}
 @font-face{{font-family:"P";font-weight:500;src:url("fonts/node_modules/@fontsource/poppins/files/poppins-latin-500-normal.woff2")}}
@@ -18,21 +18,21 @@ body{{position:relative;font-family:"P",sans-serif;color:#fff;background:radial-
 .top{{position:absolute;left:54px;top:70px;display:flex;align-items:center;gap:20px}}
 .top b{{background:#e5383b;font-weight:700;font-size:30px;padding:8px 22px;border-radius:10px;letter-spacing:1px}}
 .top span{{font-weight:500;font-size:25px;letter-spacing:1.5px;text-transform:uppercase;color:#e8f0ea}}
-h1{{position:absolute;left:54px;right:54px;top:150px;font-weight:700;font-size:92px;line-height:1.05;letter-spacing:-2px}}
+h1{{position:absolute;left:54px;right:54px;top:150px;font-weight:700;font-size:60px;line-height:1.05;letter-spacing:-1px;white-space:nowrap}}
 h1 em{{font-style:normal;color:#FFB400}}
-.cd{{position:absolute;left:54px;right:54px;height:230px;border-radius:28px;background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.14);display:flex;align-items:center;padding:0 36px 0 24px;gap:28px}}
-.c1{{top:430px}}.c2{{top:690px}}
-.av{{width:176px;height:176px;border-radius:50%;background-size:cover;border:6px solid #162526;box-shadow:0 0 0 3px rgba(255,255,255,.35);flex:none}}
-.in{{flex:1}}
-.nm{{font-weight:600;font-size:31px;text-transform:uppercase;letter-spacing:.5px}}
-.nm small{{display:inline-block;margin-left:10px;font-size:18px;font-weight:500;border:1.5px solid rgba(255,255,255,.7);border-radius:6px;padding:2px 9px;vertical-align:5px}}
-.vt{{font-weight:300;font-size:28px;color:#e8f0ea;margin-top:2px}}
-.tr{{height:16px;border-radius:8px;background:rgba(255,255,255,.14);margin-top:20px}}.tr i{{display:block;height:16px;border-radius:8px}}
-.pc{{font-weight:700;font-size:96px;letter-spacing:-2px;min-width:300px;text-align:right}}
-.ap{{position:absolute;left:54px;right:54px;top:975px}}
-.ap .t{{font-weight:600;font-size:54px;letter-spacing:-1px}}.ap .t em{{font-style:normal;font-weight:700;color:#FFB400}}
+.cd{{position:absolute;top:250px;width:478px;height:690px;border-radius:30px;overflow:hidden;background:#0e1a1b}}
+.c1{{left:54px}}.c2{{right:54px}}
+.ph{{position:absolute;inset:0;background-size:cover}}
+.gr{{position:absolute;left:0;right:0;bottom:0;height:420px;background:linear-gradient(180deg,rgba(22,37,38,0),rgba(22,37,38,.96) 70%)}}
+.nm{{position:absolute;left:0;right:0;top:455px;text-align:center;font-weight:600;font-size:29px;text-transform:uppercase;letter-spacing:.5px}}
+.nm small{{display:inline-block;margin-left:10px;font-size:17px;font-weight:500;border:1.5px solid rgba(255,255,255,.7);border-radius:6px;padding:2px 8px;vertical-align:4px}}
+.pc{{position:absolute;left:0;right:0;top:490px;text-align:center;font-weight:700;font-size:112px;letter-spacing:-2px;line-height:1.1}}
+.vt{{position:absolute;left:0;right:0;top:612px;text-align:center;font-weight:300;font-size:25px;color:#e8f0ea}}
+.tr{{position:absolute;left:36px;right:36px;top:660px;height:12px;border-radius:6px;background:rgba(255,255,255,.18)}}.tr i{{display:block;height:12px;border-radius:6px}}
+.ap{{position:absolute;left:54px;right:54px;top:985px}}
+.ap .t{{font-weight:600;font-size:50px;letter-spacing:-1px}}.ap .t em{{font-style:normal;font-weight:700;color:#FFB400}}
 .bar{{height:22px;border-radius:11px;background:rgba(255,255,255,.14);margin-top:16px}}.bar i{{display:block;height:22px;border-radius:11px;background:#FFB400;width:{w}%}}
-.tx{{margin-top:22px;font-weight:300;font-size:30px;color:#e8f0ea}}.tx b{{font-weight:600;color:#fff}}
+.tx{{margin-top:18px;font-weight:300;font-size:28px;color:#e8f0ea}}.tx b{{font-weight:600;color:#fff}}
 .ft{{position:absolute;left:54px;right:54px;top:1238px;display:flex;align-items:center;gap:16px}}
 .ft img{{width:68px;height:68px;border-radius:50%;object-fit:cover;object-position:50% 55%}}
 .ft .n{{font-weight:600;font-size:24px}}.ft .h{{font-weight:300;font-size:19px;color:rgba(255,255,255,.75)}}
@@ -40,7 +40,6 @@ h1 em{{font-style:normal;color:#FFB400}}
 </style></head><body>
 <div class="top"><b>URGENTE</b><span>Presidente · 2º turno</span></div>
 <h1>{tit}</h1>
-<div class="c1" style="display:none"></div>
 {card("Flávio Bolsonaro","PL","flavio.jpg","50% 14%",fp,fv,"#FFB400",a).replace('class="cd"','class="cd c1"')}
 {card("Lula","PT","lula.jpg","50% 10%",lp,lv,"#ffffff",b).replace('class="cd"','class="cd c2"')}
 <div class="ap"><div class="t"><em>{pct}%</em> das urnas apuradas</div><div class="bar"><i></i></div><div class="tx">{l1}</div></div>
