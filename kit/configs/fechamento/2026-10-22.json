@@ -1,0 +1,55 @@
+{
+ "data": "2026-10-22",
+ "ibov": {
+  "pontos": "204.120",
+  "var": -1.15
+ },
+ "extras": [
+  {
+   "rotulo": "Dólar",
+   "valor": "R$ 5,04",
+   "var": 0.22
+  },
+  {
+   "rotulo": "Na semana",
+   "var": -0.64
+  }
+ ],
+ "altas": [
+  [
+   "BBSE3",
+   "BB Seguridade",
+   2.05
+  ],
+  [
+   "PRIO3",
+   "Prio",
+   1.85
+  ],
+  [
+   "VIVT3",
+   "Vivo",
+   1.65
+  ]
+ ],
+ "baixas": [
+  [
+   "CSNA3",
+   "CSN",
+   -5.43
+  ],
+  [
+   "USIM5",
+   "Usiminas",
+   -4.81
+  ],
+  [
+   "EMBJ3",
+   "Embraer",
+   -4.66
+  ]
+ ],
+ "fonte": "Fechamento de 22/10/2026. Fonte: B3",
+ "nota_altas": "As 3 ações do Ibovespa<br>que mais subiram hoje",
+ "nota_baixas": "As 3 ações do Ibovespa<br>que mais caíram hoje"
+}
