@@ -1,0 +1,13 @@
+{
+ "data": "2026-10-23",
+ "ibov": {"pontos": "205.083", "var": 0.47},
+ "extras": [
+  {"rotulo": "Dólar", "valor": "R$ 4,99", "var": -0.90},
+  {"rotulo": "Na semana", "var": -0.17}
+ ],
+ "altas": [["CSNA3", "CSN", 12.41], ["USIM5", "Usiminas", 4.74], ["NATU3", "Natura", 4.50]],
+ "baixas": [["VBBR3", "Vibra", -3.19], ["WEGE3", "WEG", -2.89], ["VIVT3", "Vivo", -2.26]],
+ "fonte": "Fechamento de 23/10/2026. Fonte: B3",
+ "nota_altas": "As 3 ações do Ibovespa<br>que mais subiram hoje",
+ "nota_baixas": "As 3 ações do Ibovespa<br>que mais caíram hoje"
+}
