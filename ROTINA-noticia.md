@@ -12,6 +12,9 @@ Se `posts/noticia-AAAA-MM-DD.jpg` de hoje já existe no repositório, pare aqui 
 ## 1b. Post pronto
 Se existir a pasta `pronto/AAAA-MM-DD-12h/` de hoje (com `arte.png`, `config.json` e `legenda.txt`), o Douglas já escolheu a notícia: NÃO escolha outra. Faça só uma busca rápida para confirmar que não saiu fato novo que deixe o post errado (se saiu, ajuste o config, gere a arte de novo e diga isso na mensagem). Depois converta `arte.png` para `posts/noticia-AAAA-MM-DD.jpg` (quality 93), use `legenda.txt` como legenda e vá direto para a seção 5.
 
+## 1c. Post pronto em carrossel
+Se a pasta `pronto/AAAA-MM-DD-12h/` tiver `1.png`, `2.png`, `3.png`... (mais de uma imagem), o post é um CARROSSEL (pedido do Douglas em 25/10/2026). Converta cada slide para `posts/noticia-AAAA-MM-DD-1.jpg`, `-2.jpg`... (quality 93), faça commit e push, confira os links raw de todos e poste com o Windsor.ai: `execute_action`, connector `instagram`, conta `17841475583342876`, ação `create_carousel_post`, `image_urls` = links raw na ordem e `caption` = `legenda.txt`. Mesma regra de erro (1 nova tentativa após 1 minuto). Os slides 2 em diante são gerados por `kit/gen_senado.py` (modelo escuro com cabeçalho @infobolsainvest). Se não houver `1.png`, vale o fluxo normal da seção 1b.
+
 ## 2. Escolher a notícia do dia
 Pesquise (WebSearch) as notícias de HOJE (ou da noite anterior) que mexem com quem investe:
 - Ibovespa, dólar, juros, Selic, Copom, inflação (IPCA), Tesouro Direto, poupança
