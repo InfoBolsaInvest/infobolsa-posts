@@ -1,0 +1,13 @@
+{
+ "data": "2026-10-26",
+ "ibov": {"pontos": "176.608", "var": -13.88},
+ "extras": [
+  {"rotulo": "Dólar", "valor": "R$ 5,40", "var": 8.21},
+  {"rotulo": "Na semana", "var": -13.88}
+ ],
+ "altas": [["SUZB3", "Suzano", 10.08], ["EMBJ3", "Embraer", 8.89], ["WEGE3", "WEG", 4.21]],
+ "baixas": [["MGLU3", "Magazine Luiza", -58.23], ["VAMO3", "Vamos", -56.79], ["HAPV3", "Hapvida", -54.93]],
+ "fonte": "Fechamento de 26/10/2026. Fonte: B3",
+ "nota_altas": "As 3 ações do Ibovespa<br>que mais subiram hoje",
+ "nota_baixas": "As 3 ações do Ibovespa<br>que mais caíram hoje"
+}
