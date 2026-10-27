@@ -26,7 +26,7 @@ def page(css,body,pg): return BASE.replace('@@CSS@@',css).replace('@@SELO@@',SEL
 
 # Slide 2 do carrossel do Bradesco (27/10/2026): print do comunicado aos parceiros
 out=sys.argv[1]
-B=BASE.replace('Fontes: Agência Senado, Agência Brasil e Exame. Projeção de 05/10/2026.','Comunicado do Bradesco aos parceiros imobiliários. Tabela em vigor desde 26/10/2026.')
-css='''.pr{position:absolute;left:50%;top:370px;transform:translateX(-50%);height:830px;border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,.5)}'''
-body='<h1>O comunicado do<br><em>próprio Bradesco</em></h1><img class="pr" src="assets/prints/bradesco-comunicado-2026-10-26.png">'
+B=BASE.replace('Fontes: Agência Senado, Agência Brasil e Exame. Projeção de 05/10/2026.','Comunicado do Bradesco aos parceiros imobiliários, de 26/10/2026.')
+css='''.pr{position:absolute;left:50%;top:172px;transform:translateX(-50%);height:1058px;border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,.5)}'''
+body='<img class="pr" src="assets/prints/bradesco-comunicado-2026-10-26.png">'
 open(out,'w').write(B.replace('@@CSS@@',css).replace('@@SELO@@',SELO).replace('@@PG@@','2/2').replace('@@BODY@@',body))
