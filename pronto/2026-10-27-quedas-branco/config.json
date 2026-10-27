@@ -1,0 +1,59 @@
+{
+ "titulo": "Ações que <span>mais caíram</span> após as eleições",
+ "tsize": 68,
+ "sub": "As 10 maiores quedas da Bolsa após o 2º turno",
+ "aba": "Maiores quedas",
+ "colunas": [
+  "Ação",
+  "Variação"
+ ],
+ "cols": "1.6fr 1fr",
+ "lh": 66,
+ "top": 430,
+ "rodape": [
+  "Variação às 12h27 de 26/10/2026. Fonte: Status Invest.",
+  "Não é recomendação de compra ou venda."
+ ],
+ "linhas": [
+  [
+   "<div style=\"display:flex;align-items:center;gap:18px\"><img src=\"assets/logos_b3/VAMO3.png\" style=\"width:50px;height:50px;border-radius:12px;flex:none\"><div><b style=\"font-weight:600\">VAMO3</b><small style=\"margin-top:0\">Vamos</small></div></div>",
+   "<span style=\"color:#c0392b;font-weight:600\">-54,60%</span>"
+  ],
+  [
+   "<div style=\"display:flex;align-items:center;gap:18px\"><img src=\"assets/logos_b3/MGLU3.png\" style=\"width:50px;height:50px;border-radius:12px;flex:none\"><div><b style=\"font-weight:600\">MGLU3</b><small style=\"margin-top:0\">Magalu</small></div></div>",
+   "<span style=\"color:#c0392b;font-weight:600\">-53,98%</span>"
+  ],
+  [
+   "<div style=\"display:flex;align-items:center;gap:18px\"><img src=\"assets/logos_b3/CEAB3.png\" style=\"width:50px;height:50px;border-radius:12px;flex:none\"><div><b style=\"font-weight:600\">CEAB3</b><small style=\"margin-top:0\">C&A</small></div></div>",
+   "<span style=\"color:#c0392b;font-weight:600\">-46,17%</span>"
+  ],
+  [
+   "<div style=\"display:flex;align-items:center;gap:18px\"><img src=\"assets/logos_b3/CSAN3.png\" style=\"width:50px;height:50px;border-radius:12px;flex:none\"><div><b style=\"font-weight:600\">CSAN3</b><small style=\"margin-top:0\">Cosan</small></div></div>",
+   "<span style=\"color:#c0392b;font-weight:600\">-45,77%</span>"
+  ],
+  [
+   "<div style=\"display:flex;align-items:center;gap:18px\"><img src=\"assets/logos_b3/CYRE3.png\" style=\"width:50px;height:50px;border-radius:12px;flex:none\"><div><b style=\"font-weight:600\">CYRE3</b><small style=\"margin-top:0\">Cyrela</small></div></div>",
+   "<span style=\"color:#c0392b;font-weight:600\">-43,77%</span>"
+  ],
+  [
+   "<div style=\"display:flex;align-items:center;gap:18px\"><img src=\"assets/logos_b3/MRVE3.png\" style=\"width:50px;height:50px;border-radius:12px;flex:none\"><div><b style=\"font-weight:600\">MRVE3</b><small style=\"margin-top:0\">MRV</small></div></div>",
+   "<span style=\"color:#c0392b;font-weight:600\">-42,53%</span>"
+  ],
+  [
+   "<div style=\"display:flex;align-items:center;gap:18px\"><img src=\"assets/logos_b3/ASAI3.png\" style=\"width:50px;height:50px;border-radius:12px;flex:none\"><div><b style=\"font-weight:600\">ASAI3</b><small style=\"margin-top:0\">Assaí</small></div></div>",
+   "<span style=\"color:#c0392b;font-weight:600\">-39,64%</span>"
+  ],
+  [
+   "<div style=\"display:flex;align-items:center;gap:18px\"><img src=\"assets/logos_b3/RENT3.png\" style=\"width:50px;height:50px;border-radius:12px;flex:none\"><div><b style=\"font-weight:600\">RENT3</b><small style=\"margin-top:0\">Localiza</small></div></div>",
+   "<span style=\"color:#c0392b;font-weight:600\">-39,03%</span>"
+  ],
+  [
+   "<div style=\"display:flex;align-items:center;gap:18px\"><img src=\"assets/logos_b3/B3SA3.png\" style=\"width:50px;height:50px;border-radius:12px;flex:none\"><div><b style=\"font-weight:600\">B3SA3</b><small style=\"margin-top:0\">B3</small></div></div>",
+   "<span style=\"color:#c0392b;font-weight:600\">-37,42%</span>"
+  ],
+  [
+   "<div style=\"display:flex;align-items:center;gap:18px\"><img src=\"assets/logos_b3/SMFT3.png\" style=\"width:50px;height:50px;border-radius:12px;flex:none\"><div><b style=\"font-weight:600\">SMFT3</b><small style=\"margin-top:0\">Smart Fit</small></div></div>",
+   "<span style=\"color:#c0392b;font-weight:600\">-33,99%</span>"
+  ]
+ ]
+}
