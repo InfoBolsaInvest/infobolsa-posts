@@ -1,0 +1,11 @@
+{
+ "data": "2026-10-28",
+ "ibov": {"pontos": "171.006", "var": -2.68},
+ "extras": [
+  {"rotulo": "Dólar", "valor": "R$ 5,34", "var": -0.19},
+  {"rotulo": "Na semana", "var": -16.62}
+ ],
+ "altas": [["MBRF3", "Marfrig", 2.82], ["TIMS3", "TIM", 2.26], ["WEGE3", "WEG", 2.25], ["PRIO3", "PRIO", 1.80], ["HAPV3", "Hapvida", 1.67]],
+ "baixas": [["CSAN3", "Cosan", -12.31], ["VAMO3", "Vamos", -11.34], ["COGN3", "Cogna", -10.00], ["AZZA3", "Azzas", -9.64], ["BEEF3", "Minerva", -9.40]],
+ "fonte": "Fechamento de 28/10/2026. Fonte: B3"
+}
