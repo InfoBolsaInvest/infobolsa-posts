@@ -1,0 +1,11 @@
+{
+ "data": "2026-10-29",
+ "ibov": {"pontos": "169.186", "var": -1.06},
+ "extras": [
+  {"rotulo": "Dólar", "valor": "R$ 5,39", "var": 0.89},
+  {"rotulo": "Na semana", "var": -17.50}
+ ],
+ "altas": [["GGBR4", "Gerdau", 5.69], ["EMBJ3", "Embraer", 5.25], ["GOAU4", "Met. Gerdau", 5.16], ["WEGE3", "WEG", 4.41], ["SUZB3", "Suzano", 3.37]],
+ "baixas": [["BEEF3", "Minerva", -6.92], ["MRVE3", "MRV", -6.70], ["DIRR3", "Direcional", -6.16], ["COGN3", "Cogna", -5.85], ["AZZA3", "Azzas", -5.60]],
+ "fonte": "Fechamento de 29/10/2026. Fonte: B3"
+}
