@@ -1,0 +1,11 @@
+{
+ "data": "2026-10-30",
+ "ibov": {"pontos": "167.922", "var": -0.75},
+ "extras": [
+  {"rotulo": "Dólar", "valor": "R$ 5,44", "var": 1.05},
+  {"rotulo": "Na semana", "var": -18.12}
+ ],
+ "altas": [["CMIN3", "CSN Mineração", 8.00], ["MGLU3", "Magalu", 4.29], ["CSAN3", "Cosan", 3.56], ["VALE3", "Vale", 3.28], ["BRAV3", "Brava", 3.14]],
+ "baixas": [["USIM5", "Usiminas", -8.59], ["CSNA3", "CSN", -8.49], ["B3SA3", "B3", -5.42], ["BEEF3", "Minerva", -5.20], ["MBRF3", "MBRF", -5.05]],
+ "fonte": "Fechamento de 30/10/2026. Fonte: B3"
+}
