@@ -4,19 +4,19 @@ RAW="""AIEC11 0,92 09/11|ARRI11 0,05 09/11|BCIA11 0,86 30/11|BCRI11 0,80 13/11|B
 L=sorted([x.split() for x in RAW.split("|")])
 assert len(L)==len(set(l[0] for l in L)), "duplicado"
 print(len(L))
-cuts=[(0,24),(24,48),(48,72)]
+cuts=[(0,36),(36,72)]
 css="""<style>.nv{position:absolute;left:28px;right:28px;top:82px;display:grid;grid-template-columns:1fr 1fr;column-gap:22px}
-.nr{height:56px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--linha)}
-.nr b{background:#162526;color:#fff;font-weight:600;font-size:21px;letter-spacing:.5px;padding:6px 12px;border-radius:9px;min-width:114px;text-align:center}
-.nr span{font-size:23px;font-weight:500;color:var(--fg);flex:1;white-space:nowrap}
-.nr i{font-style:normal;font-size:21px;color:var(--acc);font-weight:600}
+.nr{height:37px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--linha)}
+.nr b{background:#162526;color:#fff;font-weight:600;font-size:17px;letter-spacing:.5px;padding:3px 10px;border-radius:8px;min-width:96px;text-align:center}
+.nr span{font-size:20px;font-weight:500;color:var(--fg);flex:1;white-space:nowrap}
+.nr i{font-style:normal;font-size:19px;color:var(--acc);font-weight:600}
 .nc{display:flex;flex-direction:column}</style>"""
 for k,(a,b) in enumerate(cuts,1):
     part=L[a:b]; half=(len(part)+1)//2
     def col(rows): return '<div class="nc">'+''.join(f'<div class="nr"><b>{t}</b><span>R$ {v}</span><i>{d}</i></div>' for t,v,d in rows)+'</div>'
-    h=82+12*56+30
+    h=82+18*37+26
     miolo=css+f'<div class="nv">{col(part[:half])}{col(part[half:])}</div>'
-    corpo=pasta(400,h,f"Valor por cota e data de pagamento ({k}/3)",miolo,"verde")
-    html=pagina("verde","<span>Dividendos</span> de novembro","FIIs que já anunciaram quanto vão pagar 👇",corpo,["Valores por cota, arredondados, com pagamento em novembro/2026. Confira o comunicado de cada fundo.","Rendimentos passados não garantem rendimentos futuros. Não é recomendação de compra ou venda."],tsize=72)
+    corpo=pasta(380,h,f"Valor por cota e data de pagamento ({k}/2)",miolo,"verde")
+    html=pagina("verde","<span>Proventos</span> de novembro","FIIs que já anunciaram quanto vão pagar 👇",corpo,["Valores por cota, arredondados, com pagamento em novembro/2026. Confira o comunicado de cada fundo.","Rendimentos passados não garantem rendimentos futuros. Não é recomendação de compra ou venda."],tsize=72)
     open(f"t{k}.html","w").write(html)
     os.system(f"python3 render.py t{k}.html ../pronto/2026-11-02-novembro/{k}.png")
