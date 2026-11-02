@@ -1,0 +1,76 @@
+{
+ "titulo": "Quanto investir em cada FII para ganhar <span>R$ 1.621</span> por mês?",
+ "tsize": 62,
+ "sub": "",
+ "aba": "Salário mínimo em rendimentos",
+ "colunas": [
+  "FII",
+  "Últ. rend.",
+  "Preço",
+  "Precisa investir"
+ ],
+ "cols": "1.5fr .9fr .9fr 1.35fr",
+ "lh": 66,
+ "top": 440,
+ "destaque": 3,
+ "linhas": [
+  [
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/VGIR11.png\" style=\"width:46px;height:46px;border-radius:11px;object-fit:cover;flex:none\"><span style=\"font-weight:800;font-size:34px;letter-spacing:.4px;color:#162526\">VGIR11</span></span>",
+   "R$ 0,13",
+   "R$ 8,90",
+   "R$ 110.976,15"
+  ],
+  [
+   "<span style=\"display:flex;align-items:center;gap:16px\"><span style=\"width:46px;height:46px;border-radius:11px;background:#162526;color:#fff;font-weight:800;font-size:18px;display:flex;align-items:center;justify-content:center;flex:none\">VG</span><span style=\"font-weight:800;font-size:34px;letter-spacing:.4px;color:#162526\">VGIA11</span></span>",
+   "R$ 0,12",
+   "R$ 8,50",
+   "R$ 114.820,83"
+  ],
+  [
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/TRXF11.png\" style=\"width:46px;height:46px;border-radius:11px;object-fit:cover;flex:none\"><span style=\"font-weight:800;font-size:34px;letter-spacing:.4px;color:#162526\">TRXF11</span></span>",
+   "R$ 0,93",
+   "R$ 66,45",
+   "R$ 115.823,06"
+  ],
+  [
+   "<span style=\"display:flex;align-items:center;gap:16px\"><span style=\"width:46px;height:46px;border-radius:11px;background:#162526;color:#fff;font-weight:800;font-size:18px;display:flex;align-items:center;justify-content:center;flex:none\">SN</span><span style=\"font-weight:800;font-size:34px;letter-spacing:.4px;color:#162526\">SNEL11</span></span>",
+   "R$ 0,10",
+   "R$ 7,62",
+   "R$ 123.520,20"
+  ],
+  [
+   "<span style=\"display:flex;align-items:center;gap:16px\"><span style=\"width:46px;height:46px;border-radius:11px;background:#162526;color:#fff;font-weight:800;font-size:18px;display:flex;align-items:center;justify-content:center;flex:none\">SN</span><span style=\"font-weight:800;font-size:34px;letter-spacing:.4px;color:#162526\">SNAG11</span></span>",
+   "R$ 0,12",
+   "R$ 9,58",
+   "R$ 129.409,83"
+  ],
+  [
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/MXRF11.png\" style=\"width:46px;height:46px;border-radius:11px;object-fit:cover;flex:none\"><span style=\"font-weight:800;font-size:34px;letter-spacing:.4px;color:#162526\">MXRF11</span></span>",
+   "R$ 0,095",
+   "R$ 8,88",
+   "R$ 151.520,84"
+  ],
+  [
+   "<span style=\"display:flex;align-items:center;gap:16px\"><span style=\"width:46px;height:46px;border-radius:11px;background:#162526;color:#fff;font-weight:800;font-size:18px;display:flex;align-items:center;justify-content:center;flex:none\">VG</span><span style=\"font-weight:800;font-size:34px;letter-spacing:.4px;color:#162526\">VGHF11</span></span>",
+   "R$ 0,05",
+   "R$ 4,80",
+   "R$ 155.616,00"
+  ],
+  [
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/HSML11.png\" style=\"width:46px;height:46px;border-radius:11px;object-fit:cover;flex:none\"><span style=\"font-weight:800;font-size:34px;letter-spacing:.4px;color:#162526\">HSML11</span></span>",
+   "R$ 0,75",
+   "R$ 79,80",
+   "R$ 172.474,40"
+  ],
+  [
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/KNSC11.png\" style=\"width:46px;height:46px;border-radius:11px;object-fit:cover;flex:none\"><span style=\"font-weight:800;font-size:34px;letter-spacing:.4px;color:#162526\">KNSC11</span></span>",
+   "R$ 0,08",
+   "R$ 8,74",
+   "R$ 177.094,25"
+  ]
+ ],
+ "rodape": [
+  "Último rendimento anunciado de cada fundo e cotações de 30/10/2026. Fonte: Status Invest.",
+  "Rendimentos passados não garantem rendimentos futuros. Não é recomendação de compra ou venda."
+ ]
+}
