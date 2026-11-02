@@ -34,6 +34,9 @@ Regras da escolha:
 ### Eleições: 25, 26 e 27/10/2026
 Nesses três dias a notícia das 12h é EXCLUSIVAMENTE sobre a eleição (segundo turno no domingo 25) e o efeito nos investimentos: dia de votação e o que está em jogo (25, sem boca de urna nem parcial, que só podem sair depois das 17h), resultado oficial do TSE e reação do mercado (26), ações, FIIs, dólar, juros e Selic depois do resultado (27). Neutralidade total, só fatos, sem opinião sobre candidato ou partido. Pesquisa eleitoral só registrada no TSE, com instituto, data e número de registro. Nunca enquete sobre voto. Foto: `foto-congresso-*.jpg`, `foto-planalto-*.jpg` ou `fundo-touro-b3.jpg` para a reação da bolsa.
 
+### Copom: quarta 04/11/2026 (pedido do Douglas em 02/11/2026)
+Na quarta 04/11 a notícia das 12h é EXCLUSIVAMENTE o Copom: "Hoje tem decisão da Selic". Mostre a Selic atual (13,75% ao ano, confira se não mudou), que a decisão sai hoje à noite (depois das 18h) e o que o mercado espera, com números confirmados em duas fontes (Focus, opções de Copom da B3, curva de juros, pesquisas de bancos citadas pela imprensa). Só expectativa com fonte, nunca palpite próprio. Não repetir o mesmo número do post de 01/11 como único dado: traga a expectativa mais recente. Foto: `foto-banco-central-1.jpg` ou `foto-banco-central-3.jpg` (a 2 foi usada em 01/11). Tag "Juros" ou "Selic". Na legenda, avise que à noite sai o post com a decisão ("Fica de olho que à noite a gente posta a decisão"). O post da decisão (por volta das 19h) é feito por uma tarefa agendada separada, não por esta rotina.
+
 ## 3. Montar o config
 Crie `kit/configs/noticia/AAAA-MM-DD.json` (veja `exemplo-manchete.json` e `exemplo-numero.json`):
 - `modo`: "manchete" (padrão) ou "numero" quando a notícia cabe num número forte (ex.: "209 mil", "15,00%", "R$ 4,98"). No modo número use `rotulo` (curto) e `numero` (até 8 caracteres). 
