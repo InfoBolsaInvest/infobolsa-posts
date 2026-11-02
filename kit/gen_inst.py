@@ -42,13 +42,13 @@ html,body{width:1080px;height:1350px;overflow:hidden}
 body{position:relative;font-family:"P",sans-serif;font-weight:300;color:var(--fg);-webkit-font-smoothing:antialiased;background:var(--bg)}
 .luz{position:absolute;inset:0;background:radial-gradient(ellipse 760px 620px at 100% 100%,var(--luz),transparent 70%)}
 .curva{position:absolute;inset:0}
-.cab{position:absolute;top:70px;left:96px;display:flex;align-items:center;gap:18px}
-.cab .ft{width:88px;height:88px;border-radius:50%;overflow:hidden;border:2px solid var(--foto);flex:none}
+.cab{position:absolute;top:60px;left:96px;display:flex;align-items:center;gap:26px}
+.cab .ft{width:150px;height:150px;border-radius:50%;overflow:hidden;border:2px solid var(--foto);flex:none}
 .cab .ft img{width:100%;height:100%;object-fit:cover}
-.cab .nm{font-weight:600;font-size:31px;line-height:36px;display:flex;align-items:center;gap:8px}
-.cab .nm svg{width:28px;height:28px}
-.cab .ar{font-size:24px;line-height:31px;color:var(--sub)}
-.tit{position:absolute;top:196px;left:96px;right:96px}
+.cab .nm{font-weight:600;font-size:44px;line-height:50px;display:flex;align-items:center;gap:8px}
+.cab .nm svg{width:36px;height:36px}
+.cab .ar{font-size:30px;line-height:38px;color:var(--sub)}
+.tit{position:absolute;top:240px;left:96px;right:96px}
 .tit h1{font-weight:600;font-size:var(--tsize,92px);line-height:1.04;letter-spacing:-1.5px}
 .tit h1 span{color:var(--acc)}
 .tit p{font-size:30px;line-height:1.35;margin-top:16px;color:var(--sub)}
