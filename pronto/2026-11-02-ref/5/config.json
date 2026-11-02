@@ -1,6 +1,6 @@
 {
  "titulo": "Veja quanto rende <span>100 MIL REAIS</span> investidos em cada FII",
- "tsize": 62,
+ "tsize": 60,
  "sub": "Simulação com a cotação de 30/10/2026 👇",
  "aba": "Rendimento de R$ 100 mil",
  "colunas": [
@@ -9,42 +9,42 @@
   "No ano"
  ],
  "cols": "1.1fr 1fr 1fr",
- "lh": 84,
- "top": 420,
+ "lh": 80,
+ "top": 480,
  "destaque": 1,
  "linhas": [
   [
-   "<span style=\"display:inline-block;background:#162526;color:#fff;font-weight:600;font-size:26px;letter-spacing:.5px;padding:5px 16px;border-radius:10px\">SNEL11</span>",
+   "<span style=\"font-weight:800;font-size:42px;letter-spacing:.5px;color:#162526\">SNEL11</span>",
    "R$ 1.312,34",
    "R$ 15.748,03"
   ],
   [
-   "<span style=\"display:inline-block;background:#162526;color:#fff;font-weight:600;font-size:26px;letter-spacing:.5px;padding:5px 16px;border-radius:10px\">SNAG11</span>",
+   "<span style=\"font-weight:800;font-size:42px;letter-spacing:.5px;color:#162526\">SNAG11</span>",
    "R$ 1.252,61",
    "R$ 15.031,32"
   ],
   [
-   "<span style=\"display:inline-block;background:#162526;color:#fff;font-weight:600;font-size:26px;letter-spacing:.5px;padding:5px 16px;border-radius:10px\">MXRF11</span>",
+   "<span style=\"font-weight:800;font-size:42px;letter-spacing:.5px;color:#162526\">MXRF11</span>",
    "R$ 1.069,82",
    "R$ 12.837,84"
   ],
   [
-   "<span style=\"display:inline-block;background:#162526;color:#fff;font-weight:600;font-size:26px;letter-spacing:.5px;padding:5px 16px;border-radius:10px\">KNCR11</span>",
+   "<span style=\"font-weight:800;font-size:42px;letter-spacing:.5px;color:#162526\">KNCR11</span>",
    "R$ 1.047,82",
    "R$ 12.573,82"
   ],
   [
-   "<span style=\"display:inline-block;background:#162526;color:#fff;font-weight:600;font-size:26px;letter-spacing:.5px;padding:5px 16px;border-radius:10px\">XPML11</span>",
+   "<span style=\"font-weight:800;font-size:42px;letter-spacing:.5px;color:#162526\">XPML11</span>",
    "R$ 950,41",
    "R$ 11.404,96"
   ],
   [
-   "<span style=\"display:inline-block;background:#162526;color:#fff;font-weight:600;font-size:26px;letter-spacing:.5px;padding:5px 16px;border-radius:10px\">HSML11</span>",
+   "<span style=\"font-weight:800;font-size:42px;letter-spacing:.5px;color:#162526\">HSML11</span>",
    "R$ 939,85",
    "R$ 11.278,20"
   ],
   [
-   "<span style=\"display:inline-block;background:#162526;color:#fff;font-weight:600;font-size:26px;letter-spacing:.5px;padding:5px 16px;border-radius:10px\">HGLG11</span>",
+   "<span style=\"font-weight:800;font-size:42px;letter-spacing:.5px;color:#162526\">HGLG11</span>",
    "R$ 782,61",
    "R$ 9.391,30"
   ]
