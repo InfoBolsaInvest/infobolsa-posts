@@ -94,8 +94,8 @@ def build(cfg):
     return f"""<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><style>{CSS % p}</style></head><body>
 <div class="bg" style="background-image:url('{cfg['fundo']}')"></div><div class="sombra"></div>
-<div class="cab"><div class="ft"><img src="assets/avatar_infobolsa.png" alt=""></div>
-<div><div class="nm">InfoBolsa Investimentos {SELO}</div><div class="ar">@infobolsainvest</div></div></div>
+<div class="cab"><div class="ft"><img src="{cfg.get('cab_foto','assets/avatar_infobolsa.png')}" alt=""></div>
+<div><div class="nm">{cfg.get('cab_nome','InfoBolsa Investimentos')} {SELO}</div><div class="ar">{cfg.get('cab_ar','@infobolsainvest')}</div></div></div>
 <div class="bloco">{tag}{miolo}{sub}</div>
 {fonte}
 {SCRIPT}
