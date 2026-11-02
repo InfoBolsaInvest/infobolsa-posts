@@ -1,0 +1,76 @@
+{
+ "titulo": "Quanto você precisa pra ganhar <span>R$ 1.621</span> por mês?",
+ "tsize": 66,
+ "sub": "Veja quanto investir em cada ação pra receber isso 👇",
+ "aba": "Salário mínimo em dividendos",
+ "colunas": [
+  "Ação",
+  "Prov. 12M",
+  "Preço",
+  "Precisa investir"
+ ],
+ "cols": "1.5fr .9fr .9fr 1.35fr",
+ "lh": 66,
+ "top": 440,
+ "destaque": 3,
+ "linhas": [
+  [
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/BBDC4.png\" style=\"width:46px;height:46px;border-radius:11px;object-fit:cover\"><span style=\"font-weight:800;font-size:34px;letter-spacing:.4px;color:#162526\">BBDC4</span></span>",
+   "R$ 1,61",
+   "R$ 13,86",
+   "R$ 167.706,34"
+  ],
+  [
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/BBSE3.png\" style=\"width:46px;height:46px;border-radius:11px;object-fit:cover\"><span style=\"font-weight:800;font-size:34px;letter-spacing:.4px;color:#162526\">BBSE3</span></span>",
+   "R$ 4,59",
+   "R$ 41,32",
+   "R$ 175.106,56"
+  ],
+  [
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/ITSA4.png\" style=\"width:46px;height:46px;border-radius:11px;object-fit:cover\"><span style=\"font-weight:800;font-size:34px;letter-spacing:.4px;color:#162526\">ITSA4</span></span>",
+   "R$ 1,13",
+   "R$ 12,45",
+   "R$ 213.994,34"
+  ],
+  [
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/ABEV3.png\" style=\"width:46px;height:46px;border-radius:11px;object-fit:cover\"><span style=\"font-weight:800;font-size:34px;letter-spacing:.4px;color:#162526\">ABEV3</span></span>",
+   "R$ 1,25",
+   "R$ 14,60",
+   "R$ 227.108,52"
+  ],
+  [
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/ITUB4.png\" style=\"width:46px;height:46px;border-radius:11px;object-fit:cover\"><span style=\"font-weight:800;font-size:34px;letter-spacing:.4px;color:#162526\">ITUB4</span></span>",
+   "R$ 3,12",
+   "R$ 38,69",
+   "R$ 241.395,22"
+  ],
+  [
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/CMIG4.png\" style=\"width:46px;height:46px;border-radius:11px;object-fit:cover\"><span style=\"font-weight:800;font-size:34px;letter-spacing:.4px;color:#162526\">CMIG4</span></span>",
+   "R$ 0,79",
+   "R$ 10,07",
+   "R$ 248.643,87"
+  ],
+  [
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/TAEE11.png\" style=\"width:46px;height:46px;border-radius:11px;object-fit:cover\"><span style=\"font-weight:800;font-size:34px;letter-spacing:.4px;color:#162526\">TAEE11</span></span>",
+   "R$ 3,01",
+   "R$ 39,59",
+   "R$ 256.146,58"
+  ],
+  [
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/PETR4.png\" style=\"width:46px;height:46px;border-radius:11px;object-fit:cover\"><span style=\"font-weight:800;font-size:34px;letter-spacing:.4px;color:#162526\">PETR4</span></span>",
+   "R$ 3,67",
+   "R$ 52,71",
+   "R$ 279.628,80"
+  ],
+  [
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/CXSE3.png\" style=\"width:46px;height:46px;border-radius:11px;object-fit:cover\"><span style=\"font-weight:800;font-size:34px;letter-spacing:.4px;color:#162526\">CXSE3</span></span>",
+   "R$ 1,35",
+   "R$ 21,38",
+   "R$ 308.062,04"
+  ]
+ ],
+ "rodape": [
+  "Com base nos proventos dos últimos 12 meses. Cotações de 30/10/2026. Fonte: Status Invest.",
+  "Não é uma recomendação de compra ou venda."
+ ]
+}
