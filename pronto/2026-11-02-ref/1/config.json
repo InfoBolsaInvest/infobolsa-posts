@@ -1,0 +1,7 @@
+{"titulo":"Qual é a sua <span>preferida</span> do momento?","tsize":72,"sub":"Fechamento de 30/10/2026. Comenta aí 👇",
+"opcoes":[
+{"ticker":"BBAS3","nome":"Banco do Brasil","logo":"assets/logos_b3/BBAS3.png","preco":"16,47","extras":[["No ano","-23,71%"],["Div. yield","4,19%"]]},
+{"ticker":"BBDC4","nome":"Bradesco","logo":"assets/logos_b3/BBDC4.png","preco":"13,86","extras":[["No ano","-20,75%"],["Div. yield","11,60%"]]},
+{"ticker":"CMIG4","nome":"Cemig","logo":"assets/logos_b3/CMIG4.png","preco":"10,07","extras":[["No ano","-5,36%"],["Div. yield","7,82%"]]}],
+"pergunta":"Qual dessas você levaria pra carteira?","top":470,"top_pergunta":1110,
+"rodape":["Cotações do fechamento de 30/10/2026. Variação desde 30/12/2025. Fonte: Status Invest.","Não é recomendação de compra ou venda."]}
