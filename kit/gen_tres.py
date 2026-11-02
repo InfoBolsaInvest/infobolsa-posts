@@ -23,7 +23,9 @@ for t in ["BBSE3", "SANB11", "VALE3", "CPFE3", "ITSA4", "TAEE11", "PETR4", "ITUB
     p, v = map(D, A[t]); ano = D(100000) / p * v
     rows.append((ano, t))
 rows.sort(reverse=True)
-linhas = [[tk(t), "R$ " + brl(a / 12), "R$ " + brl(a)] for a, t in rows]
+lg2 = lambda t: (f'<span style="display:flex;align-items:center;gap:16px"><img src="assets/logos_b3/{t}.png" style="width:52px;height:52px;border-radius:12px;object-fit:cover">'
+                 f'<span style="font-weight:800;font-size:40px;letter-spacing:.5px;color:#162526">{t}</span></span>')
+linhas = [[lg2(t), "R$ " + brl(a / 12), "R$ " + brl(a)] for a, t in rows]
 c = {"titulo": "Quanto rendem <span>R$ 100 mil</span> em ações que pagam dividendos?", "tsize": 52, "sub": "Simulação com a cotação de 30/10/2026 👇",
      "aba": "Rendimento de R$ 100 mil", "colunas": ["Ação", "Média por mês", "Em 12 meses"], "cols": "1.1fr 1fr 1fr", "lh": 74, "top": 440,
      "destaque": 1, "linhas": linhas,

@@ -14,42 +14,42 @@
  "destaque": 1,
  "linhas": [
   [
-   "<span style=\"font-weight:800;font-size:42px;letter-spacing:.5px;color:#162526\">BBSE3</span>",
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/BBSE3.png\" style=\"width:52px;height:52px;border-radius:12px;object-fit:cover\"><span style=\"font-weight:800;font-size:40px;letter-spacing:.5px;color:#162526\">BBSE3</span></span>",
    "R$ 925,72",
    "R$ 11.108,66"
   ],
   [
-   "<span style=\"font-weight:800;font-size:42px;letter-spacing:.5px;color:#162526\">ITSA4</span>",
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/ITSA4.png\" style=\"width:52px;height:52px;border-radius:12px;object-fit:cover\"><span style=\"font-weight:800;font-size:40px;letter-spacing:.5px;color:#162526\">ITSA4</span></span>",
    "R$ 757,50",
    "R$ 9.089,96"
   ],
   [
-   "<span style=\"font-weight:800;font-size:42px;letter-spacing:.5px;color:#162526\">SANB11</span>",
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/SANB11.png\" style=\"width:52px;height:52px;border-radius:12px;object-fit:cover\"><span style=\"font-weight:800;font-size:40px;letter-spacing:.5px;color:#162526\">SANB11</span></span>",
    "R$ 756,20",
    "R$ 9.074,35"
   ],
   [
-   "<span style=\"font-weight:800;font-size:42px;letter-spacing:.5px;color:#162526\">VALE3</span>",
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/VALE3.png\" style=\"width:52px;height:52px;border-radius:12px;object-fit:cover\"><span style=\"font-weight:800;font-size:40px;letter-spacing:.5px;color:#162526\">VALE3</span></span>",
    "R$ 754,13",
    "R$ 9.049,50"
   ],
   [
-   "<span style=\"font-weight:800;font-size:42px;letter-spacing:.5px;color:#162526\">CPFE3</span>",
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/CPFE3.png\" style=\"width:52px;height:52px;border-radius:12px;object-fit:cover\"><span style=\"font-weight:800;font-size:40px;letter-spacing:.5px;color:#162526\">CPFE3</span></span>",
    "R$ 743,02",
    "R$ 8.916,23"
   ],
   [
-   "<span style=\"font-weight:800;font-size:42px;letter-spacing:.5px;color:#162526\">ITUB4</span>",
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/ITUB4.png\" style=\"width:52px;height:52px;border-radius:12px;object-fit:cover\"><span style=\"font-weight:800;font-size:40px;letter-spacing:.5px;color:#162526\">ITUB4</span></span>",
    "R$ 671,51",
    "R$ 8.058,15"
   ],
   [
-   "<span style=\"font-weight:800;font-size:42px;letter-spacing:.5px;color:#162526\">TAEE11</span>",
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/TAEE11.png\" style=\"width:52px;height:52px;border-radius:12px;object-fit:cover\"><span style=\"font-weight:800;font-size:40px;letter-spacing:.5px;color:#162526\">TAEE11</span></span>",
    "R$ 632,84",
    "R$ 7.594,09"
   ],
   [
-   "<span style=\"font-weight:800;font-size:42px;letter-spacing:.5px;color:#162526\">PETR4</span>",
+   "<span style=\"display:flex;align-items:center;gap:16px\"><img src=\"assets/logos_b3/PETR4.png\" style=\"width:52px;height:52px;border-radius:12px;object-fit:cover\"><span style=\"font-weight:800;font-size:40px;letter-spacing:.5px;color:#162526\">PETR4</span></span>",
    "R$ 579,70",
    "R$ 6.956,37"
   ]
