@@ -1,0 +1,42 @@
+{
+ "titulo": "Quanto de <span>imposto</span><br>na renda fixa?",
+ "sub": "Quanto mais tempo, menos imposto 👇",
+ "aba": "Tabela do Imposto de Renda",
+ "colunas": [
+  "Quanto tempo investiu",
+  "Imposto sobre o lucro",
+  "De R$ 1.000 de lucro, fica"
+ ],
+ "cols": "1.2fr 1fr 1.2fr",
+ "lh": 96,
+ "destaque": 2,
+ "linhas": [
+  [
+   "Até 180 dias",
+   "22,50%",
+   "R$ 775,00"
+  ],
+  [
+   "De 181 a 360 dias",
+   "20,00%",
+   "R$ 800,00"
+  ],
+  [
+   "De 361 a 720 dias",
+   "17,50%",
+   "R$ 825,00"
+  ],
+  [
+   "Acima de 720 dias",
+   "15,00%",
+   "R$ 850,00"
+  ]
+ ],
+ "fim": "LCI e LCA são <b>isentas</b> de imposto para pessoa física.",
+ "rodape": [
+  "Vale para CDB e Tesouro Direto. Não considera IOF (nos primeiros 30 dias) nem taxa de custódia.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "tsize": 76,
+ "top": 450
+}

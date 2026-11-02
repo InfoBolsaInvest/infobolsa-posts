@@ -1,0 +1,54 @@
+{
+ "titulo": "“Não sobra nada<br>pra <span>investir</span>”",
+ "sub": "Olha o que <b>R$ 100 por mês</b> viram com o tempo 👇",
+ "aba": "Guardando todo mês",
+ "colunas": [
+  "Guardando por mês",
+  "Em 10 anos (R$)",
+  "Em 20 anos (R$)",
+  "Em 30 anos (R$)"
+ ],
+ "cols": "1.1fr 1fr 1fr 1.1fr",
+ "lh": 88,
+ "destaque": 3,
+ "linhas": [
+  [
+   "<b>R$ 100,00</b>",
+   "19.986,39",
+   "71.825,92",
+   "206.284,33"
+  ],
+  [
+   "<b>R$ 200,00</b>",
+   "39.972,77",
+   "143.651,85",
+   "412.568,66"
+  ],
+  [
+   "<b>R$ 300,00</b>",
+   "59.959,16",
+   "215.477,77",
+   "618.852,99"
+  ],
+  [
+   "<b>R$ 500,00</b>",
+   "99.931,93",
+   "359.129,61",
+   "1.031.421,66"
+  ],
+  [
+   "<b>R$ 1.000,00</b>",
+   "199.863,86",
+   "718.259,23",
+   "2.062.843,31"
+  ]
+ ],
+ "fim": "Não precisa ser rico. <b>Precisa começar.</b>",
+ "rodape": [
+  "Simulação com rendimento de 10,00% ao ano, constante, sem imposto e sem inflação.",
+  "Rentabilidade hipotética, não é garantia de retorno.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "tsize": 80,
+ "top": 450
+}

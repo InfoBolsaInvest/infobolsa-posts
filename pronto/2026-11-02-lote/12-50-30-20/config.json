@@ -1,0 +1,47 @@
+{
+ "titulo": "Ganha <span>R$ 3.000</span>?<br>Quanto dá pra investir",
+ "sub": "A regra 50-30-20 aplicada ao seu salário 👇",
+ "aba": "Dividindo o salário",
+ "colunas": [
+  "Salário",
+  "50% contas",
+  "30% desejos",
+  "20% investir"
+ ],
+ "cols": "0.9fr 1fr 1fr 1fr",
+ "lh": 96,
+ "destaque": 3,
+ "linhas": [
+  [
+   "<b>R$ 2.000,00</b>",
+   "R$ 1.000,00",
+   "R$ 600,00",
+   "R$ 400,00"
+  ],
+  [
+   "<b>R$ 3.000,00</b>",
+   "R$ 1.500,00",
+   "R$ 900,00",
+   "R$ 600,00"
+  ],
+  [
+   "<b>R$ 5.000,00</b>",
+   "R$ 2.500,00",
+   "R$ 1.500,00",
+   "R$ 1.000,00"
+  ],
+  [
+   "<b>R$ 8.000,00</b>",
+   "R$ 4.000,00",
+   "R$ 2.400,00",
+   "R$ 1.600,00"
+  ]
+ ],
+ "fim": "Guardar <b>20%</b> já muda o seu futuro.",
+ "rodape": [
+  "Regra 50-30-20: 50% para necessidades, 30% para desejos, 20% para investir e quitar dívidas. É uma referência: ajuste à sua realidade.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "tsize": 78,
+ "top": 450
+}

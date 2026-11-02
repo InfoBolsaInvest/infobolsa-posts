@@ -1,0 +1,42 @@
+{
+ "titulo": "Quanto você precisa<br>na <span>reserva de emergência</span>",
+ "sub": "Antes de investir em qualquer coisa 👇",
+ "aba": "Quanto guardar",
+ "colunas": [
+  "Seu gasto mensal",
+  "Reserva de 6 meses",
+  "Reserva de 12 meses"
+ ],
+ "cols": "1.1fr 1.1fr 1.1fr",
+ "lh": 96,
+ "destaque": 1,
+ "linhas": [
+  [
+   "<b>R$ 2.000,00</b> por mês",
+   "R$ 12.000,00",
+   "R$ 24.000,00"
+  ],
+  [
+   "<b>R$ 3.000,00</b> por mês",
+   "R$ 18.000,00",
+   "R$ 36.000,00"
+  ],
+  [
+   "<b>R$ 5.000,00</b> por mês",
+   "R$ 30.000,00",
+   "R$ 60.000,00"
+  ],
+  [
+   "<b>R$ 8.000,00</b> por mês",
+   "R$ 48.000,00",
+   "R$ 96.000,00"
+  ]
+ ],
+ "fim": "Primeiro a reserva. <b>Depois os investimentos.</b>",
+ "rodape": [
+  "6 meses para quem tem renda fixa (CLT). 12 meses para quem tem renda variável (autônomo, comissão). Deixe em investimento seguro e com liquidez diária, como Tesouro Selic.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "tsize": 64,
+ "top": 450
+}

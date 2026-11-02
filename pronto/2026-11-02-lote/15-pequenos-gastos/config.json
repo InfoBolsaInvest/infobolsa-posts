@@ -1,0 +1,43 @@
+{
+ "titulo": "Pequenos gastos,<br><span>grande</span> patrimônio",
+ "sub": "O que acontece se você investir esse valor 👇",
+ "aba": "Investindo por 20 anos",
+ "colunas": [
+  "O gasto",
+  "Por mês",
+  "Investido em 20 anos"
+ ],
+ "cols": "1.5fr 0.9fr 1.2fr",
+ "lh": 116,
+ "destaque": 2,
+ "linhas": [
+  [
+   "<b>Café de R$ 8,00 por dia útil</b>",
+   "R$ 176,00",
+   "R$ 126.413,62"
+  ],
+  [
+   "<b>Delivery 2 vezes por semana (R$ 45,00)</b>",
+   "R$ 390,00",
+   "R$ 280.121,10"
+  ],
+  [
+   "<b>Assinaturas de streaming (R$ 80,00)</b>",
+   "R$ 80,00",
+   "R$ 57.460,74"
+  ],
+  [
+   "<b>Lanche de R$ 25,00 por dia útil</b>",
+   "R$ 550,00",
+   "R$ 395.042,58"
+  ]
+ ],
+ "fim": "Não é cortar tudo. <b>É escolher o que vale a pena.</b>",
+ "rodape": [
+  "Simulação com rendimento de 10,00% ao ano, constante, sem imposto e sem inflação.",
+  "Rentabilidade hipotética, não é garantia de retorno.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "tsize": 78,
+ "top": 450
+}

@@ -1,0 +1,40 @@
+{
+ "titulo": "De onde vem o <span>dinheiro</span><br>dos fundos imobiliários",
+ "sub": "Os 5 tipos mais conhecidos, em português simples 👇",
+ "aba": "Tipos de FII",
+ "colunas": [
+  "Tipo",
+  "De onde vem o rendimento"
+ ],
+ "cols": "1fr 1.6fr",
+ "lh": 112,
+ "linhas": [
+  [
+   "<b>Logística</b><small>Galpões</small>",
+   "Aluguel pago por empresas que armazenam e distribuem produtos"
+  ],
+  [
+   "<b>Shoppings</b>",
+   "Aluguel das lojas e parte das vendas dos shoppings"
+  ],
+  [
+   "<b>Lajes corporativas</b><small>Escritórios</small>",
+   "Aluguel pago por empresas que ocupam os escritórios"
+  ],
+  [
+   "<b>Papel</b><small>Recebíveis</small>",
+   "Juros de dívidas imobiliárias que o fundo comprou"
+  ],
+  [
+   "<b>Fundos de fundos</b>",
+   "Dividendos de outros fundos imobiliários"
+  ]
+ ],
+ "fim": "Quem investe em vários tipos <b>se protege melhor.</b>",
+ "rodape": [
+  "Cada fundo tem riscos próprios. Estude antes de investir.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "tsize": 72,
+ "top": 440
+}

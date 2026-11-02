@@ -1,0 +1,54 @@
+{
+ "titulo": "Quanto custa<br><span>esperar</span> pra começar?",
+ "sub": "Guardando <b>R$ 500 por mês</b> até os 65 anos 👇",
+ "aba": "Começar cedo",
+ "colunas": [
+  "Quando começa",
+  "Investe por",
+  "Do seu bolso (R$)",
+  "Aos 65 anos (R$)"
+ ],
+ "cols": "1.1fr 0.9fr 1.1fr 1.15fr",
+ "lh": 88,
+ "destaque": 3,
+ "linhas": [
+  [
+   "Começa aos <b>25</b>",
+   "40 anos",
+   "240.000,00",
+   "2.775.174,07"
+  ],
+  [
+   "Começa aos <b>30</b>",
+   "35 anos",
+   "210.000,00",
+   "1.699.395,51"
+  ],
+  [
+   "Começa aos <b>35</b>",
+   "30 anos",
+   "180.000,00",
+   "1.031.421,66"
+  ],
+  [
+   "Começa aos <b>40</b>",
+   "25 anos",
+   "150.000,00",
+   "616.662,45"
+  ],
+  [
+   "Começa aos <b>45</b>",
+   "20 anos",
+   "120.000,00",
+   "359.129,61"
+  ]
+ ],
+ "fim": "Cada ano de espera <b>custa caro.</b>",
+ "rodape": [
+  "Simulação com rendimento de 10,00% ao ano, constante, sem imposto e sem inflação.",
+  "Rentabilidade hipotética, não é garantia de retorno.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "tsize": 76,
+ "top": 450
+}

@@ -1,0 +1,42 @@
+{
+ "titulo": "Em quantos anos seu<br>dinheiro <span>dobra</span>?",
+ "sub": "Depende da taxa de rendimento 👇",
+ "aba": "Tempo pra dobrar",
+ "colunas": [
+  "Rende ao ano",
+  "Seu dinheiro dobra em"
+ ],
+ "cols": "1fr 1.4fr",
+ "lh": 96,
+ "destaque": 1,
+ "linhas": [
+  [
+   "<b>6,00%</b>",
+   "11 anos e 11 meses"
+  ],
+  [
+   "<b>8,00%</b>",
+   "9 anos"
+  ],
+  [
+   "<b>10,00%</b>",
+   "7 anos e 3 meses"
+  ],
+  [
+   "<b>12,00%</b>",
+   "6 anos e 1 mês"
+  ],
+  [
+   "<b>15,00%</b>",
+   "5 anos"
+  ]
+ ],
+ "fim": "Taxa e tempo <b>mudam tudo.</b>",
+ "rodape": [
+  "Simulação com taxa constante, sem aportes, sem imposto e sem inflação.",
+  "Rentabilidade hipotética, não é garantia de retorno.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "tsize": 80,
+ "top": 450
+}

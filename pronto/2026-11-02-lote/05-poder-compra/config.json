@@ -1,0 +1,42 @@
+{
+ "titulo": "O que R$ 1.000 <span>parados</span><br>compram no futuro",
+ "sub": "Com preço subindo, o dinheiro parado compra menos 👇",
+ "aba": "Poder de compra",
+ "colunas": [
+  "Daqui a",
+  "R$ 1.000 compram só",
+  "Você perde"
+ ],
+ "cols": "0.8fr 1.4fr 1fr",
+ "lh": 96,
+ "destaque": 2,
+ "linhas": [
+  [
+   "<b>5 anos</b>",
+   "R$ 802,45",
+   "R$ 197,55"
+  ],
+  [
+   "<b>10 anos</b>",
+   "R$ 643,93",
+   "R$ 356,07"
+  ],
+  [
+   "<b>15 anos</b>",
+   "R$ 516,72",
+   "R$ 483,28"
+  ],
+  [
+   "<b>20 anos</b>",
+   "R$ 414,64",
+   "R$ 585,36"
+  ]
+ ],
+ "fim": "Parado, o dinheiro <b>perde valor sem você ver.</b>",
+ "rodape": [
+  "Simulação com inflação de 4,50% ao ano, constante. A inflação real muda a cada ano.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "tsize": 70,
+ "top": 450
+}

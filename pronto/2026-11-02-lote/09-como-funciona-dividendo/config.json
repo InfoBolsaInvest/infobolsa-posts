@@ -1,0 +1,32 @@
+{
+ "titulo": "Como funciona<br>o <span>dividendo</span>",
+ "sub": "Os 3 dias que você precisa conhecer 👇",
+ "aba": "Passo a passo",
+ "colunas": [
+  "Data",
+  "O que significa"
+ ],
+ "cols": "1fr 2fr",
+ "lh": 150,
+ "linhas": [
+  [
+   "<b>1. Data com</b>",
+   "Último dia pra ter a ação e <b>ter direito</b> ao dividendo"
+  ],
+  [
+   "<b>2. Data ex</b>",
+   "Quem compra a partir daqui <b>não recebe</b> esse pagamento"
+  ],
+  [
+   "<b>3. Data de pagamento</b>",
+   "O dinheiro <b>cai na sua conta</b>, direto na corretora"
+  ]
+ ],
+ "fim": "Quem tinha a ação na data com, <b>recebe.</b>",
+ "rodape": [
+  "Cada empresa divulga as suas datas. Confira sempre no comunicado ou no site de relações com investidores.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "tsize": 80,
+ "top": 470
+}

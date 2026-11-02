@@ -1,0 +1,48 @@
+{
+ "titulo": "R$ 1.000 <span>parados</span><br>x R$ 1.000 investidos",
+ "sub": "O mesmo dinheiro, dois destinos 👇",
+ "aba": "Depois de quanto tempo",
+ "colunas": [
+  "Passou",
+  "Debaixo do colchão",
+  "Investido",
+  "Diferença"
+ ],
+ "cols": "0.7fr 1.15fr 1.1fr 1.1fr",
+ "lh": 96,
+ "destaque": 2,
+ "linhas": [
+  [
+   "<b>10 anos</b>",
+   "R$ 1.000,00",
+   "R$ 2.593,74",
+   "R$ 1.593,74"
+  ],
+  [
+   "<b>20 anos</b>",
+   "R$ 1.000,00",
+   "R$ 6.727,50",
+   "R$ 5.727,50"
+  ],
+  [
+   "<b>30 anos</b>",
+   "R$ 1.000,00",
+   "R$ 17.449,40",
+   "R$ 16.449,40"
+  ],
+  [
+   "<b>40 anos</b>",
+   "R$ 1.000,00",
+   "R$ 45.259,26",
+   "R$ 44.259,26"
+  ]
+ ],
+ "fim": "Dinheiro parado <b>nunca vai dobrar sozinho.</b>",
+ "rodape": [
+  "Simulação com rendimento de 10,00% ao ano, constante, sem imposto e sem inflação. Sem aportes.",
+  "Rentabilidade hipotética, não é garantia de retorno.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "tsize": 70,
+ "top": 450
+}

@@ -1,0 +1,40 @@
+{
+ "titulo": "5 <span>mitos</span><br>sobre a bolsa",
+ "sub": "E o que é verdade em cada um 👇",
+ "aba": "Mito e verdade",
+ "colunas": [
+  "O que dizem",
+  "A verdade"
+ ],
+ "cols": "1fr 1.35fr",
+ "lh": 116,
+ "linhas": [
+  [
+   "<b>“Bolsa é coisa de rico”</b>",
+   "Dá pra começar com poucos reais, com uma cota só"
+  ],
+  [
+   "<b>“Bolsa é cassino”</b>",
+   "Quem investe pensando em anos não está apostando"
+  ],
+  [
+   "<b>“Preciso entender de tudo”</b>",
+   "Dá pra começar com o básico e aprender no caminho"
+  ],
+  [
+   "<b>“Se cair, perdi tudo”</b>",
+   "Só perde quem vende. Mas risco existe: diversifique"
+  ],
+  [
+   "<b>“Tenho que acertar o melhor dia”</b>",
+   "Investir todo mês costuma funcionar melhor"
+  ]
+ ],
+ "fim": "Informação <b>desmonta o medo.</b>",
+ "rodape": [
+  "Investimentos em renda variável têm risco de perda.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "tsize": 84,
+ "top": 430
+}

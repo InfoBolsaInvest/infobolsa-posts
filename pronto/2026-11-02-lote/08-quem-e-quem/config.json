@@ -1,0 +1,36 @@
+{
+ "titulo": "Renda fixa, FII e ações:<br><span>qual é qual</span>?",
+ "sub": "Em português simples, pra quem tá começando 👇",
+ "aba": "Os três jeitos de investir",
+ "colunas": [
+  "Tipo",
+  "O que você é",
+  "Risco"
+ ],
+ "cols": "1.15fr 1.7fr .8fr",
+ "lh": 150,
+ "linhas": [
+  [
+   "<b>Renda fixa</b><small>CDB, Tesouro Direto</small>",
+   "Você empresta dinheiro e recebe de volta com juros",
+   "Menor risco"
+  ],
+  [
+   "<b>Fundos imobiliários</b><small>FIIs</small>",
+   "Você vira dono de pedacinhos de imóveis e recebe aluguel todo mês",
+   "Risco médio"
+  ],
+  [
+   "<b>Ações</b><small>Pedaço de empresas</small>",
+   "Você vira sócio de uma empresa e ganha com lucro e valorização",
+   "Maior risco"
+  ]
+ ],
+ "fim": "Um não substitui o outro. <b>Eles se completam.</b>",
+ "rodape": [
+  "O risco varia de acordo com o ativo escolhido.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "tsize": 76,
+ "top": 470
+}

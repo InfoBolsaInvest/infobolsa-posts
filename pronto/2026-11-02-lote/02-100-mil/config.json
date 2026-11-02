@@ -1,0 +1,48 @@
+{
+ "titulo": "Como juntar<br><span>R$ 100 mil</span>",
+ "sub": "Quanto guardar por mês em cada prazo 👇",
+ "aba": "Meta de R$ 100.000,00",
+ "colunas": [
+  "Prazo",
+  "Guardar por mês",
+  "Sai do seu bolso",
+  "Os juros fazem"
+ ],
+ "cols": "0.8fr 1.1fr 1.1fr 1.1fr",
+ "lh": 96,
+ "destaque": 3,
+ "linhas": [
+  [
+   "<b>5 anos</b>",
+   "R$ 1.306,14",
+   "R$ 78.368,65",
+   "R$ 21.631,35"
+  ],
+  [
+   "<b>10 anos</b>",
+   "R$ 500,34",
+   "R$ 60.040,87",
+   "R$ 39.959,13"
+  ],
+  [
+   "<b>15 anos</b>",
+   "R$ 250,98",
+   "R$ 45.175,74",
+   "R$ 54.824,26"
+  ],
+  [
+   "<b>20 anos</b>",
+   "R$ 139,23",
+   "R$ 33.414,12",
+   "R$ 66.585,88"
+  ]
+ ],
+ "fim": "Quanto mais tempo, <b>mais o juro trabalha por você.</b>",
+ "rodape": [
+  "Simulação com rendimento de 10,00% ao ano, constante, sem imposto e sem inflação.",
+  "Rentabilidade hipotética, não é garantia de retorno.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "tsize": 84,
+ "top": 450
+}

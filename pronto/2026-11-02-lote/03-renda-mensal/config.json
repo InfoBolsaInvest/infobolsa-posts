@@ -1,0 +1,48 @@
+{
+ "titulo": "Quanto preciso ter pra<br>receber <span>R$ 1.000</span> por mês?",
+ "sub": "Renda passiva, de acordo com o seu sonho 👇",
+ "aba": "Patrimônio necessário",
+ "colunas": [
+  "Renda que você quer",
+  "Você precisa ter",
+  "Recebe por ano"
+ ],
+ "cols": "1.1fr 1.1fr 1fr",
+ "lh": 88,
+ "destaque": 1,
+ "linhas": [
+  [
+   "<b>R$ 1.000,00</b> por mês",
+   "R$ 125.000,00",
+   "R$ 12.000,00"
+  ],
+  [
+   "<b>R$ 2.000,00</b> por mês",
+   "R$ 250.000,00",
+   "R$ 24.000,00"
+  ],
+  [
+   "<b>R$ 3.000,00</b> por mês",
+   "R$ 375.000,00",
+   "R$ 36.000,00"
+  ],
+  [
+   "<b>R$ 5.000,00</b> por mês",
+   "R$ 625.000,00",
+   "R$ 60.000,00"
+  ],
+  [
+   "<b>R$ 10.000,00</b> por mês",
+   "R$ 1.250.000,00",
+   "R$ 120.000,00"
+  ]
+ ],
+ "fim": "Ninguém começa com isso. <b>Dá pra montar aos poucos.</b>",
+ "rodape": [
+  "Considera rendimento de 0,80% ao mês (cerca de 10,03% ao ano). Rendimentos passados não garantem rendimentos futuros.",
+  "Rentabilidade hipotética, não é garantia de retorno.",
+  "Não é uma recomendação de compra ou venda."
+ ],
+ "tsize": 70,
+ "top": 450
+}
