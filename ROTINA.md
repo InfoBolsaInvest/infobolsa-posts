@@ -2,7 +2,7 @@
 
 IMPORTANTE (19/10/2026, pedido do Douglas): este post agora vai para o perfil NOVO @infobolsainvest (conta Windsor 17841475583342876). O @infobolsainvestimentos não recebe mais posts automáticos. A arte já sai com @infobolsainvest no cabeçalho.
 
-Roda nos dias úteis às 18h20 (horário de Brasília), sem nenhum computador ligado.
+Roda nos dias úteis às 18h40 (horário de Brasília; desde 03/11/2026 a B3 fecha às 18h), sem nenhum computador ligado.
 
 ## 1. Teve pregão hoje?
 Confira se a B3 abriu hoje (feriado nacional ou da B3 = sem pregão). Pesquise "Ibovespa fecha hoje DD/MM/AAAA". Se não teve pregão, pare aqui e não poste nada.
