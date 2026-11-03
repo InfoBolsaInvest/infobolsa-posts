@@ -1,0 +1,11 @@
+{
+ "data": "2026-11-03",
+ "ibov": {"pontos": "165.529", "var": -1.42},
+ "extras": [
+  {"rotulo": "Dólar", "valor": "R$ 5,49", "var": 0.79},
+  {"rotulo": "Na semana", "var": -1.42}
+ ],
+ "altas": [["NATU3", "Natura", 4.32], ["EMBJ3", "Embraer", 4.24], ["USIM5", "Usiminas", 3.00], ["SANB11", "Santander", 2.26], ["SMFT3", "Smart Fit", 2.13]],
+ "baixas": [["COGN3", "Cogna", -12.66], ["CMIN3", "CSN Mineração", -5.14], ["AZZA3", "Azzas", -5.09], ["HAPV3", "Hapvida", -5.00], ["MGLU3", "Magalu", -4.86]],
+ "fonte": "Fechamento de 03/11/2026. Fonte: B3"
+}
