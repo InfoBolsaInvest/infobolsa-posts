@@ -1,0 +1,13 @@
+{
+ "data": "2026-11-05",
+ "ibov": {"pontos": "166.191", "var": -0.82},
+ "extras": [
+  {"rotulo": "Dólar", "valor": "R$ 5,49", "var": 0.67},
+  {"rotulo": "Na semana", "var": -1.03}
+ ],
+ "altas": [["CEAB3", "C&A", 9.25], ["SMFT3", "Smart Fit", 5.48], ["CSAN3", "Cosan", 4.60]],
+ "baixas": [["TEND3", "Tenda", -17.72], ["CMIN3", "CSN Mineração", -6.49], ["EMBJ3", "Embraer", -4.96]],
+ "fonte": "Fechamento de 05/11/2026. Fonte: B3",
+ "nota_altas": "As 3 ações do Ibovespa<br>que mais subiram hoje",
+ "nota_baixas": "As 3 ações do Ibovespa<br>que mais caíram hoje"
+}
