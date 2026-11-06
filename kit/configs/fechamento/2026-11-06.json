@@ -1,0 +1,13 @@
+{
+ "data": "2026-11-06",
+ "ibov": {"pontos": "168.498", "var": 1.39},
+ "extras": [
+  {"rotulo": "Dólar", "valor": "R$ 5,51", "var": 0.36},
+  {"rotulo": "Na semana", "var": 0.34}
+ ],
+ "altas": [["CSAN3", "Cosan", 10.80], ["CEAB3", "C&A", 9.01], ["CSNA3", "CSN", 8.89]],
+ "baixas": [["NATU3", "Natura", -3.36], ["UGPA3", "Ultrapar", -2.71], ["CXSE3", "Caixa Seguridade", -2.15]],
+ "fonte": "Fechamento de 06/11/2026. Fonte: B3",
+ "nota_altas": "As 3 ações do Ibovespa<br>que mais subiram hoje",
+ "nota_baixas": "As 3 ações do Ibovespa<br>que mais caíram hoje"
+}
