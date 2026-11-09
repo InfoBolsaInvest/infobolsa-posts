@@ -1,0 +1,13 @@
+{
+ "data": "2026-11-09",
+ "ibov": {"pontos": "172.236", "var": 2.22},
+ "extras": [
+  {"rotulo": "Dólar", "valor": "R$ 5,51", "var": -0.06},
+  {"rotulo": "Na semana", "var": 2.22}
+ ],
+ "altas": [["MBRF3", "MBRF", 11.37], ["NATU3", "Natura", 8.60], ["BEEF3", "Minerva", 8.43]],
+ "baixas": [["BRAV3", "Brava", -4.04], ["VAMO3", "Vamos", -2.61], ["PRIO3", "PRIO", -2.21]],
+ "fonte": "Fechamento de 09/11/2026. Fonte: B3",
+ "nota_altas": "As 3 ações do Ibovespa<br>que mais subiram hoje",
+ "nota_baixas": "As 3 ações do Ibovespa<br>que mais caíram hoje"
+}
