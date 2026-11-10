@@ -1,0 +1,13 @@
+{
+ "data": "2026-11-10",
+ "ibov": {"pontos": "171.337", "var": -0.52},
+ "extras": [
+  {"rotulo": "Dólar", "valor": "R$ 5,59", "var": 1.46},
+  {"rotulo": "Na semana", "var": 1.68}
+ ],
+ "altas": [["MGLU3", "Magazine Luiza", 10.45], ["EMBJ3", "Embraer", 9.13], ["CXSE3", "Caixa Seguridade", 3.74]],
+ "baixas": [["HAPV3", "Hapvida", -10.48], ["BRAV3", "Brava", -5.08], ["LREN3", "Renner", -5.03]],
+ "fonte": "Fechamento de 10/11/2026. Fonte: B3",
+ "nota_altas": "As 3 ações do Ibovespa<br>que mais subiram hoje",
+ "nota_baixas": "As 3 ações do Ibovespa<br>que mais caíram hoje"
+}
