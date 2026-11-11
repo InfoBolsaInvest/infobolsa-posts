@@ -1,0 +1,13 @@
+{
+ "data": "2026-11-11",
+ "ibov": {"pontos": "172.060", "var": 0.42},
+ "extras": [
+  {"rotulo": "Dólar", "valor": "R$ 5,56", "var": -0.43},
+  {"rotulo": "Na semana", "var": 2.11}
+ ],
+ "altas": [["MGLU3", "Magazine Luiza", 18.87]],
+ "baixas": [["CMIN3", "CSN Mineração", -3.42], ["PETR4", "Petrobras", -3.11]],
+ "fonte": "Fechamento de 11/11/2026. Fonte: B3",
+ "nota_altas": "A ação do Ibovespa<br>que mais subiu hoje",
+ "nota_baixas": "As 2 ações do Ibovespa<br>que mais caíram hoje"
+}
