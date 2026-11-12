@@ -1,0 +1,13 @@
+{
+ "data": "2026-11-12",
+ "ibov": {"pontos": "171.324", "var": -0.43},
+ "extras": [
+  {"rotulo": "Dólar", "valor": "R$ 5,65", "var": 1.62},
+  {"rotulo": "Na semana", "var": 1.68}
+ ],
+ "altas": [["HAPV3", "Hapvida", 14.90], ["AZZA3", "Azzas 2154", 9.95], ["BEEF3", "Minerva", 5.65]],
+ "baixas": [["BBAS3", "Banco do Brasil", -8.35], ["MGLU3", "Magazine Luiza", -7.70], ["TEND3", "Tenda", -6.95]],
+ "fonte": "Fechamento de 12/11/2026. Fonte: B3",
+ "nota_altas": "As 3 ações do Ibovespa<br>que mais subiram hoje",
+ "nota_baixas": "As 3 ações do Ibovespa<br>que mais caíram hoje"
+}
