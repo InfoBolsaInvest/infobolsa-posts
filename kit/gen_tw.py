@@ -12,12 +12,12 @@ body{background:linear-gradient(172deg,#ffffff 0%,#ffffff 58%,#eef6f1 100%)!impo
 .cab{top:70px}
 .tw-t{position:absolute;left:96px;right:96px;top:260px;font-weight:700;font-size:var(--ts,76px);line-height:1.08;letter-spacing:-1.5px;color:#162526}
 .gr{position:absolute;left:70px;right:70px;display:grid;row-gap:26px;column-gap:26px}
-.it{display:flex;flex-direction:column;align-items:center;text-align:center;background:#fff;border:1.5px solid #e3ece7;border-radius:30px;padding:30px 10px 26px;box-shadow:0 10px 26px rgba(22,37,38,.05)}
-.lq{width:170px;height:170px;border-radius:38px;display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:22px}
+.it{display:flex;flex-direction:column;align-items:center;text-align:center;background:#fff;border:1.5px solid #e3ece7;border-radius:30px;padding:24px 10px 22px;box-shadow:0 10px 26px rgba(22,37,38,.05)}
+.lq{width:128px;height:128px;border-radius:30px;display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:14px}
 .lq img{width:68%;height:68%;object-fit:contain}
-.lq.em{font-size:150px;line-height:1}
-.it .v{font-weight:700;font-size:54px;letter-spacing:-1px;color:#162526;line-height:1.1}
-.it .d{font-size:28px;color:#3f5552;line-height:1.3;margin-top:4px}
+.lq.em{font-size:112px;line-height:1}
+.it .v{font-weight:700;font-size:50px;letter-spacing:-1px;color:#162526;line-height:1.1}
+.it .d{font-size:25px;color:#3f5552;line-height:1.3;margin-top:4px}
 """
 
 def grade(c):
@@ -32,6 +32,7 @@ def grade(c):
 <div><div class="nm">Douglas Medeiros {SELO}</div><div class="ar">@infobolsainvestimentos</div></div></div>
 <div class="tw-t">{c["titulo"]}</div>
 <div class="gr" style="top:{c.get("top", 420)}px;grid-template-columns:repeat({c.get("cols", 3)},1fr)">{it}</div>
+<div style="position:absolute;left:96px;right:96px;bottom:60px;text-align:center;font-size:24px;color:#7b8f8a">{c.get("nota", "")}</div>
 {SCRIPT}</body></html>"""
 
 CSS_VS = """

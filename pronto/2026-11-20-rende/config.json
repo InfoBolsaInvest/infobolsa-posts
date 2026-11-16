@@ -1,43 +1,44 @@
 {
  "titulo": "R$ 20 MIL: QUANTO RENDE?",
  "tsize": 68,
- "top": 460,
+ "top": 430,
  "cols": 3,
  "itens": [
   {
    "logo": "assets/logo_si_nubank.svg",
    "fundo": "#820ad1",
-   "valor": "R$ 257",
-   "det": "120% CDI<br>Caixinha Turbo"
+   "valor": "R$ 199",
+   "det": "120% CDI (Turbo)<br>1,00% ao mês"
   },
   {
    "logo": "assets/logo_inter_txt.svg",
    "fundo": "#ff7a00",
-   "valor": "R$ 214",
-   "det": "100% CDI"
+   "valor": "R$ 166",
+   "det": "100% CDI<br>0,83% ao mês"
   },
   {
    "logo": "assets/logo_si_picpay.svg",
    "fundo": "#21c25e",
-   "valor": "R$ 219",
-   "det": "102% CDI"
+   "valor": "R$ 169",
+   "det": "102% CDI<br>0,85% ao mês"
   },
   {
    "logo": "assets/logo_si_mercadopago.svg",
    "fundo": "#00b1ea",
-   "valor": "R$ 247",
-   "det": "115% CDI"
+   "valor": "R$ 191",
+   "det": "115% CDI<br>0,96% ao mês"
   },
   {
    "emoji": "🐷",
    "valor": "R$ 100",
-   "det": "Poupança"
+   "det": "Poupança<br>0,50% ao mês"
   },
   {
    "logo": "assets/logo_sofisa_txt.svg",
    "fundo": "#00875a",
-   "valor": "R$ 225",
-   "det": "105% CDI"
+   "valor": "R$ 174",
+   "det": "105% CDI<br>0,87% ao mês"
   }
- ]
+ ],
+ "nota": "Valores líquidos, já descontado o IR de 22,5%. Selic de 13,75% ao ano."
 }
