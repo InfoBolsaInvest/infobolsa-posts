@@ -26,9 +26,9 @@ TEMAS = {
                   acc="#0f7a43", dot="#FFB400", card1="#ffffff", card2="#f8fbf9", borda="#d6e5dc",
                   linha="#e4eee8", chip="#eef6f1", curva="rgba(15,122,67,.28)", foto="#162526"),
     # estilo Twitter (16/11/2026): branco liso, sem luz nem curva
-    "branco": dict(bg="#ffffff", luz="transparent", fg="#162526", sub="#3f5552", mute="#7b8f8a",
+    "branco": dict(bg="linear-gradient(172deg,#ffffff 0%,#ffffff 58%,#eef6f1 100%)", luz="rgba(15,122,67,.06)", fg="#162526", sub="#3f5552", mute="#7b8f8a",
                   acc="#0f7a43", dot="#FFB400", card1="#ffffff", card2="#ffffff", borda="#e3e8e6",
-                  linha="#e9eeec", chip="#eef6f1", curva="transparent", foto="#162526"),
+                  linha="#e9eeec", chip="#eef6f1", curva="rgba(15,122,67,.22)", foto="#162526"),
     "claro": dict(bg="linear-gradient(160deg,#ffffff 0%,#f4f7fc 55%,#e7eefb 100%)",
                   luz="rgba(29,111,224,.10)", fg="#0a1633", sub="#3d4a66", mute="#7a869e",
                   acc="#1d6fe0", card1="#ffffff", card2="#f7f9fd", borda="#d9e1ef",

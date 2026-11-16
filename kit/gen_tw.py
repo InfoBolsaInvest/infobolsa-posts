@@ -3,14 +3,16 @@
 Uso: python3 gen_tw.py grade config.json saida.html
 grade: titulo, itens [{logo, fundo, valor, det, emoji}], cols"""
 import json, sys
-from gen_inst import CSS, FS, SELO, SCRIPT
+from gen_inst import CSS, FS, SELO, SCRIPT, curva
 
 EXTRA = """
-body{background:#ffffff!important}
+body{background:linear-gradient(172deg,#ffffff 0%,#ffffff 58%,#eef6f1 100%)!important}
+.luz{position:absolute;inset:0;background:radial-gradient(ellipse 760px 620px at 100% 100%,rgba(15,122,67,.07),transparent 70%)}
+.tw-t:after{content:'';display:block;width:110px;height:7px;border-radius:4px;background:#FFB400;margin-top:22px}
 .cab{top:70px}
 .tw-t{position:absolute;left:96px;right:96px;top:260px;font-weight:700;font-size:var(--ts,76px);line-height:1.08;letter-spacing:-1.5px;color:#162526}
-.gr{position:absolute;left:70px;right:70px;display:grid;row-gap:60px}
-.it{display:flex;flex-direction:column;align-items:center;text-align:center}
+.gr{position:absolute;left:70px;right:70px;display:grid;row-gap:26px;column-gap:26px}
+.it{display:flex;flex-direction:column;align-items:center;text-align:center;background:#fff;border:1.5px solid #e3ece7;border-radius:30px;padding:30px 10px 26px;box-shadow:0 10px 26px rgba(22,37,38,.05)}
 .lq{width:170px;height:170px;border-radius:38px;display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:22px}
 .lq img{width:68%;height:68%;object-fit:contain}
 .lq.em{font-size:150px;line-height:1}
@@ -25,7 +27,7 @@ def grade(c):
               else f'<div class="lq" style="background:{x["fundo"]}"><img src="{x["logo"]}"></div>')
         it += f'<div class="it">{lq}<div class="v num">{x["valor"]}</div><div class="d">{x.get("det", "")}</div></div>'
     return f"""<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>{CSS.replace('FS/', FS)}{EXTRA}</style></head>
-<body style="--fg:#162526;--sub:#3f5552;--foto:#162526;--ts:{c.get("tsize", 76)}px">
+<body style="--fg:#162526;--sub:#3f5552;--foto:#162526;--ts:{c.get("tsize", 76)}px"><div class="luz"></div>{curva("branco")}
 <div class="cab"><div class="ft"><img src="assets/foto.png" alt=""></div>
 <div><div class="nm">Douglas Medeiros {SELO}</div><div class="ar">@infobolsainvestimentos</div></div></div>
 <div class="tw-t">{c["titulo"]}</div>
@@ -38,25 +40,28 @@ CSS_VS = """
 .vh .lg img{width:100%;height:100%;object-fit:contain}
 .vh .vs{font-weight:700;font-size:64px;color:#0f7a43;font-style:italic}
 .vr{position:absolute;left:96px;right:96px;display:flex;flex-direction:column}
-.vr .ln{display:grid;grid-template-columns:1fr 1.1fr 1fr;align-items:center;text-align:center;height:var(--lh,116px);border-bottom:2px solid #eef1f0}
+.vr .ln{display:grid;grid-template-columns:1fr 1.1fr 1fr;align-items:center;text-align:center;height:var(--lh,116px);border-bottom:2px solid #d9e7de}
+.vr .ln:nth-child(odd){background:#f3f8f5;border-radius:22px}
 .vr .ln:last-child{border-bottom:none}
 .vr .x{font-weight:700;font-size:46px;color:#162526}
 .vr .l{font-weight:600;font-size:28px;color:#3f5552;line-height:1.2}
 .rk{position:absolute;left:96px;right:96px;display:flex;flex-direction:column}
-.rw{display:flex;align-items:center;gap:28px;height:var(--rh,150px);border-bottom:2px solid #eef1f0}
+.rw{display:flex;align-items:center;gap:28px;height:var(--rh,150px);border-bottom:2px solid #d9e7de;padding:0 26px}
+.rw:nth-child(odd){background:#f3f8f5;border-radius:22px}
 .rw:last-child{border-bottom:none}
-.rw .ps{font-weight:700;font-size:44px;color:#0f7a43;width:70px}
+.rw .ps{font-weight:700;font-size:30px;color:#0f7a43;width:66px;height:66px;border-radius:50%;background:#e2f0e8;display:flex;align-items:center;justify-content:center;flex:none}
+.rw:first-child .ps{background:#FFB400;color:#162526}
 .rw .lq{width:104px;height:104px;border-radius:24px;overflow:hidden;flex:none}
 .rw .lq img{width:100%;height:100%;object-fit:contain}
 .rw .tk{flex:1;font-weight:700;font-size:46px;line-height:1.1;color:#162526;display:flex;flex-direction:column;align-items:flex-start}
 .rw .tk small{display:block;font-size:24px;font-weight:400;color:#7b8f8a;margin-top:4px}
-.rw .v{font-weight:700;font-size:46px;color:#162526;white-space:nowrap}
+.rw .v{font-weight:700;font-size:44px;color:#0f7a43;white-space:nowrap}
 """
 
 
 def _pag(c, corpo):
     return f"""<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>{CSS.replace('FS/', FS)}{EXTRA}{CSS_VS}</style></head>
-<body style="--fg:#162526;--sub:#3f5552;--foto:#162526;--ts:{c.get("tsize", 76)}px">
+<body style="--fg:#162526;--sub:#3f5552;--foto:#162526;--ts:{c.get("tsize", 76)}px"><div class="luz"></div>{curva("branco")}
 <div class="cab"><div class="ft"><img src="assets/foto.png" alt=""></div>
 <div><div class="nm">Douglas Medeiros {SELO}</div><div class="ar">@infobolsainvestimentos</div></div></div>
 <div class="tw-t">{c["titulo"]}</div>{corpo}{SCRIPT}</body></html>"""
