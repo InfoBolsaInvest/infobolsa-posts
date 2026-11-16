@@ -1,0 +1,48 @@
+{
+ "titulo": "Os 5 FIIs com <span>maior patrimônio</span> da bolsa",
+ "tsize": 66,
+ "sub": "Patrimônio líquido de cada fundo 👇",
+ "top": 450,
+ "rh": 138,
+ "itens": [
+  {
+   "pos": 1,
+   "logo": "assets/logos_b3/KNCR11.png",
+   "tk": "KNCR11",
+   "det": "Kinea Rendimentos · papel",
+   "valor": "R$ 10,99 bi"
+  },
+  {
+   "pos": 2,
+   "logo": "assets/logos_b3/HGLG11.png",
+   "tk": "HGLG11",
+   "det": "Pátria Log · galpões",
+   "valor": "R$ 7,59 bi"
+  },
+  {
+   "pos": 3,
+   "logo": "assets/logos_b3/BTLG11.png",
+   "tk": "BTLG11",
+   "det": "BTG Logística · galpões",
+   "valor": "R$ 7,43 bi"
+  },
+  {
+   "pos": 4,
+   "logo": "assets/logos_b3/KNIP11.png",
+   "tk": "KNIP11",
+   "det": "Kinea Índices de Preços · papel",
+   "valor": "R$ 7,37 bi"
+  },
+  {
+   "pos": 5,
+   "logo": "assets/logos_b3/XPML11.png",
+   "tk": "XPML11",
+   "det": "XP Malls · shoppings",
+   "valor": "R$ 7,08 bi"
+  }
+ ],
+ "rodape": [
+  "Patrimônio líquido conforme o último informe de cada fundo.",
+  "Fonte: StatusInvest, 16/11/2026. Não é uma recomendação de compra ou venda."
+ ]
+}

@@ -220,8 +220,18 @@ def build_vs(c, tema):
     n = len(c["linhas"])
     lh = 86
     tab = (f'<div class="tb vs" style="--cols:1.25fr 1fr 1fr;--lh:{lh}px;top:62px"><div class="hd"><div></div>{emp(a)}{emp(b)}</div>{linhas}</div>')
-    h = 62 + 150 + n * lh + 20
-    corpo = pasta(440, h, "Comparativo", tab, tema)
+    st = ""
+    if c.get("grande"):
+        lh = c.get("lh", 100)
+        tab = tab.replace("--lh:86px", f"--lh:{lh}px")
+        st = ("<style>.vs .hd{height:170px!important}.emp{font-size:30px!important;font-weight:600!important;gap:14px!important}"
+              ".emp .lg{width:104px!important;height:104px!important;border:none!important}.emp .lg img{width:100%!important;height:100%!important}"
+              ".vs .lb{font-size:30px!important;font-weight:600!important}.vs .lb small{font-size:21px!important}"
+              ".vs .vl{font-size:40px!important;font-weight:600!important}</style>")
+        h = 62 + 170 + n * lh + 24
+    else:
+        h = 62 + 150 + n * lh + 20
+    corpo = st + pasta(c.get("top", 440), h, "Comparativo", tab, tema)
     return pagina(tema, titulo, limpa(c.get("sub", "")), corpo, c["rodape"], tsize=86)
 
 
