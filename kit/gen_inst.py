@@ -553,6 +553,12 @@ def build_historia_slide(s, i, n, tema):
     else:
         sub = f'<p>{s["sub"]}</p>' if s.get("sub") else ""
         topo = f'<div class="hs-t" style="--tsize:{s.get("tsize", 78)}px;--ttop:{s.get("ttop", 215)}px"><h1>{s["titulo"]}</h1>{sub}</div>'
+    lg = ""
+    if s.get("logo"):
+        sz = s.get("logo_size", 150)
+        lg = (f'<div style="position:absolute;left:96px;top:{s.get("logo_top", 400)}px;width:{sz}px;height:{sz}px;border-radius:30px;'
+              f'background:{s.get("logo_fundo", "#fff")};display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(22,37,38,.14)">'
+              f'<img src="{s["logo"]}" style="width:{int(sz*.72)}px;height:{int(sz*.72)}px;object-fit:contain"></div>')
     arr = '<div class="arrasta">Arrasta pro lado →</div>' if i == 1 and s.get("arrasta", True) else ""
     rod = "<br>".join(s.get("rodape", []))
     return f"""<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>{CSS.replace('FS/', FS)}{CSS_HIST}</style></head>
@@ -560,7 +566,7 @@ def build_historia_slide(s, i, n, tema):
 <div class="cab"><div class="ft"><img src="assets/foto.png" alt=""></div>
 <div><div class="nm">Douglas Medeiros {SELO}</div><div class="ar">@infobolsainvestimentos</div></div></div>
 <div class="hs-n"><b>{i}</b> / {n}</div>
-{topo}{_hs_corpo(s)}{arr}
+{topo}{lg}{_hs_corpo(s)}{arr}
 <div class="rod">{rod}</div>{SCRIPT}</body></html>"""
 
 

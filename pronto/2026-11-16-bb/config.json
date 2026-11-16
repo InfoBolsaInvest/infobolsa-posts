@@ -1,22 +1,145 @@
-{"slides":[
-{"tipo":"numero","titulo":"O lucro do Banco do Brasil <i>despencou</i>","tsize":74,"numero":"66,5%","neg":true,"top":560,
- "legenda":"de queda no lucro do 3º trimestre.<br>De <b>R$ 3,8 bi</b> para <b>R$ 1,27 bi</b> em um ano.",
- "rodape":["Lucro líquido ajustado, 3T26 contra 3T25.","Fonte: Banco do Brasil (balanço divulgado em 11/11/2026)."]},
-{"tipo":"barras","titulo":"E a previsão de 2026 <i>caiu pela metade</i>","tsize":70,"sub":"Lucro esperado para o ano, em R$ bilhões 👇",
- "barras":[{"rotulo":"Previsão antiga","sub":"lucro ajustado 2026","txt":"18 a 22","valor":22},{"rotulo":"Previsão nova","sub":"lucro ajustado 2026","txt":"9 a 11","valor":11,"cor":"neg"}],
- "base":1100,"hmax":430,"badge":"corte de 50%","badge_x":430,"badge_y":820,
- "rodape":["Guidance de lucro ajustado para 2026, em R$ bilhões.","Fonte: Banco do Brasil e Times Brasil."]},
-{"tipo":"barras","titulo":"O motivo: mais gente <i>sem pagar</i>","tsize":70,"sub":"Inadimplência acima de 90 dias na carteira do banco. No crédito rural, chegou a <b>6,92%</b> 👇",
- "barras":[{"rotulo":"Setembro de 2025","sub":"carteira total","txt":"4,51%","valor":4.51},{"rotulo":"Setembro de 2026","sub":"carteira total","txt":"6,08%","valor":6.08,"cor":"neg"}],
- "base":1100,"hmax":400,
- "rodape":["Inadimplência acima de 90 dias.","Fonte: Banco do Brasil e Times Brasil."]},
-{"tipo":"barras","titulo":"E o banco vai <i>separar mais dinheiro</i> para calotes","tsize":64,"sub":"Custo do crédito previsto para 2026, em R$ bilhões. Quanto maior, menos sobra de lucro 👇",
- "barras":[{"rotulo":"Previsão antiga","sub":"custo do crédito 2026","txt":"65 a 70","valor":70},{"rotulo":"Previsão nova","sub":"custo do crédito 2026","txt":"80 a 83","valor":83,"cor":"neg"}],
- "base":1100,"hmax":400,
- "rodape":["Custo do crédito: valor reservado para perdas com empréstimos.","Fonte: Banco do Brasil e Times Brasil."]},
-{"tipo":"fluxo","titulo":"E os <i>dividendos</i> encolheram","tsize":76,"top":520,
- "passos":[{"txt":"Payout de 30% para 25%","sub":"o mínimo obrigatório por lei"},{"txt":"17/02/2027","sub":"anúncio do complemento dos dividendos de 2026","alerta":true},{"txt":"10/03/2027","sub":"pagamento previsto do complemento"},{"txt":"2027 sem dividendos intermediários","sub":"o banco diz que a medida é temporária"}],
- "rodape":["Payout: parcela do lucro distribuída aos acionistas.","Fonte: Banco do Brasil e Times Brasil."]},
-{"tipo":"frase","titulo":"Lucro caindo, calote subindo e dividendo menor.","pergunta":"O banco diz que o corte é temporário. A dúvida é por quanto tempo.<br><br><b>Você tem BBAS3 na carteira? Comenta aqui 👇</b>","top":330,"tsize":70,
- "rodape":["Não é uma recomendação de compra ou venda."]}
-],"segue":true}
+{
+ "slides": [
+  {
+   "tipo": "numero",
+   "titulo": "O lucro do Banco do Brasil <i>despencou</i>",
+   "tsize": 74,
+   "numero": "66,5%",
+   "neg": true,
+   "top": 590,
+   "legenda": "de queda no lucro do 3º trimestre.<br>De <b>R$ 3,8 bi</b> para <b>R$ 1,27 bi</b> em um ano.",
+   "rodape": [
+    "Lucro líquido ajustado, 3T26 contra 3T25.",
+    "Fonte: Banco do Brasil (balanço divulgado em 11/11/2026)."
+   ],
+   "logo": "assets/logos_b3/BBAS3.png",
+   "logo_fundo": "#fcfc30",
+   "logo_top": 400,
+   "logo_size": 140
+  },
+  {
+   "tipo": "barras",
+   "titulo": "E a previsão de 2026 <i>caiu pela metade</i>",
+   "tsize": 70,
+   "sub": "Lucro esperado para o ano, em R$ bilhões 👇",
+   "barras": [
+    {
+     "rotulo": "Previsão antiga",
+     "sub": "lucro ajustado 2026",
+     "txt": "18 a 22",
+     "valor": 22
+    },
+    {
+     "rotulo": "Previsão nova",
+     "sub": "lucro ajustado 2026",
+     "txt": "9 a 11",
+     "valor": 11,
+     "cor": "neg"
+    }
+   ],
+   "base": 1100,
+   "hmax": 430,
+   "badge": "corte de 50%",
+   "badge_x": 430,
+   "badge_y": 820,
+   "rodape": [
+    "Guidance de lucro ajustado para 2026, em R$ bilhões.",
+    "Fonte: Banco do Brasil e Times Brasil."
+   ]
+  },
+  {
+   "tipo": "barras",
+   "titulo": "O motivo: mais gente <i>sem pagar</i>",
+   "tsize": 70,
+   "sub": "Inadimplência acima de 90 dias na carteira do banco. No crédito rural, chegou a <b>6,92%</b> 👇",
+   "barras": [
+    {
+     "rotulo": "Setembro de 2025",
+     "sub": "carteira total",
+     "txt": "4,51%",
+     "valor": 4.51
+    },
+    {
+     "rotulo": "Setembro de 2026",
+     "sub": "carteira total",
+     "txt": "6,08%",
+     "valor": 6.08,
+     "cor": "neg"
+    }
+   ],
+   "base": 1100,
+   "hmax": 400,
+   "rodape": [
+    "Inadimplência acima de 90 dias.",
+    "Fonte: Banco do Brasil e Times Brasil."
+   ]
+  },
+  {
+   "tipo": "barras",
+   "titulo": "E o banco vai <i>separar mais dinheiro</i> para calotes",
+   "tsize": 64,
+   "sub": "Custo do crédito previsto para 2026, em R$ bilhões. Quanto maior, menos sobra de lucro 👇",
+   "barras": [
+    {
+     "rotulo": "Previsão antiga",
+     "sub": "custo do crédito 2026",
+     "txt": "65 a 70",
+     "valor": 70
+    },
+    {
+     "rotulo": "Previsão nova",
+     "sub": "custo do crédito 2026",
+     "txt": "80 a 83",
+     "valor": 83,
+     "cor": "neg"
+    }
+   ],
+   "base": 1100,
+   "hmax": 400,
+   "rodape": [
+    "Custo do crédito: valor reservado para perdas com empréstimos.",
+    "Fonte: Banco do Brasil e Times Brasil."
+   ]
+  },
+  {
+   "tipo": "fluxo",
+   "titulo": "E os <i>dividendos</i> encolheram",
+   "tsize": 76,
+   "top": 520,
+   "passos": [
+    {
+     "txt": "Payout de 30% para 25%",
+     "sub": "o mínimo obrigatório por lei"
+    },
+    {
+     "txt": "17/02/2027",
+     "sub": "anúncio do complemento dos dividendos de 2026",
+     "alerta": true
+    },
+    {
+     "txt": "10/03/2027",
+     "sub": "pagamento previsto do complemento"
+    },
+    {
+     "txt": "2027 sem dividendos intermediários",
+     "sub": "o banco diz que a medida é temporária"
+    }
+   ],
+   "rodape": [
+    "Payout: parcela do lucro distribuída aos acionistas.",
+    "Fonte: Banco do Brasil e Times Brasil."
+   ]
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Lucro caindo, calote subindo e dividendo menor.",
+   "pergunta": "O banco diz que o corte é temporário. A dúvida é por quanto tempo.<br><br><b>Você tem BBAS3 na carteira? Comenta aqui 👇</b>",
+   "top": 330,
+   "tsize": 70,
+   "rodape": [
+    "Não é uma recomendação de compra ou venda."
+   ]
+  }
+ ],
+ "segue": true
+}
