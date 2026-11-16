@@ -8,10 +8,7 @@
    "neg": true,
    "top": 790,
    "legenda": "de queda no lucro do 3º trimestre.<br>De <b>R$ 3,8 bi</b> para <b>R$ 1,27 bi</b> em um ano.",
-   "rodape": [
-    "Lucro líquido ajustado, 3T26 contra 3T25.",
-    "Fonte: Banco do Brasil (balanço divulgado em 11/11/2026)."
-   ],
+   "rodape": [],
    "logo": "assets/logos_b3/BBAS3.png",
    "logo_fundo": "#fdee00",
    "logo_top": 250,
@@ -45,10 +42,7 @@
    "badge": "corte de 50%",
    "badge_x": 430,
    "badge_y": 820,
-   "rodape": [
-    "Guidance de lucro ajustado para 2026, em R$ bilhões.",
-    "Fonte: Banco do Brasil e Times Brasil."
-   ]
+   "rodape": []
   },
   {
    "tipo": "barras",
@@ -72,10 +66,7 @@
    ],
    "base": 1100,
    "hmax": 400,
-   "rodape": [
-    "Inadimplência acima de 90 dias.",
-    "Fonte: Banco do Brasil e Times Brasil."
-   ]
+   "rodape": []
   },
   {
    "tipo": "barras",
@@ -99,10 +90,7 @@
    ],
    "base": 1100,
    "hmax": 400,
-   "rodape": [
-    "Custo do crédito: valor reservado para perdas com empréstimos.",
-    "Fonte: Banco do Brasil e Times Brasil."
-   ]
+   "rodape": []
   },
   {
    "tipo": "fluxo",
@@ -128,10 +116,7 @@
      "sub": "o banco diz que a medida é temporária"
     }
    ],
-   "rodape": [
-    "Payout: parcela do lucro distribuída aos acionistas.",
-    "Fonte: Banco do Brasil e Times Brasil."
-   ]
+   "rodape": []
   },
   {
    "tipo": "frase",
@@ -139,9 +124,7 @@
    "pergunta": "O banco diz que o corte é temporário. A dúvida é por quanto tempo.<br><br><b>Você tem BBAS3 na carteira? Comenta aqui 👇</b>",
    "top": 330,
    "tsize": 70,
-   "rodape": [
-    "Não é uma recomendação de compra ou venda."
-   ]
+   "rodape": []
   }
  ],
  "segue": true

@@ -7,25 +7,25 @@
   {
    "logo": "assets/logo_si_nubank.svg",
    "fundo": "#820ad1",
-   "valor": "R$ 298",
+   "valor": "R$ 257",
    "det": "120% CDI<br>Caixinha Turbo"
   },
   {
    "logo": "assets/logo_inter_txt.svg",
    "fundo": "#ff7a00",
-   "valor": "R$ 248",
+   "valor": "R$ 214",
    "det": "100% CDI"
   },
   {
    "logo": "assets/logo_si_picpay.svg",
    "fundo": "#21c25e",
-   "valor": "R$ 254",
+   "valor": "R$ 219",
    "det": "102% CDI"
   },
   {
    "logo": "assets/logo_si_mercadopago.svg",
    "fundo": "#00b1ea",
-   "valor": "R$ 284",
+   "valor": "R$ 247",
    "det": "115% CDI"
   },
   {
@@ -36,7 +36,7 @@
   {
    "logo": "assets/logo_sofisa_txt.svg",
    "fundo": "#00875a",
-   "valor": "R$ 260",
+   "valor": "R$ 225",
    "det": "105% CDI"
   }
  ]

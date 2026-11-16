@@ -1,55 +1,43 @@
 {
+ "titulo": "ITAÚ X NUBANK NO 3º TRI",
+ "tsize": 68,
+ "top": 400,
+ "lh": 112,
  "empresas": [
   {
-   "nome": "Itaú",
    "logo": "assets/logos_b3/ITUB4.png",
-   "fundo": "#ee7000",
-   "logo_w": 130
+   "fundo": "#ee7000"
   },
   {
-   "nome": "Nubank",
    "logo": "assets/logo_nu_pad.svg",
-   "fundo": "#820ad1",
-   "logo_w": 130
+   "fundo": "#820ad1"
   }
  ],
- "sub": "Os números do 3º trimestre de 2026 👇",
  "linhas": [
   [
    "Lucro",
-   "no trimestre",
    "R$ 12,6 bi",
    "US$ 1,1 bi"
   ],
   [
    "ROE",
-   "rentabilidade anualizada",
    "23,60%",
    "32,00%"
   ],
   [
    "Eficiência",
-   "quanto menor, melhor",
    "35,70%",
    "19,30%"
   ],
   [
-   "Crédito",
-   "carteira total",
+   "Carteira de crédito",
    "R$ 1,54 tri",
    "US$ 41,6 bi"
   ],
   [
-   "Inadimplência",
-   "atrasos acima de 90 dias",
+   "Inadimplência<br>+90 dias",
    "2,00%",
    "7,30%"
   ]
- ],
- "rodape": [
-  "Itaú: lucro recorrente 3T26 (divulgado em 03/11/2026). Nubank: Nu Holdings 3T26 (12/11/2026), em dólar.",
-  "Fontes: Itaú Unibanco, Nu Holdings e Seu Dinheiro. Não é uma recomendação de compra ou venda."
- ],
- "grande": true,
- "top": 400
+ ]
 }
