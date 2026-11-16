@@ -1,58 +1,43 @@
 {
- "titulo": "R$ 20 mil: quanto <span>rende?</span>",
- "tsize": 64,
- "sub": "Rendimento de 1 mês, antes do IR, nas taxas padrão 👇",
- "top": 400,
- "ch": 300,
+ "titulo": "R$ 20 MIL: QUANTO RENDE?",
+ "tsize": 68,
+ "top": 440,
+ "cols": 3,
  "itens": [
   {
    "logo": "assets/logo_si_nubank.svg",
    "fundo": "#820ad1",
-   "nome": "Nubank Caixinha",
-   "valor": "R$ 214,40",
-   "det": "100% do CDI"
+   "valor": "R$ 298",
+   "det": "120% CDI<br>Caixinha Turbo"
   },
   {
    "logo": "assets/logo_inter_txt.svg",
    "fundo": "#ff7a00",
-   "nome": "Inter Porquinho",
-   "valor": "R$ 214,40",
-   "det": "100% do CDI"
+   "valor": "R$ 248",
+   "det": "100% CDI"
   },
   {
    "logo": "assets/logo_si_picpay.svg",
    "fundo": "#21c25e",
-   "nome": "PicPay Cofrinho",
-   "valor": "R$ 218,68",
-   "det": "102% do CDI",
-   "destaque": true
+   "valor": "R$ 254",
+   "det": "102% CDI"
   },
   {
    "logo": "assets/logo_si_mercadopago.svg",
    "fundo": "#00b1ea",
-   "nome": "Mercado Pago",
-   "valor": "R$ 214,40",
-   "det": "100% do CDI"
+   "valor": "R$ 284",
+   "det": "115% CDI"
   },
   {
-   "logo": "assets/logo_tesouro.svg",
-   "fundo": "#e9f2ec",
-   "nome": "Tesouro Selic",
-   "valor": "R$ 215,88",
-   "det": "100% da Selic"
+   "emoji": "🐷",
+   "valor": "R$ 100",
+   "det": "Poupança"
   },
   {
-   "logo": "assets/logo_poupanca.svg",
-   "fundo": "#fde3ec",
-   "nome": "Poupança",
-   "valor": "R$ 100,00",
-   "det": "0,5% ao mês + TR"
+   "logo": "assets/logo_sofisa_txt.svg",
+   "fundo": "#00875a",
+   "valor": "R$ 260",
+   "det": "105% CDI"
   }
- ],
- "fim": "📌 Com assinatura ou movimentação mínima, algumas caixinhas pagam até 120% do CDI, com limite de saldo.",
- "fim_top": 1050,
- "rodape": [
-  "CDI de 13,65% e Selic de 13,75% ao ano (Copom de 04/11/2026). Valores aproximados, sem IR.",
-  "Taxas padrão divulgadas; confira as condições no app. Não é uma recomendação de compra ou venda."
  ]
 }
