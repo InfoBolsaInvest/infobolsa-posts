@@ -32,7 +32,7 @@ def grade(c):
 <div><div class="nm">Douglas Medeiros {SELO}</div><div class="ar">@infobolsainvestimentos</div></div></div>
 <div class="tw-t">{c["titulo"]}</div>
 <div class="gr" style="top:{c.get("top", 420)}px;grid-template-columns:repeat({c.get("cols", 3)},1fr)">{it}</div>
-<div style="position:absolute;left:96px;right:96px;bottom:60px;text-align:center;font-size:24px;color:#7b8f8a">{c.get("nota", "")}</div>
+<div style="position:absolute;left:96px;right:96px;bottom:52px;text-align:center;font-size:22px;line-height:1.45;color:#7b8f8a">{c.get("nota", "")}</div>
 {SCRIPT}</body></html>"""
 
 CSS_VS = """

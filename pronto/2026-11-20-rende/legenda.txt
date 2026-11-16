@@ -5,7 +5,7 @@ Mercado Pago (115% do CDI): R$ 191
 Sofisa (105% do CDI): R$ 174
 PicPay (102% do CDI): R$ 169
 Inter (100% do CDI): R$ 166
-Poupança (0,66% ao mês, com a TR): R$ 132
+Poupança (0,50% ao mês + TR de 0,16% = 0,66%): R$ 132
 
 Mesmo depois do imposto, a melhor opção da lista rende cerca de 50% a mais que a poupança.
 
@@ -17,7 +17,7 @@ Salva esse post e manda para quem ainda deixa dinheiro na poupança.
 
 Na última arte: Black do Grana, plano Mais Grana anual com R$ 120 de desconto (link na bio). Conteúdo publicitário em parceria com o Grana Capital.
 
-Valores líquidos aproximados de 1 mês, já descontado o IR de 22,5% (aplicações de até 6 meses), com a Selic em 13,75% ao ano (CDI de 13,65%). A poupança é isenta de IR.
+Valores líquidos aproximados de 1 mês, já descontado o IR de 22,5% (aplicações de até 6 meses), com a Selic em 13,75% ao ano (CDI de 13,65%). A poupança rende 0,50% ao mês mais a TR (taxa referencial), que em novembro ficou perto de 0,16%, e é isenta de IR.
 Não é uma recomendação de compra ou venda.
 
 #rendafixa #cdi #poupanca #reservadeemergencia #investimentos #educacaofinanceira

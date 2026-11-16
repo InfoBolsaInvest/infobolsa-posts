@@ -31,7 +31,7 @@
   {
    "emoji": "🐷",
    "valor": "R$ 132",
-   "det": "Poupança<br>0,66% ao mês"
+   "det": "Poupança<br>0,50% + TR = 0,66%"
   },
   {
    "logo": "assets/logo_sofisa_txt.svg",
@@ -40,5 +40,5 @@
    "det": "105% CDI<br>0,87% ao mês"
   }
  ],
- "nota": "Valores líquidos, já descontado o IR de 22,5%. Selic de 13,75% ao ano."
+ "nota": "Valores líquidos, já descontado o IR de 22,5%. Selic de 13,75% ao ano.<br>Poupança: 0,50% ao mês + TR (taxa referencial) de 0,16%, sem IR."
 }
