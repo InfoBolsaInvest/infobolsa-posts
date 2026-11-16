@@ -3,19 +3,22 @@
   {
    "tipo": "numero",
    "titulo": "O lucro do Banco do Brasil <i>despencou</i>",
-   "tsize": 74,
+   "tsize": 78,
    "numero": "66,5%",
    "neg": true,
-   "top": 590,
+   "top": 790,
    "legenda": "de queda no lucro do 3º trimestre.<br>De <b>R$ 3,8 bi</b> para <b>R$ 1,27 bi</b> em um ano.",
    "rodape": [
     "Lucro líquido ajustado, 3T26 contra 3T25.",
     "Fonte: Banco do Brasil (balanço divulgado em 11/11/2026)."
    ],
    "logo": "assets/logos_b3/BBAS3.png",
-   "logo_fundo": "#fcfc30",
-   "logo_top": 400,
-   "logo_size": 140
+   "logo_fundo": "#fdee00",
+   "logo_top": 250,
+   "logo_size": 120,
+   "logo_nome": "Banco do Brasil",
+   "logo_sub": "BBAS3 · Resultado do 3º trimestre",
+   "ttop": 540
   },
   {
    "tipo": "barras",

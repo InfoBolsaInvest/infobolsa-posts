@@ -556,9 +556,11 @@ def build_historia_slide(s, i, n, tema):
     lg = ""
     if s.get("logo"):
         sz = s.get("logo_size", 150)
-        lg = (f'<div style="position:absolute;left:96px;top:{s.get("logo_top", 400)}px;width:{sz}px;height:{sz}px;border-radius:30px;'
-              f'background:{s.get("logo_fundo", "#fff")};display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(22,37,38,.14)">'
-              f'<img src="{s["logo"]}" style="width:{int(sz*.72)}px;height:{int(sz*.72)}px;object-fit:contain"></div>')
+        lg = (f'<div style="position:absolute;left:96px;right:96px;top:{s.get("logo_top", 250)}px;height:{sz+44}px;border-radius:32px;'
+              f'background:{s.get("logo_fundo", "#fff")};display:flex;align-items:center;gap:34px;padding:0 36px;box-shadow:0 14px 34px rgba(22,37,38,.12)">'
+              f'<img src="{s["logo"]}" style="width:{sz}px;height:{sz}px;object-fit:contain;flex:none">'
+              f'<div style="color:#162526"><div style="font-weight:700;font-size:50px;line-height:1.1;letter-spacing:-1px">{s.get("logo_nome", "")}</div>'
+              f'<div style="font-weight:400;font-size:28px;margin-top:6px;opacity:.8">{s.get("logo_sub", "")}</div></div></div>')
     arr = '<div class="arrasta">Arrasta pro lado →</div>' if i == 1 and s.get("arrasta", True) else ""
     rod = "<br>".join(s.get("rodape", []))
     return f"""<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>{CSS.replace('FS/', FS)}{CSS_HIST}</style></head>
