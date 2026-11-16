@@ -5,9 +5,9 @@ Mercado Pago (115% do CDI): R$ 191
 Sofisa (105% do CDI): R$ 174
 PicPay (102% do CDI): R$ 169
 Inter (100% do CDI): R$ 166
-Poupança (0,50% ao mês): R$ 100
+Poupança (0,66% ao mês, com a TR): R$ 132
 
-Mesmo depois do imposto, a melhor opção da lista rende quase o dobro da poupança.
+Mesmo depois do imposto, a melhor opção da lista rende cerca de 50% a mais que a poupança.
 
 Atenção: as taxas mais altas costumam exigir condições (assinatura ou movimentação mínima) e têm limite de saldo. Confira no app antes.
 
