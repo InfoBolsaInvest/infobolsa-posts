@@ -110,7 +110,43 @@ def tabela(c):
     return _pag(c, corpo)
 
 
+CSS_GTA = """
+.gw{position:absolute;left:70px;right:70px;display:flex;flex-direction:column;gap:26px}
+.gc{display:grid;grid-template-columns:1fr 1fr;height:var(--ch,390px);background:#fff;border:1.5px solid #e3ece7;border-radius:32px;box-shadow:0 12px 30px rgba(22,37,38,.06);overflow:hidden}
+.gc .l{display:flex;flex-direction:column;align-items:center;justify-content:center;border-right:2px solid #e3ece7}
+.gc .l img{width:300px;height:220px;object-fit:contain}
+.gc .l .y{font-weight:700;font-size:40px;color:#162526;margin-top:12px}
+.gc .r{display:flex;flex-direction:column;justify-content:center;padding:0 44px;background:#f6faf7}
+.gc .lg{display:flex;align-items:center;gap:18px}
+.gc .lg img{width:84px;height:84px;border-radius:20px;object-fit:contain}
+.gc .tk{font-weight:700;font-size:40px;color:#162526;line-height:1}
+.gc .nm{font-size:22px;color:#7b8f8a;margin-top:4px}
+.gc .p{font-weight:700;font-size:86px;letter-spacing:-2px;color:#162526;margin-top:20px;line-height:1}
+.gc .p small{font-size:44px;letter-spacing:0;margin-right:6px;font-weight:600}
+.gc .v{align-self:flex-start;margin-top:16px;font-weight:700;font-size:32px;padding:8px 20px;border-radius:30px}
+.gc .up{background:#e2f0e8;color:#0f7a43}.gc .dn{background:#f8e1de;color:#c0392b}
+"""
+
+
+def gta(c, x, titulo):
+    lg = f'<div class="lg"><img src="{x["logo"]}"><div><div class="tk">{x["tk"]}</div><div class="nm">{x["nome"]}</div></div></div>'
+    cls = "dn" if x["var"].startswith("-") else "up"
+    card = lambda glogo, ano, pr, extra: (f'<div class="gc"><div class="l"><img src="{glogo}"><div class="y">{ano}</div></div>'
+                                         f'<div class="r">{lg}<div class="p num"><small>R$</small>{pr}</div>{extra}</div></div>')
+    corpo = (f'<style>{CSS_GTA}</style><div class="gw" style="top:{c.get("top", 420)}px;--ch:{c.get("ch", 390)}px">'
+             + card(c["logo_a"], c["ano_a"], x["a"], "")
+             + card(c["logo_b"], c["ano_b"], x["b"], f'<div class="v num {cls}">{x["var"]}</div>') + "</div>")
+    return _pag({**c, "titulo": titulo}, corpo)
+
+
 if __name__ == "__main__":
     tipo, cfg, out = sys.argv[1:4]
+    if tipo == "gta":
+        c = json.load(open(cfg))
+        for i, x in enumerate(c["itens"], 1):
+            cor = "#c0392b" if x["var"].startswith("-") else "#0f7a43"
+            t = c["titulo"] if i == 1 else f'{x["nome"]}: <span style="color:{cor}">{x["var"]}</span>'
+            open(f"{out}-{i}.html", "w").write(gta(c, x, t))
+        sys.exit()
     c = json.load(open(cfg))
     open(out, "w").write({"grade": grade, "vs": vs, "ranking": ranking, "tabela": tabela}[tipo](c))

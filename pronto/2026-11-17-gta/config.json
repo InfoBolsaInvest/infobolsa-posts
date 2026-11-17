@@ -1,7 +1,7 @@
 {
- "titulo": "Do GTA V ao GTA VI: <span>quanto subiram as ações?</span>",
- "tsize": 58,
- "top": 415,
+ "titulo": "Do GTA V ao GTA VI: <span style='color:#0f7a43'>quanto subiram as ações?</span>",
+ "tsize": 60,
+ "top": 440,
  "lh": 88,
  "cab": [
   "Ação",
@@ -85,5 +85,6 @@
  "ano_b": "2026",
  "sub_b": "lança em 19/11/2026",
  "logo_a": "assets/gta5.png",
- "logo_b": "assets/gta6.png"
+ "logo_b": "assets/gta6.png",
+ "ch": 390
 }
