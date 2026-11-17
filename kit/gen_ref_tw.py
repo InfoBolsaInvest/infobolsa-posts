@@ -15,11 +15,12 @@ body{background:linear-gradient(172deg,#ffffff 0%,#ffffff 58%,#eef6f1 100%)!impo
 .tot{position:absolute;left:84px;font-weight:700;font-size:92px;color:#162526;letter-spacing:-1px}
 .tot span{color:#0f7a43}
 .fn{position:absolute;left:84px;right:84px;font-size:24px;line-height:1.45;color:#7b8f8a}
-.br{position:absolute;left:70px;right:60px;display:flex;flex-direction:column;gap:22px}
+.br{position:absolute;left:70px;right:60px;display:flex;flex-direction:column;gap:18px}
 .row{display:flex;align-items:center;gap:20px;height:96px}
 .row img{width:96px;height:96px;border-radius:14px;object-fit:contain;flex:none}
 .bar{height:96px;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:34px;white-space:nowrap;flex:none}
 .val{font-weight:700;font-size:34px;color:#162526;white-space:nowrap}
+.qq{font-weight:700;font-size:26px;padding:6px 14px;border-radius:20px;white-space:nowrap;flex:none}.qq.up{background:#e2f0e8;color:#0f7a43}.qq.dn{background:#f8e1de;color:#c0392b}
 .secs{position:absolute;left:84px;right:84px;display:flex;flex-direction:column;gap:34px}
 .sec h2{margin:0 0 8px;font-weight:700;font-size:54px;color:#162526;letter-spacing:-1px}
 .sec ul{margin:0;padding:0;list-style:none}
@@ -52,16 +53,18 @@ mx = max(x["v"] for x in c["itens"])
 nomes = {"Itaú": "Itaú", "Banco do Brasil": "Banco do Brasil"}
 rows = ""
 for x in c["itens"]:
-    w = max(36, int(600 * x["v"] / mx))
+    w = max(36, int(560 * x["v"] / mx))
+    qq = f'<div class="qq num {"dn" if x["qoq"].startswith("-") else "up"}">{x["qoq"]}</div>'
     txt = x["txt"].replace(" bi", " bilhões").replace(" mi", " milhões").replace("R$ 1,27 bilhões", "R$ 1,27 bilhão")
     if w > 380:
-        rows += f'<div class="row"><img src="{x["logo"]}" style="background:{x.get("fundo", "transparent")}"><div class="bar" style="width:{w}px;background:{x["cor"]}">{x["nome"]} - {txt}</div></div>'
+        rows += f'<div class="row"><img src="{x["logo"]}" style="background:{x.get("fundo", "transparent")}"><div class="bar" style="width:{w}px;background:{x["cor"]}">{x["nome"]} - {txt}</div>{qq}</div>'
     elif w > 200:
-        rows += f'<div class="row"><img src="{x["logo"]}" style="background:{x.get("fundo", "transparent")}"><div class="bar" style="width:{w}px;background:{x["cor"]}">{x["nome"]}</div><div class="val num">{txt}</div></div>'
+        rows += f'<div class="row"><img src="{x["logo"]}" style="background:{x.get("fundo", "transparent")}"><div class="bar" style="width:{w}px;background:{x["cor"]}">{x["nome"]}</div><div class="val num">{txt}</div>{qq}</div>'
     else:
-        rows += f'<div class="row"><img src="{x["logo"]}" style="background:{x.get("fundo", "transparent")}"><div class="bar" style="width:{w}px;background:{x["cor"]}"></div><div class="val num">{x["nome"]} - {txt}</div></div>'
+        rows += f'<div class="row"><img src="{x["logo"]}" style="background:{x.get("fundo", "transparent")}"><div class="bar" style="width:{w}px;background:{x["cor"]}"></div><div class="val num">{x["nome"]} - {txt}</div>{qq}</div>'
 html = pag(f'<div class="t" style="font-size:52px">🚨 Quanto cada banco lucrou <span class="n">no 3º trimestre (valor em R$):</span> 👇💰🏦</div>'
-           f'<div class="br" style="top:455px">{rows}</div>', 52)
+           f'<div class="br" style="top:455px">{rows}</div>'
+           f'<div class="fn" style="top:1290px;font-size:22px">Variação em relação ao 2º trimestre de 2026. Nubank: variação em dólar.</div>', 52)
 open("r2.html", "w").write(html.replace(" - ", ": "))
 # 3. Investimento
 sec = lambda t, c, its, top=0: f'<div class="sec" style="--c:{c}"><h2>{t}</h2><ul>' + "".join(f"<li>{i}</li>" for i in its) + "</ul></div>"

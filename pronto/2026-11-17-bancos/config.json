@@ -9,42 +9,48 @@
    "logo": "assets/logos_b3/ITUB4.png",
    "cor": "#ee7000",
    "v": 12.62,
-   "txt": "R$ 12,62 bi"
+   "txt": "R$ 12,62 bi",
+   "qoq": "+2,50%"
   },
   {
    "nome": "Bradesco",
    "logo": "assets/logos_b3/BBDC4.png",
    "cor": "#cc092f",
    "v": 7.1,
-   "txt": "R$ 7,10 bi"
+   "txt": "R$ 7,10 bi",
+   "qoq": "+0,71%"
   },
   {
    "nome": "Nubank",
    "logo": "assets/logo_nu_pad.svg",
    "cor": "#820ad1",
    "v": 6.16,
-   "txt": "R$ 6,16 bi"
+   "txt": "R$ 6,16 bi",
+   "qoq": "+2,83%"
   },
   {
    "nome": "BTG",
    "logo": "assets/logos_b3/BPAC11.png",
    "cor": "#0b2a5b",
    "v": 5.3,
-   "txt": "R$ 5,30 bi"
+   "txt": "R$ 5,30 bi",
+   "qoq": "+3,59%"
   },
   {
    "nome": "Santander",
    "logo": "assets/logos_b3/SANB11.png",
    "cor": "#ec0000",
    "v": 2.9,
-   "txt": "R$ 2,90 bi"
+   "txt": "R$ 2,90 bi",
+   "qoq": "-3,78%"
   },
   {
    "nome": "Banco do Brasil",
    "logo": "assets/logos_b3/BBAS3.png",
    "cor": "#e8c400",
    "v": 1.27,
-   "txt": "R$ 1,27 bi"
+   "txt": "R$ 1,27 bi",
+   "qoq": "-67,44%"
   },
   {
    "nome": "Inter",
@@ -52,7 +58,8 @@
    "cor": "#ff7a00",
    "v": 0.425,
    "txt": "R$ 425 mi",
-   "fundo": "#ff7a00"
+   "fundo": "#ff7a00",
+   "qoq": "+1,00%"
   }
  ],
  "nota": "Lucro do 3º trimestre de 2026, recorrente ou ajustado, como cada banco divulga. Nubank: US$ 1,09 bi convertido.<br>Fontes: balanços dos bancos, Times Brasil e Mercado &amp; Consumo."
