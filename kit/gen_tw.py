@@ -111,9 +111,10 @@ def tabela(c):
 
 
 CSS_GTA = """
-.gw{position:absolute;left:70px;right:70px;display:flex;flex-direction:column;gap:26px}
+.gw{position:absolute;left:70px;right:70px;display:flex;flex-direction:column;gap:44px}
+.gw .sep{position:absolute;left:-70px;right:-70px;top:calc(var(--ch,390px) + 19px);height:6px;background:#FFB400}
 .gc{display:grid;grid-template-columns:1fr 1fr;height:var(--ch,390px);background:#fff;border:1.5px solid #e3ece7;border-radius:32px;box-shadow:0 12px 30px rgba(22,37,38,.06);overflow:hidden}
-.gc .l{display:flex;flex-direction:column;align-items:center;justify-content:center;border-right:2px solid #e3ece7}
+.gc .l{display:flex;flex-direction:column;align-items:center;justify-content:center;border-right:6px solid #FFB400}
 .gc .l img{width:300px;height:220px;object-fit:contain}
 .gc .l .y{font-weight:700;font-size:40px;color:#162526;margin-top:12px}
 .gc .r{display:flex;flex-direction:column;justify-content:center;padding:0 44px;background:#f6faf7}
@@ -124,6 +125,7 @@ CSS_GTA = """
 .gc .p{font-weight:700;font-size:86px;letter-spacing:-2px;color:#162526;margin-top:20px;line-height:1}
 .gc .p small{font-size:44px;letter-spacing:0;margin-right:6px;font-weight:600}
 .gc .v{align-self:flex-start;margin-top:16px;font-weight:700;font-size:32px;padding:8px 20px;border-radius:30px}
+.gc .pk{margin-top:14px;font-size:24px;color:#7b8f8a;line-height:1.3}.gc .pk b{color:#c0392b}
 .gc .up{background:#e2f0e8;color:#0f7a43}.gc .dn{background:#f8e1de;color:#c0392b}
 """
 
@@ -133,8 +135,9 @@ def gta(c, x, titulo):
     cls = "dn" if x["var"].startswith("-") else "up"
     card = lambda glogo, ano, pr, extra: (f'<div class="gc"><div class="l"><img src="{glogo}"><div class="y">{ano}</div></div>'
                                          f'<div class="r">{lg}<div class="p num"><small>R$</small>{pr}</div>{extra}</div></div>')
-    corpo = (f'<style>{CSS_GTA}</style><div class="gw" style="top:{c.get("top", 420)}px;--ch:{c.get("ch", 390)}px">'
+    corpo = (f'<style>{CSS_GTA}</style><div class="gw" style="top:{c.get("top", 420) + (55 if x.get("pico") else 0)}px;--ch:{c.get("ch", 390) - (15 if x.get("pico") else 0)}px">'
              + card(c["logo_a"], c["ano_a"], x["a"], "")
+             + '<div class="sep"></div>'
              + card(c["logo_b"], c["ano_b"], x["b"], f'<div class="v num {cls}">{x["var"]}</div>') + "</div>")
     return _pag({**c, "titulo": titulo}, corpo)
 
@@ -146,6 +149,8 @@ if __name__ == "__main__":
         for i, x in enumerate(c["itens"], 1):
             cor = "#c0392b" if x["var"].startswith("-") else "#0f7a43"
             t = c["titulo"] if i == 1 else f'{x["nome"]}: <span style="color:{cor}">{x["var"]}</span>'
+            if x.get("pico"):
+                t += f'<div style="font-size:30px;font-weight:500;letter-spacing:0;color:#3f5552;margin-top:12px;line-height:1.3">{x["pico"]}</div>'
             open(f"{out}-{i}.html", "w").write(gta(c, x, t))
         sys.exit()
     c = json.load(open(cfg))

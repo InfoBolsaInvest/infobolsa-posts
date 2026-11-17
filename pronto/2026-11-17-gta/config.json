@@ -32,7 +32,8 @@
    "a": "2,11",
    "b": "7,49",
    "var": "+255%",
-   "nome": "Magazine Luiza"
+   "nome": "Magazine Luiza",
+   "pico": "Mas no meio do caminho chegou a <b style='color:#c0392b'>R$ 244,52</b> (nov/2020) e caiu 97% desde o pico."
   },
   {
    "tk": "B3SA3",
@@ -64,7 +65,8 @@
    "a": "12,27",
    "b": "14,86",
    "var": "+21%",
-   "nome": "Banco do Brasil"
+   "nome": "Banco do Brasil",
+   "pico": "No pico, em fev/2024, chegou a <b style='color:#c0392b'>R$ 29,80</b>: o dobro de hoje."
   },
   {
    "tk": "ABEV3",
@@ -72,7 +74,8 @@
    "a": "16,99",
    "b": "15,88",
    "var": "-7%",
-   "nome": "Ambev"
+   "nome": "Ambev",
+   "pico": "No pico, em mar/2018, chegou a <b style='color:#c0392b'>R$ 24,27</b>."
   }
  ],
  "nota": "Preço em 17/09/2013 (lançamento do GTA V) e em 17/11/2026, ajustado por desdobramentos e bonificações. Sem contar dividendos.",
