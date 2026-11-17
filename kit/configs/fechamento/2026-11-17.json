@@ -1,0 +1,11 @@
+{
+ "data": "2026-11-17",
+ "ibov": {"pontos": "169.817", "var": 0.31},
+ "extras": [
+  {"rotulo": "Dólar", "valor": "R$ 5,78", "var": 0.10},
+  {"rotulo": "Na semana", "var": -1.53}
+ ],
+ "altas": [["HAPV3", "Hapvida", 11.03], ["CSAN3", "Cosan", 5.50], ["MGLU3", "Magazine Luiza", 4.94], ["RAIL3", "Rumo", 4.17], ["VIVT3", "Vivo", 3.94]],
+ "baixas": [["NATU3", "Natura", -3.67], ["CURY3", "Cury", -3.21], ["TAEE11", "Taesa", -3.00], ["TEND3", "Tenda", -2.51], ["DIRR3", "Direcional", -2.45]],
+ "fonte": "Fechamento de 17/11/2026. Fonte: B3"
+}
