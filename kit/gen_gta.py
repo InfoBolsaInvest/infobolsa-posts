@@ -8,20 +8,21 @@ from gen_inst import CSS, FS, SELO, SCRIPT
 EX = """
 body{background:#fff!important}
 .q{position:absolute;display:flex;flex-direction:column;justify-content:center}
-.esq{left:0;width:430px;padding:0 50px}
+.esq{left:0;width:540px;padding:0 50px;align-items:center;text-align:center}
+.esq img{width:380px;height:300px;object-fit:contain;filter:drop-shadow(0 10px 24px rgba(0,0,0,.35))}
 .esq .r{font-weight:700;font-size:96px;line-height:1;letter-spacing:-2px}
 .esq .a{font-weight:600;font-size:44px;margin-top:14px;opacity:.85}
 .esq .s{font-size:24px;margin-top:10px;opacity:.7}
 .cima.esq{top:0;height:675px;background:#162526;color:#fff}
 .baixo.esq{top:675px;height:675px;background:linear-gradient(160deg,#0f7a43,#0a5a31);color:#fff}
-.dir{left:430px;width:650px;padding:0 60px;align-items:flex-start}
+.dir{left:540px;width:540px;padding:0 50px;align-items:flex-start}
 .cima.dir{top:0;height:675px;background:#f4f7f5}
 .baixo.dir{top:675px;height:675px;background:#fff}
 .dir .lg{display:flex;align-items:center;gap:22px}
-.dir .lg img{width:110px;height:110px;border-radius:26px;object-fit:contain}
-.dir .tk{font-weight:700;font-size:52px;color:#162526;line-height:1}
+.dir .lg img{width:96px;height:96px;border-radius:26px;object-fit:contain}
+.dir .tk{font-weight:700;font-size:46px;color:#162526;line-height:1}
 .dir .nm{font-size:26px;color:#7b8f8a;margin-top:6px}
-.dir .p{font-weight:700;font-size:118px;letter-spacing:-3px;color:#162526;margin-top:30px;line-height:1}
+.dir .p{font-weight:700;font-size:100px;letter-spacing:-3px;color:#162526;margin-top:30px;line-height:1}
 .dir .p small{font-size:56px;letter-spacing:0;margin-right:8px;font-weight:600}
 .dir .v{margin-top:24px;font-weight:700;font-size:40px;padding:10px 24px;border-radius:40px}
 .up{background:#e2f0e8;color:#0f7a43}.dn{background:#f8e1de;color:#c0392b}
@@ -48,10 +49,10 @@ def slide(c, x):
     lg = f'<div class="lg"><img src="{x["logo"]}"><div><div class="tk">{x["tk"]}</div><div class="nm">{x["nome"]}</div></div></div>'
     cls = "dn" if x["var"].startswith("-") else "up"
     pr = lambda v: f'<div class="p num"><small>R$</small>{v}</div>'
-    return pag(f"""<div class="q cima esq"><div class="r">{c["rot_a"]}</div><div class="a">{c["ano_a"]}</div><div class="s">{c.get("sub_a", "")}</div></div>
+    return pag(f"""<div class="q cima esq"><img src="{c["logo_a"]}"><div class="a">{c["ano_a"]}</div></div>
 <div class="q cima dir">{lg}{pr(x["a"])}</div>
-<div class="q baixo esq"><div class="r">{c["rot_b"]}</div><div class="a">{c["ano_b"]}</div><div class="s">{c.get("sub_b", "")}</div></div>
-<div class="q baixo dir">{lg}{pr(x["b"])}<div class="v num {cls}">{x["var"]} em 13 anos</div></div>
+<div class="q baixo esq"><img src="{c["logo_b"]}"><div class="a">{c["ano_b"]}</div></div>
+<div class="q baixo dir">{lg}{pr(x["b"])}<div class="v num {cls}">{x["var"]}</div></div>
 <div class="div"></div><div class="rod">@infobolsainvestimentos</div>""")
 
 if __name__ == "__main__":

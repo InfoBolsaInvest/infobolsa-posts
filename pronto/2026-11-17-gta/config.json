@@ -83,5 +83,7 @@
  "sub_a": "lançado em 17/09/2013",
  "rot_b": "GTA VI",
  "ano_b": "2026",
- "sub_b": "lança em 19/11/2026"
+ "sub_b": "lança em 19/11/2026",
+ "logo_a": "assets/gta5.png",
+ "logo_b": "assets/gta6.png"
 }
