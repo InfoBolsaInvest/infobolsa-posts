@@ -142,6 +142,60 @@ def gta(c, x, titulo):
     return _pag({**c, "titulo": titulo}, corpo)
 
 
+CSS_X = """
+.l2{position:absolute;left:96px;right:96px;display:grid;grid-template-columns:1fr 1fr;column-gap:40px}
+.l2 .li{display:flex;justify-content:space-between;align-items:center;height:var(--lh,86px);border-bottom:2px solid #e3ece7;font-size:38px;color:#162526}
+.l2 .li b{font-weight:700}
+.l2 .li span{font-weight:500;color:#3f5552}
+.tot{position:absolute;left:96px;right:96px;display:flex;align-items:center;justify-content:space-between;background:#162526;border-radius:28px;padding:0 44px;height:130px;color:#fff;font-weight:700;font-size:54px}
+.tot span{color:#FFB400}
+.br{position:absolute;left:70px;right:70px;display:flex;flex-direction:column;gap:12px}
+.br .row{display:flex;align-items:center;gap:20px;height:var(--lh,98px)}
+.br .row img{width:84px;height:84px;border-radius:20px;object-fit:contain;flex:none}
+.br .bar{height:84px;border-radius:18px;display:flex;align-items:center;padding:0 22px;color:#fff;font-weight:700;font-size:28px;white-space:nowrap;flex:none}
+.br .val{font-weight:700;font-size:34px;color:#162526;white-space:nowrap}
+.cols{position:absolute;left:70px;right:70px;display:flex;flex-direction:column;gap:20px}
+.cx{border-radius:30px;padding:22px 40px;background:#fff;border:1.5px solid #e3ece7;box-shadow:0 12px 30px rgba(22,37,38,.06)}
+.cx h3{margin:0 0 14px;font-size:36px;font-weight:700;display:flex;align-items:center;gap:14px}
+.cx h3 i{font-style:normal;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:28px}
+.cx .gr2{display:grid;grid-template-columns:1fr 1fr;gap:6px 30px}
+.cx .gr2 div{font-size:32px;color:#162526;padding:6px 0}
+.cx p{margin:4px 0;font-size:28px;color:#3f5552;line-height:1.35}
+.cx p b{color:#162526}
+"""
+
+
+def lista2(c):
+    it = "".join(f'<div class="li"><b>{t}</b><span class="num">R$ {p}</span></div>' for t, p in c["itens"])
+    corpo = (f'<style>{CSS_X}</style><div class="l2" style="top:{c.get("top", 430)}px;--lh:{c.get("lh", 86)}px">{it}</div>'
+             f'<div class="tot" style="top:{c["tot_top"]}px"><div>Total</div><span class="num">R$ {c["total"]}</span></div>'
+             f'<div style="position:absolute;left:96px;right:96px;bottom:48px;text-align:center;font-size:22px;color:#7b8f8a">{c.get("nota", "")}</div>')
+    return _pag(c, corpo)
+
+
+def barras(c):
+    mx = max(x["v"] for x in c["itens"])
+    rows = ""
+    for x in c["itens"]:
+        dentro = x["v"] / mx > .35
+        rows += (f'<div class="row"><img src="{x["logo"]}" style="background:{x.get("fundo", "transparent")}"><div class="bar" style="width:{max(14, int(560 * x["v"] / mx))}px;background:{x["cor"]}">{x["nome"] if dentro else ""}</div>'
+                 f'<div class="val num">{"" if dentro else x["nome"] + " "}{x["txt"]}</div></div>')
+    corpo = (f'<style>{CSS_X}</style><div class="br" style="top:{c.get("top", 430)}px;--lh:{c.get("lh", 98)}px">{rows}</div>'
+             f'<div style="position:absolute;left:96px;right:96px;bottom:48px;text-align:center;font-size:22px;line-height:1.45;color:#7b8f8a">{c.get("nota", "")}</div>')
+    return _pag(c, corpo)
+
+
+def colunas(c):
+    bx = ""
+    for b in c["caixas"]:
+        if b.get("grade"):
+            miolo = '<div class="gr2">' + "".join(f"<div>{i}</div>" for i in b["itens"]) + "</div>"
+        else:
+            miolo = "".join(f"<p>{i}</p>" for i in b["itens"])
+        bx += f'<div class="cx" style="border-left:10px solid {b["cor"]}"><h3 style="color:{b["cor"]}"><i style="background:{b["cor"]}">{b["ic"]}</i>{b["t"]}</h3>{miolo}</div>'
+    return _pag(c, f'<style>{CSS_X}</style><div class="cols" style="top:{c.get("top", 400)}px">{bx}</div>')
+
+
 if __name__ == "__main__":
     tipo, cfg, out = sys.argv[1:4]
     if tipo == "gta":
@@ -154,4 +208,4 @@ if __name__ == "__main__":
             open(f"{out}-{i}.html", "w").write(gta(c, x, t))
         sys.exit()
     c = json.load(open(cfg))
-    open(out, "w").write({"grade": grade, "vs": vs, "ranking": ranking, "tabela": tabela}[tipo](c))
+    open(out, "w").write({"grade": grade, "vs": vs, "ranking": ranking, "tabela": tabela, "lista2": lista2, "barras": barras, "colunas": colunas}[tipo](c))

@@ -1,0 +1,42 @@
+{
+ "titulo": "Entenda de uma vez:<br><span style='color:#0f7a43'>é investimento ou não?</span>",
+ "tsize": 62,
+ "top": 420,
+ "caixas": [
+  {
+   "t": "É investimento",
+   "cor": "#0f7a43",
+   "ic": "✓",
+   "grade": true,
+   "itens": [
+    "Tesouro Direto",
+    "CDB",
+    "LCI e LCA",
+    "Ações",
+    "Fundos imobiliários",
+    "ETFs"
+   ]
+  },
+  {
+   "t": "Não é investimento",
+   "cor": "#c0392b",
+   "ic": "✕",
+   "grade": true,
+   "itens": [
+    "Consórcio",
+    "Loteria",
+    "Título de capitalização",
+    "Bets e apostas"
+   ]
+  },
+  {
+   "t": "Depende",
+   "cor": "#d99a00",
+   "ic": "?",
+   "itens": [
+    "<b>Poupança:</b> é investimento, mas costuma render menos que as opções acima.",
+    "<b>Previdência privada:</b> pode valer a pena, mas fuja de taxa de administração alta e de taxa de carregamento."
+   ]
+  }
+ ]
+}
