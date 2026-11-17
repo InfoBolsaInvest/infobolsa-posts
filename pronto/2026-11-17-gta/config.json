@@ -1,0 +1,71 @@
+{
+ "titulo": "DO GTA V AO GTA VI: <span style='color:#0f7a43'>QUANTO SUBIRAM AS AÇÕES?</span>",
+ "tsize": 58,
+ "top": 415,
+ "lh": 88,
+ "cab": [
+  "Ação",
+  "<b>2013</b>GTA V",
+  "<b>2026</b>GTA VI",
+  "Variação"
+ ],
+ "itens": [
+  {
+   "tk": "WEGE3",
+   "logo": "assets/logos_b3/WEGE3.png",
+   "a": "R$ 4,10",
+   "b": "R$ 50,38",
+   "var": "+1.129%"
+  },
+  {
+   "tk": "EMBJ3",
+   "logo": "assets/logos_b3/EMBJ3.png",
+   "a": "R$ 18,65",
+   "b": "R$ 108,62",
+   "var": "+482%"
+  },
+  {
+   "tk": "MGLU3",
+   "logo": "assets/logos_b3/MGLU3.png",
+   "a": "R$ 2,11",
+   "b": "R$ 7,49",
+   "var": "+255%"
+  },
+  {
+   "tk": "B3SA3",
+   "logo": "assets/logos_b3/B3SA3.png",
+   "a": "R$ 4,29",
+   "b": "R$ 14,81",
+   "var": "+245%"
+  },
+  {
+   "tk": "ITUB4",
+   "logo": "assets/logos_b3/ITUB4.png",
+   "a": "R$ 13,97",
+   "b": "R$ 41,43",
+   "var": "+197%"
+  },
+  {
+   "tk": "PETR4",
+   "logo": "assets/logos_b3/PETR4.png",
+   "a": "R$ 18,53",
+   "b": "R$ 44,11",
+   "var": "+138%"
+  },
+  {
+   "tk": "BBAS3",
+   "logo": "assets/logos_b3/BBAS3.png",
+   "a": "R$ 12,27",
+   "b": "R$ 14,86",
+   "var": "+21%"
+  },
+  {
+   "tk": "ABEV3",
+   "logo": "assets/logos_b3/ABEV3.png",
+   "a": "R$ 16,99",
+   "b": "R$ 15,88",
+   "var": "-7%"
+  }
+ ],
+ "nota": "Preço em 17/09/2013 (lançamento do GTA V) e em 17/11/2026, ajustado por desdobramentos e bonificações. Sem contar dividendos."
+}

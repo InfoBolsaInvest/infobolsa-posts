@@ -83,7 +83,34 @@ def ranking(c):
     return _pag(c, f'<div class="rk" style="top:{c.get("top", 430)}px;--rh:{c.get("rh", 150)}px">{rows}</div>')
 
 
+CSS_TB = """
+.tb{position:absolute;left:70px;right:70px}
+.tb .hd,.tb .ln{display:grid;grid-template-columns:1.25fr 1fr 1fr 1fr;align-items:center}
+.tb .hd{height:84px;font-size:22px;letter-spacing:0;font-weight:600;color:#7b8f8a;text-align:center}
+.tb .hd div:first-child{text-align:left;padding-left:26px}
+.tb .hd b{display:block;font-size:30px;color:#162526;margin-bottom:2px}
+.tb .ln{height:var(--lh,100px);border-bottom:2px solid #d9e7de;text-align:center}
+.tb .ln:last-child{border-bottom:none}
+.tb .ln:nth-child(even){background:#f3f8f5;border-radius:20px}
+.tb .tk{display:flex;align-items:center;gap:16px;padding-left:20px;font-weight:700;font-size:34px;color:#162526}
+.tb .tk img{width:66px;height:66px;border-radius:16px;object-fit:contain}
+.tb .p{font-weight:600;font-size:36px;color:#3f5552}
+.tb .p.n{font-weight:700;color:#162526}
+.tb .v{font-weight:700;font-size:36px}
+.tb .up{color:#0f7a43}.tb .dn{color:#c0392b}
+"""
+
+
+def tabela(c):
+    hd = "".join(f"<div>{h}</div>" for h in c["cab"])
+    rows = "".join(f'<div class="ln"><div class="tk"><img src="{x["logo"]}">{x["tk"]}</div><div class="p num">{x["a"]}</div>'
+                   f'<div class="p n num">{x["b"]}</div><div class="v num {"up" if not x["var"].startswith("-") else "dn"}">{x["var"]}</div></div>' for x in c["itens"])
+    corpo = f'<style>{CSS_TB}</style><div class="tb" style="top:{c.get("top", 420)}px;--lh:{c.get("lh", 100)}px"><div class="hd">{hd}</div>{rows}</div>'
+    corpo += f'<div style="position:absolute;left:96px;right:96px;bottom:48px;text-align:center;font-size:22px;line-height:1.45;color:#7b8f8a">{c.get("nota", "")}</div>'
+    return _pag(c, corpo)
+
+
 if __name__ == "__main__":
     tipo, cfg, out = sys.argv[1:4]
     c = json.load(open(cfg))
-    open(out, "w").write({"grade": grade, "vs": vs, "ranking": ranking}[tipo](c))
+    open(out, "w").write({"grade": grade, "vs": vs, "ranking": ranking, "tabela": tabela}[tipo](c))
