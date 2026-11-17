@@ -27,6 +27,27 @@ mark{background:#FFB400;color:#162526;padding:0 8px;border-radius:6px;font-weigh
 .cmp .b .t{color:#FFB400}
 .cmp .i{font-size:30px;line-height:1.3;padding:12px 0;border-top:1.5px solid rgba(128,128,128,.25)}
 .cmp .i b{font-weight:700}
+.st{display:flex;flex-direction:column;gap:20px;margin-top:30px}
+.st .k{display:flex;align-items:center;gap:30px;background:#fff;border:1.5px solid #e3ece7;border-radius:26px;padding:24px 32px;box-shadow:0 10px 26px rgba(22,37,38,.05)}
+.st .v{font-weight:700;font-size:58px;color:#0f7a43;min-width:300px;letter-spacing:-1px}
+.st .d{font-size:30px;color:#2b3d3c;line-height:1.3}
+.tbl{margin-top:30px;border-radius:26px;overflow:hidden;border:1.5px solid #e3ece7;background:#fff}
+.tbl .r{display:grid;grid-template-columns:1.2fr 1fr 1fr;align-items:center;min-height:96px;border-top:1.5px solid #e3ece7;font-size:32px;text-align:center}
+.tbl .r:first-child{border-top:none;background:#162526;color:#fff;font-weight:700;font-size:28px;min-height:76px}
+.tbl .r:first-child div:last-child{color:#FFB400}
+.tbl .r div:first-child{text-align:left;padding-left:28px;font-weight:600}
+.tbl .r .pl{font-weight:700;color:#c0392b}
+.ck{display:flex;flex-direction:column;gap:20px;margin-top:30px}
+.ck .k{display:flex;gap:24px;align-items:flex-start;background:#fff;border:1.5px solid #e3ece7;border-radius:26px;padding:26px 30px}
+.ck .ic{width:60px;height:60px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:32px}
+.ck .t{font-weight:700;font-size:36px;color:#162526}
+.ck .d{font-size:29px;color:#3f5552;line-height:1.3;margin-top:4px}
+.tl{margin-top:34px;position:relative;padding-left:56px}
+.tl:before{content:'';position:absolute;left:17px;top:14px;bottom:14px;width:4px;background:#d9e7de}
+.tl .e{position:relative;margin-bottom:28px;font-size:34px;color:#2b3d3c}
+.tl .e b{color:#162526}
+.tl .e:before{content:'';position:absolute;left:-52px;top:8px;width:30px;height:30px;border-radius:50%;background:#fff;border:5px solid #d9e7de;box-sizing:border-box}
+.tl .e.ok:before{background:#0f7a43;border-color:#0f7a43}
 .n{position:absolute;right:84px;bottom:46px;font-size:24px;color:#7b8f8a}
 """
 
@@ -52,7 +73,17 @@ def slide(s):
         c = s["cmp"]
         col = lambda k, t, its: f'<div class="c {k}"><div class="t">{t}</div>' + "".join(f'<div class="i">{x}</div>' for x in its) + "</div>"
         cmp = f'<div class="cmp">{col("a", c["a_t"], c["a"])}{col("b", c["b_t"], c["b"])}</div>'
-    return f'<div class="cx"><div class="h">{s["titulo"]}</div>{cmp}{"".join(par(x) for x in s.get("p", []))}</div>'
+    ex = ""
+    if s.get("stats"):
+        ex = '<div class="st">' + "".join(f'<div class="k"><div class="v num">{v}</div><div class="d">{d}</div></div>' for v, d in s["stats"]) + "</div>"
+    if s.get("tab"):
+        ex = '<div class="tbl">' + "".join('<div class="r">' + "".join(f'<div class="{"pl" if j == 2 and i and r[1] != r[2] else ""} num">{c}</div>' for j, c in enumerate(r)) + "</div>" for i, r in enumerate(s["tab"])) + "</div>"
+    if s.get("check"):
+        ex = '<div class="ck">' + "".join(f'<div class="k"><div class="ic" style="background:{c}">{ic}</div><div><div class="t">{t}</div><div class="d">{d}</div></div></div>' for ic, c, t, d in s["check"]) + "</div>"
+    if s.get("tl"):
+        ex = '<div class="tl">' + "".join(f'<div class="e {"ok" if ok else ""}">{t}</div>' for ok, t in s["tl"]) + "</div>"
+    pre = "".join(par(x) for x in s.get("p0", []))
+    return f'<div class="cx"><div class="h">{s["titulo"]}</div>{pre}{cmp}{ex}{"".join(par(x) for x in s.get("p", []))}</div>'
 
 
 if __name__ == "__main__":
