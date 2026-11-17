@@ -8,129 +8,57 @@
    "sub": "O que muda, quem é afetado e o que acontece agora 👉"
   },
   {
-   "titulo": "Primeiro: como funciona hoje",
-   "p0": [
-    "Desde 2026, pela Lei 15.270/2025:"
-   ],
-   "stats": [
-    [
-     "10%",
-     "de IR retido na fonte sobre os dividendos"
-    ],
-    [
-     "R$ 50 mil",
-     "por mês da mesma empresa: abaixo disso, não retém nada"
-    ],
-    [
-     "R$ 600 mil",
-     "por ano: só acima disso entra o imposto mínimo"
-    ]
-   ]
-  },
-  {
-   "titulo": "O que o projeto quer mudar",
-   "tab": [
-    [
-     "",
-     "Regra atual",
-     "PL 5854"
-    ],
-    [
-     "Alíquota retida",
-     "10%",
-     "15%"
-    ],
-    [
-     "Começa a reter",
-     "acima de R$ 50 mil/mês",
-     "desde R$ 1"
-    ],
-    [
-     "Acerto na declaração",
-     "sim",
-     "sim"
-    ]
-   ],
+   "titulo": "Primeiro, o que já existe.",
    "p": [
-    "O valor retido continua sendo uma <b>antecipação</b>, que entra no acerto do IR no ano seguinte."
+    "Desde janeiro vale a Lei 15.270/2025, que mexeu nos dividendos de duas formas.",
+    "De um lado, um <b>desconto na fonte</b>, feito pela empresa na hora de pagar.",
+    "Do outro, um <b>imposto mínimo</b> para quem tem renda muito alta no ano.",
+    "São coisas separadas, e é aí que muita gente se perde."
    ]
   },
   {
-   "titulo": "Na prática, quanto fica retido por mês",
-   "tab": [
-    [
-     "Dividendo no mês",
-     "Hoje",
-     "Com o PL"
-    ],
-    [
-     "R$ 1.000",
-     "R$ 0",
-     "R$ 150"
-    ],
-    [
-     "R$ 20.000",
-     "R$ 0",
-     "R$ 3.000"
-    ],
-    [
-     "R$ 60.000",
-     "R$ 6.000",
-     "R$ 9.000"
-    ]
-   ],
+   "titulo": "O desconto na fonte hoje",
    "p": [
-    "Quem mais sente é o pequeno e médio empresário, que hoje não tem nada retido."
+    "Ele só acontece quando uma mesma empresa paga ao sócio <b>mais de R$ 50 mil em um mês</b>. Aí são descontados 10%.",
+    {
+     "m": "Recebeu menos que isso? Nenhum centavo é descontado."
+    },
+    "E o que foi descontado não é perdido: entra no acerto da declaração. O imposto mínimo só chega para quem passa de R$ 600 mil no ano."
    ]
   },
   {
-   "titulo": "E o investidor da bolsa?",
-   "check": [
-    [
-     "✓",
-     "#c0392b",
-     "Ações",
-     "Pelo texto, os dividendos de ações também entrariam na retenção, mesmo valores pequenos."
+   "titulo": "E o que o PL 5854 propõe",
+   "cmp": {
+    "a_t": "REGRA ATUAL",
+    "a": [
+     "<b>10%</b> descontados só acima de R$ 50 mil no mês",
+     "Acerto na declaração"
     ],
-    [
-     "?",
-     "#d99a00",
-     "Fundos imobiliários",
-     "Seguem outra lei e não são citados no projeto."
-    ],
-    [
-     "✓",
-     "#0f7a43",
-     "JCP",
-     "Já tem 15% retido na fonte hoje. Nada muda."
+    "b_t": "SE O PL PASSAR",
+    "b": [
+     "<b>15%</b> descontados de qualquer valor",
+     "Acerto na declaração continua"
     ]
-   ]
-  },
-  {
-   "titulo": "Ainda falta muito caminho",
-   "tl": [
-    [
-     true,
-     "<b>13/11:</b> projeto protocolado na Câmara"
-    ],
-    [
-     false,
-     "Escolha do relator e votação na Câmara"
-    ],
-    [
-     false,
-     "Votação no Senado"
-    ],
-    [
-     false,
-     "Sanção do presidente"
-    ],
-    [
-     false,
-     "Se aprovado, vale a partir de <b>1º de janeiro</b> do ano seguinte"
-    ]
-   ],
+   },
    "p": [
+    "<b>Na prática:</b> você recebe R$ 20 mil de dividendos da sua empresa no mês. Hoje cai tudo na conta. Com o projeto, <mark>caem R$ 17 mil</mark>, e os R$ 3 mil só voltam para o acerto do IR."
+   ]
+  },
+  {
+   "titulo": "E quem investe na bolsa?",
+   "p": [
+    "O texto fala de lucros e dividendos pagos a pessoas físicas, sem valor mínimo. Ou seja, <b>dividendos de ações também seriam descontados</b>, até os de poucos reais.",
+    "Já os rendimentos de <b>fundos imobiliários</b> têm lei própria e <b>não aparecem</b> no projeto.",
+    {
+     "m": "Por enquanto, nada muda no seu bolso."
+    }
+   ]
+  },
+  {
+   "titulo": "Calma: por enquanto, é só proposta.",
+   "p": [
+    "O projeto entrou na Câmara em 13/11 e ainda nem tem relator.",
+    "Para valer, precisa ser aprovado pelos deputados, pelos senadores e sancionado. E mesmo assim, só começaria em 1º de janeiro do ano seguinte.",
     {
      "m": "Você é a favor ou contra? Comenta aqui 👇"
     }
