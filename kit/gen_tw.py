@@ -112,9 +112,9 @@ def tabela(c):
 
 CSS_GTA = """
 .gw{position:absolute;left:70px;right:70px;display:flex;flex-direction:column;gap:44px}
-.gw .sep{position:absolute;left:-70px;right:-70px;top:calc(var(--ch,390px) + 19px);height:6px;background:#FFB400}
+.gw .sep{position:absolute;left:0;right:0;top:calc(var(--ch,390px) + 21px);height:3px;border-radius:2px;background:#cfd8d4}
 .gc{display:grid;grid-template-columns:1fr 1fr;height:var(--ch,390px);background:#fff;border:1.5px solid #e3ece7;border-radius:32px;box-shadow:0 12px 30px rgba(22,37,38,.06);overflow:hidden}
-.gc .l{display:flex;flex-direction:column;align-items:center;justify-content:center;border-right:6px solid #FFB400}
+.gc .l{display:flex;flex-direction:column;align-items:center;justify-content:center;border-right:3px solid #cfd8d4}
 .gc .l img{width:300px;height:220px;object-fit:contain}
 .gc .l .y{font-weight:700;font-size:40px;color:#162526;margin-top:12px}
 .gc .r{display:flex;flex-direction:column;justify-content:center;padding:0 44px;background:#f6faf7}
