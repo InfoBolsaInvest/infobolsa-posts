@@ -1,0 +1,11 @@
+{
+ "data": "2026-11-19",
+ "ibov": {"pontos": "166.376", "var": -0.69},
+ "extras": [
+  {"rotulo": "Dólar", "valor": "R$ 5,93", "var": 1.15},
+  {"rotulo": "Na semana", "var": -3.53}
+ ],
+ "altas": [["USIM5", "Usiminas", 2.59], ["FLRY3", "Fleury", 2.53], ["GOAU4", "Gerdau Met.", 2.22], ["BBAS3", "Banco do Brasil", 1.27], ["TEND3", "Tenda", 1.13]],
+ "baixas": [["AZZA3", "Azzas 2154", -7.29], ["NATU3", "Natura", -6.28], ["CSNA3", "CSN", -6.03], ["CEAB3", "C&A", -4.82], ["POMO4", "Marcopolo", -4.23]],
+ "fonte": "Fechamento de 19/11/2026. Fonte: B3"
+}
