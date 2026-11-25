@@ -9,8 +9,8 @@ BASE = """
 body{background:linear-gradient(172deg,#ffffff 0%,#ffffff 58%,#eef6f1 100%)!important}
 .luz{position:absolute;inset:0;background:radial-gradient(ellipse 760px 620px at 100% 100%,rgba(15,122,67,.07),transparent 70%)}
 .cab{top:70px}
-.t{position:absolute;left:84px;right:84px;top:245px;font-weight:700;font-size:var(--ts,60px);line-height:1.15;letter-spacing:-1px;color:#162526}
-.t .n{font-weight:400}.t .g{color:#0f7a43}
+.t{position:absolute;left:84px;right:84px;top:245px;font-weight:400;font-size:var(--ts,60px);line-height:1.15;letter-spacing:-1px;color:#162526}
+.t b{font-weight:700}
 .t:after{content:'';display:block;width:110px;height:7px;border-radius:4px;background:#FFB400;margin-top:24px}
 .sb{position:absolute;left:84px;right:84px;font-size:32px;color:#3f5552}
 """
@@ -45,7 +45,7 @@ cards = ""
 for i, (t, n, q) in enumerate(G):
     cards += (f'<div class="lr"><div class="ps">{i + 1}º</div><img src="assets/logos_b3/{t}.png">'
               f'<div class="tk">{t}<small>{n}</small></div><div class="q num">{br(q / 1000, 0)} mil<small>cotistas</small></div></div>')
-open("q1.html", "w").write(pag('<div class="t">🚨 Os 5 FIIs de galpões com <span class="g">mais cotistas</span> 👇</div>'
+open("q1.html", "w").write(pag('<div class="t">🚨 Ranking: <b>os 5 FIIs de galpões</b> com <b>mais cotistas</b> 👇</div>'
                                f'<div class="lk">{cards}</div>', 58, CSS1))
 
 # 2. Focus
@@ -66,7 +66,7 @@ rows = '<div class="r"><div>Indicador</div><div>2026</div><div>2027</div><div>20
 for k, vs in F:
     rows += f'<div class="r"><div>{k}</div>' + "".join(
         f'<div class="v num">{"<small>R$</small>" + v[3:] if v.startswith("R$") else v}</div>' for v in vs) + "</div>"
-open("q2.html", "w").write(pag('<div class="t">O que o mercado projeta para a <span class="g">economia brasileira?</span></div>'
+open("q2.html", "w").write(pag('<div class="t"><b>O que o mercado projeta</b> para a economia brasileira?</div>'
                                '<div class="fs">Boletim Focus de 23/11/2026 👇</div>'
                                f'<div class="fo">{rows}</div>', 60, CSS2))
 
@@ -75,19 +75,22 @@ C = [("Reserva de emergência", ["Poupança", "CDB liquidez diária", "Tesouro S
      ("Crescer o patrimônio", ["Previdência cara", "Tesouro IPCA+", "Ações"]),
      ("Receber renda mensal", ["Imóvel para alugar", "Ações", "FIIs"])]
 CSS3 = """
-.ct{position:absolute;left:84px;right:84px;top:480px}
-.ct .r{display:grid;grid-template-columns:1.25fr 1fr 1fr 1fr;align-items:center;min-height:200px;border-bottom:1.5px solid #dfe6e3;text-align:center}
-.ct .r div+div{border-left:1.5px solid #dfe6e3;align-self:stretch;display:flex;align-items:center;justify-content:center;padding:0 10px}
-.ct .r:first-child{min-height:80px;border-bottom:3px solid #162526;font-weight:700;font-size:28px;letter-spacing:2px}
-.ct .r div:first-child{text-align:left;font-weight:700;font-size:34px;color:#162526;line-height:1.2;padding-right:14px}
-.ct .x{font-weight:600;font-size:32px;color:#162526;line-height:1.2}
+.cl{position:absolute;left:60px;right:60px;top:480px;display:flex;flex-direction:column;gap:36px}
+.bl{background:#fff;border:1.5px solid #e3ece7;border-radius:30px;padding:22px 26px 24px;box-shadow:0 12px 30px rgba(22,37,38,.06)}
+.bl h3{margin:0 0 18px;font-weight:700;font-size:34px;color:#162526;text-align:center}
+.bl .g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
+.cbx{border-radius:20px;overflow:hidden;border:1.5px solid #e3ece7;text-align:center}
+.cbx .cbl{font-weight:700;font-size:24px;letter-spacing:2px;color:#fff;padding:8px 0}
+.cbx .cbn{font-weight:700;font-size:29px;color:#162526;padding:12px 10px;min-height:82px;display:flex;align-items:center;justify-content:center;line-height:1.15}
 """
 lbs = [("RUIM", "#c0392b"), ("BOM", "#d99a00"), ("ÓTIMO", "#0f7a43")]
-bl = '<div class="r"><div></div>' + "".join(f'<div style="color:{c}">{l}</div>' for l, c in lbs) + "</div>"
+bl = ""
 for t, its in C:
-    bl += f'<div class="r"><div>{t}</div>' + "".join(f'<div class="x">{x}</div>' for x in its) + "</div>"
-open("q3.html", "w").write(pag('<div class="t">Classificando os <span class="g">investimentos</span> 👇</div>'
-                               f'<div class="ct">{bl}</div>', 64, CSS3))
+    bl += f'<div class="bl"><h3>{t}</h3><div class="g3">' + "".join(
+        f'<div class="cbx"><div class="cbl" style="background:{c}">{l}</div><div class="cbn">{x}</div></div>'
+        for (l, c), x in zip(lbs, its)) + "</div></div>"
+open("q3.html", "w").write(pag('<div class="t"><b>Classificando</b> os investimentos 👇</div>'
+                               f'<div class="cl">{bl}</div>', 64, CSS3))
 
 # 4. Salário mínimo com FIIs
 SAL = 1621
@@ -113,7 +116,7 @@ rows = '<div class="r"><div>FII</div><div>Últ. rend.</div><div>Preço</div><div
 for t, r, p, v in L:
     rows += (f'<div class="r"><div>{t}</div><div class="num">R$ {br(r, 3 if round(r, 2) != r else 2)}</div>'
              f'<div class="num">R$ {br(p)}</div><div class="num">R$ {br(v)}</div></div>')
-open("q4.html", "w").write(pag('<div class="t">Quanto investir para receber <span class="g" style="white-space:nowrap">1 salário</span> <span class="g">mínimo</span> por mês?</div>'
+open("q4.html", "w").write(pag('<div class="t">Quanto investir para receber <b style="white-space:nowrap">1 salário mínimo</b> por mês?</div>'
                                '<div class="sb" style="top:440px">R$ 1.621,00 por mês, com cada FII 👇</div>'
                                f'<div class="sm">{rows}</div>', 58, CSS4))
 json.dump([[t, r, p, round(v, 2)] for t, r, p, v in L], open("/tmp/claude-0/-home-claude/bb41cf14-75e1-5f31-b4e9-ee9e21090f51/scratchpad/sal.json", "w"))
