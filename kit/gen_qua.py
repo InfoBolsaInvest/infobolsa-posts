@@ -9,9 +9,10 @@ BASE = """
 body{background:linear-gradient(172deg,#ffffff 0%,#ffffff 58%,#eef6f1 100%)!important}
 .luz{position:absolute;inset:0;background:radial-gradient(ellipse 760px 620px at 100% 100%,rgba(15,122,67,.07),transparent 70%)}
 .cab{top:70px}
-.t{position:absolute;left:84px;right:84px;top:250px;font-weight:700;font-size:var(--ts,60px);line-height:1.15;letter-spacing:-1px;color:#162526}
+.t{position:absolute;left:84px;right:84px;top:245px;font-weight:700;font-size:var(--ts,60px);line-height:1.15;letter-spacing:-1px;color:#162526}
 .t .n{font-weight:400}.t .g{color:#0f7a43}
-.t:after{content:'';display:block;width:110px;height:7px;border-radius:4px;background:#FFB400;margin-top:20px}
+.t:after{content:'';display:block;width:110px;height:7px;border-radius:4px;background:#FFB400;margin-top:24px}
+.sb{position:absolute;left:84px;right:84px;font-size:32px;color:#3f5552}
 """
 
 
@@ -30,19 +31,19 @@ def br(v, d=2):
 G = [("HGLG11", "Pátria Log", 608345), ("BTLG11", "BTG Logística", 505908), ("GGRC11", "GGR Covepi", 411230),
      ("XPLG11", "XP Log", 347304), ("VILG11", "Vinci Logística", 149265)]
 CSS1 = """
-.pd{position:absolute;left:70px;right:70px;top:450px;display:grid;grid-template-columns:1fr 1fr;gap:34px;grid-auto-rows:240px}
+.pd{position:absolute;left:70px;right:70px;top:490px;display:grid;grid-template-columns:1fr 1fr;gap:40px;grid-auto-rows:220px}
 .pc{background:#fff;border:1.5px solid #e3ece7;border-radius:30px;box-shadow:0 12px 30px rgba(22,37,38,.06);display:flex;align-items:center;gap:24px;padding:24px 28px;position:relative}
 .pc.um{grid-column:1/3;justify-content:center;padding:30px}
-.pc{flex-direction:column;justify-content:center;text-align:center;gap:12px}.pc.um{flex-direction:row;text-align:left;gap:30px}
-.pc img{width:96px;height:96px;border-radius:24px;object-fit:contain}
+.pc{padding:24px 24px 24px 30px;gap:22px}.pc.um{gap:30px}
+.pc img{width:84px;height:84px;border-radius:24px;object-fit:contain}
 .pc.um img{width:140px;height:140px}
-.pc .tk{font-weight:700;font-size:44px;color:#162526;line-height:1}
+.pc .tk{font-weight:700;font-size:40px;color:#162526;line-height:1}
 .pc.um .tk{font-size:58px}
 .pc .nm2{font-size:24px;color:#7b8f8a;margin-top:6px}
-.pc .q{font-weight:700;font-size:36px;color:#0f7a43;margin-top:10px}
+.pc .q{font-weight:700;font-size:34px;color:#0f7a43;margin-top:12px}
 .pc.um .q{font-size:46px}
 .pc .q small{font-size:24px;font-weight:500;color:#3f5552}
-.md{position:absolute;left:-14px;top:-14px;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:26px;color:#fff;box-shadow:0 6px 14px rgba(0,0,0,.15)}
+.md{position:absolute;left:-12px;top:-12px;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:26px;color:#fff;box-shadow:0 6px 14px rgba(0,0,0,.15)}
 """
 cores = ["#FFB400", "#9aa5a8", "#c07a3c", "#0f7a43", "#0f7a43"]
 cards = ""
@@ -57,10 +58,10 @@ open("q1.html", "w").write(pag('<div class="t">🚨 Os 5 FIIs de galpões com <s
 F = [("IPCA", ["5,15%", "5,12%", "4,00%", "4,00%"]), ("PIB", ["1,70%", "1,00%", "1,71%", "2,00%"]),
      ("Dólar", ["R$ 5,55", "R$ 5,50", "R$ 5,50", "R$ 5,55"]), ("Selic", ["13,75%", "13,00%", "11,00%", "10,50%"])]
 CSS2 = """
-.fs{position:absolute;left:84px;right:84px;top:430px;font-size:32px;color:#3f5552}
-.fo{position:absolute;left:60px;right:60px;top:520px;background:#fff;border:1.5px solid #e3ece7;border-radius:30px;overflow:hidden;box-shadow:0 12px 30px rgba(22,37,38,.06)}
-.fo .r{display:grid;grid-template-columns:1.15fr 1fr 1fr 1fr 1fr;align-items:center;height:160px;border-top:1.5px solid #e3ece7;text-align:center}
-.fo .r:first-child{height:96px;border-top:none;background:#162526;color:#FFB400;font-weight:700;font-size:28px;letter-spacing:1px}
+.fs{position:absolute;left:84px;right:84px;top:445px;font-size:32px;color:#3f5552}
+.fo{position:absolute;left:60px;right:60px;top:540px;background:#fff;border:1.5px solid #e3ece7;border-radius:30px;overflow:hidden;box-shadow:0 12px 30px rgba(22,37,38,.06)}
+.fo .r{display:grid;grid-template-columns:1.15fr 1fr 1fr 1fr 1fr;align-items:center;height:150px;border-top:1.5px solid #e3ece7;text-align:center}
+.fo .r:first-child{height:90px;border-top:none;background:#162526;color:#FFB400;font-weight:700;font-size:28px;letter-spacing:1px}
 .fo .r:first-child div:first-child{color:#fff}
 .fo .r:nth-child(odd):not(:first-child){background:#f6faf7}
 .fo .r div:first-child{text-align:left;padding-left:32px;font-weight:700;font-size:40px;color:#162526}
@@ -80,13 +81,13 @@ C = [("Reserva de emergência", ["Poupança", "CDB liquidez diária", "Tesouro S
      ("Crescer o patrimônio", ["Previdência cara", "Tesouro IPCA+", "Ações"]),
      ("Receber renda mensal", ["Imóvel para alugar", "Ações", "FIIs"])]
 CSS3 = """
-.cl{position:absolute;left:60px;right:60px;top:430px;display:flex;flex-direction:column;gap:24px}
-.bl{background:#fff;border:1.5px solid #e3ece7;border-radius:30px;padding:24px 26px 26px;box-shadow:0 12px 30px rgba(22,37,38,.06)}
-.bl h3{margin:0 0 18px;font-weight:700;font-size:36px;color:#162526;text-align:center}
+.cl{position:absolute;left:60px;right:60px;top:480px;display:flex;flex-direction:column;gap:36px}
+.bl{background:#fff;border:1.5px solid #e3ece7;border-radius:30px;padding:22px 26px 24px;box-shadow:0 12px 30px rgba(22,37,38,.06)}
+.bl h3{margin:0 0 18px;font-weight:700;font-size:34px;color:#162526;text-align:center}
 .bl .g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
 .cbx{border-radius:20px;overflow:hidden;border:1.5px solid #e3ece7;text-align:center}
-.cbx .cbl{font-weight:700;font-size:26px;letter-spacing:2px;color:#fff;padding:10px 0}
-.cbx .cbn{font-weight:700;font-size:30px;color:#162526;padding:16px 10px;min-height:96px;display:flex;align-items:center;justify-content:center;line-height:1.15}
+.cbx .cbl{font-weight:700;font-size:24px;letter-spacing:2px;color:#fff;padding:8px 0}
+.cbx .cbn{font-weight:700;font-size:29px;color:#162526;padding:12px 10px;min-height:82px;display:flex;align-items:center;justify-content:center;line-height:1.15}
 """
 lbs = [("RUIM", "#c0392b"), ("BOM", "#d99a00"), ("ÓTIMO", "#0f7a43")]
 bl = ""
@@ -107,12 +108,12 @@ for t, r, p in S:
     L.append((t, r, p, q * p))
 L.sort(key=lambda x: x[3])
 CSS4 = """
-.sm{position:absolute;left:60px;right:60px;top:480px;background:#fff;border:1.5px solid #e3ece7;border-radius:30px;overflow:hidden;box-shadow:0 12px 30px rgba(22,37,38,.06)}
-.sm .r{display:grid;grid-template-columns:1fr .9fr .9fr 1.5fr;align-items:center;height:84px;border-top:1.5px solid #e3ece7;text-align:center;font-size:32px;color:#3f5552}
+.sm{position:absolute;left:60px;right:60px;top:510px;background:#fff;border:1.5px solid #e3ece7;border-radius:30px;overflow:hidden;box-shadow:0 12px 30px rgba(22,37,38,.06)}
+.sm .r{display:grid;grid-template-columns:1fr .9fr .9fr 1.5fr;align-items:center;height:76px;border-top:1.5px solid #e3ece7;text-align:center;font-size:30px;color:#3f5552}
 .sm .r:first-child{height:70px;border-top:none;background:#162526;color:#fff;font-weight:700;font-size:24px}
 .sm .r:first-child div:last-child{color:#FFB400}
 .sm .r:nth-child(odd):not(:first-child){background:#f6faf7}
-.sm .r div:first-child{font-weight:700;color:#162526;font-size:34px}
+.sm .r div:first-child{font-weight:700;color:#162526;font-size:32px}
 .sm .r:first-child div:first-child{color:#fff;font-size:24px}
 .sm .r div:last-child{font-weight:700;color:#0f7a43}
 .sm .r:first-child div:last-child{color:#FFB400}
@@ -121,7 +122,8 @@ rows = '<div class="r"><div>FII</div><div>Últ. rend.</div><div>Preço</div><div
 for t, r, p, v in L:
     rows += (f'<div class="r"><div>{t}</div><div class="num">R$ {br(r, 3 if round(r, 2) != r else 2)}</div>'
              f'<div class="num">R$ {br(p)}</div><div class="num">R$ {br(v)}</div></div>')
-open("q4.html", "w").write(pag('<div class="t">Quanto investir em cada FII para <span class="g">receber um salário mínimo</span> por mês? <span class="n">(R$ 1.621,00)</span></div>'
-                               f'<div class="sm">{rows}</div>', 52, CSS4))
+open("q4.html", "w").write(pag('<div class="t">Quanto investir para receber <span class="g" style="white-space:nowrap">1 salário</span> <span class="g">mínimo</span> por mês?</div>'
+                               '<div class="sb" style="top:440px">R$ 1.621,00 por mês, com cada FII 👇</div>'
+                               f'<div class="sm">{rows}</div>', 58, CSS4))
 json.dump([[t, r, p, round(v, 2)] for t, r, p, v in L], open("/tmp/claude-0/-home-claude/bb41cf14-75e1-5f31-b4e9-ee9e21090f51/scratchpad/sal.json", "w"))
 print([(t, br(v)) for t, r, p, v in L])
