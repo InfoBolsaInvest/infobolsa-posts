@@ -27,44 +27,38 @@ def br(v, d=2):
     return f"{v:,.{d}f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
 
-# 1. Galpões com mais cotistas (pódio)
+# 1. Galpões com mais cotistas (lista com linhas finas)
 G = [("HGLG11", "Pátria Log", 608345), ("BTLG11", "BTG Logística", 505908), ("GGRC11", "GGR Covepi", 411230),
      ("XPLG11", "XP Log", 347304), ("VILG11", "Vinci Logística", 149265)]
 CSS1 = """
-.pd{position:absolute;left:70px;right:70px;top:490px;display:grid;grid-template-columns:1fr 1fr;gap:40px;grid-auto-rows:220px}
-.pc{background:#fff;border:1.5px solid #e3ece7;border-radius:30px;box-shadow:0 12px 30px rgba(22,37,38,.06);display:flex;align-items:center;gap:24px;padding:24px 28px;position:relative}
-.pc.um{grid-column:1/3;justify-content:center;padding:30px}
-.pc{padding:24px 24px 24px 30px;gap:22px}.pc.um{gap:30px}
-.pc img{width:84px;height:84px;border-radius:24px;object-fit:contain}
-.pc.um img{width:140px;height:140px}
-.pc .tk{font-weight:700;font-size:40px;color:#162526;line-height:1}
-.pc.um .tk{font-size:58px}
-.pc .nm2{font-size:24px;color:#7b8f8a;margin-top:6px}
-.pc .q{font-weight:700;font-size:34px;color:#0f7a43;margin-top:12px}
-.pc.um .q{font-size:46px}
-.pc .q small{font-size:24px;font-weight:500;color:#3f5552}
-.md{position:absolute;left:-12px;top:-12px;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:26px;color:#fff;box-shadow:0 6px 14px rgba(0,0,0,.15)}
+.lk{position:absolute;left:84px;right:84px;top:480px;border-top:1.5px solid #dfe6e3}
+.lr{display:flex;align-items:center;gap:28px;height:162px;border-bottom:1.5px solid #dfe6e3}
+.lr .ps{width:56px;font-weight:700;font-size:40px;color:#0f7a43}
+.lr:first-child .ps{color:#d99a00}
+.lr img{width:92px;height:92px;border-radius:20px;object-fit:contain;flex:none}
+.lr .tk{flex:1;font-weight:700;font-size:46px;color:#162526;line-height:1.1;display:flex;flex-direction:column;align-items:flex-start}
+.lr .tk small{display:block;font-size:24px;font-weight:400;color:#7b8f8a;margin-top:6px}
+.lr .q{text-align:right;font-weight:700;font-size:46px;color:#162526;line-height:1}
+.lr .q small{display:block;font-size:22px;font-weight:500;color:#7b8f8a;margin-top:6px}
 """
-cores = ["#FFB400", "#9aa5a8", "#c07a3c", "#0f7a43", "#0f7a43"]
 cards = ""
 for i, (t, n, q) in enumerate(G):
-    cards += (f'<div class="pc{" um" if i == 0 else ""}"><div class="md" style="background:{cores[i]}">{i + 1}º</div>'
-              f'<img src="assets/logos_b3/{t}.png"><div><div class="tk">{t}</div><div class="nm2">{n}</div>'
-              f'<div class="q num">{br(q / 1000, 0)} mil <small>cotistas</small></div></div></div>')
+    cards += (f'<div class="lr"><div class="ps">{i + 1}º</div><img src="assets/logos_b3/{t}.png">'
+              f'<div class="tk">{t}<small>{n}</small></div><div class="q num">{br(q / 1000, 0)} mil<small>cotistas</small></div></div>')
 open("q1.html", "w").write(pag('<div class="t">🚨 Os 5 FIIs de galpões com <span class="g">mais cotistas</span> 👇</div>'
-                               f'<div class="pd">{cards}</div>', 58, CSS1))
+                               f'<div class="lk">{cards}</div>', 58, CSS1))
 
 # 2. Focus
 F = [("IPCA", ["5,15%", "5,12%", "4,00%", "4,00%"]), ("PIB", ["1,70%", "1,00%", "1,71%", "2,00%"]),
      ("Dólar", ["R$ 5,55", "R$ 5,50", "R$ 5,50", "R$ 5,55"]), ("Selic", ["13,75%", "13,00%", "11,00%", "10,50%"])]
 CSS2 = """
 .fs{position:absolute;left:84px;right:84px;top:445px;font-size:32px;color:#3f5552}
-.fo{position:absolute;left:60px;right:60px;top:540px;background:#fff;border:1.5px solid #e3ece7;border-radius:30px;overflow:hidden;box-shadow:0 12px 30px rgba(22,37,38,.06)}
-.fo .r{display:grid;grid-template-columns:1.15fr 1fr 1fr 1fr 1fr;align-items:center;height:150px;border-top:1.5px solid #e3ece7;text-align:center}
-.fo .r:first-child{height:90px;border-top:none;background:#162526;color:#FFB400;font-weight:700;font-size:28px;letter-spacing:1px}
-.fo .r:first-child div:first-child{color:#fff}
-.fo .r:nth-child(odd):not(:first-child){background:#f6faf7}
-.fo .r div:first-child{text-align:left;padding-left:32px;font-weight:700;font-size:40px;color:#162526}
+.fo{position:absolute;left:84px;right:84px;top:540px}
+.fo .r{display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr 1fr;align-items:center;height:166px;border-bottom:1.5px solid #dfe6e3;text-align:center}
+.fo .r div+div{border-left:1.5px solid #dfe6e3;height:100%;display:flex;align-items:center;justify-content:center}
+.fo .r:first-child{height:80px;border-bottom:3px solid #0f7a43;color:#0f7a43;font-weight:700;font-size:30px;letter-spacing:1px}
+.fo .r:first-child div:first-child{color:#7b8f8a;font-size:24px}
+.fo .r div:first-child{text-align:left;font-weight:700;font-size:40px;color:#162526}
 .fo .v{font-weight:700;font-size:40px;color:#162526}
 .fo .v small{font-size:22px;color:#7b8f8a;font-weight:500;margin-right:4px}
 """
@@ -81,22 +75,19 @@ C = [("Reserva de emergência", ["Poupança", "CDB liquidez diária", "Tesouro S
      ("Crescer o patrimônio", ["Previdência cara", "Tesouro IPCA+", "Ações"]),
      ("Receber renda mensal", ["Imóvel para alugar", "Ações", "FIIs"])]
 CSS3 = """
-.cl{position:absolute;left:60px;right:60px;top:480px;display:flex;flex-direction:column;gap:36px}
-.bl{background:#fff;border:1.5px solid #e3ece7;border-radius:30px;padding:22px 26px 24px;box-shadow:0 12px 30px rgba(22,37,38,.06)}
-.bl h3{margin:0 0 18px;font-weight:700;font-size:34px;color:#162526;text-align:center}
-.bl .g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
-.cbx{border-radius:20px;overflow:hidden;border:1.5px solid #e3ece7;text-align:center}
-.cbx .cbl{font-weight:700;font-size:24px;letter-spacing:2px;color:#fff;padding:8px 0}
-.cbx .cbn{font-weight:700;font-size:29px;color:#162526;padding:12px 10px;min-height:82px;display:flex;align-items:center;justify-content:center;line-height:1.15}
+.ct{position:absolute;left:84px;right:84px;top:480px}
+.ct .r{display:grid;grid-template-columns:1.25fr 1fr 1fr 1fr;align-items:center;min-height:200px;border-bottom:1.5px solid #dfe6e3;text-align:center}
+.ct .r div+div{border-left:1.5px solid #dfe6e3;align-self:stretch;display:flex;align-items:center;justify-content:center;padding:0 10px}
+.ct .r:first-child{min-height:80px;border-bottom:3px solid #162526;font-weight:700;font-size:28px;letter-spacing:2px}
+.ct .r div:first-child{text-align:left;font-weight:700;font-size:34px;color:#162526;line-height:1.2;padding-right:14px}
+.ct .x{font-weight:600;font-size:32px;color:#162526;line-height:1.2}
 """
 lbs = [("RUIM", "#c0392b"), ("BOM", "#d99a00"), ("ÓTIMO", "#0f7a43")]
-bl = ""
+bl = '<div class="r"><div></div>' + "".join(f'<div style="color:{c}">{l}</div>' for l, c in lbs) + "</div>"
 for t, its in C:
-    bl += f'<div class="bl"><h3>{t}</h3><div class="g3">' + "".join(
-        f'<div class="cbx"><div class="cbl" style="background:{c}">{l}</div><div class="cbn">{x}</div></div>'
-        for (l, c), x in zip(lbs, its)) + "</div></div>"
+    bl += f'<div class="r"><div>{t}</div>' + "".join(f'<div class="x">{x}</div>' for x in its) + "</div>"
 open("q3.html", "w").write(pag('<div class="t">Classificando os <span class="g">investimentos</span> 👇</div>'
-                               f'<div class="cl">{bl}</div>', 64, CSS3))
+                               f'<div class="ct">{bl}</div>', 64, CSS3))
 
 # 4. Salário mínimo com FIIs
 SAL = 1621
@@ -108,15 +99,15 @@ for t, r, p in S:
     L.append((t, r, p, q * p))
 L.sort(key=lambda x: x[3])
 CSS4 = """
-.sm{position:absolute;left:60px;right:60px;top:510px;background:#fff;border:1.5px solid #e3ece7;border-radius:30px;overflow:hidden;box-shadow:0 12px 30px rgba(22,37,38,.06)}
-.sm .r{display:grid;grid-template-columns:1fr .9fr .9fr 1.5fr;align-items:center;height:76px;border-top:1.5px solid #e3ece7;text-align:center;font-size:30px;color:#3f5552}
-.sm .r:first-child{height:70px;border-top:none;background:#162526;color:#fff;font-weight:700;font-size:24px}
-.sm .r:first-child div:last-child{color:#FFB400}
-.sm .r:nth-child(odd):not(:first-child){background:#f6faf7}
+.sm{position:absolute;left:84px;right:84px;top:510px}
+.sm .r{display:grid;grid-template-columns:1fr .9fr .9fr 1.5fr;align-items:center;height:76px;border-top:1.5px solid #dfe6e3;text-align:center;font-size:30px;color:#3f5552}
+.sm .r:first-child{height:70px;border-top:none;border-bottom:3px solid #0f7a43;color:#7b8f8a;font-weight:700;font-size:24px}
+.sm .r div+div{border-left:1.5px solid #dfe6e3;height:100%;display:flex;align-items:center;justify-content:center}
+.sm .r:first-child div:last-child{color:#0f7a43}
 .sm .r div:first-child{font-weight:700;color:#162526;font-size:32px}
-.sm .r:first-child div:first-child{color:#fff;font-size:24px}
+.sm .r:first-child div:first-child{color:#7b8f8a;font-size:24px}
 .sm .r div:last-child{font-weight:700;color:#0f7a43}
-.sm .r:first-child div:last-child{color:#FFB400}
+.sm .r:first-child div:last-child{color:#0f7a43}
 """
 rows = '<div class="r"><div>FII</div><div>Últ. rend.</div><div>Preço</div><div>Investimento necessário</div></div>'
 for t, r, p, v in L:
