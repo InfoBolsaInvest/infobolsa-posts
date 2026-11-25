@@ -1,0 +1,11 @@
+{
+ "data": "2026-11-25",
+ "ibov": {"pontos": "166.684", "var": 1.58},
+ "extras": [
+  {"rotulo": "Dólar", "valor": "R$ 5,82", "var": -1.58},
+  {"rotulo": "Na semana", "var": 0.19}
+ ],
+ "altas": [["NATU3", "Natura", 10.09], ["AZZA3", "Azzas 2154", 7.05], ["VAMO3", "Vamos", 6.98], ["MGLU3", "Magazine Luiza", 6.63], ["MRVE3", "MRV", 6.45]],
+ "baixas": [["EMBJ3", "Embraer", -3.27], ["SANB11", "Santander", -2.63], ["MBRF3", "MBRF", -1.69], ["ABEV3", "Ambev", -1.55], ["CPFE3", "CPFL Energia", -1.13]],
+ "fonte": "Fechamento de 25/11/2026. Fonte: B3"
+}
