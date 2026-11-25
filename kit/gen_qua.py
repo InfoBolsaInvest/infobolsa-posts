@@ -75,23 +75,25 @@ C = [("Reserva de emergência", ["Poupança", "CDB liquidez diária", "Tesouro S
      ("Crescer o patrimônio", ["Previdência cara", "Tesouro IPCA+", "Ações"]),
      ("Receber renda mensal", ["Imóvel para alugar", "Ações", "FIIs"])]
 CSS3 = """
-.cl{position:absolute;left:84px;right:84px;top:470px;display:flex;flex-direction:column;gap:30px}
-.bl{background:#e9f2ed;border-radius:30px;overflow:hidden}
-.bl h3{margin:0;font-weight:700;font-size:32px;color:#fff;background:#162526;padding:16px 30px;display:flex;align-items:center;gap:14px}
-.bl h3:before{content:'';width:12px;height:12px;border-radius:50%;background:#FFB400}
-.bl .g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;padding:20px}
-.cbx{border-radius:18px;overflow:hidden;background:#fff;text-align:center;box-shadow:0 6px 16px rgba(22,37,38,.08)}
-.cbx .cbl{font-weight:700;font-size:22px;letter-spacing:2px;color:#fff;padding:7px 0}
-.cbx .cbn{font-weight:700;font-size:29px;color:#162526;padding:10px 10px;min-height:84px;display:flex;align-items:center;justify-content:center;line-height:1.15}
+.cm{position:absolute;left:84px;right:84px;top:480px}
+.cm .r{display:grid;grid-template-columns:1.25fr 1fr 1fr 1fr;align-items:center;column-gap:14px;height:232px;border-bottom:3px solid #cdd9d3}
+.cm .r:first-child{height:auto;padding-bottom:26px;border-bottom:3px solid #162526}
+.cm .pl{font-weight:700;font-size:24px;letter-spacing:2px;color:#fff;border-radius:40px;padding:10px 0;text-align:center}
+.cm .ob{font-weight:700;font-size:34px;color:#162526;line-height:1.15}
+.cm .ob small{display:block;font-size:24px;font-weight:400;color:#7b8f8a;margin-top:6px}
+.cm .cit{display:block!important;font-weight:600;font-size:29px;color:#162526;text-align:center;line-height:1.2}
+.cm .cit i{display:block;font-style:normal;font-size:44px;margin-bottom:8px}
 """
 lbs = [("RUIM", "#c0392b"), ("BOM", "#d99a00"), ("ÓTIMO", "#0f7a43")]
-bl = ""
-for t, its in C:
-    bl += f'<div class="bl"><h3>{t}</h3><div class="g3">' + "".join(
-        f'<div class="cbx"><div class="cbl" style="background:{c}">{l}</div><div class="cbn">{x}</div></div>'
-        for (l, c), x in zip(lbs, its)) + "</div></div>"
+OBJ = [("Reserva de emergência", "pra imprevistos", ["🐷", "🏦", "🏛️"]),
+       ("Crescer o patrimônio", "pensando no longo prazo", ["📉", "🛡️", "📈"]),
+       ("Receber renda mensal", "dinheiro caindo todo mês", ["🏠", "💵", "🏢"])]
+bl = '<div class="r"><div></div>' + "".join(f'<div class="pl" style="background:{c}">{l}</div>' for l, c in lbs) + "</div>"
+for (t, its), (_, sub, ics) in zip(C, OBJ):
+    bl += f'<div class="r"><div class="ob">{t}<small>{sub}</small></div>' + "".join(
+        f'<div class="cit"><i>{ic}</i>{x}</div>' for ic, x in zip(ics, its)) + "</div>"
 open("q3.html", "w").write(pag('<div class="t"><b>Classificando</b> os investimentos 👇</div>'
-                               f'<div class="cl">{bl}</div>', 64, CSS3))
+                               f'<div class="cm">{bl}</div>', 64, CSS3))
 
 # 4. Salário mínimo com FIIs
 SAL = 1621
