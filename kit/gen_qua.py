@@ -75,13 +75,14 @@ C = [("Reserva de emergência", ["Poupança", "CDB liquidez diária", "Tesouro S
      ("Crescer o patrimônio", ["Previdência cara", "Tesouro IPCA+", "Ações"]),
      ("Receber renda mensal", ["Imóvel para alugar", "Ações", "FIIs"])]
 CSS3 = """
-.cl{position:absolute;left:60px;right:60px;top:480px;display:flex;flex-direction:column;gap:36px}
-.bl{background:#fff;border:1.5px solid #e3ece7;border-radius:30px;padding:22px 26px 24px;box-shadow:0 12px 30px rgba(22,37,38,.06)}
-.bl h3{margin:0 0 18px;font-weight:700;font-size:34px;color:#162526;text-align:center}
-.bl .g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
-.cbx{border-radius:20px;overflow:hidden;border:1.5px solid #e3ece7;text-align:center}
-.cbx .cbl{font-weight:700;font-size:24px;letter-spacing:2px;color:#fff;padding:8px 0}
-.cbx .cbn{font-weight:700;font-size:29px;color:#162526;padding:12px 10px;min-height:82px;display:flex;align-items:center;justify-content:center;line-height:1.15}
+.cl{position:absolute;left:84px;right:84px;top:470px;display:flex;flex-direction:column;gap:30px}
+.bl{background:#e9f2ed;border-radius:30px;overflow:hidden}
+.bl h3{margin:0;font-weight:700;font-size:32px;color:#fff;background:#162526;padding:16px 30px;display:flex;align-items:center;gap:14px}
+.bl h3:before{content:'';width:12px;height:12px;border-radius:50%;background:#FFB400}
+.bl .g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;padding:20px}
+.cbx{border-radius:18px;overflow:hidden;background:#fff;text-align:center;box-shadow:0 6px 16px rgba(22,37,38,.08)}
+.cbx .cbl{font-weight:700;font-size:22px;letter-spacing:2px;color:#fff;padding:7px 0}
+.cbx .cbn{font-weight:700;font-size:29px;color:#162526;padding:10px 10px;min-height:84px;display:flex;align-items:center;justify-content:center;line-height:1.15}
 """
 lbs = [("RUIM", "#c0392b"), ("BOM", "#d99a00"), ("ÓTIMO", "#0f7a43")]
 bl = ""
