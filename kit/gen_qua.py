@@ -31,8 +31,8 @@ def br(v, d=2):
 G = [("HGLG11", "Pátria Log", 608345), ("BTLG11", "BTG Logística", 505908), ("GGRC11", "GGR Covepi", 411230),
      ("XPLG11", "XP Log", 347304), ("VILG11", "Vinci Logística", 149265)]
 CSS1 = """
-.lk{position:absolute;left:84px;right:84px;top:480px;border-top:1.5px solid #dfe6e3}
-.lr{display:flex;align-items:center;gap:28px;height:162px;border-bottom:1.5px solid #dfe6e3}
+.lk{position:absolute;left:84px;right:84px;top:480px;border-top:3px solid #cdd9d3}
+.lr{display:flex;align-items:center;gap:28px;height:162px;border-bottom:3px solid #cdd9d3}
 .lr .ps{width:56px;font-weight:700;font-size:40px;color:#0f7a43}
 .lr:first-child .ps{color:#d99a00}
 .lr img{width:92px;height:92px;border-radius:20px;object-fit:contain;flex:none}
@@ -54,8 +54,8 @@ F = [("IPCA", ["5,15%", "5,12%", "4,00%", "4,00%"]), ("PIB", ["1,70%", "1,00%", 
 CSS2 = """
 .fs{position:absolute;left:84px;right:84px;top:445px;font-size:32px;color:#3f5552}
 .fo{position:absolute;left:84px;right:84px;top:540px}
-.fo .r{display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr 1fr;align-items:center;height:166px;border-bottom:1.5px solid #dfe6e3;text-align:center}
-.fo .r div+div{border-left:1.5px solid #dfe6e3;height:100%;display:flex;align-items:center;justify-content:center}
+.fo .r{display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr 1fr;align-items:center;height:166px;border-bottom:3px solid #cdd9d3;text-align:center}
+.fo .r div+div{border-left:3px solid #cdd9d3;height:100%;display:flex;align-items:center;justify-content:center}
 .fo .r:first-child{height:80px;border-bottom:3px solid #0f7a43;color:#0f7a43;font-weight:700;font-size:30px;letter-spacing:1px}
 .fo .r:first-child div:first-child{color:#7b8f8a;font-size:24px}
 .fo .r div:first-child{text-align:left;font-weight:700;font-size:40px;color:#162526}
@@ -103,9 +103,9 @@ for t, r, p in S:
 L.sort(key=lambda x: x[3])
 CSS4 = """
 .sm{position:absolute;left:84px;right:84px;top:510px}
-.sm .r{display:grid;grid-template-columns:1fr .9fr .9fr 1.5fr;align-items:center;height:76px;border-top:1.5px solid #dfe6e3;text-align:center;font-size:30px;color:#3f5552}
+.sm .r{display:grid;grid-template-columns:1fr .9fr .9fr 1.5fr;align-items:center;height:76px;border-top:3px solid #cdd9d3;text-align:center;font-size:30px;color:#3f5552}
 .sm .r:first-child{height:70px;border-top:none;border-bottom:3px solid #0f7a43;color:#7b8f8a;font-weight:700;font-size:24px}
-.sm .r div+div{border-left:1.5px solid #dfe6e3;height:100%;display:flex;align-items:center;justify-content:center}
+.sm .r div+div{border-left:3px solid #cdd9d3;height:100%;display:flex;align-items:center;justify-content:center}
 .sm .r:first-child div:last-child{color:#0f7a43}
 .sm .r div:first-child{font-weight:700;color:#162526;font-size:32px}
 .sm .r:first-child div:first-child{color:#7b8f8a;font-size:24px}
