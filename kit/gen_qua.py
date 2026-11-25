@@ -81,7 +81,7 @@ CSS3 = """
 .cm .pl{font-weight:700;font-size:24px;letter-spacing:2px;color:#fff;border-radius:40px;padding:10px 0;text-align:center}
 .cm .ob{font-weight:700;font-size:34px;color:#162526;line-height:1.15}
 .cm .ob small{display:block;font-size:24px;font-weight:400;color:#7b8f8a;margin-top:6px}
-.cm .cit{display:block!important;font-weight:600;font-size:29px;color:#162526;text-align:center;line-height:1.2}
+.cm .cit{display:flex!important;flex-direction:column;align-items:center;justify-content:center;height:190px;border-radius:24px;padding:0 8px;font-weight:600;font-size:29px;color:#162526;text-align:center;line-height:1.2}
 .cm .cit i{display:block;font-style:normal;font-size:44px;margin-bottom:8px}
 """
 lbs = [("RUIM", "#c0392b"), ("BOM", "#d99a00"), ("ÓTIMO", "#0f7a43")]
@@ -91,7 +91,7 @@ OBJ = [("Reserva de emergência", "pra imprevistos", ["🐷", "🏦", "🏛️"]
 bl = '<div class="r"><div></div>' + "".join(f'<div class="pl" style="background:{c}">{l}</div>' for l, c in lbs) + "</div>"
 for (t, its), (_, sub, ics) in zip(C, OBJ):
     bl += f'<div class="r"><div class="ob">{t}<small>{sub}</small></div>' + "".join(
-        f'<div class="cit"><i>{ic}</i>{x}</div>' for ic, x in zip(ics, its)) + "</div>"
+        f'<div class="cit" style="background:{bg}"><i>{ic}</i>{x}</div>' for ic, x, bg in zip(ics, its, ["#fbe2df", "#fdf0cf", "#dcf0e3"])) + "</div>"
 open("q3.html", "w").write(pag('<div class="t"><b>Classificando</b> os investimentos 👇</div>'
                                f'<div class="cm">{bl}</div>', 64, CSS3))
 
